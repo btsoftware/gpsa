@@ -1,4 +1,4 @@
 gpsa
 ====
 
-GPSA Knowledge Platform
+GPSA KP
