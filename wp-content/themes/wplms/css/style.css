@@ -529,7 +529,8 @@ header{
 
 #headertop{
 	background:#232b2d;
-	padding:8px 0;
+	border-top: 3px solid #6D6F9E;
+	padding:0;
 	font-size:11px;
 	text-transform: uppercase;
 	color:rgba(255,255,255,0.6);
@@ -562,12 +563,13 @@ header #searchdiv{
 	font-size:16px;
 	padding:28px 0 0;
 }
-header #searchicon{
-	float: right;
-	color: rgba(255,255,255,0.6);
-	font-size: 20px;
-	padding: 25px 0;
+header #searchicon {
+	background: none repeat scroll 0 0 #6D6F9E;
+	color: #FFFFFF;
 	cursor: pointer;
+	float: right;
+	font-size: 20px;
+	padding: 0 2px;
 }
 header #searchdiv{display: none;z-index: 999;}
 header #searchform{
@@ -617,7 +619,7 @@ header #searchform:after{
 
 nav{
 	 /* Adjusting for Logo */
-	float:right;
+	float:left;
 }
 
 
@@ -648,15 +650,16 @@ nav .sub-menu li:hover > a{
 }
 
 nav .menu li a{
-	font-family: 'Raleway',sans-serif;
-	font-weight:600;
-	margin:0 10px;
-	padding: 30px 6px;
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	padding: 6px 16px;
 	display: inline-block;
 	font-size: 13px;
 	text-transform:uppercase;
 	color: rgba(255,255,255,0.5);
 	position: relative;
+	border-left: 1px solid rgba(209, 209, 209, 0.1);
+	
 }
 nav .menu li.current-menu-item a{
 	color:#FFF;
@@ -684,6 +687,7 @@ nav .sub-menu{
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	font-weight:300 !important
 }
 nav .hasmenu .sub-menu{
 	width:176px;
@@ -890,7 +894,7 @@ button span {
 #trigger {
 cursor: pointer;
 user-select: none;
-background:transparent;
+background:#6D6F9E;
 }
 
 
@@ -1054,6 +1058,7 @@ h2#sidelogo:hover img{
 
 
 #logo{
+        text-align: center;
 	margin:6px 0 0;
 	padding:0;
 	webkit-transition: all 0.6s ease-in-out;
@@ -1063,7 +1068,7 @@ h2#sidelogo:hover img{
 }
 
 #logo img{
-		max-height:48px;	
+		max-height:61px;	
 		width:auto;
 }
 
@@ -1140,31 +1145,33 @@ footer{
 	color:#FFF;
 	font-weight:600;
 }
-.footerbottom{
+.footer-contact{
 	margin-top:30px;
+	padding:0;
+}
+.footerbottom{
+	margin-top:0px;
 	padding:30px 0 0;
 	border-top:1px solid rgba(255,255,255,0.1);
 }
 
 #footerbottom{
 	background:#232b2d;
-	padding:30px 0 20px;
-	color:rgba(255,255,255,0.6);
-	font-size: 11px;
-	text-transform: uppercase;
+	padding:5px 0;
+	color:rgba(255,255,255,0.2);
+	font-size: 10px;
 }
 #footerbottom a{
 	color:rgba(255,255,255,0.6);
 }
 #footerlogo{
-	max-width:48px;
+	max-width:190px;
 	float:left;
 	margin:-15px 10px 0 0;
 	padding:0;
-	opacity: 0.6;
 }
 #footerlogo:hover{
-	opacity: 1;
+	opacity: 0.9;
 }
 #footermenu{float:right;}
 .footermenu li{
@@ -1745,6 +1752,11 @@ h4.block_title + .date{line-height:1.4;}
 	list-style: none;
 }
 .container{
+	position: relative;
+}
+.container-logo {
+	background: none repeat scroll 0 0 #FFFFFF;
+	padding: 0 0 20px;
 	position: relative;
 }
 

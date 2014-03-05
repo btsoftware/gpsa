@@ -3233,11 +3233,11 @@ margin:2px 5px 0 0;
 	#buddypress #members-activity div.activity-type-tabs ul li{
 		width:140px;
 	}
-	header #searchicon{
-		position: absolute;
-		top: -80px;
-		right: 100px;
-		font-size:20px;
+	header #searchicon {
+	    font-size: 20px;
+	    position: absolute;
+	    right: 83px;
+	    top: -62px;
 	}
 	header #searchform{margin-top:30px;}
 
