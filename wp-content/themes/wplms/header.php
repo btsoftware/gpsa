@@ -11,6 +11,7 @@
 <?php
 wp_head();
 ?>
+
 </head>
 <body <?php body_class(); ?>>
 <div id="global" class="global">
@@ -80,9 +81,8 @@ wp_head();
             </div>
         </div>
         <header>
-            <div class="container">
+            <div class="container-logo">
                 <div class="row">
-                    <div class="col-md-3 col-sm-2 col-xs-12">
                         <?php
                             if(is_home()){
                                 echo '<h1 id="logo">';
@@ -98,9 +98,12 @@ wp_head();
                             }else{
                                 echo '</h2>';
                             }
-                        ?>
-                    </div>
-                    <div class="col-md-9 col-sm-10">
+                        ?>                     
+                </div>
+            </div>
+            <div class="container">               
+                <div class="row">
+                    <div class="col-xs-12">
                         <div id="searchicon"><i class="icon-search-2"></i></div>
                         <div id="searchdiv">
                             <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
