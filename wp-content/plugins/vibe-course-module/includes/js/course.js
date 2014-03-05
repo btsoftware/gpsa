@@ -793,11 +793,6 @@ jQuery(document).ready(function($){
           callbacks: {
              parseAjax: function( mfpResponse ) {
               mfpResponse.data = $(mfpResponse.data).find('#certificate');
-            },
-            ajaxContentAdded: function() {
-              $('.printthis').click(function(){
-                  $(this).parent().print();
-              });
             }
           }
       });

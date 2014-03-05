@@ -844,10 +844,19 @@ function bp_get_course_certificate($args){
     'course_id' =>get_the_ID(),
     'user_id'=> get_current_user_id()
     );
+
+
   $r = wp_parse_args( $args, $defaults );
   extract( $r, EXTR_SKIP );
 
-  $pid=vibe_get_option('certificate_page');
+  $certificate_template_id=get_post_meta($course_id,'vibe_certificate_template',true);
+
+  if(isset($certificate_template_id) && $certificate_template_id){
+      $pid = $certificate_template_id;
+  }else{
+      $pid=vibe_get_option('certificate_page');
+  }
+
   $url = get_permalink($pid).'?c='.$course_id.'&u='.$user_id;
   return $url;
 }

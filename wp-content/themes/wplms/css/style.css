@@ -1100,7 +1100,7 @@ footer{
 	background:#313B3D;
 	position: relative;
 	margin-top:30px;
-	padding:30px 0;
+	padding:30px 0 0;
 	font-size:14px;
 	color:rgba(255,255,255,0.6);
 }
@@ -1146,13 +1146,84 @@ footer{
 	font-weight:600;
 }
 .footer-contact{
+	color: #fff;
 	margin-top:30px;
 	padding:0;
+	border-bottom: 3px solid #6D6F9E;
+	text-align:center;
+	
 }
-.footerbottom{
-	margin-top:0px;
-	padding:30px 0 0;
-	border-top:1px solid rgba(255,255,255,0.1);
+.buttoncontact {
+    background: url("images/mail.png") no-repeat scroll left top #6D6F9E;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1;
+    margin: 0;
+    padding: 6px 24px 4px 47px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    transition: background-color 0.15s ease-in-out 0s;
+    width: auto;
+}
+.buttoncontact {
+    background: url("images/mail.png") no-repeat scroll left top #6D6F9E;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1;
+    margin: 0;
+    padding: 6px 24px 4px 47px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    transition: background-color 0.15s ease-in-out 0s;
+    width: auto;
+}
+.buttoncontact {
+    background: url("images/mail.png") no-repeat scroll left top #6D6F9E;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1;
+    margin: 0;
+    padding: 6px 24px 4px 47px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    transition: background-color 0.15s ease-in-out 0s;
+    width: auto;
+}
+a.buttoncontact{
+    color:#fff !important;
+}
+a:hover.buttoncontact {
+    color:#fff !important;
+}
+.footerbottom {
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding: 30px 0 0;
+}
+.sitemap {
+    margin-bottom: 12px;
+    margin-top: -22px;
+}
+.footertop{
+	background:#f3f3f3;
 }
 
 #footerbottom{
@@ -1178,14 +1249,30 @@ footer{
 	float:left;
 	margin-left:15px;
 }
-.footertitle,
-footer h4{
-	color:#FFF;
-	font-size: 14px;
-text-transform: uppercase;
-font-weight: 600;
+.footertitle, footer h4 {
+    color: #333333 !important;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
 }
-
+.footertitle, footer h4 >a {
+    color: #2a2a2a !important;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+}
+.footertitle, footer h4 >a:hover {
+    color: #333333 !important;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+}
+footer, footer a, .footerwidget li a:hover {
+    color: #666666 !important ;
+}
+footer, footer a:hover, .footerwidget li a {
+    color: #666666 !important;
+}
 .quick-flickr-item a{
 	max-width: 64px;
 	border: 2px solid rgba(0,0,0,0.2);
@@ -1225,9 +1312,11 @@ background:#232b2d;
 	border: 20px solid;
 	border-color: rgba(230,230,230,0.2) transparent transparent transparent;
 }
-.footerwidget ul li{
-	position: relative;
-	clear:both;
+.footerwidget ul li {
+    clear: both;
+    font-size: 9px;
+    margin-bottom: 10px;
+    position: relative;
 }
 .footerwidget ul li a{
   padding:4px 0;
