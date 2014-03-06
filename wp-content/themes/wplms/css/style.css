@@ -1429,14 +1429,27 @@ background:#232b2d;
 /*========================================================================*/
 
 #title{
-	margin-top: -5px;
-	padding: 30px 0 0;
-}
+	padding: 40px 0 0;
+	position:relative;
+	background:#f4f4f4;
 
+}
+#title:after{
+	background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+        bottom: -6px;
+	content: "";
+	height: 7px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
 .pagetitle h1{
+        color: #253169;	
 	margin:0;
 	padding:0;
-	font-weight:600;
+	font-family: 'steelfish_rgregular';
+	font-size:35px;
+	text-transform:uppercase;
 }
 .pagetitle h5{
 	margin-bottom:10px;
@@ -1476,22 +1489,23 @@ text-transform: uppercase;
 }
 
 .col-md-3 .breadcrumbs{
-	padding: 20px 0 10px;
+	padding: 20px 0 0px;
 }
 
 .breadcrumbs li{
 	float:left;
 	white-space:nowrap;
-	margin-right:10px;
-	font-size:11px;
-	text-transform: uppercase;
+	margin-right:5px;
+	font-size:10px;
+	text-transform: none;
 }
 .breadcrumbs a{font-weight:600;}
+.breadcrumbs a:hover{color:#6D6F9E;}
 .breadcrumbs li+li:before{
 	font-family: "fonticon" !important;
 	content: "\e0f6";
-	font-size: 10px;
-	margin-right:10px;
+	font-size: 9px;
+	margin-right:5px;
 }
 
 .prev_next li{
