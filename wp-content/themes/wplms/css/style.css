@@ -1468,6 +1468,16 @@ background:#232b2d;
 	font-size:35px;
 	text-transform:uppercase;
 }
+
+.pagetitle h2{
+   color: #253169;	
+	margin:0;
+	padding:0;
+	font-family: 'steelfish_rgregular';
+	font-size:25px;
+	text-transform:uppercase;
+}
+
 .pagetitle h5{
 	margin-bottom:10px;
 }
