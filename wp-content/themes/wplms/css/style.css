@@ -300,8 +300,8 @@ img.wp-image-2001 {
 }
 .greybackhome {
     background:#F4F4F4;
-    padding-bottom: 16px !important;
-    padding-top: 16px !important;
+    padding-bottom: 0 !important;
+    padding-top: 19px !important;
 }
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
