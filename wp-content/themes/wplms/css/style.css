@@ -306,8 +306,8 @@ img.wp-image-2001 {
 }
 /** about **/
 .aboutus-1 {
-    background:url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
-
+    background: url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
+    padding-top: 40px;
 }
 
 /*========================================================================*/
