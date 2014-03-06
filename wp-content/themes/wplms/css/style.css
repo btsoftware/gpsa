@@ -304,6 +304,12 @@ img.wp-image-2001 {
     padding-bottom: 0 !important;
     padding-top: 19px !important;
 }
+/** about **/
+.aboutus-1 {
+    background:url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
+
+}
+
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
 /*========================================================================*/
