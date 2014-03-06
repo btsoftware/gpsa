@@ -108,14 +108,15 @@ font-family: 'Steelfish Bold'
 
 h1,h2,h3,h4,h5,h6{
 	line-height:1.35em;
-	 font-family: 'Raleway','Open Sans', sans-serif;
 	color: #282828;
 }
 h1{
 	font-size: 32px;
 }
 h2{
-	font-size: 28px;
+	font-size: 244px;
+	font-family: 'steelfish_rgregular';
+	color:#6D6F9E;
 
 }
 h3{
