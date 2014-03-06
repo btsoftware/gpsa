@@ -194,7 +194,10 @@ get_header( 'buddypress' ); ?>
 			</div>
 		</div><!-- .padder -->
 		
-		<iframe width="100%" height="500px" frameBorder="0" src="http://a.tiles.mapbox.com/v3/fundarmexico.refp3nmi/page.html#2/0.0/0.0"></iframe>
+		<!-- Map Roster of practitioners -->
+			<p class="bbp-forum-title">Roster of practitioners</p>
+			<iframe width="100%" height="500px" frameBorder="0" src="http://a.tiles.mapbox.com/v3/fundarmexico.refp3nmi/page.html#2/0.0/0.0"></iframe>
+		<!-- End Map Roster of practitioners -->
 	</div><!-- #content -->
 
 	<?php do_action( 'bp_after_directory_activity_page' ); ?>
