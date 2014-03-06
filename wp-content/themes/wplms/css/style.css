@@ -157,7 +157,9 @@ blockquote+p,
 p+blockquote{
 	margin-top: 10px;
 }
-
+p{
+	font-size:13px;
+}
 blockquote p{
 	font-weight:400;
 }
@@ -295,6 +297,11 @@ p.welcome3 {
 }
 img.wp-image-2001 {
     margin-top: 20px;
+}
+.greybackhome {
+    background:#F4F4F4;
+    padding-bottom: 16px !important;
+    padding-top: 16px !important;
 }
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
