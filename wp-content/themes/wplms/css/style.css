@@ -38,6 +38,10 @@
 /*========================================================================*/
 /*   01. DEFAULT STYLING
 /*========================================================================*/
+
+@import url("fonts/stylesheet.css");
+
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, adress, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
@@ -263,6 +267,23 @@ a:hover{
 .content ul > li > ul,
 .content ol > li > ol{
 	padding-left:30px;
+}
+/** Home **/
+h1.welcome1 {
+    color: #6D6F9E;
+    font-family: 'steelfish_rgregular';
+    font-size: 32px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+h1.welcome2 {
+    color: #28336A;
+    font-family: 'steelfish_rgregular';
+    font-size: 57px;
+    line-height: 59px;
+    margin-bottom: 9px;
+    margin-top:0px;
+    text-transform: uppercase;
 }
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
