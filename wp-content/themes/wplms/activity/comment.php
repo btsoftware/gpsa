@@ -13,7 +13,10 @@
 ?>
 
 <?php do_action( 'bp_before_activity_comment' ); ?>
-
+<section id="activitytitle">
+    <div class="container">
+        <div class="row">
+			
 <li id="acomment-<?php bp_activity_comment_id(); ?>">
 	<div class="acomment-avatar">
 		<a href="<?php bp_activity_comment_user_link(); ?>">
@@ -54,4 +57,7 @@
 	<?php bp_activity_recurse_comments( bp_activity_current_comment() ); ?>
 </li>
 
+		</div>
+    </div>
+</section>
 <?php do_action( 'bp_after_activity_comment' ); ?>

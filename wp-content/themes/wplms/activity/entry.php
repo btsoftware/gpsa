@@ -13,7 +13,10 @@
 ?>
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
-
+<section id="activitytitle">
+    <div class="container">
+        <div class="row">
+			
 <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
 		<a href="<?php bp_activity_user_link(); ?>">
@@ -121,4 +124,7 @@
 
 </li>
 
+		</div>
+    </div>
+</section>
 <?php do_action( 'bp_after_activity_entry' ); ?>
