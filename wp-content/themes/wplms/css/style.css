@@ -119,11 +119,11 @@ h2{
 	color:#6D6F9E;
 
 }
-.subt h2{
-	font-size: 44px;
-	font-family: 'steelfish_rgregular';
-	color:#6D6F9E;
-
+h2.subt {
+    color: #6D6F9E;
+    font-family: 'steelfish_rgregular';
+    font-size: 44px;
+    text-transform: uppercase;
 }
 h3{
 	font-size: 24px;
