@@ -167,6 +167,10 @@ p+blockquote{
 p{
 	font-size:13px;
 }
+p.obj {
+    font-size: 17px;
+    font-weight: 300;
+}
 blockquote p{
 	font-weight:400;
 }
