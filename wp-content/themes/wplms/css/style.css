@@ -1475,7 +1475,7 @@ background:#232b2d;
 	text-transform:uppercase;
 }
 
-/*Title Map*/
+/*Title & Map*/
 .pagetitle h2{
    color: #253169;	
 	margin:0;
@@ -1485,9 +1485,8 @@ background:#232b2d;
 	text-transform:uppercase;
 }
 
-#share-overlay {
-    visibility: hidden;
-}
+#map { position:relative; width:100%; height: 500px; }
+/* End Title & Map*/
 
 .pagetitle h5{
 	margin-bottom:10px;

@@ -195,11 +195,15 @@ get_header( 'buddypress' ); ?>
 		</div><!-- .padder -->
 		
 		<!-- Map Roster of practitioners -->
-			<div class="pagetitle">
-				<h2>Roster of practitioners</h2>
-			</div>
-			
-			<iframe width="100%" height="500px" frameBorder="0" src="http://a.tiles.mapbox.com/v3/fundarmexico.refp3nmi/page.html#2/0.0/0.0"></iframe>
+			<div class="pagetitle"><h2>Roster of practitioners</h2></div>
+
+			<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+			<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+
+			<div id='map'></div>
+			<script>
+				var map = L.mapbox.map('map', 'fundarmexico.refp3nmi');
+			</script>
 		<!-- End Map Roster of practitioners -->
 	</div><!-- #content -->
 
