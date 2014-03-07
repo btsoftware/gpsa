@@ -203,8 +203,10 @@ get_header( 'buddypress' ); ?>
 			<div id='map'></div>
 			<script>
 				var map = L.mapbox.map('map', 'fundarmexico.refp3nmi');
+				map.scrollWheelZoom.disable();
 			</script>
 		<!-- End Map Roster of practitioners -->
+		
 	</div><!-- #content -->
 
 	<?php do_action( 'bp_after_directory_activity_page' ); ?>
