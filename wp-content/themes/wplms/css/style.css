@@ -1469,6 +1469,7 @@ background:#232b2d;
 	text-transform:uppercase;
 }
 
+/*Title Map*/
 .pagetitle h2{
    color: #253169;	
 	margin:0;
@@ -1476,6 +1477,10 @@ background:#232b2d;
 	font-family: 'steelfish_rgregular';
 	font-size:25px;
 	text-transform:uppercase;
+}
+
+#share-overlay {
+    visibility: hidden;
 }
 
 .pagetitle h5{
