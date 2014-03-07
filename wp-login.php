@@ -730,16 +730,14 @@ default:
 	}
 
 	if ( isset( $_REQUEST['redirect_to'] ) ) {
-		die("as");
 		$redirect_to = $_REQUEST['redirect_to'];
 		// Redirect to https if user wants ssl
 		if ( $secure_cookie && false !== strpos($redirect_to, 'wp-admin') )
 			$redirect_to = preg_replace('|^http://|', 'https://', $redirect_to);
 	} else {
-		die("aasdasds");
 		$redirect_to = admin_url();
 	}
-die(var_dump($redirect_to));
+
 	$reauth = empty($_REQUEST['reauth']) ? false : true;
 
 	// If the user was redirected to a secure login form from a non-secure admin page, and secure login is required but secure admin is not, then don't use a secure
@@ -790,6 +788,8 @@ die(var_dump($redirect_to));
 				$redirect_to = get_dashboard_url( $user->ID );
 			elseif ( !$user->has_cap('edit_posts') )
 				$redirect_to = admin_url('profile.php');
+			else
+				$redirect_to = home_url();
 		}
 		wp_safe_redirect($redirect_to);
 		exit();
