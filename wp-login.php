@@ -737,7 +737,7 @@ default:
 	} else {
 		$redirect_to = admin_url();
 	}
-
+die(var_dump($redirect_to));
 	$reauth = empty($_REQUEST['reauth']) ? false : true;
 
 	// If the user was redirected to a secure login form from a non-secure admin page, and secure login is required but secure admin is not, then don't use a secure
@@ -763,7 +763,7 @@ default:
 	 * @param WP_User|WP_Error $user                  WP_User object if login was successful, WP_Error object otherwise.
 	 */
 	$redirect_to = apply_filters( 'login_redirect', $redirect_to, $requested_redirect_to, $user );
-	die(var_dump($redirect_to));
+	
 	if ( !is_wp_error($user) && !$reauth ) {
 		if ( $interim_login ) {
 			$message = '<p class="message">' . __('You have logged in successfully.') . '</p>';
