@@ -1,5 +1,5 @@
-<footer>
-    <div class="footer-contact">
+<section class="stripe" style="padding-bottom: 0px ! important;">
+        <div class="footer-contact">
 	<div class="container">
 	<div class="row">
 	    <a class="buttoncontact" href="">Contac Us</a>	
@@ -7,6 +7,9 @@
 	</div>
     </div>
 
+
+</section>
+<footer>
     <div class="footertop">
     <div class="container">
         <div class="row">
