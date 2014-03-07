@@ -730,11 +730,13 @@ default:
 	}
 
 	if ( isset( $_REQUEST['redirect_to'] ) ) {
+		die("as");
 		$redirect_to = $_REQUEST['redirect_to'];
 		// Redirect to https if user wants ssl
 		if ( $secure_cookie && false !== strpos($redirect_to, 'wp-admin') )
 			$redirect_to = preg_replace('|^http://|', 'https://', $redirect_to);
 	} else {
+		die("aasdasds");
 		$redirect_to = admin_url();
 	}
 die(var_dump($redirect_to));
