@@ -781,6 +781,7 @@ default:
 		}
 
 		if ( ( empty( $redirect_to ) || $redirect_to == 'wp-admin/' || $redirect_to == admin_url() ) ) {
+			die("as");
 			// If the user doesn't belong to a blog, send them to user admin. If the user can't edit posts, send them to their profile.
 			if ( is_multisite() && !get_active_blog_for_user($user->ID) && !is_super_admin( $user->ID ) )
 				$redirect_to = user_admin_url();
@@ -791,6 +792,8 @@ default:
 			else
 				$redirect_to = home_url();
 		}
+		
+		die("noo");
 		wp_safe_redirect($redirect_to);
 		exit();
 	}
