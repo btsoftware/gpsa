@@ -639,8 +639,8 @@ header #searchicon {
 	color: #FFFFFF;
 	cursor: pointer;
 	float: right;
-	font-size: 20px;
-	padding: 0 2px;
+	font-size: 16px;
+	padding:6px 9px;
 }
 header #searchdiv{display: none;z-index: 999;}
 header #searchform{
@@ -723,7 +723,7 @@ nav .sub-menu li:hover > a{
 nav .menu li a{
 	font-family: 'Open Sans', sans-serif;
 	margin:0;
-	padding: 6px 16px;
+	padding: 8px 16px;
 	display: inline-block;
 	font-size: 13px;
 	text-transform:uppercase;
@@ -1459,11 +1459,11 @@ background:#232b2d;
 /*   07. TITILE
 /*========================================================================*/
 
-#title{
-	padding: 40px 0 0;
-	position:relative;
-	background:#f4f4f4;
-
+#title {
+    background: none repeat scroll 0 0 #F4F4F4;
+    margin-top: 6px;
+    padding: 23px 0 0;
+    position: relative;
 }
 #title:after{
 	background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
