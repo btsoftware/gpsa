@@ -125,6 +125,12 @@ h2.subt {
     font-size: 44px;
     text-transform: uppercase;
 }
+h2.subt2{
+    color: #6D6F9E;
+    margin: 0;
+    padding: 0 !important;
+    text-transform: uppercase;
+}
 h3{
 	font-size: 24px;
 
