@@ -327,6 +327,13 @@ img.wp-image-2001 {
     padding-top: 40px;
 }
 
+.aboutus-3 {
+    background: url("images/bk-components.png") repeat-x scroll 0 0 #F2F2F5;
+    padding-top: 40px;
+}
+
+
+
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
 /*========================================================================*/
@@ -1474,16 +1481,6 @@ background:#232b2d;
 	font-size:35px;
 	text-transform:uppercase;
 }
-
-.pagetitle h2{
-   color: #253169;	
-	margin:0;
-	padding:0;
-	font-family: 'steelfish_rgregular';
-	font-size:25px;
-	text-transform:uppercase;
-}
-
 .pagetitle h5{
 	margin-bottom:10px;
 }
