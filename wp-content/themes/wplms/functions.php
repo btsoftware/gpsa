@@ -44,4 +44,35 @@ include_once 'includes/tour.php';
 // Options Panel
 get_template_part('vibe','options');
 
+
+//Redirect user
+function redirect_based_on_role()
+{
+    //comprueba informacion usuario actual
+    global $current_user;
+    get_currentuserinfo();
+    die(var_dump($current_user));
+    if ($current_user->user_level == 0)
+    {
+     // Usuario es sucriptor
+     // Redirección a la respectiva página.
+    }
+    else if ($current_user->user_level > 1)
+    {
+      // Usuario es colaborador
+      // Redirección a la respectiva página.
+    }
+    else if ($current_user->user_level >8)
+    {
+      // Usuario es un editor
+      // Redirección a la respectiva página.
+    }
+    else
+    {
+      // No se encontró el perfil de usaurio
+      // Salir de aquí
+    }
+}
+// Utiliza esta acción para hacerlo posible.
+add_action("admin_init","redirect_based_on_role");
 ?>
