@@ -31,7 +31,7 @@ get_header();
                     query_posts(array('post_type'=>'post','per_page'=>5,'paged' => $paged));
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-                    $categories = get_the_category(15);
+                    $categories = get_the_category();
                     $cats='<ul>';
                     if($categories){
                         foreach($categories as $category) {
