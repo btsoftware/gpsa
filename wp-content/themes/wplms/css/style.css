@@ -1481,8 +1481,6 @@ background:#232b2d;
 	font-size:35px;
 	text-transform:uppercase;
 }
-<<<<<<< HEAD
-=======
 
 /*Title & Map*/
 .pagetitle h2{
@@ -1497,10 +1495,6 @@ background:#232b2d;
 #map { position:relative; width:100%; height: 500px; }
 /* End Title & Map*/
 
-<<<<<<< HEAD
->>>>>>> 2cbf64cb9eacfc42764cddd3cb5ab2c8f0fd3a2e
-=======
->>>>>>> 2cbf64cb9eacfc42764cddd3cb5ab2c8f0fd3a2e
 .pagetitle h5{
 	margin-bottom:10px;
 }
