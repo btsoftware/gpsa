@@ -91,13 +91,18 @@
 .ajde_evcal_calendar #evcal_next{background-position:-20px 0; margin:8px 0 0 0px}
 .ajde_evcal_calendar a#evcal_prev:hover{background-position:-5px -17px}
 .ajde_evcal_calendar a#evcal_next:hover{background-position:-20px -17px}
-.ajde_evcal_calendar .calendar_header p{
-	height:36px;line-height:36px;
-	margin:0 !important;font-size:36px;
-	font-weight:normal;
-	float:left; color:#c6c6c6;
-	text-transform:uppercase; 
-	padding-top:1px; padding-bottom:0px;
+.ajde_evcal_calendar .calendar_header p {
+    color: #6D6F9E;
+    float: left;
+    font-family: steelfish_rgregular;
+    font-size: 36px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 !important;
+    padding-bottom: 0;
+    padding-top: 1px;
+    text-transform: uppercase;
 }
 
 .ajde_evcal_calendar .calendar_header .evcal_arrows{
@@ -611,16 +616,17 @@
 .evcal_evdata_img {height:70px; }
 	
 /*-- upcoming events list --*/
-.ajde_evcal_calendar .evcal_month_line p{
-	padding:8px 0 5px;
-	color: #c6c6c6;
-	font-size: 24px;
-	text-transform: uppercase;
-	min-height: 24px;
-	line-height: 100% !important;
-	margin: 0 !important;
-	font-weight: normal;
-	border-bottom: 1px solid #e5e5e5;
+.ajde_evcal_calendar .evcal_month_line p {
+    border-bottom: 1px solid #E5E5E5;
+    color: #6D6F9E;
+    font-family: steelfish_rgregular;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 100% !important;
+    margin: 0 !important;
+    min-height: 24px;
+    padding: 8px 0 5px;
+    text-transform: uppercase;
 }
 
 
