@@ -62,7 +62,7 @@ if ( !class_exists('vibe_bp_login') ) {
 				do_action( 'bp_before_sidebar_login_form' ); ?>
 				
 				
-				<form name="login-form" id="vbp-login-form" class="standard-form" action="<?php echo vibe_site_url( 'wp-login.php', 'login-post' ); ?>" method="post">
+				<form name="login-form" id="vbp-login-form" class="standard-form" action="<?php echo wp_login_url( get_permalink() ); ?>" method="post">
 					<label><?php _e( 'Username', 'vibe' ); ?><br />
 					<input type="text" name="log" id="side-user-login" class="input" value="<?php echo esc_attr( stripslashes( $user_login ) ); ?>" /></label>
 					
