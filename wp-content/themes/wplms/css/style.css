@@ -805,6 +805,7 @@ nav .sub-menu li a{
 }
 nav .sub-menu > li:last-child a{
 	border-bottom:none;
+	color:#000;
 }
 nav .sub-menu li a:hover{
 	color:#28336A;
