@@ -64,6 +64,7 @@ get_header();
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('mainsidebar') ) : ?>
                 <?php endif; ?>
 			</div>
+			
 		</div>
 	</div>
 </section>
