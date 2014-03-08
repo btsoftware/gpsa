@@ -2,7 +2,7 @@
         <div class="footer-contact">
 	<div class="container">
 	<div class="row">
-	    <a class="buttoncontact" href="">Contac Us</a>	
+	    <a class="buttoncontact" href="">Contact Us</a>	
 	</div>
 	</div>
     </div>

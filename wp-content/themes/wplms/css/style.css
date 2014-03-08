@@ -315,11 +315,21 @@ p.welcome3 {
 img.wp-image-2001 {
     margin-top: 20px;
 }
+.greybackhome:before {
+    background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    bottom: -6px;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
 .greybackhome {
     background: none repeat scroll 0 0 #F4F4F4;
     margin-top: -30px !important;
     padding-bottom: 0 !important;
     padding-top: 20px !important;
+    position:relative;
 }
 /** about **/
 .aboutus-1 {
