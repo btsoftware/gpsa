@@ -327,9 +327,9 @@ img.wp-image-2001 {
 .greybackhome {
     background: none repeat scroll 0 0 #F4F4F4;
     margin-top: -10px !important;
-    padding: 29px 0 3px;
+    overflow: visible !important;
+    padding: 29px 0 3px !important;
     position: relative;
-   overflow: visible !important,
 }
 /** about **/
 .aboutus-1 {
