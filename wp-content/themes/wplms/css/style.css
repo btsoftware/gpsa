@@ -329,7 +329,7 @@ img.wp-image-2001 {
     margin-top: -10px !important;
     padding: 29px 0 3px;
     position: relative;
-    overflow: visible !important;
+   overflow: visible !important,
 }
 /** about **/
 .aboutus-1 {
