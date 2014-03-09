@@ -3264,8 +3264,10 @@ Me lo puso como negritas el comentario, aca va otra vez:
     margin-right: 46px;
 }
 .beginDiv ul li {
-     background: url("images/arrow-purple.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0) !important;}
-	
-.beginDiv li{
-	padding-left:12px;
+    background: url("images/arrow-purple.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0) !important;
+}
+.beginDiv li {
+    color: #666666;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
