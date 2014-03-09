@@ -3280,7 +3280,7 @@ Me lo puso como negritas el comentario, aca va otra vez:
     display: inline-block;
     font-size: 13px;
     font-weight: normal;
-    min-width: 200px;
+    margin:20px 0;
     padding: 5px 12px;
 }
 .contorno-morado a:hover{
