@@ -371,7 +371,19 @@ img.wp-image-2001 {
     color: #6B6B6B;
     font-size: 15px !important;
     text-transform: none !important;
-}    
+    }
+/** eventon news & events **/
+.eventon_events_list .eventon_list_event .evcal_cblock, .evo_pop_body .evcal_cblock {
+    color: #ABABAB;
+    font-family: steelfish_rgregular !important;
+    font-size: 27px !important;
+    font-weight: normal !important;
+    line-height: 110%;
+}
+.eventon_events_list .eventon_list_event .evcal_list_a{
+	
+	min-height: 64px !important;
+}
 /** about **/
 .aboutus-1 {
     background: url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
