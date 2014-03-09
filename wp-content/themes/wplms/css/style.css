@@ -369,10 +369,14 @@ img.wp-image-2001 {
     }
 .eventon_events_list .eventon_list_event .evcal_desc span.evcal_desc2, .evo_pop_body .evcal_desc span.evcal_desc2 {
     color: #6B6B6B;
-    font-size: 15px !important;
+
     text-transform: none !important;
     }
+    .evcal_event_title{
+     font-size:13px !important;
+    }
 /** eventon news & events **/
+
 .eventon_events_list .eventon_list_event .evcal_cblock, .evo_pop_body .evcal_cblock {
     color: #ABABAB;
     font-family: steelfish_rgregular !important;
@@ -1775,6 +1779,16 @@ a.page-numbers,
 	margin-bottom:60px;
 }
 .widget .widget_title {
+    background: url("images/bullet-title-sidebar.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
+    color:#000;
+    display: block;
+    font-family: steelfish_rgregular;
+    font-size: 27px;
+    padding-bottom: 10px;
+    text-indent: 13px;
+    text-transform: uppercase;
+}
+.widget .widgettitle {
     background: url("images/bullet-title-sidebar.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
     color:#000;
     display: block;
