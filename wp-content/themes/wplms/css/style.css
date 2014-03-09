@@ -3283,6 +3283,6 @@ Me lo puso como negritas el comentario, aca va otra vez:
     margin:20px 0;
     padding: 5px 12px;
 }
-.contorno-morado a:hover{
+a:hover.contorno-morado {
     border: 1px solid #6D6F9E;	
 }
