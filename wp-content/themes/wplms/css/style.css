@@ -3273,12 +3273,16 @@ Me lo puso como negritas el comentario, aca va otra vez:
 }
 /**botones **/
 .contorno-morado {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     border: 1px solid #253169;
     border-radius: 0 0 0 0;
     color: #253169;
-    margin-top: 25px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
     min-width: 200px;
-    padding: 9px 12px;
-    font-size:13px;
+    padding: 5px 12px;
+}
+.contorno-morado a:hover{
+    border: 1px solid #6D6F9E;	
 }
