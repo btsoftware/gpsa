@@ -3246,7 +3246,7 @@ clear:none !important;
 /* End Title & Map*/
 Me lo puso como negritas el comentario, aca va otra vez:
 
-/* Title & Map */
+/** Title & Map **/
 .pagetitle h2{
   color: #253169;        
        margin:0;
@@ -3260,9 +3260,12 @@ Me lo puso como negritas el comentario, aca va otra vez:
 /* End Title & Map*/
 
 /** li arrow bullet **/
+.beginDiv {
+    margin-right: 46px;
+}
 .beginDiv ul li {
      background: url("images/arrow-purple.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0) !important;}
 	
 .beginDiv li{
-	padding-left:15px;
+	padding-left:12px;
 }
