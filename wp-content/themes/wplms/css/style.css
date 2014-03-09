@@ -1550,7 +1550,7 @@ background:#232b2d;
 	margin:0;
 	padding:0;
 	font-family: 'steelfish_rgregular';
-	font-size:35px;
+	font-size:38px;
 	text-transform:uppercase;
 }
 .pagetitle h5{
@@ -3270,4 +3270,15 @@ Me lo puso como negritas el comentario, aca va otra vez:
     color: #666666;
     padding-bottom: 10px;
     padding-left: 10px;
+}
+/**botones **/
+.contorno-morado {
+    background-color: transparent !important;
+    border: 1px solid #253169;
+    border-radius: 0 0 0 0;
+    color: #253169;
+    margin-top: 25px;
+    min-width: 200px;
+    padding: 9px 12px;
+    font-size:13px;
 }
