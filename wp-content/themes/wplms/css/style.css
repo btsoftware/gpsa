@@ -3258,3 +3258,11 @@ Me lo puso como negritas el comentario, aca va otra vez:
 
 #map { position:relative; width:100%; height: 500px; }
 /* End Title & Map*/
+
+/** li arrow bullet **/
+.beginDiv ul li {
+     background: url("images/arrow-purple.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0) !important;}
+	
+.beginDiv li{
+	padding-left:15px;
+}
