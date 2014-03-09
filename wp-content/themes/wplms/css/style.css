@@ -331,6 +331,47 @@ img.wp-image-2001 {
     padding: 29px 0 3px !important;
     position: relative;
 }
+    /** full calendar home**/
+    #evcal_calendar_2 > #evcal_head > #evcal_cur {
+	font-family: 'Open Sans','Helvetica Neue',sans-serif;
+	font-size:13px;
+	text-transform:none;
+	color:#000;
+    }
+    .eventon_fullcal p {
+    color: #666666 !important;
+    font-family: 'Open Sans','Helvetica Neue',sans-serif !important;
+    font-size: 12px !important;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    }
+    .eventon_fullcal .eventon_fc_daynames .evo_fc_day {
+    display: none;
+    font-size: 14px;
+    }
+    #evcal_calendar_2 {
+    margin-top: -15px;
+    }
+    #evcal_calendar_2 > .evo_sort_btn {
+    cursor: pointer;
+    font-family: open sans;
+    font-size: 10px;
+    height: 15px;
+    margin-left: 6px !important;
+    padding-left: 20px;
+    text-transform: none;
+    width: auto;
+    }
+    #evcal_calendar_2 > .eventon_fullcal > .evcal_list  > .eventon_list_event > span.evcal_desc2{
+	font-size:11px;
+	  
+    }
+.eventon_events_list .eventon_list_event .evcal_desc span.evcal_desc2, .evo_pop_body .evcal_desc span.evcal_desc2 {
+    color: #6B6B6B;
+    font-size: 15px !important;
+    text-transform: none !important;
+}    
 /** about **/
 .aboutus-1 {
     background: url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
