@@ -72,7 +72,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                     </div>
                                                                     <!-- forums -->
                                                                     <div class="block_home" style="margin-top: 50px;">
-                                                                    <?php $service_query = new WP_Query('page_id=173');
+                                                                    <?php $service_query = new WP_Query('page_id=178');
                                                                     while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
@@ -97,7 +97,7 @@ if(isset($title) && $title !='' && $title !='H'){
               <!--forums and toster and blog --><div class="one_half ">
                                                                   <!-- blog -->
                                                                     <div class="block_home">
-                                                                    <?php $service_query = new WP_Query('page_id=11');
+                                                                    <?php $service_query = new WP_Query('page_id=173');
                                                                     while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
@@ -115,7 +115,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                     </div>
                                                                      <!-- roster -->
                                                                     <div class="block_home" style="margin-top: 50px;">
-                                                                    <?php $service_query = new WP_Query('page_id=2055');
+                                                                    <?php $service_query = new WP_Query('page_id=180');
                                                                     while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
