@@ -433,7 +433,7 @@ h4.bloque_title {
     background-color:#253169;
     border: 1px solid #253169;
     border-radius: 0 0 0 0;
-    color: #FFF;
+    color: #FFF !important;
     display: inline-block;
     font-size: 13px;
     font-weight: normal;
