@@ -77,13 +77,13 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
                                                                                <div class="animate zoom load">
-                                                                               <h4 class="bloque_title"><a class="" href="http://gpsa.fundarlabs.mx/v1/networking/blog/"><?php the_title(); ?></a> </h4>  
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsa.fundarlabs.mx/v1/category/blog/"><?php the_title(); ?></a> </h4>  
                                                                                <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
                                                                                </div> 	<!-- end .post_content -->                                                                                  
-                                                                                <a class="more" href="http://gpsa.fundarlabs.mx/v1/networking/blog/"><span>Read more</span></a>                                                                                      
+                                                                                <a class="more" href="http://gpsa.fundarlabs.mx/v1/category/blog/"><span>Read more</span></a>                                                                                      
 
                                                                        </article> <!-- end .entry -->
                                                                        <?php endwhile; // end of the loop. ?>
