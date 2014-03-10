@@ -122,11 +122,19 @@ h2{
 h2.subt {
     color: #6D6F9E;
     font-family: 'steelfish_rgregular';
-    font-size: 44px;
+    font-size: 47px;
     text-transform: uppercase;
 }
-h2.subt2{
+h2.subt2 {
     color: #6D6F9E;
+    font-size: 25px;
+    margin: 0;
+    padding: 0 !important;
+    text-transform: uppercase;
+}
+.pagetitle > h2{
+    color: #6D6F9E;
+    font-size: 25px;
     margin: 0;
     padding: 0 !important;
     text-transform: uppercase;
