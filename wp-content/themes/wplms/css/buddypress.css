@@ -2342,6 +2342,33 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress #course-directory-form  div.item-list-tabs{
 	width:100%;
 }
+#activitytitle:after {
+    background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    bottom: -6px;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+#memberstitle:after {
+    background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    bottom: -6px;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+#grouptitle:after {
+    background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    bottom: -6px;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
 #grouptitle,
 #memberstitle,
 #activitytitle{
