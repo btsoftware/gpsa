@@ -49,14 +49,90 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-sm-8">
-                <div class="content">
+                       <div class="content" style="padding: 0px ! important; margin-top: 48px ! important;">
+                       <!--webinars and blog --><div class="one_half clearfix">
+                                                        <div class="column_content first">
+                                                                    <!-- webinars -->
+                                                                    <div class="block_home">
+                                                                    <?php $service_query = new WP_Query('page_id=171');
+                                                                    while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+                                                                       <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                                                   
+                                                                               <div class="animate zoom load">
+                                                                               <h4 class="bloque_title"><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h4>  
+                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               </div> 	<!-- end .post-thumbnail -->					
+                                                                               <div class="block_info">						
+                                                                                       <?php the_content(); ?>
+                                                                               </div> 	<!-- end .post_content -->                                                                                  
+                                                                                <a class="more" href="<?php the_permalink(); ?>"><span>Read more</span></a>                                                                                      
 
-                </div>
-                <?php
-                
-                endwhile;
-                endif;
-                ?>
+                                                                       </article> <!-- end .entry -->
+                                                                       <?php endwhile; // end of the loop. ?>
+                                                                    </div>
+                                                                    <!-- forums -->
+                                                                    <div class="block_home" style="margin-top: 50px;">
+                                                                    <?php $service_query = new WP_Query('page_id=173');
+                                                                    while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+                                                                       <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                                                   
+                                                                               <div class="animate zoom load">
+                                                                               <h4 class="bloque_title"><a class="" href="./knowldge-exchange/"><?php the_title(); ?></a> </h4>  
+                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               </div> 	<!-- end .post-thumbnail -->					
+                                                                               <div class="block_info">						
+                                                                                       <?php the_content(); ?>
+                                                                               </div> 	<!-- end .post_content -->                                                                                  
+                                                                                <a class="more" href="http://gpsa.fundarlabs.mx/v1/knowldge-exchange/"><span>Read more</span></a>                                                                                      
+
+                                                                       </article> <!-- end .entry -->
+                                                                       <?php endwhile; // end of the loop. ?>
+                                                                    </div>                                                         
+                                                        </div>
+                                                        <?php
+                                                        endwhile;
+                                                        endif;
+                                                        ?>                                       
+                                                     </div>                                                                                                                   
+              <!--forums and toster and blog --><div class="one_half ">
+                                                                  <!-- blog -->
+                                                                    <div class="block_home">
+                                                                    <?php $service_query = new WP_Query('page_id=11');
+                                                                    while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+                                                                       <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                                                   
+                                                                               <div class="animate zoom load">
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsa.fundarlabs.mx/v1/networking/blog/"><?php the_title(); ?></a> </h4>  
+                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               </div> 	<!-- end .post-thumbnail -->					
+                                                                               <div class="block_info">						
+                                                                                       <?php the_content(); ?>
+                                                                               </div> 	<!-- end .post_content -->                                                                                  
+                                                                                <a class="more" href="http://gpsa.fundarlabs.mx/v1/networking/blog/"><span>Read more</span></a>                                                                                      
+
+                                                                       </article> <!-- end .entry -->
+                                                                       <?php endwhile; // end of the loop. ?>
+                                                                    </div>
+                                                                     <!-- roster -->
+                                                                    <div class="block_home" style="margin-top: 50px;">
+                                                                    <?php $service_query = new WP_Query('page_id=2055');
+                                                                    while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+                                                                       <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                                                   
+                                                                               <div class="animate zoom load">
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsa.fundarlabs.mx/v1/networking/"><?php the_title(); ?></a> </h4>  
+                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               </div> 	<!-- end .post-thumbnail -->					
+                                                                               <div class="block_info">						
+                                                                                       <?php the_content(); ?>
+                                                                               </div> 	<!-- end .post_content -->                                                                                  
+                                                                                <a class="more" href="http://gpsa.fundarlabs.mx/v1/networking/"><span>Read more</span></a>                                                                                      
+
+                                                                       </article> <!-- end .entry -->
+                                                                       <?php endwhile; // end of the loop. ?>
+                                                                    </div>                
+                                                </div>
+                        </div>                                
             </div>
             <div class="col-md-3 col-sm-4">
                 <div class="sidebar">

@@ -388,6 +388,71 @@ img.wp-image-2001 {
 	
 	min-height: 64px !important;
 }
+h4.bloque_title {
+    background-color:rgba(32, 33, 53, 0.8);
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-family: 'steelfish_rgregular';
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px 12px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1000;
+}
+.bloque_title > a{
+    color:#fff;
+}
+.bloque_title > a:hover{
+    color:#dcdced;
+}
+.th_home{
+   margin-top:-48px;
+
+}
+.block_home {
+    cursor: default;
+    height: 100%;
+    max-width: 330px;
+    position: relative;
+    width: 100%;
+}
+.block_info {
+    background:#EFEFEF;
+    border-bottom: 5px solid #EFEFEF;
+    border-left: 5px solid #EFEFEF;
+    border-right: 5px solid #EFEFEF;
+    display: block;
+    height: inherit;
+    padding: 7px;
+    width: inherit;
+}
+.more {
+    background-color:#253169;
+    border: 1px solid #253169;
+    border-radius: 0 0 0 0;
+    color: #FFF;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin:0;
+    padding: 5px 12px;
+    text-transform:uppercase;
+}
+a.more:hover{
+    background-color:#6D6F9E;
+    border: 1px solid #6D6F9E;
+    border-radius: 0 0 0 0;
+    color: #FFF;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin:0;
+    padding: 5px 12px;
+    text-transform:uppercase;
+}
 /** about **/
 .aboutus-1 {
     background: url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
