@@ -72,7 +72,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                     </div>
                                                                     <!-- blog -->
                                                                     <div class="block_home" style="margin-top: 50px;">
-                                                                    <?php $service_query = new WP_Query('page_id=178');
+                                                                    <?php $service_query = new WP_Query('page_id=92');
                                                                     while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
