@@ -420,12 +420,12 @@ h4.bloque_title {
     width: 100%;
 }
 .block_info {
-    background:#EFEFEF;
+    background: none repeat scroll 0 0 #EFEFEF;
     border-bottom: 5px solid #EFEFEF;
     border-left: 5px solid #EFEFEF;
     border-right: 5px solid #EFEFEF;
     display: block;
-    height: inherit;
+    min-height: 158px;
     padding: 7px;
     width: inherit;
 }
