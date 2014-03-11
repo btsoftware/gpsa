@@ -14,9 +14,7 @@ if(bp_is_course_component()){
         <div class="row">
              <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
-                	<?php
-                		all_course_page_title();
-                	?>
+                	<h1>Learning Activities</h1>
                 </div>
             </div>
             <div class="col-md-3 col-sm-4">
