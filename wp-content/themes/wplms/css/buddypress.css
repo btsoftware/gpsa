@@ -1958,7 +1958,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	font-weight: normal;
 }
 #buddypress div.item-list-tabs {
-	background: #253169;
+	background: #253169 !important;
 	clear: left;
 	display: inline-block;
 	overflow: hidden;
