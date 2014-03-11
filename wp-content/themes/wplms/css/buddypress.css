@@ -2380,7 +2380,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 
 #buddypress #groups-directory-form div.item-list-tabs#subnav,
 #buddypress #course-directory-form div.item-list-tabs#subnav{
-	background:#FFF;
+	background:#F4f4f4 !important;
 }
 #buddypress #groups-directory-form div.item-list-tabs ul li,
 #buddypress #course-directory-form div.item-list-tabs ul li,
