@@ -1664,7 +1664,7 @@ a.bp-title-button {
 #sitewide-notice a{font-weight:600;color:#222;}
 #buddypress div#item-header {
 	overflow: hidden;
-	background: #141b3a;
+	background: #253169;
 	padding: 0;
 	position: relative;
 	z-index: 2;
@@ -1672,7 +1672,9 @@ a.bp-title-button {
 	border-top-right-radius: 2px;
 	border-top-left-radius: 2px;
 }
-
+li.nav-forum-groups-li{
+    border-color: #253169;
+}
 
 #groups-dir-list,
 #course-dir-list{
@@ -1976,10 +1978,11 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 
 #buddypress #item-nav div.item-list-tabs li a{
+
 	padding:12px 20px;
 	text-transform: uppercase;
 }
-
+#nav-forum-groups-li .current .selected > .nav-forum
 #buddypress div.item-list-tabs ul {
 	margin: 0;
 	padding: 0;
@@ -2108,6 +2111,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 #buddypress div.item-list-tabs ul li a,
 #buddypress div.item-list-tabs ul li span {
+	background:#2b3666;
 	display: block;
 	color:rgba(255,255,255,0.6);
 	padding: 18px 24px;
