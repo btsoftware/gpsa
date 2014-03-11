@@ -1,3 +1,4 @@
+@import url("fonts/stylesheet.css");
 
 /*-------------------------------------------------------------------------
 3.8 - FORUMS
@@ -19,11 +20,13 @@ float:right;
 }
 #bbp_search_submit{padding:4px 10px;}
 #bbpress-forums > h3 {
-font-size: 16px;
+font-size: 22px;
 font-weight: 600;
 text-transform: uppercase;
 display: inline-block;
 float: left;
+font-family: 'steelfish_rgregular';
+
 }
 #subscription-toggle{
 	float:right;
