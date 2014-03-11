@@ -1982,7 +1982,10 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	padding:12px 20px;
 	text-transform: uppercase;
 }
-#nav-forum-groups-li .current .selected > .nav-forum
+#nav-forum-groups-li .current .selected > .nav-forum {
+	background:#21284e;
+	
+}
 #buddypress div.item-list-tabs ul {
 	margin: 0;
 	padding: 0;
