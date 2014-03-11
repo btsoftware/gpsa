@@ -15,6 +15,7 @@ if(bp_is_course_component()){
              <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
                 	<h1>Learning Activities</h1>
+			<h5></h5>
                 </div>
             </div>
             <div class="col-md-3 col-sm-4">
