@@ -1977,15 +1977,17 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	padding:0;
 }
 
-#buddypress #item-nav div.item-list-tabs li a{
+#buddypress #item-nav div.item-list-tabs li a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+#buddypress #item-nav div.item-list-tabs li.current a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
 
-	padding:12px 20px;
-	text-transform: uppercase;
-}
-#nav-forum-groups-li .current .selected > .nav-forum a{
-	background:#21284e;
-	
-}
 #buddypress div.item-list-tabs ul {
 	margin: 0;
 	padding: 0;
