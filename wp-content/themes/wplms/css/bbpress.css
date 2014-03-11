@@ -20,14 +20,15 @@ float:right;
 }
 #bbp_search_submit{padding:4px 10px;}
 #bbpress-forums > h3 {
-font-size: 22px;
-font-weight: 600;
-text-transform: uppercase;
-display: inline-block;
-float: left;
-font-family: 'steelfish_rgregular';
-
-}
+    color: #6D6F9E;
+    display: inline-block;
+    float: left;
+    font-family: 'steelfish_rgregular';
+    font-size: 41px;
+    font-weight: normal !important;
+    margin-top: -9px !important;
+    text-transform: uppercase;
+}}
 #subscription-toggle{
 	float:right;
 	position: relative;
@@ -53,7 +54,7 @@ font-family: 'steelfish_rgregular';
 .bbp-template-notice{
        clear:both;
       margin:10px 0;
-background-color: #34a8dc;
+background-color: #C5C5DB;
 	border-radius:2px;
 color:#440;
 }
