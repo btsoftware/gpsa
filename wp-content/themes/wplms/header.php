@@ -6,7 +6,10 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 <title>
-<?php wp_title('|',true,'right'); ?>
+<?php 
+echo get_the_title();
+//wp_title('|',true,'right'); 
+?>
 </title>
 <?php
 wp_head();

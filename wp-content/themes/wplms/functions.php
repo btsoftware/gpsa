@@ -48,7 +48,7 @@ get_template_part('vibe','options');
 function bookmarks() {
 	global $wp;
 	
-	$current_url = add_query_arg($wp->query_string, '', home_url( $wp->request ));
+	$current_url = add_query_arg($wp->query_string, '', home_url($wp->request));
 	$current_url = explode("?", $current_url);
 	$current_url = $current_url[0];
 	$title       = get_the_title();
