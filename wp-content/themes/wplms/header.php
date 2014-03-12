@@ -93,7 +93,7 @@ wp_head();
                             }
                         ?>
 
-                            <a href="http://gpsa.fundarlabs.mx/v1/"><img src="<?php echo (isset($logo)?$logo:VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
+                            <a href="<?php echo home_url();?>/"><img src="<?php echo (isset($logo)?$logo:VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
                         <?php
                             if(is_home()){
                                 echo '</h1>';
