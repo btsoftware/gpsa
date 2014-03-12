@@ -52,6 +52,6 @@ function bookmarks() {
 	$current_url = explode("?", $current_url);
 	$current_url = $current_url[0];
 	
-	echo '<a href="' . vibe_site_url() . 'add-bookmark/' . $current_url . '">Add to favorites</a>';
+	echo '<a href="' . home_url() . 'add-bookmark/' . $current_url . '">Add to favorites</a>';
 }
 ?>
