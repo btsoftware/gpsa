@@ -51,7 +51,7 @@ function bookmarks() {
 	$current_url = add_query_arg($wp->query_string, '', home_url( $wp->request ));
 	$current_url = explode("?", $current_url);
 	$current_url = $current_url[0];
-	$title       = wp_title();
+	$title       = get_the_title();
 	
 	echo '<a href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to favorites</a>';
 }
