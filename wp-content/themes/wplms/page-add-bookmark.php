@@ -9,8 +9,8 @@ if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
 		$title       = $_GET["title"];
 		$id_user     = bp_loggedin_user_id();
 		
-		$wpdb->insert('bookmarks', array('id_user' => $id_user, 'url' => $current_url, 'title' => $title));
-		
+		$wpdb->insert('wp_bookmarks', array('id_user' => $id_user, 'url' => $current_url, 'title' => $title));
+		die(var_dump($wpdb));
 		header('Location: '. $current_url);
 		exit();
 	} else {
