@@ -46,8 +46,6 @@ get_template_part('vibe','options');
 
 
 function bookmarks() {
-	echo '<li>';
-		echo '<a href="">bookmark1</a>';
-	echo '</li>';
+	echo '<a href="' . vibe_site_url() . '/add-bookmark/' . get_permalink() . '">Add to favorites</a>';
 }
 ?>
