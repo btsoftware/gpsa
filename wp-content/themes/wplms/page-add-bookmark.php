@@ -18,4 +18,7 @@ if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
 		header('Location: '. home_url());
 		exit();
 	}
+} else {
+	header('Location: '. home_url());
+	exit();
 }
