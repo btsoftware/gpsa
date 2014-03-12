@@ -7,7 +7,7 @@ if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
 		
 		$current_url = $_GET["page"];
 		$title       = $_GET["title"];
-		$id_user     = bp_member_user_id();
+		$id_user     = bp_loggedin_user_id();
 		
 		die(var_dump($current_url . $title . $id_user));
 		
