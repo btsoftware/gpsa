@@ -44,4 +44,10 @@ include_once 'includes/tour.php';
 // Options Panel
 get_template_part('vibe','options');
 
+
+function bookmarks() {
+	echo '<li>';
+		echo '<a href="">bookmark1</a>';
+	echo '</li>';
+}
 ?>
