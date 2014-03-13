@@ -59,7 +59,19 @@ function bookmarks() {
 /*get bookmarks*/
 function getBookmarks() {
 	if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
-		echo '<h2>Not bookmarks yet</h2>';
+		global $wp;
+		global $wpdb;
+		
+		$user_id = bp_loggedin_user_id();
+		$myrows  = $wpdb->get_results("SELECT * FROM wp_bookmarks where user_id=$user_id order by bookmark_id desc");
+		
+		if($myrows) {
+			foreach($myrows as $row) {
+				die(var_dump($row));
+			}
+		} else {
+			echo '<h2>Not bookmarks yet</h2>';
+		}
 	}  else {
 		header('Location: '. home_url());
 		exit();
