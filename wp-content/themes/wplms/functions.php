@@ -59,6 +59,8 @@ function bookmarks() {
 /*get bookmarks*/
 function getBookmarks() {
 	if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
+		echo '<h3>Bookmarks</h3>';
+		
 		global $wp;
 		global $wpdb;
 		
@@ -66,16 +68,12 @@ function getBookmarks() {
 		$myrows  = $wpdb->get_results("SELECT * FROM wp_bookmarks where user_id=$user_id order by bookmark_id desc");
 		
 		if($myrows) {
-			echo '<h3>Bookmarks</h3>';
-			
 			echo '<ul class="ul-bookmarks">';
-			
-			foreach($myrows as $row) {
-				echo '<li>';
-					echo '<a href="' . $row->url . '" title="' . $row->title . '">' . $row->title . '</a>';
-				echo '</li>';
-			}
-			
+				foreach($myrows as $row) {
+					echo '<li>';
+						echo '<a href="' . $row->url . '" title="' . $row->title . '">' . $row->title . '</a>';
+					echo '</li>';
+				}
 			echo '</ul>';
 		} else {
 			echo '<h2>Not bookmarks yet</h2>';
