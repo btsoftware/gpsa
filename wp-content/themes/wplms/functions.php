@@ -66,9 +66,15 @@ function getBookmarks() {
 		$myrows  = $wpdb->get_results("SELECT * FROM wp_bookmarks where user_id=$user_id order by bookmark_id desc");
 		
 		if($myrows) {
+			echo '<ul class="ul-bookmarks">';
+			
 			foreach($myrows as $row) {
-				die(var_dump($row));
+				echo '<li>';
+					echo '<a href="' . $row->url . '" title="' . $row->title . '">' . $row->title . '</a>';
+				echo '</li>';
 			}
+			
+			echo '</ul>';
 		} else {
 			echo '<h2>Not bookmarks yet</h2>';
 		}
