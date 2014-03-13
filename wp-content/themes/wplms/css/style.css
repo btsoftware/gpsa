@@ -3359,3 +3359,8 @@ Me lo puso como negritas el comentario, aca va otra vez:
 a:hover.contorno-morado {
     border: 1px solid #6D6F9E;	
 }
+
+.bookmark-successful {
+	color:#253169;
+	font-size:13px;
+}
