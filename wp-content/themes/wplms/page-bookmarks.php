@@ -17,7 +17,7 @@ get_header();
 	<div class="container">
 		<div class="col-md-9 col-sm-8">
 			<div class="content">
-				<?php get_bookmarks();?>
+				<?php getBookmarks();?>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-4">

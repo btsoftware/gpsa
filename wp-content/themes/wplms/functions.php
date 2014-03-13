@@ -57,7 +57,7 @@ function bookmarks() {
 }
 
 /*get bookmarks*/
-function get_bookmarks() {
+function getBookmarks() {
 	if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
 		echo '<h2>Not bookmarks yet</h2>';
 	}  else {
