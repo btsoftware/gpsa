@@ -44,7 +44,7 @@ include_once 'includes/tour.php';
 // Options Panel
 get_template_part('vibe','options');
 
-
+/*add bookmark*/
 function bookmarks() {
 	global $wp;
 	
@@ -54,5 +54,15 @@ function bookmarks() {
 	$title       = get_the_title();
 	
 	echo '<a href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to favorites</a>';
+}
+
+/*get bookmarks*/
+function get_bookmarks() {
+	if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
+		echo '<h2>Not bookmarks yet</h2>';
+	}  else {
+		header('Location: '. home_url());
+		exit();
+	}
 }
 ?>

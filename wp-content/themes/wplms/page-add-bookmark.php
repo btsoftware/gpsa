@@ -1,6 +1,6 @@
 <?php
 
-if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {	
+if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
 	if(isset($_GET["page"]) and isset($_GET["title"])) {
 		global $wp;
 		global $wpdb;
