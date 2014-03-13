@@ -54,6 +54,10 @@ function bookmarks() {
 	$title       = get_the_title();
 	
 	echo '<a href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to favorites</a>';
+	
+	if(isset($_GET["msg"]) and $_GET["msg"] == "successful-bookmark") {
+		echo '<span class="bookmark-successful">Bookmark added successfully</span>';
+	}
 }
 
 /*get bookmarks*/
