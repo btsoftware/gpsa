@@ -48,6 +48,8 @@ if ( !class_exists('vibe_bp_login') ) {
 						if ( bp_is_active( 'groups' ) ) : ?>
 						<li><a href="<?php echo bp_loggedin_user_domain() . BP_GROUPS_SLUG ?>/"><i class="icon-myspace-alt"></i> <?php _e('Groups','vibe'); ?></a></li>
 						<?php endif; ?>
+						
+						<li><a href="<?php echo home_url(); ?>/bookmarks/"><i class="icon-bookmark"></i> Bookmarks</a></li>	
 					</ul>
 				
 				<?php
