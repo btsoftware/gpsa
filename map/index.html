@@ -51,6 +51,20 @@
 		/*on each marker*/
 		function onEachFeature(feature, layer) { 
 		   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
+		   
+		    /*Listen for individual marker clicks*/
+			marker.on('click',function(e) {
+				/*Force the popup closed*/
+				e.layer.closePopup();
+				
+				console.log(e.layer.feature);
+				
+				var feature = e.layer.feature;
+				console.log(e.layer.feature);
+				//var info = '<h2>' + feature.properties.title + '</h2>' + '<p>' + feature.properties.description + '</p>';
+
+				document.getElementById('info').innerHTML = "<h2>hola</h2>";
+			});
 		}
 
 		/*load geojson.js*/
@@ -62,21 +76,6 @@
 		map.on('move',function(e){
 			document.getElementById('info').innerHTML = '<h2>Click a marker</h2>';
 		});
-		
-		/*Listen for individual marker clicks*/
-		map.featureLayer.on('click',function(e) {
-			/*Force the popup closed*/
-			e.layer.closePopup();
-			
-			console.log(e.layer.feature);
-			
-			var feature = e.layer.feature;
-			console.log(e.layer.feature);
-			//var info = '<h2>' + feature.properties.title + '</h2>' + '<p>' + feature.properties.description + '</p>';
-
-			document.getElementById('info').innerHTML = "<h2>hola</h2>";
-		});
-
 	</script>
 </body>
 </html>
