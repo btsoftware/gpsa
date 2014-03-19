@@ -50,14 +50,14 @@
 
 		/*on each marker*/
 		function onEachFeature(feature, layer) { 
-		   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
+			var feature = feature;
+			var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
 		   
 		    /*Listen for individual marker clicks*/
-			circle.on('click',function(e) {				
-				console.log(e);
+			circle.on('click',function(e) {
 				console.log(feature);
 				
-				var feature = e.layer.feature;
+				//var feature = e.layer.feature;
 				
 				//var info = '<h2>' + feature.properties.title + '</h2>' + '<p>' + feature.properties.description + '</p>';
 
