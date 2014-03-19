@@ -53,7 +53,7 @@
 		   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
 		   
 		    /*Listen for individual marker clicks*/
-			marker.on('click',function(e) {
+			circle.on('click',function(e) {
 				/*Force the popup closed*/
 				e.layer.closePopup();
 				
