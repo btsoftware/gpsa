@@ -54,10 +54,11 @@
 		   
 		    /*Listen for individual marker clicks*/
 			circle.on('click',function(e) {				
-				console.log(e.layer.feature);
+				console.log(e);
+				console.log(feature);
 				
 				var feature = e.layer.feature;
-				console.log(e.layer.feature);
+				
 				//var info = '<h2>' + feature.properties.title + '</h2>' + '<p>' + feature.properties.description + '</p>';
 
 				document.getElementById('info').innerHTML = "<h2>hola</h2>";
