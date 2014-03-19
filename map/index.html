@@ -24,6 +24,10 @@
 /*load map - mapbox fundarmexico*/
 var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
 
+/*disable scroll and tocuh zoom*/
+map.touchZoom.disable();
+map.scrollWheelZoom.disable();
+
 /*marker style-options*/
 var geojsonMarkerOptions = {
 	radius : 17,
