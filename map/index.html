@@ -21,10 +21,12 @@
 
 <div id='map'></div>
 <script>
+/*load map - mapbox fundarmexico*/
 var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
 
+/*marker style-options*/
 var geojsonMarkerOptions = {
-radius : 17,
+	radius : 17,
     fillColor: "transparent",
     color: "#a9d7ef",
     weight: 13,
@@ -32,10 +34,12 @@ radius : 17,
     fillOpacity: 0.8
 };
 
+/*on each marker*/
 function onEachFeature(feature, layer) { 
    var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
 }
 
+/*load geojson.js*/
 L.geoJson(geojson, {
     onEachFeature: onEachFeature
 });
