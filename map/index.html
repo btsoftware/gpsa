@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title>Roster of Practitioners</title>
+	<meta charset=utf-8 />
+	<title>Roster of Practitioners</title>
 
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
 
-<script src="js/gpsa-rosters.geojson.js"></script>
+	<script src="js/gpsa-rosters.geojson.js"></script>
 
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
+	<style>
+		body { margin:0; padding:0; }
+		#map { position:absolute; top:0; bottom:0; width:100%; }
+		#info {
+			background:rgba(255,255,255,0.75);
+			border:1px solid #fff;
+			position:absolute;
+			width:260px;
+			top:10px;
+			right:10px;
+			padding:10px;
+			border-radius:3px;
+		}
+	</style>
 </head>
 <body>
+	<div id='map'></div>
+	<div id='info'></div>
 
+	<script type="text/javascript">
+		/*load map - mapbox fundarmexico*/
+		var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
 
-<div id='map'></div>
-<script>
-/*load map - mapbox fundarmexico*/
-var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
+		/*disable scroll and tocuh zoom*/
+		map.touchZoom.disable();
+		map.scrollWheelZoom.disable();
 
-/*disable scroll and tocuh zoom*/
-map.touchZoom.disable();
-map.scrollWheelZoom.disable();
+		/*marker style-options*/
+		var geojsonMarkerOptions = {
+			radius : 17,
+			fillColor: "transparent",
+			color: "#a9d7ef",
+			weight: 13,
+			opacity: 0.7,
+			fillOpacity: 0.8
+		};
 
-/*marker style-options*/
-var geojsonMarkerOptions = {
-	radius : 17,
-    fillColor: "transparent",
-    color: "#a9d7ef",
-    weight: 13,
-    opacity: 0.7,
-    fillOpacity: 0.8
-};
+		/*on each marker*/
+		function onEachFeature(feature, layer) { 
+		   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
+		}
 
-/*on each marker*/
-function onEachFeature(feature, layer) { 
-   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
-}
+		/*load geojson.js*/
+		L.geoJson(geojson, {
+			onEachFeature: onEachFeature
+		});
+		
+		/*clear the tooltip when map is clicked*/
+		map.on('move',function(e){
+			document.getElementById('info').innerHTML = '<h2>Click a marker</h2>';
+		});
+		
+		/*Listen for individual marker clicks*/
+		map.featureLayer.on('click',function(e) {
+			/*Force the popup closed*/
+			e.layer.closePopup();
+			
+			console.log(e.layer.feature);
+			
+			var feature = e.layer.feature;
+			console.log(e.layer.feature);
+			//var info = '<h2>' + feature.properties.title + '</h2>' + '<p>' + feature.properties.description + '</p>';
 
-/*load geojson.js*/
-L.geoJson(geojson, {
-    onEachFeature: onEachFeature
-});
+			document.getElementById('info').innerHTML = "<h2>hola</h2>";
+		});
 
-</script>
-
-
+	</script>
 </body>
 </html>
