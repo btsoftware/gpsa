@@ -25,9 +25,8 @@ var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
 
 
 var geojsonMarkerOptions = {
-    radius: 8,
     fillColor: "#a9d7ef",
-    color: "transparent",
+    color: "#a9d7ef",
     weight: 9,
     opacity: 1,
     fillOpacity: 0.8
@@ -36,7 +35,7 @@ var geojsonMarkerOptions = {
 function onEachFeature(feature, layer) {
    console.log(feature.geometry.coordinates[0]);
    
-   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], 900, geojsonMarkerOptions).addTo(map);
+   var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], 9000, geojsonMarkerOptions).addTo(map);
 	
    //L.circleMarker(latlng, geojsonMarkerOptions);
 }
