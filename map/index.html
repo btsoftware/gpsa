@@ -7,6 +7,12 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+<script src="js/gpsa-rosters.geojson.js"></script>
 
 <style>
   body { margin:0; padding:0; }
@@ -19,6 +25,35 @@
 <div id='map'></div>
 <script>
 var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
+
+
+var geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
+function onEachFeature(feature, layer) {
+   console.log(feature);
+   
+   /*
+   var circle = L.circleMarker([51.508, -0.11], 500, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(map);
+	*/
+	
+   //L.circleMarker(latlng, geojsonMarkerOptions);
+}
+
+L.geoJson(geojson, {
+    onEachFeature: onEachFeature
+});
+
 </script>
 
 
