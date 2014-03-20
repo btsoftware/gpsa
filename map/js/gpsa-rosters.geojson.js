@@ -9,8 +9,8 @@ var geojson = {
           "Karina Banfi"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1",
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/hernan-charosky/",
+          "http://gpsa.fundarlabs.mx/v1/expert/karina-banfi/"
         ],
         "themes": [
           [1,3,4,5,6,8],
@@ -33,7 +33,7 @@ var geojson = {
           "Almudena Ocejo"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/almudena-ocejo/"
         ],
         "themes": [
           [4,5,8]
@@ -55,7 +55,7 @@ var geojson = {
           "Aly Elias Lalá"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/aly-elias-lala/"
         ],
         "themes": [
           [1,2,3,5,6]
@@ -77,7 +77,7 @@ var geojson = {
           "Anabel Cruz"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/anabel-cruz/"
         ],
         "themes": [
           [1,3,5,6,8]
@@ -99,7 +99,7 @@ var geojson = {
           "Bibhu Prasad Sahu"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/bibhu-prasad-sahu/"
         ],
         "themes": [
           [1,2,4,5,8]
@@ -121,7 +121,7 @@ var geojson = {
           "Kedar Khadka"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/kedar-khadka/"
         ],
         "themes": [
           [1,2,3,4,5,6,8]
@@ -143,7 +143,7 @@ var geojson = {
           "Richard Holloway"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1"
+          "http://gpsa.fundarlabs.mx/v1/expert/richard-holloway/"
         ],
         "themes": [
           [1,2,3,4,5,6,7,8]
