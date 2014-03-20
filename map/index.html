@@ -4,30 +4,18 @@
 	<meta charset=utf-8 />
 	<title>Roster of Practitioners</title>
 
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
-
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>
+	<link href='css/map-style.css' rel='stylesheet'/>
 	<script src="js/gpsa-rosters.geojson.js"></script>
-
-	<style>
-		body { margin:0; padding:0; }
-		#map { position:absolute; top:0; bottom:0; width:100%; }
-		#info {
-			background:rgba(255,255,255,0.75);
-			border:1px solid #fff;
-			position:absolute;
-			width:260px;
-			top:10px;
-			right:10px;
-			padding:10px;
-			border-radius:3px;
-		}
-	</style>
 </head>
 <body>
-	<div id='map'></div>
+	<div id='map'>
+		<div id="themes-layers" class="layers"></div>
+	</div>
+	
 	<div id='info'></div>
 
 	<script type="text/javascript">
@@ -59,7 +47,7 @@
 				
 				for(i in feature.properties.names) {
 					info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
-				};
+				}
 
 				document.getElementById('info').innerHTML = info;
 			});
@@ -74,6 +62,14 @@
 		map.on('move',function(e){
 			//document.getElementById('info').innerHTML = '<h2>Click a marker</h2>';
 		});
+		
+		/*on each theme set legend*/
+		var themes = "";
+		for(i in geojson.properties.themes) {
+			themes += '<a id="theme-' + geojson.properties.themes[i].id_theme + '" data-control="layer">' + geojson.properties.themes[i].name + '</a>';
+		}
+		document.getElementById('themes-layers').innerHTML = themes;
+		
 	</script>
 </body>
 </html>
