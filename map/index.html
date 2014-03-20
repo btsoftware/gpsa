@@ -58,7 +58,7 @@
 				var info  = '<h2>' + feature.properties.name + '</h2>';
 				
 				for(i in feature.properties.names) {
-					info += '<p><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+					info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
 				};
 
 				document.getElementById('info').innerHTML = info;
