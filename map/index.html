@@ -55,7 +55,13 @@
 		   
 		    /*Listen for individual marker clicks*/
 			circle.on('click',function(e) {
-				var info = '<h2>' + feature.properties.name + '</h2>' + '<p>' + feature.properties.names[0] + '</p>';
+				var info  = '<h2>' + feature.properties.name + '</h2>';
+				
+				for(i in feature.properties.name) {
+					console.log(feature.properties.name[i]);
+				};
+
+				var info += '<p>' + feature.properties.names[0] + '</p>';
 				document.getElementById('info').innerHTML = info;
 			});
 		}
@@ -67,7 +73,7 @@
 		
 		/*clear the tooltip when map is clicked*/
 		map.on('move',function(e){
-			document.getElementById('info').innerHTML = '<h2>Click a marker</h2>';
+			//document.getElementById('info').innerHTML = '<h2>Click a marker</h2>';
 		});
 	</script>
 </body>
