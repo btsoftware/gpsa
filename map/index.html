@@ -5,6 +5,7 @@
 	<title>Roster of Practitioners</title>
 
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>
 	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>
@@ -20,8 +21,9 @@
 
 	<script type="text/javascript">
 		/*load map - mapbox fundarmexico*/
-		var map = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
-
+		var map     = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 3);
+		var markers = new L.LayerGroup();
+		
 		/*disable scroll and tocuh zoom*/
 		map.touchZoom.disable();
 		map.scrollWheelZoom.disable();
@@ -36,52 +38,87 @@
 			fillOpacity: 0.8
 		};
 
-		/*on each marker*/
-		function onEachFeature(feature, layer) { 
-			var feature = feature;
-			var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions).addTo(map);
-		   
-		    /*Listen for individual marker CLICK*/
-			circle.on('click',function(e) {
-				var info  = '<h2>' + feature.properties.name + '</h2>';
-				
-				for(i in feature.properties.names) {
-					info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
-				}
-
-				document.getElementById('info').innerHTML = info;
-			});
+		function draw(value) {
+			var theme = parseInt(value);
 			
-			/*Listen for individual marker OVER*/
-			circle.on('mouseover',function(e) {
-				var info  = '<h2>' + feature.properties.name + '</h2>';
+			/*on each marker*/
+			function onEachFeature(feature, layer) {
+				var feature = feature;
 				
-				for(i in feature.properties.names) {
-					info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
-				}
+				/*search index theme on array [0,1] number of experts for country*/
+				var indexof  = jQuery.inArray(theme, feature.properties.themes[0]);
+				var indexof2 = jQuery.inArray(theme, feature.properties.themes[1]);
+				
+				if(indexof != -1 || indexof2 != -1 || theme == 0) {
+					var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions);
+				   
+					/*Listen for individual marker CLICK*/
+					circle.on('click',function(e) {
+						var info  = '<h2>' + feature.properties.name + '</h2>';
+						
+						for(i in feature.properties.names) {
+							info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+						}
 
-				document.getElementById('info').innerHTML = info;
+						document.getElementById('info').innerHTML = info;
+					});
+					
+					/*Listen for individual marker OVER*/
+					circle.on('mouseover',function(e) {
+						var info  = '<h2>' + feature.properties.name + '</h2>';
+						
+						for(i in feature.properties.names) {
+							info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+						}
+
+						document.getElementById('info').innerHTML = info;
+					});
+					
+					/*add to group layer*/
+					markers.addLayer(circle);
+				}
+			}
+
+			/*load geojson.js*/
+			L.geoJson(geojson, {
+				onEachFeature: onEachFeature
 			});
 		}
-
-		/*load geojson.js*/
-		L.geoJson(geojson, {
-			onEachFeature: onEachFeature
-		});
 		
-		/*clear the tooltip when map is clicked
-		map.on('move',function(e){
-			document.getElementById('info').innerHTML = '';
-		});
-		*/
+		/*add layer to map*/
+		markers.addTo(map);
 		
 		/*on each theme set legend*/
-		var themes = "";
+		var themes = '<a id="theme-0" data-control="layer">All themes</a>';
+		
 		for(i in geojson.properties.themes) {
 			themes += '<a id="theme-' + geojson.properties.themes[i].id_theme + '" data-control="layer">' + geojson.properties.themes[i].name + '</a>';
 		}
 		document.getElementById('themes-layers').innerHTML = themes;
 		
+		$(document).ready (function () {
+			$('.layers > a').click(function() {
+				$(".layers > a").removeClass('active');
+				
+				if($(this).hasClass('active')) {
+					$(this).removeClass('active');
+				} else {
+					$(this).addClass('active');
+				}
+				
+				setTheme();
+			});
+			
+			$("#theme-0").click();
+		});
+		
+		function setTheme() {
+			markers.clearLayers();
+			
+			var active = $(".layers > a.active").attr("id");
+			
+			draw(active.replace("theme-", ""));
+		}
 	</script>
 </body>
 </html>
