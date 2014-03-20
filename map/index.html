@@ -56,13 +56,11 @@
 		    /*Listen for individual marker clicks*/
 			circle.on('click',function(e) {
 				var info  = '<h2>' + feature.properties.name + '</h2>';
-				info += '<p>' + feature.properties.names[0] + '</p>';
 				
 				for(i in feature.properties.names) {
-					console.log(feature.properties.names[i]);
+					info += '<p><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
 				};
 
-				
 				document.getElementById('info').innerHTML = info;
 			});
 		}
