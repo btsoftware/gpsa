@@ -470,7 +470,6 @@ a.more:hover{
 .aboutus-3 {
     background: none repeat scroll 0 0 #F2F2F5;
     border-top: 1px solid #FFFFFF;
-    box-shadow: 0 1px 1px rgba(2, 4, 4, 0.15);
     padding-top: 40px;
 }
 
@@ -3364,10 +3363,4 @@ Me lo puso como negritas el comentario, aca va otra vez:
 }
 a:hover.contorno-morado {
     border: 1px solid #6D6F9E;	
-}
-
-.bookmark-successful {
-	color:#253169;
-	font-size:13px;
-	margin-left:20px;
 }
