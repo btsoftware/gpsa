@@ -6,7 +6,10 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 <title>
-<?php wp_title('|',true,'right'); ?>
+<?php 
+echo get_the_title();
+//wp_title('|',true,'right'); 
+?>
 </title>
 <?php
 wp_head();
@@ -49,6 +52,8 @@ wp_head();
                         <ul class="topmenu">
                             <li><a href="<?php bp_loggedin_user_link(); ?>" class="smallimg vbplogin"><?php bp_loggedin_user_avatar( 'type=full' ); ?><?php bp_loggedin_user_fullname(); ?></a></li>
                         </ul>
+                        
+                        <?php bookmarks(); ?>
                     <?php
                     else :
                         ?>
@@ -91,7 +96,7 @@ wp_head();
                             }
                         ?>
 
-                            <a href="http://gpsa.fundarlabs.mx/v1/"><img src="<?php echo (isset($logo)?$logo:VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
+                            <a href="<?php echo home_url();?>/"><img src="<?php echo (isset($logo)?$logo:VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
                         <?php
                             if(is_home()){
                                 echo '</h1>';

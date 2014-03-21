@@ -44,4 +44,47 @@ include_once 'includes/tour.php';
 // Options Panel
 get_template_part('vibe','options');
 
+/*add bookmark*/
+function bookmarks() {
+	global $wp;
+	
+	$current_url = add_query_arg($wp->query_string, '', home_url($wp->request));
+	$current_url = explode("?", $current_url);
+	$current_url = $current_url[0];
+	$title       = get_the_title();
+	
+	echo '<a href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to favorites</a>';
+	
+	if(isset($_GET["msg"]) and $_GET["msg"] == "successful-bookmark") {
+		echo '<span class="bookmark-successful">Bookmark added successfully</span>';
+	}
+}
+
+/*get bookmarks*/
+function getBookmarks() {
+	if(function_exists('bp_loggedin_user_link') && is_user_logged_in()) {
+		echo '<h3>Bookmarks</h3>';
+		
+		global $wp;
+		global $wpdb;
+		
+		$user_id = bp_loggedin_user_id();
+		$myrows  = $wpdb->get_results("SELECT * FROM wp_bookmarks where user_id=$user_id order by bookmark_id desc");
+		
+		if($myrows) {
+			echo '<ul class="ul-bookmarks">';
+				foreach($myrows as $row) {
+					echo '<li>';
+						echo '<a href="' . $row->url . '" title="' . $row->title . '">' . $row->title . '</a>';
+					echo '</li>';
+				}
+			echo '</ul>';
+		} else {
+			echo '<h2>Not bookmarks yet</h2>';
+		}
+	}  else {
+		header('Location: '. home_url());
+		exit();
+	}
+}
 ?>
