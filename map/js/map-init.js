@@ -18,6 +18,7 @@ var geojsonMarkerOptions = {
 
 function draw(value) {
 	var theme = parseInt(value);
+	document.getElementById('info').innerHTML = "";
 	
 	/*on each marker*/
 	function onEachFeature(feature, layer) {
