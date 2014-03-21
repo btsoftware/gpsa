@@ -16,6 +16,7 @@ var geojsonMarkerOptions = {
 	fillOpacity: 0.8
 };
 
+/*draw markers & tooltips - parameter: value = id_theme*/
 function draw(value) {
 	var theme = parseInt(value);
 	document.getElementById('info').innerHTML = "";
