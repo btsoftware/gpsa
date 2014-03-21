@@ -474,7 +474,11 @@ a.more:hover{
 }
 
 /** contribute **/
-
+section.sombra {
+    box-shadow: 0 1px 1px rgba(2, 4, 4, 0.15);
+    margin-top: -6px;
+    padding-bottom: 17px;
+}
 .about-4 {
     margin-top: 40px !important;
 }

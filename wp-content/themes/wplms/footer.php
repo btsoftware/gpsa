@@ -1,3 +1,5 @@
+<section class="stripe sombra">
+</section>
 <section class="stripe about-4">
     <div class="container">
        <div class="row">
