@@ -78,10 +78,10 @@ function draw(value) {
 markers.addTo(map);
 
 /*on each theme set legend*/
-var themes = '<a id="theme-0" data-control="layer">All themes</a>';
+var themes = '<a data-value="0" data-control="layer">All themes</a>';
 
 for(i in geojson.properties.themes) {
-	themes += '<a id="theme-' + geojson.properties.themes[i].id_theme + '" data-control="layer">' + geojson.properties.themes[i].name + '</a>';
+	themes += '<a data-value="' + geojson.properties.themes[i].id_theme + '" data-control="layer">' + geojson.properties.themes[i].name + '</a>';
 }
 document.getElementById('themes-layers').innerHTML = themes;
 
@@ -98,13 +98,11 @@ $(document).ready (function () {
 		setTheme();
 	});
 	
-	$("#theme-0").click();
+	$("#themes-layers > a:first-child").click();
 });
 
+/*clear layers & draw with selected theme*/
 function setTheme() {
 	markers.clearLayers();
-	
-	var active = $(".layers > a.active").attr("id");
-	
-	draw(active.replace("theme-", ""));
+	draw($(".layers > a.active").attr("data-value"));
 }
