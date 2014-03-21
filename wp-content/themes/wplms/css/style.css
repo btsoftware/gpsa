@@ -474,7 +474,7 @@ a.more:hover{
 }
 
 /** contribute **/
-.sombra{
+section.sombra{
     box-shadow: 0 1px 1px rgba(2, 4, 4, 0.15);
 }
 .about-4 {
