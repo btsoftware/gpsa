@@ -37,7 +37,7 @@ function draw(value) {
 				var info  = '<h2>' + feature.properties.name + '</h2>';
 				
 				for(i in feature.properties.names) {
-					if(jQuery.inArray(theme, feature.properties.themes[i] != -1 || theme == 0) {
+					if(jQuery.inArray(theme, feature.properties.themes[i]) != -1 || theme == 0) {
 						info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
 					}
 				}
@@ -50,7 +50,7 @@ function draw(value) {
 				var info  = '<h2>' + feature.properties.name + '</h2>';
 				
 				for(i in feature.properties.names) {
-					if(jQuery.inArray(theme, feature.properties.themes[i] != -1 || theme == 0) {
+					if(jQuery.inArray(theme, feature.properties.themes[i]) != -1 || theme == 0) {
 						info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
 					}
 				}
