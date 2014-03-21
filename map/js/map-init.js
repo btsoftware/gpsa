@@ -24,13 +24,17 @@ function draw(value) {
 	function onEachFeature(feature, layer) {
 		var feature = feature;
 		
-		/*search index theme on array [0,1] number of experts for country*/
-		var indexof  = jQuery.inArray(theme, feature.properties.themes[0]);
-		var indexof2 = jQuery.inArray(theme, feature.properties.themes[1]);
-		var indexof3 = jQuery.inArray(theme, feature.properties.themes[2]);
-		var indexof4 = jQuery.inArray(theme, feature.properties.themes[3]);
+		/*search index theme on array for in .. number of experts for country - var boolean*/
+		var themeAviable = false;
 		
-		if(indexof != -1 || indexof2 != -1 || indexof3 != -1 || indexof4 != -1 || theme == 0) {
+		for(i in feature.properties.themes) {
+			if(jQuery.inArray(theme, feature.properties.themes[i]) != -1 || theme == 0) {
+				themeAviable = true;
+				break;
+			}
+		}
+		
+		if(themeAviable == true) {
 			var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions);
 		   
 			/*Listen for individual marker CLICK*/
