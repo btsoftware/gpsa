@@ -14,7 +14,7 @@
          </article> <!-- end .entry -->
         <?php endwhile; // end of the loop. ?>
            
-        </div>
+	   </div>
     </div>
 </section>
 <section class="stripe" style="padding-bottom: 0px ! important;">
