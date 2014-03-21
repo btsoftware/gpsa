@@ -89,10 +89,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <?php endwhile; // end of the loop. ?>
                                                                     </div>                                                         
                                                         </div>
-                                                        <?php
-                                                        endwhile;
-                                                        endif;
-                                                        ?>                                       
+                                     
                                                      </div>                                                                                                                   
               <!--forums and toster and blog --><div class="one_half ">
                                                                   <!-- forums -->
@@ -131,6 +128,10 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <?php endwhile; // end of the loop. ?>
                                                                     </div>                
                                                 </div>
+                                                <?php
+                                                endwhile;
+                                                endif;
+                                                 ?>  
                         </div>                                
             </div>
             <div class="col-md-3 col-sm-4">
