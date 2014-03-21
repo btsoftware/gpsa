@@ -26,8 +26,10 @@ function draw(value) {
 		/*search index theme on array [0,1] number of experts for country*/
 		var indexof  = jQuery.inArray(theme, feature.properties.themes[0]);
 		var indexof2 = jQuery.inArray(theme, feature.properties.themes[1]);
+		var indexof3 = jQuery.inArray(theme, feature.properties.themes[2]);
+		var indexof4 = jQuery.inArray(theme, feature.properties.themes[3]);
 		
-		if(indexof != -1 || indexof2 != -1 || theme == 0) {
+		if(indexof != -1 || indexof2 != -1 || indexof3 != -1 || indexof4 != -1 || theme == 0) {
 			var circle = L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], geojsonMarkerOptions);
 		   
 			/*Listen for individual marker CLICK*/
@@ -35,7 +37,9 @@ function draw(value) {
 				var info  = '<h2>' + feature.properties.name + '</h2>';
 				
 				for(i in feature.properties.names) {
-					info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+					if(jQuery.inArray(theme, feature.properties.themes[i] != -1 || theme == 0) {
+						info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+					}
 				}
 
 				document.getElementById('info').innerHTML = info;
@@ -46,7 +50,9 @@ function draw(value) {
 				var info  = '<h2>' + feature.properties.name + '</h2>';
 				
 				for(i in feature.properties.names) {
-					info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+					if(jQuery.inArray(theme, feature.properties.themes[i] != -1 || theme == 0) {
+						info += '<p class="name-expert"><a href="' + feature.properties.urls[i] + '" title="' + feature.properties.names[i] + '">' + feature.properties.names[i] + '</a></p>';
+					}
 				}
 
 				document.getElementById('info').innerHTML = info;

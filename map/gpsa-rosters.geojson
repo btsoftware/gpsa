@@ -26,17 +26,26 @@
         ]
       }
     },
-    {
+     {
       "type": "Feature",
       "properties": {
         "names": [
-          "Almudena Ocejo"
+          "Almudena Ocejo",
+          "Felipe Hevia",
+          "Guadalupe Mendoza",
+          "Lourdes Morales"
         ],
         "urls": [
-          "http://gpsa.fundarlabs.mx/v1/expert/almudena-ocejo/"
+          "http://gpsa.fundarlabs.mx/v1/expert/almudena-ocejo/",
+          "http://gpsa.fundarlabs.mx/v1/expert/felipe-hevia/",
+          "http://gpsa.fundarlabs.mx/v1/expert/guadalupe-mendoza/",
+          "http://gpsa.fundarlabs.mx/v1/expert/lourdes-morales/"
         ],
         "themes": [
-          [4,5,8]
+          [4,5,8],
+          [3,4,5,7],
+          [6,8],
+          [1,4]
         ],
         "name": "Mexico"
       },
@@ -155,6 +164,72 @@
         "coordinates": [
           2.35107421875,
           48.85387273165656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+         "names": [
+          "Carmen Malena"
+        ],
+        "urls": [
+          "http://gpsa.fundarlabs.mx/v1/expert/carmen-malena/"
+        ],
+        "themes": [
+          [1,4,5,6,7,8]
+        ],
+        "name": "Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.75390625,
+          54.57206165565852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { 
+        "names": [
+          "Asyl Undeland"
+        ],
+        "urls": [
+          "http://gpsa.fundarlabs.mx/v1/expert/asyl-undeland/"
+        ],
+        "themes": [
+          [4,5,6]
+        ],
+        "name": "Sri Lanka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7275390625,
+          7.395152907137248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "names": [
+          "Blair Glencorse"
+        ],
+        "urls": [
+          "http://gpsa.fundarlabs.mx/v1/expert/blair-glencorse/"
+        ],
+        "themes": [
+          [1,4,5,6,7,8]
+        ],
+        "name": "United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.91015624999999,
+          39.027718840211605
         ]
       }
     }
