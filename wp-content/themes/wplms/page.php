@@ -49,7 +49,7 @@ endwhile;
 endif;
 ?>
 </div>
-<section class="stripe sombra"> </section>
+
 <?php
 get_footer();
 ?>
