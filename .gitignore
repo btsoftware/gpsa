@@ -15,7 +15,7 @@ wp-content/backups/
 !.gitignore
 !wp-content/
 !map/
-!.favicon.ico
+!favicon.ico
  
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
