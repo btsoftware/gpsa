@@ -52,7 +52,7 @@ get_header();
                             <div class="featured2">
                                 <a href="'.get_post_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'full').'</a>
                             </div>':'').'
-                            <div class="excerpt '.(has_post_thumbnail(get_the_ID())?'thumb':'').'">
+                            <div class="excerpt2 '.(has_post_thumbnail(get_the_ID())?'':'').'">
                                 <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
                                 <div class="cats">
                                     '.$cats.'

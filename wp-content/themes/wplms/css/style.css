@@ -1793,6 +1793,9 @@ text-transform: uppercase;
 .blogpost .excerpt{
 	margin-left:90px;
 }
+.blogpost .excerpt2{
+	margin-left:170px;
+}
 .blogpost .excerpt.thumb{
 	margin-left:310px;
 }
