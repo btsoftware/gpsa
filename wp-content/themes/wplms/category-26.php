@@ -16,7 +16,14 @@ get_header();
         </div>
 	</div>
 </section>
-<section id="content">uilño{ñ´
+<section id="content">
+	<div class="container">
+		<div class="row">	
+	               <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+		</div>
+	</div>
+</section>
+<section id="content">	
 	<div class="container">
 		<div class="col-md-9 col-sm-8">
 			<div class="content">
