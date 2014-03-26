@@ -55,7 +55,6 @@ get_header();
                             </div>':'').'
                             <div class="excerpt2 '.(has_post_thumbnail(get_the_ID())?'':'').'">
                                 <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
-                                ' . bookmarks(the_permalink(), get_the_title()) . '
                                 <div class="cats">
                                     '.$cats.'
                                     <p>| 
@@ -65,6 +64,8 @@ get_header();
                                 <p>'.get_the_excerpt(100).'</p>
                             </div>
                         </div>';
+                        
+                        bookmarks(the_permalink(), get_the_title());
                     endwhile;
                     endif;
                     pagination();
