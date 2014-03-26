@@ -25,7 +25,7 @@ get_header();
 </section>
 <section id="content">	
 	<div class="container">
-		<div class="col-md-9 col-sm-8">
+		<div class="row">
 			<div class="content">
 				<?php
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -66,13 +66,6 @@ get_header();
                     endif;
                     pagination();
                 ?>
-			</div>
-		</div>
-		<div class="col-md-3 col-sm-4">
-			<div class="sidebar">
-				<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('mainsidebar') ) : ?>
-                <?php endif; ?>
 			</div>
 		</div>
 	</div>
