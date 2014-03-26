@@ -296,8 +296,14 @@ a:hover{
 	padding-left:30px;
 }
 /** Home **/
-.page-id-24 > .global > .pusher > #content{
-	background-image: url(images/bg-intro.png);
+.page-id-24 > .global > .pusher > #content.page-id-24 > .global > .pusher > #content {
+    background:url("images/bg-intro.png") no-repeat scroll center bottom rgba(0, 0, 0, 0)
+}
+.content.no {
+	background:transparent !important;
+}
+.page-id-24{
+	background-image: url(images/bg-intro.png)  !important;
 }
 h1.welcome1 {
     color: #6D6F9E;
