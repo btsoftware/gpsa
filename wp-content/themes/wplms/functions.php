@@ -89,6 +89,14 @@ function getBookmarks() {
 }
 
 function getMap() {
-	
+	echo "<script src='http://code.jquery.com/jquery-1.11.0.min.js'></script>";
+	echo "<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>";
+	echo "<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>";
+	echo "<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>";
+	echo "<link href='/map/css/map-style.css' rel='stylesheet'/>";
+	echo "<script src='/map/js/gpsa-rosters.geojson.js' type='text/javascript'></script>";
+	echo "<div id='map'><div id='themes-layers' class='layers'></div></div><div id='info'></div>";
+	echo "<script src='/map/js/map-init.js' type='text/javascript'></script>";
 }
+
 ?>

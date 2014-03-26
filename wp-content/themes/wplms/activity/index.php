@@ -196,16 +196,6 @@ get_header( 'buddypress' ); ?>
 		
 		<!-- Map Roster of practitioners -->
 			<?php getMap();?>
-			<div class="pagetitle"><h2>Roster of practitioners</h2></div>
-
-			<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
-			<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
-
-			<div id='map'></div>
-			<script>
-				var map = L.mapbox.map('map', 'fundarmexico.refp3nmi');
-				map.scrollWheelZoom.disable();
-			</script>
 		<!-- End Map Roster of practitioners -->
 		
 	</div><!-- #content -->
