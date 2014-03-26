@@ -1774,10 +1774,10 @@ text-transform: uppercase;
 	margin: 0 20px;
 }
 .blogpost .featured2{
-	max-width: 200px;
+	max-width: 140px;
 	height: auto;
 	float: left;
-	margin: 0 20px;
+	margin: 0;
 	border-bottom:3px solid #253169;
 	border-top: 1px solid #f1f1f1;
 	border-right: 1px solid #f1f1f1;
