@@ -5,6 +5,8 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico">
 <title>
 <?php 
 echo get_the_title();

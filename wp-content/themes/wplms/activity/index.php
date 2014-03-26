@@ -195,6 +195,7 @@ get_header( 'buddypress' ); ?>
 		</div><!-- .padder -->
 		
 		<!-- Map Roster of practitioners -->
+			<?php getMap();?>
 			<div class="pagetitle"><h2>Roster of practitioners</h2></div>
 
 			<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>

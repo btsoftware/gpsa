@@ -87,4 +87,8 @@ function getBookmarks() {
 		exit();
 	}
 }
+
+function getMap() {
+	
+}
 ?>
