@@ -296,6 +296,9 @@ a:hover{
 	padding-left:30px;
 }
 /** Home **/
+.page-id-24{
+	background-image: url(images/bg-intro.png);
+}
 h1.welcome1 {
     color: #6D6F9E;
     font-family: 'steelfish_rgregular';
@@ -1633,6 +1636,7 @@ background:#232b2d;
 	font-size:38px;
 	text-transform:uppercase;
 }
+
 .pagetitle h5{
 	margin-bottom:10px;
 }
