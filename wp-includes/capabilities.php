@@ -1,7 +1,4 @@
 <?php
-
-require_once('pluggable.php');
-
 /**
  * WordPress Roles and Capabilities.
  *
