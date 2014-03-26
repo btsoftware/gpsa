@@ -1782,8 +1782,10 @@ text-transform: uppercase;
     margin: 0 0 25px;
     max-width: 140px;
 }
-.blogpost h3{
-	margin-top:0;
+.blogpost h3 {
+    font-family: steelfish_rgregular;
+    font-size: 26px;
+    margin-top: 0;
 }
 
 .blogpost img{
