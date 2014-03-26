@@ -1,5 +1,5 @@
 /*load map - mapbox fundarmexico*/
-var map     = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([0,0], 2);
+var map     = L.mapbox.map('map', 'fundarmexico.zuz69a4i').setView([5.266, 6.68], 2);
 var markers = new L.LayerGroup();
 
 /*disable scroll and tocuh zoom*/
