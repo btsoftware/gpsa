@@ -61,8 +61,7 @@ get_header();
                                     <a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'">'.get_the_author_meta( 'display_name' ).'</a>
                                     </p>
                                 </div>
-                                <p>'.get_the_excerpt().'</p>
-                                <a href="'.get_permalink().'" class="link">Read More</a>
+                                <p>'.get_the_excerpt(100).'</p>
                             </div>
                         </div>';
                     endwhile;
