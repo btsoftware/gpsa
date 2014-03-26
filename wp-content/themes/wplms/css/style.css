@@ -296,7 +296,7 @@ a:hover{
 	padding-left:30px;
 }
 /** Home **/
-.page-id-24{
+.page-id-24 > .global > .pusher > #content{
 	background-image: url(images/bg-intro.png);
 }
 h1.welcome1 {
