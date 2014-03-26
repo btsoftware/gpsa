@@ -1773,6 +1773,16 @@ text-transform: uppercase;
 	float: left;
 	margin: 0 20px;
 }
+.blogpost .featured2{
+	max-width: 200px;
+	height: auto;
+	float: left;
+	margin: 0 20px;
+	border-bottom:3px solid #253169;
+	border-top: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
+}
 .blogpost h3{
 	margin-top:0;
 }
@@ -3376,7 +3386,7 @@ a:hover.contorno-morado {
 }
 /** repository **/
 .top{
-	margin: 40px 0 0;
+	margin: 40px !important;
 }
 
 .sort-serach {

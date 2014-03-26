@@ -48,14 +48,8 @@ get_header();
                     $cats .='</ul>';
                         
                        echo ' <div class="blogpost">
-                            <div class="meta">
-                               <div class="date">
-                                <p class="day"><span>'.get_the_time('j').'</span></p>
-                                <p class="month">'.get_the_time('M').'</p>
-                               </div>
-                            </div>
                             '.(has_post_thumbnail(get_the_ID())?'
-                            <div class="featured">
+                            <div class="featured2">
                                 <a href="'.get_post_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'full').'</a>
                             </div>':'').'
                             <div class="excerpt '.(has_post_thumbnail(get_the_ID())?'thumb':'').'">
