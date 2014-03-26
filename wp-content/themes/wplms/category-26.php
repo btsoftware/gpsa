@@ -27,7 +27,7 @@ get_header();
 <section id="content sort-serach">
 	<div class="container">
 		<div class="row">	
-	               <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+	               
 		</div>
 	</div>
 </section>

@@ -3375,11 +3375,11 @@ a:hover.contorno-morado {
     border: 1px solid #6D6F9E;	
 }
 /** repository **/
-.top{
+#top{
 	margin: 40px 0 0;
 }
 
-.sort-serach {
+#sort-serach {
 	background: #F1F1F1;
 	
 }
