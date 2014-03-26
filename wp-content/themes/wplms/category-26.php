@@ -33,6 +33,7 @@ get_header();
 </section>
 <section id="content">	
 	<div class="container">
+		<h2 class="subt">All Materials</h2>
 		<div class="row">
 			<div class="content">
 				<?php

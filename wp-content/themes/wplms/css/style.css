@@ -1773,15 +1773,14 @@ text-transform: uppercase;
 	float: left;
 	margin: 0 20px;
 }
-.blogpost .featured2{
-	max-width: 140px;
-	height: auto;
-	float: left;
-	margin: 0;
-	border-bottom:3px solid #253169;
-	border-top: 1px solid #f1f1f1;
-	border-right: 1px solid #f1f1f1;
-	border-left: 1px solid #f1f1f1;
+.blogpost .featured2 {
+    border-color: #F1F1F1 #F1F1F1 #253169;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    float: left;
+    height: auto;
+    margin: 0 0 25px;
+    max-width: 140px;
 }
 .blogpost h3{
 	margin-top:0;
