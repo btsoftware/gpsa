@@ -16,7 +16,15 @@ get_header();
         </div>
 	</div>
 </section>
-<section id="content">
+<!-- Carrusel -->
+<section id="content" style="margin-top: 40px;">
+	<div class="container">
+		<div class="row">	
+	               <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+		</div>
+	</div>
+</section>
+<section id="content sort-serach">
 	<div class="container">
 		<div class="row">	
 	               <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
