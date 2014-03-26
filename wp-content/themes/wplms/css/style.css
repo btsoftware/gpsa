@@ -297,7 +297,7 @@ a:hover{
 }
 /** Home **/
 .page-id-24 > .global > .pusher > #content.page-id-24 > .global > .pusher > #content {
-    background:url("images/bg-intro.png") no-repeat scroll center bottom rgba(0, 0, 0, 0)
+    background:url("images/bg-intro.png") no-repeat scroll center bottom rgba(0, 0, 0, 0) !important;
 }
 .content.no {
 	background:transparent !important;
