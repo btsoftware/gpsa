@@ -62,7 +62,6 @@ function bookmarks($url = false, $title = false) {
 	if(isset($_GET["msg"]) and $_GET["msg"] == "successful-bookmark") {
 		echo '<span class="bookmark-successful">Bookmark added successfully</span>';
 	}
-	return true;
 }
 
 /*get bookmarks*/
