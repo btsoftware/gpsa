@@ -33,6 +33,10 @@ get_header();
 </section>
 <section id="content">	
 	<div class="container">
+		<?php if(function_exists('sbc')) {
+			sbc();
+		} ?>
+
 		<h2 class="subt">All Materials</h2>
 		<div class="row">
 			<div class="content">
