@@ -59,9 +59,11 @@ get_header();
                             </div>':'').'
                             <div class="excerpt2 '.(has_post_thumbnail(get_the_ID())?'':'').'">
                                 <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
-								<div class="box-bookmark">
-									' . bookmarks(get_permalink(), get_the_title()) . '
-								</div>
+								<div class="box-bookmark">';
+								
+								bookmarks(get_permalink(), get_the_title());
+									
+								echo '</div>
                                 <div class="cats">
                                     '.$cats.'
                                     <p>| 
