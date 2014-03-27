@@ -45,15 +45,19 @@ include_once 'includes/tour.php';
 get_template_part('vibe','options');
 
 /*add bookmark*/
-function bookmarks() {
+function bookmarks($url = false, $title = false) {
 	global $wp;
 	
-	$current_url = add_query_arg($wp->query_string, '', home_url($wp->request));
-	$current_url = explode("?", $current_url);
-	$current_url = $current_url[0];
-	$title       = get_the_title();
+	if($url == false) {
+		$current_url = add_query_arg($wp->query_string, '', home_url($wp->request));
+		$current_url = explode("?", $current_url);
+		$current_url = $current_url[0];
+		$title       = get_the_title();
+	} else {
+		$current_url = $url;
+	}
 	
-	echo '<a href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to favorites</a>';
+	echo '<a class="add-bookmark" href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to my favorites</a>';
 	
 	if(isset($_GET["msg"]) and $_GET["msg"] == "successful-bookmark") {
 		echo '<span class="bookmark-successful">Bookmark added successfully</span>';
