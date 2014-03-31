@@ -3449,3 +3449,14 @@ p.resumen {
 .yarpp-related{
     display: none !important;
 }
+/** lerning activiyies soon **/
+.soon {
+    background: url("images/soon.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
+    color:#000;
+    display: block;
+    font-family: steelfish_rgregular;
+    font-size: 27px;
+    padding-bottom: 10px;
+    text-indent: 13px;
+    text-transform: uppercase;
+}
