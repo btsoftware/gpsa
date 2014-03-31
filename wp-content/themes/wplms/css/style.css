@@ -3451,6 +3451,10 @@ p.resumen {
 }
 /** lerning activiyies soon **/
 .comingsoon {
-    background: url("images/coming-soon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
-
+    background: url("images/coming-soon.png") no-repeat scroll center -63px rgba(0, 0, 0, 0);
+    position: relative;
+    top: -152px;
+}
+.soon {
+    padding-top: 399px;
 }
