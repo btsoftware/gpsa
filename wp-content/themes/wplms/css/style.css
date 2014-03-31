@@ -3450,7 +3450,7 @@ p.resumen {
     display: none !important;
 }
 /** lerning activiyies soon **/
-.soon {
+.comingsoon {
     background: url("images/soon.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
     color:#000;
     display: block;
