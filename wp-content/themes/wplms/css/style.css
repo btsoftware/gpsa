@@ -3453,12 +3453,11 @@ p.resumen {
 .comingsoon {
     background: url("images/coming-soon2.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
     position: relative;
-    top: -152px;
 }
 #soon {
     padding-top: 399px;
 }
-.page-id-13 > .pusher > #content > element.style {
+.page-id-13 > .pusher > #content > content{
     display: none;
     margin: 0 !important;
     padding: 0 !important;
