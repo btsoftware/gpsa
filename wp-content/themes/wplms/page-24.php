@@ -59,7 +59,11 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
                                                                                <div class="animate zoom load">
+<<<<<<< HEAD
                                                                                <h4 class="bloque_title"><a class="/knowldge-exchange/" href="#"><?php the_title(); ?></a> </h4>  
+=======
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/learning-activities/"><?php the_title(); ?></a> </h4>  
+>>>>>>> 0e387b0f2108fbe061ccef2171c089d6d3905656
                                                                                <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
@@ -77,13 +81,21 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
                                                                                <div class="animate zoom load">
+<<<<<<< HEAD
                                                                                <h4 class="bloque_title"><a class="" href="/category/blog/"><?php the_title(); ?></a> </h4>  
+=======
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/category/blog/"><?php the_title(); ?></a> </h4>  
+>>>>>>> 0e387b0f2108fbe061ccef2171c089d6d3905656
                                                                                <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
                                                                                </div> 	<!-- end .post_content -->                                                                                  
+<<<<<<< HEAD
                                                                                 <a class="more" href="/category/blog/"><span>Read more</span></a>                                                                                      
+=======
+                                                                                <a class="more" href="http://gpsaknowledge.org/category/blog/"><span>Read more</span></a>                                                                                      
+>>>>>>> 0e387b0f2108fbe061ccef2171c089d6d3905656
 
                                                                        </article> <!-- end .entry -->
                                                                        <?php endwhile; // end of the loop. ?>
@@ -102,13 +114,17 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
                                                                                <div class="animate zoom load">
-                                                                               <h4 class="bloque_title"><a class="" href="http://gpsa.fundarlabs.mx/v1/forums/"><?php the_title(); ?></a> </h4>  
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/forums/"><?php the_title(); ?></a> </h4>  
                                                                                <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
                                                                                </div> 	<!-- end .post_content -->                                                                                  
+<<<<<<< HEAD
                                                                                 <a class="more" href="/forums/"><span>Read more</span></a>                                                                                      
+=======
+                                                                                <a class="more" href="http://gpsaknowledge.org/forums/"><span>Read more</span></a>                                                                                      
+>>>>>>> 0e387b0f2108fbe061ccef2171c089d6d3905656
 
                                                                        </article> <!-- end .entry -->
                                                                        <?php endwhile; // end of the loop. ?>
@@ -120,13 +136,21 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
                                                                                <div class="animate zoom load">
+<<<<<<< HEAD
                                                                                <h4 class="bloque_title"><a class="" href="/networking/"><?php the_title(); ?></a> </h4>  
+=======
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/networking/"><?php the_title(); ?></a> </h4>  
+>>>>>>> 0e387b0f2108fbe061ccef2171c089d6d3905656
                                                                                <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
                                                                                </div> 	<!-- end .post_content -->                                                                                  
+<<<<<<< HEAD
                                                                                 <a class="more" href="/networking/"><span>Read more</span></a>                                                                                      
+=======
+                                                                                <a class="more" href="http://gpsaknowledge.org/networking/"><span>Read more</span></a>                                                                                      
+>>>>>>> 0e387b0f2108fbe061ccef2171c089d6d3905656
 
                                                                        </article> <!-- end .entry -->
                                                                        <?php endwhile; // end of the loop. ?>
