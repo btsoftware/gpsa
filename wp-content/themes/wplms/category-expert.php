@@ -113,4 +113,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 </div>
 
 <?php
+
+endwhile;
 get_footer();
