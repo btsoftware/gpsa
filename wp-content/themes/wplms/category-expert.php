@@ -21,6 +21,8 @@ if(isset($title) && $title !='' && $title !='H'){
                     if(isset($breadcrumbs) && $breadcrumbs !='' && $breadcrumbs !='H'){
                         vibe_breadcrumbs();
                     }    
+                    
+                    $data["name"] = getPostMeta($post->ID, 'Name');
                 ?>
             </div>
         </div>
@@ -39,7 +41,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div class="content">
                     <div class="bp-widget wp-profile">
 						
-						<h4><?php echo getPostMeta($post->ID, 'Name');?></h4>
+						<h4><?php echo $data["name"];?></h4>
 
 						<table class="wp-profile-fields">
 
