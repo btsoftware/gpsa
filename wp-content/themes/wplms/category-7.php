@@ -43,7 +43,7 @@ get_header();
 				<?php
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-                    $categories = 101;
+                    $categories = get_the_category();
                     $cats='<ul>';
                     if($categories){
                         foreach($categories as $category) {
@@ -59,7 +59,7 @@ get_header();
                             </div>':'').'
                             <div class="excerpt2 '.(has_post_thumbnail(get_the_ID())?'':'').'">
                                 <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
-								<div class="box-bookmark">';
+								<div class="box-bookmark-repository">';
 								
 								bookmarks(get_permalink(), get_the_title());
 									
@@ -70,7 +70,7 @@ get_header();
                                     <a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'">'.get_the_author_meta( 'display_name' ).'</a>
                                     </p>
                                 </div>
-                                <p>'.get_the_excerpt(100).'</p>
+                                <p class="resumen">'.get_the_excerpt(100).'</p>
                             </div>
                         </div>';
                     endwhile;

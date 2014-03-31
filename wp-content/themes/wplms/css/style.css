@@ -3404,6 +3404,41 @@ a:hover.contorno-morado {
 	background: #F1F1F1;
 	
 }
+.box-bookmark-repository {
+    float: right;
+    margin-top: -44px;
+    padding-left: 10px;
+}
+.box-bookmark-repository > .add-bookmark {
+    background-color:#253169;
+    border: 1px solid #253169;
+    border-radius: 0 0 0 0;
+    color: #FFF !important;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin:0;
+    padding: 5px 12px;
+    text-transform:uppercase;
+}
+.box-bookmark-repository > a.add-bookmark:hover{
+    background-color:#6D6F9E;
+    border: 1px solid #6D6F9E;
+    border-radius: 0 0 0 0;
+    color: #FFF;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin:0;
+    padding: 5px 12px;
+    text-transform:uppercase;
+}
+p.resumen {
+    margin-bottom: 10px;
+    margin-top: 7px;
+    padding-right: 32px;
+    width: 74%;
+}
 /** Related post */
 .yarpp-related{
     display: none !important;
