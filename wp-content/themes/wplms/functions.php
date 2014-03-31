@@ -106,4 +106,17 @@ function getMap() {
 	echo "<script src='/map/js/map-init.js' type='text/javascript'></script>";
 }
 
+
+function get_custom_cat_template($single_template) {
+    global $post;
+ 
+    if(in_category( 'expert' )) {
+        $single_template = dirname( __FILE__ ) . '/single-expert.php';
+    }
+    
+    return $single_template;
+}
+ 
+add_filter( "single_template", "get_custom_cat_template" ) ;
+
 ?>
