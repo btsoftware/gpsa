@@ -59,7 +59,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                                                    
                                                                                <div class="animate zoom load">
-                                                                               <h4 class="bloque_title"><a class="" href="#"><?php the_title(); ?></a> </h4>  
+                                                                               <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/learning-activities/"><?php the_title(); ?></a> </h4>  
                                                                                <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
