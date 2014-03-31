@@ -3438,7 +3438,7 @@ p.resumen {
     padding-right: 32px;
     width: 74%;
 }
-.excerpt2 > .blogpost h3 {
+.excerpt2 > .blogpost > h3 {
     color: #29356C !important;
     font-family: open sans;
     font-size: 15px;
