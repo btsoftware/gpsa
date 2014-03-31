@@ -3457,7 +3457,7 @@ p.resumen {
 #soon {
     padding-top: 399px;
 }
-.page-id-13 > .pusher > #content > content{
+.page-id-13 > .pusher > #content > .container{
     display: none;
     margin: 0 !important;
     padding: 0 !important;
