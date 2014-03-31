@@ -3451,10 +3451,15 @@ p.resumen {
 }
 /** lerning activiyies soon **/
 .comingsoon {
-    background: url("images/coming-soon2.png") no-repeat scroll center -63px rgba(0, 0, 0, 0);
+    background: url("images/coming-soon2.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
     position: relative;
     top: -152px;
 }
 #soon {
     padding-top: 399px;
+}
+.page-id-13 > .pusher > #content > element.style {
+    display: none;
+    margin: 0 !important;
+    padding: 0 !important;
 }
