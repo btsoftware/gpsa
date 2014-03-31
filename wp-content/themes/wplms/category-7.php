@@ -27,7 +27,11 @@ get_header();
 <section class="stripe sort-serach">
 	<div class="container">
 		<div class="row">	
-	               
+			<?php 
+				if(function_exists('sbc')) {
+					sbc();
+				}
+			?>    
 		</div>
 	</div>
 </section>
@@ -35,11 +39,11 @@ get_header();
 	<div class="container">
 		<h2 class="subt">All Materials</h2>
 		<div class="row">
-			<div class="content" style="padding: 0px;">
+			<div class="content">
 				<?php
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
-			
-                    $categories = get_the_category();
+
+                    $categories = 101;
                     $cats='<ul>';
                     if($categories){
                         foreach($categories as $category) {
@@ -48,29 +52,27 @@ get_header();
                     }
                     $cats .='</ul>';
                         
-                       echo ' <div class="blogpost col-md-10">
-		       
+                       echo ' <div class="blogpost">
                             '.(has_post_thumbnail(get_the_ID())?'
                             <div class="featured2">
                                 <a href="'.get_post_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'full').'</a>
-                            </div>':
-			    '').'
+                            </div>':'').'
                             <div class="excerpt2 '.(has_post_thumbnail(get_the_ID())?'':'').'">
                                 <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
+								<div class="box-bookmark">';
 								
+								bookmarks(get_permalink(), get_the_title());
+									
+								echo '</div>
                                 <div class="cats">
                                     '.$cats.'
                                     <p>| 
                                     <a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'">'.get_the_author_meta( 'display_name' ).'</a>
                                     </p>
                                 </div>
-                                <p class="excerptblog">'.get_the_excerpt().'</p>
+                                <p>'.get_the_excerpt(100).'</p>
                             </div>
                         </div>';
-			
-			echo '<div class="box-bookmark col-md-2">'.bookmarks(get_permalink(), get_the_title()).'
-								</div>';
-			
                     endwhile;
                     endif;
                     pagination();
