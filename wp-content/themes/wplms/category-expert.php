@@ -22,7 +22,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         vibe_breadcrumbs();
                     }    
                     
-                    $data["name"] = getPostMeta($post->ID, 'Name');
+                    $data["name"] = get_post_meta($post->ID, 'Name', true);
                 ?>
             </div>
         </div>
