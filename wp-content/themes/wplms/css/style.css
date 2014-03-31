@@ -3406,7 +3406,6 @@ a:hover.contorno-morado {
 }
 .box-bookmark-repository {
     float: right;
-    margin-top: -44px;
     padding-left: 10px;
 }
 .box-bookmark-repository > .add-bookmark {
@@ -3438,6 +3437,13 @@ p.resumen {
     margin-top: 7px;
     padding-right: 32px;
     width: 74%;
+}
+.excerpt2 > .blogpost h3 {
+    color: #29356C !important;
+    font-family: open sans;
+    font-size: 15px;
+    margin-top: 0;
+    width: 72%;
 }
 /** Related post */
 .yarpp-related{
