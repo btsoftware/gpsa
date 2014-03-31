@@ -50,17 +50,27 @@
 		    </div>
 		    <div class="col-md-2">
 			    <div class="footerwidget">
-				<h4 class="footertitle"><a>Knowledge Repository</a></h4>
+				<h4 class="footertitle"><a href="/networking/">Knowledge Repository</a></h4>
 				<div class="textwidget">
-				    <ul>
-				    <li><a>Publications on Social Accountability</a></li>
-				   </ul>
 				</div>
 		            </div>
 		    </div>
 		    <div class="col-md-2">
 			<div class="footerwidget">
-			    <h4 class="footertitle"><a>Learning Activities</a></h4>
+			    <h4 class="footertitle"><a href="category/knowledge-repository/">Networking</a></h4>
+				<div class="textwidget">
+				    <ul>
+				    <li><a>Blog</a></li>
+				    <li><a>Tell us about your story</a></li>
+				    <li><a>Related Initiatives</a></li>
+				    <li><a>Roster of Practitioners</a></li>
+				    </ul>
+				</div>
+		       </div>
+		    </div>		    
+		    <div class="col-md-2">
+			<div class="footerwidget">
+			    <h4 class="footertitle"><a href="/learning-activities/">Learning Activities</a></h4>
 				<div class="textwidget">
 				    <ul>
 				    <li><a>E-courses</a></li>
@@ -71,20 +81,7 @@
 		    </div>
 		    <div class="col-md-2">
 			<div class="footerwidget">
-			    <h4 class="footertitle"><a>Networking</a></h4>
-				<div class="textwidget">
-				    <ul>
-				    <li><a>Blog</a></li>
-				    <li><a>Tell us about your story</a></li>
-				    <li><a>Related Initiatives</a></li>
-				    <li><a>Roster of Practitioners</a></li>
-				    </ul>
-				</div>
-		       </div>
-		    </div>
-		    <div class="col-md-2">
-			<div class="footerwidget">
-			    <h4 class="footertitle"><a>Knowledge Exchange</a></h4>
+			    <h4 class="footertitle"><a href="/knowldge-exchange/">Knowledge Exchange</a></h4>
 				<div class="textwidget">
 				    <ul>
 				    <li><a>Thematic forums</a></li>
