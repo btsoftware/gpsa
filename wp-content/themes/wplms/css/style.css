@@ -479,7 +479,12 @@ a.more:hover{
     border-top: 1px solid #FFFFFF;
     padding-top: 40px;
 }
-
+/** knowledge exchange **/
+.exchange {
+    background: url("images/bk-components.png") repeat-x scroll 0 0 #FCFCFC;
+    margin-top: -30px !important;
+    padding-top: 50px;
+}
 /** contribute **/
 section.sombra {
     box-shadow: 0 1px 1px rgba(2, 4, 4, 0.15);
@@ -1819,14 +1824,16 @@ border-bottom: 1px dotted #EFEFEF;
 
 .cats a{
 	font-size: 11px;
-	font-weight: 600;
-	color:#bbb;
-	text-transform: uppercase;
+	font-weight: 200;
+	color:#999999;
+	text-transform:none;
 }
 .cats a:hover{
 	color:#78c8ce;
 }
-
+p.excerptblog{
+	margin:08px 0 12px 0;
+}
 /*========================================================================*/
 /*   07. PAGINATION
 /*========================================================================*/
@@ -3396,4 +3403,8 @@ a:hover.contorno-morado {
 .sort-serach {
 	background: #F1F1F1;
 	
+}
+/** Related post */
+.yarpp-related{
+    display: none !important;
 }
