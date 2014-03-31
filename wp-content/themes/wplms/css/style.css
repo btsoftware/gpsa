@@ -3462,7 +3462,7 @@ p.resumen {
     margin: 0 !important;
     padding: 0 !important;
 }
-.aprendizaje p{
+p.aprendizaje {
     font-size: 18px;
     font-weight: lighter;
     margin-top: 20px;
