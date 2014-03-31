@@ -92,7 +92,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								</tr>
 
 							<?php endif; ?>
-
+						<?php endwhile;?>
 						</table>
 					</div>
                 </div>
@@ -113,7 +113,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 </div>
 
 <?php
-endwhile;
+
 endif;
 
 get_footer();
