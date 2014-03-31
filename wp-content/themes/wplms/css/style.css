@@ -3451,12 +3451,6 @@ p.resumen {
 }
 /** lerning activiyies soon **/
 .comingsoon {
-    background: url("images/soon.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
-    color:#000;
-    display: block;
-    font-family: steelfish_rgregular;
-    font-size: 27px;
-    padding-bottom: 10px;
-    text-indent: 13px;
-    text-transform: uppercase;
+    background: url("images/soon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+
 }
