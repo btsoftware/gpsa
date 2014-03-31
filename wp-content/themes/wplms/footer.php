@@ -38,13 +38,13 @@
                 <div class="col-md-7 sitemap">
                     <div class="col-md-2">
 			<div class="footerwidget">
-			    <h4 class="footertitle"><a href="about/">About</a></h4>
+			    <h4 class="footertitle"><a href="http://gpsaknowledge.org/about/">About</a></h4>
 			    <div class="textwidget"></div>
 		        </div>
 		    </div>
 		    <div class="col-md-2">
 			<div class="footerwidget">
-			    <h4 class="footertitle"><a>News and Events</a></h4>
+			    <h4 class="footertitle"><a href="/news-events/">News and Events</a></h4>
 			    <div class="textwidget"></div>
 		        </div>
 		    </div>
