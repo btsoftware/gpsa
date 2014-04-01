@@ -3543,6 +3543,8 @@ p.aprendizaje {
 /** formularios **/
 #formulario1 {
     background: none repeat scroll 0 0 #FCFCFC;
-    border: 1px solid;
+    border: 1px solid #E1E1E1;
     color: #919191;
+    margin-top: 3px;
+    padding: 12px;
 }
