@@ -20,7 +20,7 @@ get_header();
                 </div>
             </div>
             <div class="col-md-3 col-sm-4">
-                <?php vibe_breadcrumbs(); ?>  
+               
             </div>
         </div>
 	</div>
