@@ -3539,3 +3539,10 @@ p.aprendizaje {
 .term-31 > #global > .pusher > #content > .container > .col-md-9 > .content .cats{
     display: none !important;
 }
+
+/** formularios **/
+ #formulario1{
+    background:#FCFCFC;
+    border-color: #E1E1E1;
+    color: #919191;
+}
