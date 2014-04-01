@@ -3533,6 +3533,10 @@ p.aprendizaje {
     font-weight: lighter !important;
     margin-top: 0;
 }
+.term-31 > #global > .pusher > #content > .container > .col-md-9 > .content > .blogpost .excerpt.thumb{
+    margin-right:90px;
+
+}
 .term-31 > #global > .pusher > #content > .container > .col-md-9 > .content .meta{
     display: none !important;
 }
