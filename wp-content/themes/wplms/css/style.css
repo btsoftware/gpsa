@@ -3541,8 +3541,8 @@ p.aprendizaje {
 }
 
 /** formularios **/
- #formulario1{
-    background:#FCFCFC;
-    border-color: #E1E1E1;
+#formulario1 {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid;
     color: #919191;
 }
