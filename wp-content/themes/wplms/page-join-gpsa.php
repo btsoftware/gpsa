@@ -6,7 +6,7 @@ get_header();
 		<div class="row">
             <div class="col-md-12">
                 <div class="pagetitle">
-                    <h1><?php echo get_bloginfo('name'); ?></h1>
+                    <h1>Networking</h1>
                     <h5><?php  echo get_bloginfo('description'); ?></h5>
                 </div>
             </div>
