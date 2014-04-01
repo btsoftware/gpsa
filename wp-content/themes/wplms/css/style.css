@@ -3445,11 +3445,15 @@ p.resumen {
     margin-top: 0;
     width: 72%;
 }
+.birrete {
+    margin-left: 6px;
+    margin-top: -4px;
+}
 /** Related post */
 .yarpp-related{
     display: none !important;
 }
-/** lerning activiyies soon **/
+/** lerning activities soon **/
 .comingsoon {
     background: url("images/coming-soon2.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
     position: relative;
