@@ -3493,7 +3493,7 @@ p.aprendizaje {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: normal !important;
     height: 32px;
     letter-spacing: 0 !important;
@@ -3505,4 +3505,16 @@ p.aprendizaje {
     vertical-align: top;
     white-space: nowrap;
     width: auto;
+}
+#mc_embed_signup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: left;
+    font: 12px Open Sans,Helvetica,Arial,sans-serif !important;
+    margin-top: -19px !important;
+}
+
+
+/** widget aidebar costum**/
+.sidebar .widget{
+    border-bottom: 1px solid #C9CCDA;
 }
