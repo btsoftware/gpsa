@@ -106,7 +106,7 @@
             </div>
             <div class="col-md-8">
                 <div id="footermenu">
-                      f t
+                     
                 </div>    
             </div>
         </div>
