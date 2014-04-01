@@ -49,16 +49,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 									<tr id="wp_displayname">
 										<td class="label">Works</td>
-										<td class="data">Organization: <?php echo $data["organization"]; ?></td>
-									</tr>
-
-								<?php endif; ?>
-								
-								<?php if($data["organization"]) : ?>
-
-									<tr id="wp_displayname">
-										<td class="label">Work</td>
-										<td class="data">Organization: <?php echo $data["organization"]; ?></td>
+										<td class="data"><?php echo $data["organization"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
