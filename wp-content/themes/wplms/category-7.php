@@ -77,8 +77,9 @@ get_header();
                     endif;
                     pagination();
                 ?>
-                
-                <a class="wpcf7-submit repositorio" href="/submit-your-materials">Submit your materials</a>
+                <div class="row repositorio">
+                <a class="wpcf7-submit" href="/submit-your-materials">Submit your materials</a>
+		<div class="row">
 			</div>
 		</div>
 	</div>
