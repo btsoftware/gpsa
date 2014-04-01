@@ -3518,3 +3518,8 @@ p.aprendizaje {
 .sidebar .widget{
     border-bottom: 1px solid #C9CCDA;
 }
+
+/**menu top**/
+.sub-menu > .menu-item > a {
+	color:#000 !important;
+}
