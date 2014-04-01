@@ -21,7 +21,7 @@
         <div class="footer-contact">
 	<div class="container">
 	<div class="row">
-	    <a class="buttoncontact" href="">Contact Us</a>	
+	    <a class="buttoncontact" href="/contact">Contact Us</a>	
 	</div>
 	</div>
     </div>

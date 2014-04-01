@@ -19,7 +19,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                         vibe_breadcrumbs();
                     }    
                     
-                    $data["name"] = get_post_meta($post->ID, 'Name', true);
+                    $data["name"]              = get_post_meta($post->ID, 'Name', true);
+                    $data["languages"]         = get_post_meta($post->ID, 'Languages', true);
+                    $data["organization"]      = get_post_meta($post->ID, 'Organization', true);
+                    $data["others_themes"]     = get_post_meta($post->ID, 'Others_themes', true);
+                    $data["regions_countries"] = get_post_meta($post->ID, 'regions_countries', true);
+                    $data["residence"]         = get_post_meta($post->ID, 'Residence', true);
+                    $data["themes"]            = get_post_meta($post->ID, 'Themes', true);
                 ?>
             </div>
         </div>
@@ -39,56 +45,56 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 							<table class="wp-profile-fields">
 
-								<?php if ( $ud->display_name ) : ?>
+								<?php if($data["organization"]) : ?>
 
 									<tr id="wp_displayname">
-										<td class="label"><?php _e( 'Name', 'vibe' ); ?></td>
-										<td class="data"><?php echo $ud->display_name; ?></td>
+										<td class="label">Works</td>
+										<td class="data"><?php echo $data["organization"]; ?></td>
+									</tr>
+
+								<?php endif; ?>
+								
+								<?php if ($data["residence"]) : ?>
+
+									<tr id="wp_displayname">
+										<td class="label">Country of Residence</td>
+										<td class="data"><?php echo $data["residence"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
 
-								<?php if ( $ud->user_description ) : ?>
+								<?php if ($data["languages"]) : ?>
 
 									<tr id="wp_desc">
-										<td class="label"><?php _e( 'About Me', 'vibe' ); ?></td>
-										<td class="data"><?php echo $ud->user_description; ?></td>
+										<td class="label">Languages</td>
+										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
 
-								<?php if ( $ud->user_url ) : ?>
+								<?php if ($data["themes"]) : ?>
 
 									<tr id="wp_website">
-										<td class="label"><?php _e( 'Website', 'vibe' ); ?></td>
-										<td class="data"><?php echo make_clickable( $ud->user_url ); ?></td>
+										<td class="label">Areas of Expertise</td>
+										<td class="data"><?php echo $data["themes"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
 
-								<?php if ( $ud->jabber ) : ?>
+								<?php if ($data["themes"]) : ?>
 
 									<tr id="wp_jabber">
-										<td class="label"><?php _e( 'Jabber', 'vibe' ); ?></td>
-										<td class="data"><?php echo $ud->jabber; ?></td>
+										<td class="label">Others themes</td>
+										<td class="data"><?php echo $data["others_themes"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
 
-								<?php if ( $ud->aim ) : ?>
+								<?php if ($data["regions_countries"]) : ?>
 
 									<tr id="wp_aim">
-										<td class="label"><?php _e( 'AOL Messenger', 'vibe' ); ?></td>
-										<td class="data"><?php echo $ud->aim; ?></td>
-									</tr>
-
-								<?php endif; ?>
-
-								<?php if ( $ud->yim ) : ?>
-
-									<tr id="wp_yim">
-										<td class="label"><?php _e( 'Yahoo Messenger', 'vibe' ); ?></td>
-										<td class="data"><?php echo $ud->yim; ?></td>
+										<td class="label">Regions and Countries of Expertise</td>
+										<td class="data"><?php echo $data["regions_countries"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
