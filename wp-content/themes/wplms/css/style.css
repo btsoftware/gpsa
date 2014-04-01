@@ -3526,6 +3526,6 @@ p.aprendizaje {
 
 /** archive webinar**/
 
-.term-31 > #global > .pusher > #content > .col-md-9 > .content >.blogpost > .excerpt > h3 >.a{
+.term-31 > #global > .pusher > #content > .col-md-9 > .content >.blogpost h3{
     pointer-events: none !important;
 }
