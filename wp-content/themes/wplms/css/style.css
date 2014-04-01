@@ -3528,6 +3528,10 @@ p.aprendizaje {
 
 .term-31 > #global > .pusher > #content > .container > .col-md-9 > .content > .blogpost h3{
     pointer-events: none !important;
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0;
 }
 .term-31 > #global > .pusher > #content > .container > .col-md-9 > .content .meta{
     display: none !important;
