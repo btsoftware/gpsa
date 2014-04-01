@@ -9,7 +9,7 @@ form#sbc-search input.single-cat {float: left; width: 54.7%;
                                     -webkit-border-top-left-radius: 15px;
                                     -moz-border-radius: 15px 0px 0px 15px;}
 
-form#sbc-search select#cat {background: #fbfbfb url(arrow.png) 88% 50% no-repeat; height: 30px; width: 63%; border: 1px solid #bbbbbb; float: left; padding: 4px 20px; border-right: none;
+form#sbc-search select#cat {background: #fbfbfb 88% 50% no-repeat; height: 30px; width: 63%; border: 1px solid #bbbbbb; float: left; padding: 4px 20px; border-right: none;
 							-khtml-appearance: none; /* fix default safai styling */
 							border-radius: 15px 0px 0px 15px;
 							-webkit-border-bottom-left-radius: 15px;
