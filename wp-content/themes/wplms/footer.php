@@ -60,10 +60,10 @@
 			    <h4 class="footertitle"><a href="category/knowledge-repository/">Networking</a></h4>
 				<div class="textwidget">
 				    <ul>
-				    <li><a>Blog</a></li>
+				    <li><a href="/blog">Blog</a></li>
 				    <li><a>Tell us about your story</a></li>
 				    <li><a>Related Initiatives</a></li>
-				    <li><a>Roster of Practitioners</a></li>
+				    <li><a href="/networking">Roster of Practitioners</a></li>
 				    </ul>
 				</div>
 		       </div>
@@ -84,8 +84,8 @@
 			    <h4 class="footertitle"><a href="/knowldge-exchange/">Knowledge Exchange</a></h4>
 				<div class="textwidget">
 				    <ul>
-				    <li><a>Thematic forums</a></li>
-				    <li><a>Webinars</a></li>
+				    <li><a href="/forums">Forums</a></li>
+				    <li><a href="/event-type/webinars">Webinars</a></li>
 				    </ul>
 				</div>
 		        </div>
