@@ -48,6 +48,15 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if($data["organization"]) : ?>
 
 									<tr id="wp_displayname">
+										<td class="label">Works</td>
+										<td class="data">Organization: <?php echo $data["organization"]; ?></td>
+									</tr>
+
+								<?php endif; ?>
+								
+								<?php if($data["organization"]) : ?>
+
+									<tr id="wp_displayname">
 										<td class="label">Work</td>
 										<td class="data">Organization: <?php echo $data["organization"]; ?></td>
 									</tr>
@@ -67,7 +76,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 									<tr id="wp_desc">
 										<td class="label">Languages</td>
-										<td class="data"><?php echo $data["Languages"]; ?></td>
+										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
 
 								<?php endif; ?>
