@@ -3521,5 +3521,5 @@ p.aprendizaje {
 
 /**menu top**/
 .sub-menu > .menu-item > a {
-	color:#000;
+	color:#000 !important;
 }
