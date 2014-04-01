@@ -3523,3 +3523,9 @@ p.aprendizaje {
 .sub-menu > .menu-item > a {
 	color:#000 !important;
 }
+
+/** archive webinar**/
+
+.term-31 > #global > .pusher > #content > .col-md-9 > .content >.blogpost > .excerpt > h3 >.a{
+    pointer-events: none !important;
+}
