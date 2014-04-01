@@ -3548,3 +3548,10 @@ p.aprendizaje {
     margin-top: 3px;
     padding: 12px;
 }
+.wpcf7-submit .button {
+    background: none repeat scroll 0 0 #253169;
+    border: 2px none;
+    color: #FFFFFF;
+    font-family: open sans;
+    padding: 12px 60px;
+}
