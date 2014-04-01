@@ -61,9 +61,9 @@
 				<div class="textwidget">
 				    <ul>
 				    <li><a href="/blog">Blog</a></li>
-				    <li><a>Tell us about your story</a></li>
-				    <li><a>Related Initiatives</a></li>
-				    <li><a href="/networking">Roster of Practitioners</a></li>
+				    <!--<li><a>Tell us about your story</a></li>-->
+				    <!--<li><a>Related Initiatives</a></li>-->
+				    <!--<li><a href="/networking">Roster of Practitioners</a></li>-->
 				    </ul>
 				</div>
 		       </div>
@@ -72,10 +72,12 @@
 			<div class="footerwidget">
 			    <h4 class="footertitle"><a href="/learning-activities/">Learning Activities</a></h4>
 				<div class="textwidget">
+				    <!--
 				    <ul>
 				    <li><a>E-courses</a></li>
 				    <li><a>Members directory</a></li>
 				    </ul>
+				    -->
 				</div>
 		       </div>
 		    </div>
