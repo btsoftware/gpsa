@@ -77,6 +77,8 @@ get_header();
                     endif;
                     pagination();
                 ?>
+                
+                <a class="buttoncontact" href="/submit-your-materials">Submit your materials</a>
 			</div>
 		</div>
 	</div>
