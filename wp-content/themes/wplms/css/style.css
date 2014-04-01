@@ -3477,11 +3477,11 @@ p.aprendizaje {
     min-width: 130px;
     padding: 8px 0;
     text-indent: 5px;
-    width: 100%;
+    width: 100% !important;
 }
 #mc_embed_signup .button:hover {
     background-color: #777777;
 }
 #mc_embed_signup input {
-    border: 0px solid #E9E9E9;
+    border: 0px solid #E9E9E9 !important;
 }
