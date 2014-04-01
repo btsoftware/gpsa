@@ -3485,3 +3485,24 @@ p.aprendizaje {
 #mc_embed_signup input {
     border: 0px solid #E9E9E9 !important;
 }
+#mc_embed_signup .button {
+    background-color: #289CD7 !important;
+    border: 0 none;
+    border-radius: 0 0 0 0 !important;
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal !important;
+    height: 32px;
+    letter-spacing: 0 !important;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase !important;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
