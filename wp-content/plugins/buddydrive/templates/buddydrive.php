@@ -1,4 +1,6 @@
-<?php if( buddydrive_is_bp_default() ): ?>
+
+<?php die("ok");
+if( buddydrive_is_bp_default() ): ?>
 
 	<?php get_header( 'buddypress' ); ?>
 
