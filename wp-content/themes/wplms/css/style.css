@@ -3557,4 +3557,8 @@ p.aprendizaje {
 }
 .wpcf7-submit:hover{
     background: none repeat scroll 0 0 #6D6F9E;
+    color: #FFFFFF;
+}
+.repositorio{
+	text-align:center;
 }
