@@ -3468,3 +3468,20 @@ p.aprendizaje {
     margin-top: 20px;
     text-align: center;
 }
+
+/** MAILCHIMP **/
+#mc_embed_signup input.email {
+    background: none repeat scroll 0 0 #E9E9E9;
+    display: block;
+    margin: 0 4% 10px 0;
+    min-width: 130px;
+    padding: 8px 0;
+    text-indent: 5px;
+    width: 100%;
+}
+#mc_embed_signup .button:hover {
+    background-color: #777777;
+}
+#mc_embed_signup input {
+    border: 0px solid #E9E9E9;
+}
