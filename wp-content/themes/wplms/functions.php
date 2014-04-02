@@ -109,8 +109,8 @@ function getMap() {
 
 function get_custom_cat_template($single_template) {
     global $post;
-    $categories = get_the_category();
-	die(var_dump($categories));
+    $taxonomies = get_taxonomies();
+	die(var_dump($taxonomies));
     if(in_category( 'expert' )) {
         $single_template = dirname( __FILE__ ) . '/single-expert.php';
     } elseif(in_category(31)) {
