@@ -11,7 +11,8 @@
 
 <?php do_action( 'bbp_template_before_forums_loop' ); ?>
 
-<h3>Welcome to the GPSA Knowledge Platform Forum!</h3>
+<br/><br/><br/>
+<h3>Welcome to the GPSA Knowledge Platform Forum!</h3><br/><br/>
 <p>
 	This section offers users the opportunity to interact and exchange knowledge and lessons learned on selected social accountability issues through two types of online forums:
 </p>
