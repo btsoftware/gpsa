@@ -3612,6 +3612,6 @@ p.aprendizaje {
     margin: 0 0 10px;
 }
 #divgris{
-	background:#f5f5f5;
+   border-bottom:1px solid #f5f5f5;
 }
 
