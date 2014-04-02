@@ -63,7 +63,7 @@
 				    <li><a href="/blog">Blog</a></li>
 				    <!--<li><a>Tell us about your story</a></li>-->
 				    <!--<li><a>Related Initiatives</a></li>-->
-				    <!--<li><a href="/networking">Roster of Practitioners</a></li>-->
+				    <li><a href="/networking">Roster of Practitioners</a></li>
 				    </ul>
 				</div>
 		       </div>
