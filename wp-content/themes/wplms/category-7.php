@@ -19,7 +19,7 @@ get_header();
 <!-- Carrusel -->
 <section class="stripe top">
 	<div class="container">
-		<div class="row">	
+		<div class="row carruselcat7">	
 	               <?php echo get_touchcarousel(2); ?>
 		</div>
 	</div>
