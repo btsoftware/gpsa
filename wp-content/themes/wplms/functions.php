@@ -119,4 +119,16 @@ function get_custom_cat_template($single_template) {
  
 add_filter( "single_template", "get_custom_cat_template" ) ;
 
+
+function get_custom_post_type_template($single_template) {
+     global $post;
+	die(var_dump($post->post_type));
+       if ($post->post_type == 'webinars') {
+          $single_template = dirname( __FILE__ ) . '/single-events.php';
+     }
+     return $single_template;
+}
+ 
+add_filter( "single_template", "get_custom_post_type_template" ) ;
+
 ?>
