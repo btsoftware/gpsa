@@ -39,6 +39,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             <div class="col-md-9 col-sm-8">
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="content">
+					    <div id="item-body">
 						<div class="bp-widget wp-profile">
 							
 							<h4><?php echo $data["name"];?></h4>
@@ -101,6 +102,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 							<?php endwhile;?>
 							</table>
 						</div>
+					    </div>
 					</div>
 				</div>
             </div>
