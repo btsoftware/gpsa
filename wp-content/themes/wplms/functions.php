@@ -109,6 +109,8 @@ function getMap() {
 
 function get_custom_cat_template($single_template) {
     global $post;
+	die(var_dump($post));
+	$tags = wp_get_post_tags();
 	
     if(in_category( 'expert' )) {
         $single_template = dirname( __FILE__ ) . '/single-expert.php';
