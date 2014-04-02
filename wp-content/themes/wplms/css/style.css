@@ -3654,3 +3654,11 @@ p.aprendizaje {
     text-transform: uppercase;
 }
 
+/** touch courusel **/
+.stripe >.row > #touchcarousel-2 .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel.tc-layout-4 .touchcarousel-item {
+    border-right: 0 solid rgba(0, 0, 0, 0) !important;
+    margin-right: 12px;
+    min-height: 180px !important;
+    position: relative;
+    width: 186px !important;
+}
