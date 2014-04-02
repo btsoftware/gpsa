@@ -3642,3 +3642,15 @@ p.aprendizaje {
 }
 
 
+/** widgets destacados sidebar **/
+.inside > .widget-title {
+    background: url("images/bullet-title-sidebar.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
+    color: #000000;
+    display: block;
+    font-family: steelfish_rgregular;
+    font-size: 27px;
+    padding-bottom: 10px;
+    text-indent: 13px;
+    text-transform: uppercase;
+}
+
