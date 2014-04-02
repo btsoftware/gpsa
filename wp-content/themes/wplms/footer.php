@@ -125,7 +125,7 @@ echo vibe_get_option('google_analytics');
 ?>
 <script type="text-javascript">
 	$( document ).ready(function() {
-		$(".bbp-forum-566 > .bbp-forum-info > a").attr("href", "#");
+		$("#bbp-forum-566 > .bbp-forum-info > a").attr("href", "#");
 	});
 </script>
 </body>
