@@ -15,13 +15,13 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="title">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-4">           
+            <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
                     <h1><?php the_title(); ?></h1>
                     <h5><?php the_sub_title(); ?></h5>
                 </div>
             </div>
-            <div class="col-md-9 col-sm-8">
+             <div class="col-md-3 col-sm-4">
                  <?php
                     $breadcrumbs=get_post_meta(get_the_ID(),'vibe_breadcrumbs',true);
                     if(isset($breadcrumbs) && $breadcrumbs !='' && $breadcrumbs !='H'){
@@ -41,13 +41,13 @@ if(isset($title) && $title !='' && $title !='H'){
         <div class="row">         
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content">
-                    <div class="col-md-9 col-sm-8">
+                    <div class="col-md-3 col-sm-3">
                     <?php if(has_post_thumbnail()){ ?>
                     <div class="featured">
                         <?php the_post_thumbnail(get_the_ID(),'full'); ?>
                     </div>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-9 col-sm-8">                    
                     <?php
                     }
                         the_content();
