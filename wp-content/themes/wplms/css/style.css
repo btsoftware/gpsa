@@ -3448,6 +3448,13 @@ p.resumen {
     margin-left: 6px;
     margin-top: -4px;
 }
+form#sbc-search select#cat {
+    border-radius:2px 0 0 2px !important;
+    
+}
+form#sbc-search input#sbc-submit {
+    border-radius: 0 2px 2px 0 !important;
+}
 /** Related post */
 .yarpp-related{
     display: none !important;
@@ -3568,4 +3575,13 @@ p.aprendizaje {
 }
 .repositorio{
 	text-align:center;
+}
+
+/** perfil expertos **/
+#item-body-experts {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
 }
