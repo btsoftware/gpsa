@@ -49,7 +49,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if($data["organization"]) : ?>
 
 									<tr id="wp_displayname">
-										<td class="label-default">Works</td>
+										<td class="label-default1">Works</td>
 										<td class="data"><?php echo $data["organization"]; ?></td>
 									</tr>
 
@@ -67,7 +67,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["languages"]) : ?>
 
 									<tr id="wp_desc">
-										<td class="label-default">Languages</td>
+										<td class="label-default1">Languages</td>
 										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
 
@@ -85,7 +85,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["themes"]) : ?>
 
 									<tr id="wp_jabber">
-										<td class="label-default">Others themes</td>
+										<td class="label-default1">Others themes</td>
 										<td class="data"><?php echo $data["others_themes"]; ?></td>
 									</tr>
 
