@@ -112,7 +112,7 @@ function get_custom_cat_template($single_template) {
  
     if(in_category( 'expert' )) {
         $single_template = dirname( __FILE__ ) . '/single-expert.php';
-    } elseif(in_category( 'expert' )) {
+    } elseif(in_category( 'Webinars' )) {
 		$single_template = dirname( __FILE__ ) . '/single-events.php';
 	}
     
