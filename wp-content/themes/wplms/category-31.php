@@ -1,5 +1,4 @@
 <?php
-die("as");
 get_header();
 ?>
 <section id="title">
