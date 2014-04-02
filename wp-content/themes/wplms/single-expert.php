@@ -57,7 +57,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								
 								<?php if ($data["residence"]) : ?>
 
-									<tr id="wp_displayname" class="divgris">
+									<tr id="wp_displayname" class="divgris claro">
 										<td class="label-default">Country of Residence</td>
 										<td class="data"><?php echo $data["residence"]; ?></td>
 									</tr>
@@ -75,7 +75,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_website" class="divgris">
+									<tr id="wp_website" class="divgris claro">
 										<td class="label-default">Areas of Expertise</td>
 										<td class="data"><?php echo $data["themes"]; ?></td>
 									</tr>
@@ -93,7 +93,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["regions_countries"]) : ?>
 
-									<tr id="wp_aim">
+									<tr id="wp_aim" class="claro">
 										<td class="label-default">Regions and Countries of Expertise</td>
 										<td class="data"><?php echo $data["regions_countries"]; ?></td>
 									</tr>
