@@ -39,9 +39,10 @@ get_header();
                                 <p class="month">'.get_the_time('M').'</p>
                                </div>
                             </div>
-                            <div class="block_info">						
-								'. the_content() . '
-                            </div> 
+                            '.(has_post_thumbnail(get_the_ID())?'
+                            <div class="featured">
+                                <a href="'.get_post_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'full').'</a>
+                            </div>':'').'
                             <div class="excerpt '.(has_post_thumbnail(get_the_ID())?'thumb':'').'">
                                 <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
                                 <div class="cats">
