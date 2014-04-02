@@ -49,7 +49,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if($data["organization"]) : ?>
 
 									<tr id="wp_displayname">
-										<td class="label">Works</td>
+										<td class="label-default">Works</td>
 										<td class="data"><?php echo $data["organization"]; ?></td>
 									</tr>
 
