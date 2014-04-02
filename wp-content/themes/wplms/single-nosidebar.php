@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name Posts: Publicaciones
+Template Name Posts: Publicacion
 */
 ?>
-
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/publicacion.css" />
 
 
 <?php
@@ -14,9 +14,6 @@ $title=get_post_meta(get_the_ID(),'vibe_title',true);
 if(isset($title) && $title !='' && $title !='H'){
 
 ?>
-
-@import url("css/publicacion.css");
-
 <section id="title">
     <div class="container">
         <div class="row">
