@@ -3608,9 +3608,16 @@ p.aprendizaje {
     vertical-align: baseline;
 }
 .data > p {
-    line-height: 22px;
+    line-height: 16px;
     margin: 0 0 10px;
 }
-#wp_displayname1{
+#wp_displayname{
 	background:#fff;
 }
+#wp_desc{
+	background:#fff;
+}
+#wp_jabber{
+	background:#fff;
+}
+
