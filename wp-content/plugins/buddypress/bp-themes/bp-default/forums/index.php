@@ -97,7 +97,7 @@
 							<?php do_action( 'groups_forum_new_topic_before' ); ?>
 
 							<a name="post-new"></a>
-							<h5><?php _e( 'Create New Forum:', 'buddypress' ); ?></h5>
+							<h5><?php _e( 'Create New Topic:', 'buddypress' ); ?></h5>
 
 							<?php do_action( 'template_notices' ); ?>
 
