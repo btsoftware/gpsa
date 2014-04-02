@@ -3643,7 +3643,7 @@ p.aprendizaje {
 
 
 /** widgets destacados sidebar **/
-.inside > .widget_title {
+.inside > .widget-title {
     background: url("images/bullet-title-sidebar.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
     color: #000000;
     display: block;
