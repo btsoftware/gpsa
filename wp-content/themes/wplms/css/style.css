@@ -3620,3 +3620,9 @@ p.aprendizaje {
 #item-body-experts > .bp-widget > table {
 	width:100%;
 }
+
+/** publicaciones **/
+.separador {
+   background:#a0a0a0;
+   height:1px;
+}
