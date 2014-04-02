@@ -48,7 +48,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if($data["organization"]) : ?>
 
-									<tr id="wp_displayname divgris">
+									<tr id="wp_displayname" class="divgris">
 										<td class="label-default">Works</td>
 										<td class="data"><?php echo $data["organization"]; ?></td>
 									</tr>
@@ -57,7 +57,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								
 								<?php if ($data["residence"]) : ?>
 
-									<tr id="wp_displayname" class=" divgris">
+									<tr id="wp_displayname" class="divgris">
 										<td class="label-default">Country of Residence</td>
 										<td class="data"><?php echo $data["residence"]; ?></td>
 									</tr>
@@ -66,7 +66,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["languages"]) : ?>
 
-									<tr id="wp_desc divgris">
+									<tr id="wp_desc class="divgris">
 										<td class="label-default ">Languages</td>
 										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
@@ -75,7 +75,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_website divgris">
+									<tr id="wp_website class="divgris">
 										<td class="label-default">Areas of Expertise</td>
 										<td class="data"><?php echo $data["themes"]; ?></td>
 									</tr>
@@ -84,7 +84,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_jabber divgris">
+									<tr id="wp_jabber class="divgris">
 										<td class="label-default">Others themes</td>
 										<td class="data"><?php echo $data["others_themes"]; ?></td>
 									</tr>
@@ -93,7 +93,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["regions_countries"]) : ?>
 
-									<tr id="wp_aim">
+									<tr id="wp_aim" class="divgris">
 										<td class="label-default">Regions and Countries of Expertise</td>
 										<td class="data"><?php echo $data["regions_countries"]; ?></td>
 									</tr>
