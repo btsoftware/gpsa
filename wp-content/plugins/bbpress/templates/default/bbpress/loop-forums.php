@@ -13,7 +13,7 @@
 
 <br/><br/><br/>
 <p><h3>Welcome to the GPSA Knowledge Platform Forum!</h3></p>
-<br/><br/><br/><p>This section offers users the opportunity to interact and exchange knowledge and lessons learned on selected social accountability issues through two types of online forums:</p>
+<br/><br/><br/><p>This section offers users the opportunity to interact and exchange knowledge and lessons<br/> learned on selected social accountability issues through two types of online forums:</p>
 
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 
