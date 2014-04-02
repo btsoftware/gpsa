@@ -57,7 +57,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								
 								<?php if ($data["residence"]) : ?>
 
-									<tr id="wp_displayname divgris">
+									<tr id="wp_displayname" class=" divgris">
 										<td class="label-default">Country of Residence</td>
 										<td class="data"><?php echo $data["residence"]; ?></td>
 									</tr>
