@@ -117,17 +117,12 @@
 </div><!-- END PUSHER -->
 </div><!-- END MAIN -->
 	<!-- SCRIPTS -->
+<script>jQuery(function() { jQuery("#bbp-forum-566 > li > a").attr("href", "#"); }); </script>
 <?php
 wp_footer();
 ?>    
 <?php
 echo vibe_get_option('google_analytics');
 ?>
-<script type="text-javascript">
-	$( document ).ready(function() {
-		console.log($("#bbp-forum-566 > li > a").attr("href"));
-		$("#bbp-forum-566 > li > a").attr("href", "#");
-	});
-</script>
 </body>
 </html>
