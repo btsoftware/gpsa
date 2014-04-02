@@ -66,7 +66,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["languages"]) : ?>
 
-									<tr id="wp_desc class="divgris">
+									<tr id="wp_desc" class="divgris">
 										<td class="label-default ">Languages</td>
 										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
@@ -75,7 +75,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_website class="divgris">
+									<tr id="wp_website" class="divgris">
 										<td class="label-default">Areas of Expertise</td>
 										<td class="data"><?php echo $data["themes"]; ?></td>
 									</tr>
@@ -84,7 +84,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_jabber class="divgris">
+									<tr id="wp_jabber" class="divgris">
 										<td class="label-default">Others themes</td>
 										<td class="data"><?php echo $data["others_themes"]; ?></td>
 									</tr>
@@ -93,7 +93,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["regions_countries"]) : ?>
 
-									<tr id="wp_aim" class="divgris">
+									<tr id="wp_aim">
 										<td class="label-default">Regions and Countries of Expertise</td>
 										<td class="data"><?php echo $data["regions_countries"]; ?></td>
 									</tr>
