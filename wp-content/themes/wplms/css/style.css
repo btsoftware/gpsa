@@ -3611,13 +3611,7 @@ p.aprendizaje {
     line-height: 16px;
     margin: 0 0 10px;
 }
-#wp_displayname{
-	background:#fff;
-}
-#wp_desc{
-	background:#fff;
-}
-#wp_jabber{
-	background:#fff;
+#divgris{
+	background:#f5f5f5;
 }
 

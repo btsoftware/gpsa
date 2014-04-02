@@ -48,7 +48,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if($data["organization"]) : ?>
 
-									<tr id="wp_displayname">
+									<tr id="wp_displayname divgris">
 										<td class="label-default">Works</td>
 										<td class="data"><?php echo $data["organization"]; ?></td>
 									</tr>
@@ -57,7 +57,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								
 								<?php if ($data["residence"]) : ?>
 
-									<tr id="wp_displayname">
+									<tr id="wp_displayname divgris">
 										<td class="label-default">Country of Residence</td>
 										<td class="data"><?php echo $data["residence"]; ?></td>
 									</tr>
@@ -66,8 +66,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["languages"]) : ?>
 
-									<tr id="wp_desc">
-										<td class="label-default">Languages</td>
+									<tr id="wp_desc divgris">
+										<td class="label-default ">Languages</td>
 										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
 
@@ -75,7 +75,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_website">
+									<tr id="wp_website divgris">
 										<td class="label-default">Areas of Expertise</td>
 										<td class="data"><?php echo $data["themes"]; ?></td>
 									</tr>
@@ -84,7 +84,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 								<?php if ($data["themes"]) : ?>
 
-									<tr id="wp_jabber">
+									<tr id="wp_jabber divgris">
 										<td class="label-default">Others themes</td>
 										<td class="data"><?php echo $data["others_themes"]; ?></td>
 									</tr>
@@ -124,4 +124,5 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <?php
 
 endif;
+
 get_footer();
