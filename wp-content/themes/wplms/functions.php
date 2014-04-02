@@ -109,13 +109,10 @@ function getMap() {
 
 function get_custom_cat_template($single_template) {
     global $post;
-    $taxonomies = get_taxonomies();
-	die(var_dump($taxonomies));
+
     if(in_category( 'expert' )) {
         $single_template = dirname( __FILE__ ) . '/single-expert.php';
-    } elseif(in_category(31)) {
-		$single_template = dirname( __FILE__ ) . '/single-events.php';
-	} elseif(in_category('events')) {
+    } elseif(isset($taxonomies["event_type"])) {
 		$single_template = dirname( __FILE__ ) . '/single-events.php';
 	}
     
