@@ -3627,8 +3627,17 @@ p.aprendizaje {
     padding: 50px 0;
 }
 .separador {
-    background: none repeat scroll 0 0 #bbbbbb;
+    background: none repeat scroll 0 0 #dbdbdb;
     height: 1px;
     margin-bottom: 15px;
+}
+.publicacionpost {
+    clear: both;
+    margin-bottom: 10px;
+}
+.publicacionpost h3 {
+    font-family: steelfish_rgregular;
+    font-size: 26px;
+    margin-top: 0;
 }
 

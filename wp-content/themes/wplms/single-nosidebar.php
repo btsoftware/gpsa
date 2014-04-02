@@ -48,7 +48,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     </div>
                     </div>
                     <div class="col-md-9 col-sm-8">
-                    <div class="blogpost"><h3><?php the_title(); ?></h3></div>
+                    <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                     <?php
                     }
