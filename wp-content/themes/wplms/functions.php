@@ -110,7 +110,7 @@ function getMap() {
 function get_custom_cat_template($single_template) {
     global $post;
 	
-	$tags = wp_get_post_terms($post->ID);
+	$tags = get_the_terms($post->ID);
 	die(var_dump($post->ID));
 	
     if(in_category( 'expert' )) {
