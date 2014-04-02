@@ -48,7 +48,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     </div>
                     </div>
                     <div class="col-md-9 col-sm-8">
-                    <h1><?php the_title(); ?></h1>
+                    <div class="excerpt2 "><h3><?php the_title(); ?></h3></div>
                     <?php
                     }
                         the_content();
