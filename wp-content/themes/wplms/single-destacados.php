@@ -100,7 +100,8 @@ if(isset($title) && $title !='' && $title !='H'){
                 }              
                 ;
                 endwhile;
-                end
+                endif;
+                ?>
             </div>
             <div class="col-md-3 col-sm-3">
                 <div class="sidebar">
