@@ -3617,3 +3617,6 @@ p.aprendizaje {
 .claro{
   background:#fff;
 }
+.item-body-experts > .bp-widget > table {
+	width:100%;
+}
