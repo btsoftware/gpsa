@@ -42,14 +42,14 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 					    <div id="item-body-experts ">
 						<div class="bp-widget wp-profile">
 							
-							<h4><?php echo $data["name"];?></h4>
+							<!--<h4><?php echo $data["name"];?></h4>-->
 
 							<table class="wp-profile-fields">
 
 								<?php if($data["organization"]) : ?>
 
 									<tr id="wp_displayname">
-										<td class="label">Works</td>
+										<td class="label-default ">Works</td>
 										<td class="data"><?php echo $data["organization"]; ?></td>
 									</tr>
 
@@ -58,7 +58,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["residence"]) : ?>
 
 									<tr id="wp_displayname">
-										<td class="label">Country of Residence</td>
+										<td class="label-default ">Country of Residence</td>
 										<td class="data"><?php echo $data["residence"]; ?></td>
 									</tr>
 
@@ -67,7 +67,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["languages"]) : ?>
 
 									<tr id="wp_desc">
-										<td class="label">Languages</td>
+										<td class="label-default ">Languages</td>
 										<td class="data"><?php echo $data["languages"]; ?></td>
 									</tr>
 
@@ -76,7 +76,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["themes"]) : ?>
 
 									<tr id="wp_website">
-										<td class="label">Areas of Expertise</td>
+										<td class="label-default ">Areas of Expertise</td>
 										<td class="data"><?php echo $data["themes"]; ?></td>
 									</tr>
 
@@ -85,7 +85,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["themes"]) : ?>
 
 									<tr id="wp_jabber">
-										<td class="label">Others themes</td>
+										<td class="label-default ">Others themes</td>
 										<td class="data"><?php echo $data["others_themes"]; ?></td>
 									</tr>
 
@@ -94,7 +94,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 								<?php if ($data["regions_countries"]) : ?>
 
 									<tr id="wp_aim">
-										<td class="label">Regions and Countries of Expertise</td>
+										<td class="label-default ">Regions and Countries of Expertise</td>
 										<td class="data"><?php echo $data["regions_countries"]; ?></td>
 									</tr>
 
