@@ -109,7 +109,7 @@ function getMap() {
 
 function get_custom_cat_template($single_template) {
     global $post;
- 
+	die(var_dump($post));
     if(in_category( 'expert' )) {
         $single_template = dirname( __FILE__ ) . '/single-expert.php';
     } elseif(in_category(31)) {
