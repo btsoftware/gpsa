@@ -3622,7 +3622,13 @@ p.aprendizaje {
 }
 
 /** publicaciones **/
-.separador {
-   background:#a0a0a0;
-   height:1px;
+.top-puplicaciones {
+    margin: 0;
+    padding: 50px 0;
 }
+.separador {
+    background: none repeat scroll 0 0 #bbbbbb;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
