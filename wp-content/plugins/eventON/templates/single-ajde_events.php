@@ -9,7 +9,7 @@
  *	@version: 0.1
  */
 	
-die("ok");
+
 	
 	get_header();
 

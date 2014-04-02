@@ -11,7 +11,7 @@
  
 global $eventon;
 
-
+die("ok");
 ?>
 
 <div class='ajde_evcal_calendar'>
