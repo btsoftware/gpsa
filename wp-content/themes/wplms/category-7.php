@@ -20,7 +20,7 @@ get_header();
 <section class="stripe top">
 	<div class="container">
 		<div class="row">	
-	               <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+	               <?php echo get_touchcarousel(2); ?>
 		</div>
 	</div>
 </section>
