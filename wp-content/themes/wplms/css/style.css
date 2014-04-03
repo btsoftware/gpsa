@@ -3655,13 +3655,13 @@ width:180px !important;
 width:180px !important;
 }
 
-#touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
+.carruselke > #touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
 width:220px !important;
 }
-#touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item{
+.carruselke > #touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item{
 width:220px !important;
 }
-#touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item > a{
+.carruselke > #touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item > a{
 font-size: 12px !important;
 }
 
