@@ -3418,11 +3418,11 @@ a:hover.contorno-morado {
     font-size: 13px;
     font-weight: normal;
     margin:0;
-    padding: 11px;
+    padding: 11px 11px 11px 37px;
 
 }
 .box-bookmark-repository > a.add-bookmark:hover{
-    background: url("css/images/icon-favorities.png") no-repeat scroll 11px 11px rgba(250, 250, 250, 0.15);
+    background: url("images/icon-favorities.png") no-repeat scroll 11px 11px rgba(250, 250, 250, 0.15);
 }
 p.resumen {
     margin-bottom: 10px;
