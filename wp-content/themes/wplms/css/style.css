@@ -3647,11 +3647,21 @@ p.aprendizaje {
     text-transform: uppercase;
 }
 
-
+/** touch caurusel **/
 .carruselcat7 > #touchcarousel-2 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
 width:180px !important;
 }
 .carruselcat7 > #touchcarousel-2 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item{
 width:180px !important;
+}
+
+#touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
+width:220px !important;
+}
+#touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item{
+width:220px !important;
+}
+#touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item > a{
+font-size: 12px !important;
 }
 
