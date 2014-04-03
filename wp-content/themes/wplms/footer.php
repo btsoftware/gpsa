@@ -50,14 +50,14 @@
 		    </div>
 		    <div class="col-md-2">
 			    <div class="footerwidget">
-				<h4 class="footertitle"><a href="/networking/">Knowledge Repository</a></h4>
+				<h4 class="footertitle"><a href="/category/knowledge-repository/">Knowledge Repository</a></h4>
 				<div class="textwidget">
 				</div>
 		            </div>
 		    </div>
 		    <div class="col-md-2">
 			<div class="footerwidget">
-			    <h4 class="footertitle"><a href="category/knowledge-repository/">Networking</a></h4>
+			    <h4 class="footertitle"><a href="/networking/">Networking</a></h4>
 				<div class="textwidget">
 				    <ul>
 				    <li><a href="/blog">Blog</a></li>
