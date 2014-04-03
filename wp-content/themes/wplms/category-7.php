@@ -71,7 +71,7 @@ get_header();
                                     </p>
                                 </div>
                                 <p class="resumen">'.get_the_excerpt(100).'</p>
-				<div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
+				<?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?>
                             </div>
 			    
                         </div>';
