@@ -61,8 +61,12 @@ if(isset($title) && $title !='' && $title !='H'){
                         the_content();
 
                      ?>
+                    <div class="box-bookmark"><?php bookmarks(); ?></div>
+                    <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
                     </div>
+                    
                 </div>
+                
                 <?php
                         $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
                         if(isset($prenex) && $prenex !='' && $prenex !='H'){
