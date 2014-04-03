@@ -36,7 +36,7 @@
     background: none repeat scroll 0 0 #29356C;
     color: #FFFFFF;
     display: inline-block;
-    margin-bottom:18px;
+    margin:20px 0 25px;
 }
 .box-bookmark > .add-bookmark {
     background: url("css/images/icon-favorities.png") no-repeat scroll 11px 11px rgba(0, 0, 0, 0);
