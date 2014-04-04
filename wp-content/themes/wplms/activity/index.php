@@ -205,3 +205,4 @@ get_header( 'buddypress' ); ?>
 </section>
 
 <?php get_footer( 'buddypress' ); ?>
+
