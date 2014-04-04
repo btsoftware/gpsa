@@ -560,7 +560,7 @@ function bigbluebutton_form($args) {
 
             if( !$current_user->ID ) {
                 $out .= '
-                <label>Name:</label>
+                <label>Username:</label>
                 <input type="text" id="name" name="display_name" size="10">';
             }
             if( bigbluebutton_validate_defaultRole($role, 'none') ) {
