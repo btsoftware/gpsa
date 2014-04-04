@@ -117,7 +117,26 @@
 </div><!-- END PUSHER -->
 </div><!-- END MAIN -->
 	<!-- SCRIPTS -->
+<div id="dialog" title="Sign up!"><p>The GPSA Knowledge Platform offers a great diversity of learning, sharing and networking activities.<br/>All these activities are free of charge and open to everyone.<br/>However, to participate you need be registered. <a href="http://gpsaknowledge.org/register/" title="register">Click here to create your own account.</a></p></div>
 <script>jQuery(function() { jQuery("#bbp-forum-566 > li > a").attr("href", "#"); }); </script>
+<script>
+	jQuery(function() {
+		jQuery( "#dialog-call-to-action" ).dialog({
+		  autoOpen: false,
+		  show: {
+			effect: "blind",
+			duration: 1000
+		  },
+		  hide: {
+			effect: "explode",
+			duration: 1000
+		  }
+		});
+ 
+		jQuery("#dialog-call-to-action").dialog("open");
+  });
+</script>
+
 <?php
 wp_footer();
 ?>    
