@@ -286,6 +286,8 @@
 
 	<script type="text/javascript">
 		jQuery(document).ready( function() {
+			jQuery('div#blog-details').toggle();
+			
 			if ( jQuery('div#blog-details').length && !jQuery('div#blog-details').hasClass('show') )
 				jQuery('div#blog-details').toggle();
 
