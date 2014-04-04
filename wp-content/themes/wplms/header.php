@@ -54,8 +54,6 @@ wp_head();
                         <ul class="topmenu">
                             <li><a href="<?php bp_loggedin_user_link(); ?>" class="smallimg vbplogin"><?php bp_loggedin_user_avatar( 'type=full' ); ?><?php bp_loggedin_user_fullname(); ?></a></li>
                         </ul>
-                        
-                        <?php bookmarks(); ?>
                     <?php
                     else :
                         ?>
