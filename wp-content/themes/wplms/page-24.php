@@ -139,7 +139,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div class="sidebar">
                     <?php
                     $sidebar=getPostMeta($post->ID,'vibe_sidebar');
-                    ((isset($sidebar) && $sidebar)?$sidebar:$sidebar='mainsidebar');
+                    ((isset($sidebar) && $sidebar)?$sidebar:$sidebar='homesidebar');
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                    <?php endif; ?>
                 </div>
