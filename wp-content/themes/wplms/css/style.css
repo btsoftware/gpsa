@@ -3519,7 +3519,7 @@ p.aprendizaje {
 
 /** widget aidebar costum**/
 .sidebar .widget{
-    border-bottom: 1px solid #C9CCDA;
+    border-bottom: 1px solid #d7d9e3;
 }
 
 /**menu top**/
@@ -3665,3 +3665,12 @@ width:220px !important;
 font-size: 12px !important;
 }
 
+/** external webinars sidebar **/
+.linksw{
+	color:#000;
+}
+.separadorsw {
+    background: none repeat scroll 0 0 #d7d9e3;
+    height: 1px;
+    margin-bottom: 15px;
+}
