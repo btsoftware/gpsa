@@ -136,13 +136,11 @@ if(isset($title) && $title !='' && $title !='H'){
                         </div>                                
             </div>
             <div class="col-md-3 col-sm-4">
-                <div class="sidebar">
-                    <?php
-                    $sidebar=getPostMeta($post->ID,'vibe_sidebar');
-                    ((isset($sidebar) && $sidebar)?$sidebar:$sidebar='homesidebar');
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
-                   <?php endif; ?>
-                </div>
+			<div class="sidebar">
+				<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('homesidebar') ) : ?>
+                <?php endif; ?>
+			</div>
             </div>
         </div>
     </div>
