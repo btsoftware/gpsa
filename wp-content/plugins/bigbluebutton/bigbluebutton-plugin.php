@@ -597,8 +597,8 @@ function bigbluebutton_form($args) {
             </form>';
 
         } else {
-            $out .= $role." users are not allowed to participate in meetings";
-
+			$out = "<p class='obj'>To join this webinar be sure to be registered and logged in</p>";
+            //$out .= $role." users are not allowed to participate in meetings";
         }
 
     } else if($dataSubmitted){
