@@ -93,6 +93,7 @@ function getBookmarks() {
 	}
 }
 
+//Map of roster of practitioners
 function getMap() {
 	echo "<script src='http://code.jquery.com/jquery-1.11.0.min.js'></script>";
 	echo "<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>";
@@ -106,7 +107,7 @@ function getMap() {
 	echo "<script src='/map/js/map-init.js' type='text/javascript'></script>";
 }
 
-
+//custom category type template
 function get_custom_cat_template($single_template) {
     global $post;
 
@@ -119,7 +120,7 @@ function get_custom_cat_template($single_template) {
  
 add_filter( "single_template", "get_custom_cat_template" ) ;
 
-
+//custom post type template
 function get_custom_post_type_template($single_template) {
     global $post;
 	
@@ -131,4 +132,12 @@ function get_custom_post_type_template($single_template) {
  
 add_filter( "single_template", "get_custom_post_type_template" ) ;
 
-?>
+//fix for cookie error while login.
+function set_wp_test_cookie() {
+	setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
+	if ( SITECOOKIEPATH != COOKIEPATH ) {
+		setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
+	}
+}
+
+add_action( 'after_setup_theme', 'set_wp_test_cookie', 101 );
