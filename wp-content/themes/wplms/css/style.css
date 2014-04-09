@@ -887,7 +887,6 @@ nav .menu li a{
 	display: inline-block;
 	font-size: 13px;
 	text-transform:uppercase;
-	color: rgba(255,255,255,0.5);
 	position: relative;
 	border-left: 1px solid rgba(209, 209, 209, 0.1);
 	
