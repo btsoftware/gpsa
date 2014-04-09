@@ -64,18 +64,11 @@ wp_head();
                             endif; ?>
                             </li>
                         </ul>
-                   <!--
+                    
                     <?php
                     endif;
-                            $args = array(
-                                'theme_location'  => 'top-menu',
-                                'container'       => '',
-                                'menu_class'      => 'topmenu',
-                                'fallback_cb'     => 'vibe_set_menu',
-                            );
-                            wp_nav_menu( $args );
+
                         ?>
-                   -->
                     </div>
                     <div id="vibe_bp_login">
                     <?php
