@@ -1206,7 +1206,7 @@ function bp_core_validate_user_signup( $user_name, $user_email ) {
 
 		// User name must pass WP's validity check
 		if ( ! validate_username( $user_name ) ) {
-			$errors->add( 'user_name', __( 'Usernames can contain only letters, numbers, ., -, and @', 'buddypress' ) );
+			$errors->add( 'user_name', __( 'Usernames can contain only letters, numbers, ., -, and @ (they should not contain spaces)', 'buddypress' ) );
 		}
 
 		// Minimum of 4 characters

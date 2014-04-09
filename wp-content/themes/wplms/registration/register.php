@@ -74,7 +74,7 @@
 
 						<?php while ( bp_profile_fields() ) : bp_the_profile_field(); ?>
 
-							<div class="editfield">
+							<div class="editfield show">
 
 								<?php if ( 'textbox' == bp_get_the_profile_field_type() ) : ?>
 
@@ -293,6 +293,7 @@
 </section><!-- #content -->
 	<script type="text/javascript">
 		jQuery(document).ready( function() {
+			jQuery('.editfield').show();
 			if ( jQuery('div#blog-details').length && !jQuery('div#blog-details').hasClass('show') )
 				jQuery('div#blog-details').toggle();
 

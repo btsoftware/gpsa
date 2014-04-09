@@ -560,7 +560,7 @@ function bigbluebutton_form($args) {
 
             if( !$current_user->ID ) {
                 $out .= '
-                <label>Name:</label>
+                <label>Username:</label>
                 <input type="text" id="name" name="display_name" size="10">';
             }
             if( bigbluebutton_validate_defaultRole($role, 'none') ) {
@@ -597,8 +597,8 @@ function bigbluebutton_form($args) {
             </form>';
 
         } else {
-            $out .= $role." users are not allowed to participate in meetings";
-
+			$out .= "<p class='obj'>To join this webinar be sure to be registered and logged in</p>";
+            //$out .= $role." users are not allowed to participate in meetings";
         }
 
     } else if($dataSubmitted){
