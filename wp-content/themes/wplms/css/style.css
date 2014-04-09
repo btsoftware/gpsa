@@ -3667,6 +3667,10 @@ width:220px !important;
 .carruselke > #touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item > a{
 font-size: 12px !important;
 }
+.tc-block > h4 {
+	color:#000;
+	font-size:12px !important;
+}
 
 /** external webinars sidebar **/
 .linksw{
