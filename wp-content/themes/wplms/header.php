@@ -64,7 +64,7 @@ wp_head();
                             endif; ?>
                             </li>
                         </ul>
-                   <!--  
+                   <!--  esconder menu top
                     <?php
                     endif;
                             $args = array(
