@@ -781,7 +781,7 @@ header{
 	border:none;
 }
 #headertop a{
-	color:rgba(255,255,255,0.6);
+	color:#666;
 }
 #headertop .topmenu{
 	float:right;
