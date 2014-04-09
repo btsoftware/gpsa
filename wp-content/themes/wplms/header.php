@@ -64,6 +64,7 @@ wp_head();
                             endif; ?>
                             </li>
                         </ul>
+                    <p style="display: none;">   
                     <?php
                     endif;
                             $args = array(
@@ -74,6 +75,7 @@ wp_head();
                             );
                             wp_nav_menu( $args );
                         ?>
+                    </p>
                     </div>
                     <div id="vibe_bp_login">
                     <?php
