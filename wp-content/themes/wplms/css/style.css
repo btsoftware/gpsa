@@ -873,10 +873,10 @@ nav .menu li.active a{
 	border-color: transparent transparent #FFF transparent;
 } */
 nav .menu li:hover > a{
-	color:#FFF;
+	color:#FFF !important;
 }
 nav .sub-menu li:hover > a{
-	color:#FFF;
+	color:#fbfbfb;
 }
 
 nav .menu li a{
