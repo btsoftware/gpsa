@@ -3648,8 +3648,11 @@ p.aprendizaje {
 }
 
 /** touch caurusel **/
-.carruselhome > #touchcarousel-1 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item{
+.carruselhome > #touchcarousel-1 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
 width:225px !important;
+}
+.carruselhome > #touchcarousel-2 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item > a{
+width:150px !important;
 }
 .carruselcat7 > #touchcarousel-2 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
 width:180px !important;
