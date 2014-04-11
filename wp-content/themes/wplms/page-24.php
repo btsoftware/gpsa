@@ -45,7 +45,7 @@ if(isset($title) && $title !='' && $title !='H'){
     </div>
 </section>
 <!-- second part home -->
-<section id="content">
+<section id="content" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-sm-8">

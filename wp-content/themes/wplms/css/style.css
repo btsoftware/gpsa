@@ -758,7 +758,7 @@ header{
 }
 
 #headertop{
-	background:#232b2d;
+	background:#ffffff;
 	border-top: 3px solid #6D6F9E;
 	padding:0;
 	font-size:11px;
@@ -781,7 +781,7 @@ header{
 	border:none;
 }
 #headertop a{
-	color:rgba(255,255,255,0.6);
+	color:#666;
 }
 #headertop .topmenu{
 	float:right;
@@ -887,7 +887,6 @@ nav .menu li a{
 	display: inline-block;
 	font-size: 13px;
 	text-transform:uppercase;
-	color: rgba(255,255,255,0.5);
 	position: relative;
 	border-left: 1px solid rgba(209, 209, 209, 0.1);
 	
@@ -3649,6 +3648,12 @@ p.aprendizaje {
 }
 
 /** touch caurusel **/
+.carruselhome > #touchcarousel-1 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
+width:225px !important;
+}
+.carruselhome > #touchcarousel-2 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item > a{
+width:150px !important;
+}
 .carruselcat7 > #touchcarousel-2 > .touchcarousel-wrapper > .touchcarousel-container > li.touchcarousel-item{
 width:180px !important;
 }
@@ -3664,6 +3669,10 @@ width:220px !important;
 }
 .carruselke > #touchcarousel-3 > .touchcarousel-wrapper > .touchcarousel-container > .touchcarousel-item > a{
 font-size: 12px !important;
+}
+.tc-block > h4 {
+	color:#000;
+	font-size:12px !important;
 }
 
 /** external webinars sidebar **/
