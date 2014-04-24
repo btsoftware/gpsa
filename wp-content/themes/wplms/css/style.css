@@ -3684,3 +3684,22 @@ font-size: 12px !important;
     height: 1px;
     margin-bottom: 15px;
 }
+/** botón how to navigate **/
+
+figure:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.list-item > li figure {
+    margin-top: 0;
+}
+.rollover {
+    transition: all 0.25s ease-out 0s;
+}
+.rollover:hover {
+    background:#253169;
+}
+figure {
+    position: relative;
+}
