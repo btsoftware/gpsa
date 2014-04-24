@@ -117,7 +117,6 @@
 </div><!-- END PUSHER -->
 </div><!-- END MAIN -->
 	<!-- SCRIPTS -->
-<script>jQuery(function() { jQuery("#bbp-forum-566 > li > a").attr("href", "#"); }); </script>
 <?php
 wp_footer();
 ?>    
