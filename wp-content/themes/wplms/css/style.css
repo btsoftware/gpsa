@@ -1930,7 +1930,7 @@ a.page-numbers,
 	padding-left:0;
 }
 .widget ul li:hover a{
-	color:#78C8Ce;
+	color:#6D6F9D;
 }
 
 .widget ul li.product:hover a,
@@ -2681,13 +2681,13 @@ background: url(../images/check_radio_sheet.png) -57px top no-repeat;
 .commentlist{
 	margin: 30px 0;
 }
-.vcard img{
-	width: 64px;
-	height:auto;
-	border-radius: 2px;
-	float: left;
-	margin-right: 20px;
-	box-shadow:0 1px 1px #aaa;
+.vcard img {
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 1px #AAAAAA;
+    float: left;
+    height: auto;
+    margin-right: 20px;
+    width: 44px;
 }
 
 .children{
