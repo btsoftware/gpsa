@@ -2216,9 +2216,15 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	display: inline-block;
 }
 
-#buddypress .widget_title{
-	font-size:16px;
-	font-weight:600;
+#buddypress .widgettitle {
+    background: url("images/bullet-title-sidebar.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
+    color: #000000;
+    display: block;
+    font-family: steelfish_rgregular;
+    font-size: 27px;
+    padding-bottom: 10px;
+    text-indent: 13px;
+    text-transform: uppercase;
 }
 #buddypress .widget ul.item-list{
 	border:none;
