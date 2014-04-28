@@ -139,7 +139,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                 <?php $service_query = new WP_Query('page_id=813');
                                 while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
                                <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-                                                                                                         				
+                                     <h2 class="subt"><?php the_title(); ?></h4>                                                                  				
                                      <div><?php the_content(); ?></div><!-- end .post_content -->                                                                                                                                                         
                                 </article> <!-- end .entry -->
                                 <?php endwhile; // end of the loop. ?>
