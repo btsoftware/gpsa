@@ -1893,7 +1893,7 @@ a.page-numbers,
 }
 
 .sidebar .widget{
-	margin-bottom:60px;
+	margin-bottom:40px;
 }
 .widget .widget_title {
     background: url("images/bullet-title-sidebar.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
