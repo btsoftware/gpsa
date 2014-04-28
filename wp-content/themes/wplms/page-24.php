@@ -133,11 +133,8 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <?php endwhile; // end of the loop. ?>
                                                                     </div>                
                                                 </div>
-                        </div>
-       
-	        </div>
+                        </div>                                
             </div>
-
             <div class="col-md-3 col-sm-4">
 			<div class="sidebar">
 				<?php 
