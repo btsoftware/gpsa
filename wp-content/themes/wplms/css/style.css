@@ -417,6 +417,14 @@ h4.bloque_title {
     text-transform: uppercase;
     z-index: 1000;
 }
+h2.logos_title {
+    color: #253169 !important;
+    font-family: 'steelfish_rgregular';
+    font-size: 28px;
+    font-weight: normal;
+    text-transform:uppercase;
+
+}
 .bloque_title > a{
     color:#fff;
 }
