@@ -133,12 +133,8 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <?php endwhile; // end of the loop. ?>
                                                                     </div>                
                                                 </div>
-                        </div>                                
-            </div>
-            <div class="container">
-                  <div class="row">
-            
-                    <?php $service_query = new WP_Query('page_id=813');
+                        </div>
+                                 <?php $service_query = new WP_Query('page_id=813');
                     while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
                     <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                     <h2 class="subt"><?php the_title(); ?></h2>
@@ -149,8 +145,8 @@ if(isset($title) && $title !='' && $title !='H'){
                     </article> <!-- end .entry -->
                    <?php endwhile; // end of the loop. ?>          
 	        </div>
-                </div>
             </div>
+
             <div class="col-md-3 col-sm-4">
 			<div class="sidebar">
 				<?php 
