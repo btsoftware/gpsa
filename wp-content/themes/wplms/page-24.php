@@ -133,8 +133,19 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                        <?php endwhile; // end of the loop. ?>
                                                                     </div>                
                                                 </div>
-                        </div>                                
-            </div>
+                        </div><!--fin 4 entradas: blog, webinar, forum, roster-->
+                        <!--Inicio carrusel -->
+                        <div class="content">
+                                <?php $service_query = new WP_Query('page_id=813');
+                                while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+                               <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                                                                                         				
+                                     <div><?php the_content(); ?></div><!-- end .post_content -->                                                                                                                                                         
+                                </article> <!-- end .entry -->
+                                <?php endwhile; // end of the loop. ?>
+                        </div>
+                        <!-- fin carrusel logos ongs -->  
+            </div><!--fin colummna derecha -->
             <div class="col-md-3 col-sm-4">
 			<div class="sidebar">
 				<?php 
