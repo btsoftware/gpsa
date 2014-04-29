@@ -60,7 +60,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                    
                                                                                <div class="animate zoom load">
                                                                                <h4 class="bloque_title"><a class="" href="/event-type/webinars/"><?php the_title(); ?></a> </h4>  
-                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               <a class="more" href="/event-type/webinars/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
@@ -78,7 +78,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                    
                                                                                <div class="animate zoom load">
                                                                                <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/category/blog/"><?php the_title(); ?></a> </h4>  
-                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               <a class="more" href="http://gpsaknowledge.org/category/blog/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                 
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
@@ -104,7 +104,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                    
                                                                                <div class="animate zoom load">
                                                                                <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/forums/"><?php the_title(); ?></a> </h4>  
-                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               <a class="more" href="http://gpsaknowledge.org/forums/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
@@ -122,7 +122,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                                                    
                                                                                <div class="animate zoom load">
                                                                                <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/networking/"><?php the_title(); ?></a> </h4>  
-                                                                               <img class="th_home"  <?php echo get_the_post_thumbnail(); ?>                                                                                  
+                                                                               <a class="more" href="http://gpsaknowledge.org/networking/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                
                                                                                </div> 	<!-- end .post-thumbnail -->					
                                                                                <div class="block_info">						
                                                                                        <?php the_content(); ?>
