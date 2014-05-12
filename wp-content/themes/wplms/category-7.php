@@ -78,8 +78,12 @@ get_header();
                     endif;
                     pagination();
                 ?>
+		<figure class="rollover"><img class="alignnone size-full wp-image-795" src="http://gpsaknowledge.org/wp-content/uploads/2014/05/third-hint-1.jpg" /></figure>
                 <div class="row repositorio">
                 <a class="wpcf7-submit" href="/submit-your-materials">Submit your materials</a>
+		
+		
+		
 		<div class="row">
 			</div>
 		</div>
