@@ -18,8 +18,6 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="no content">
-			tretery
 					<?php getMap();?>
                 </div>
             </div>
