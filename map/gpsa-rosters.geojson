@@ -27,20 +27,61 @@
     {
       "type": "Feature",
       "properties": {
-        "names": [
-          "Hernan Charosky",
-          "Karina Banfi",
+		"names": [
+          "Simon Peter Gregorio"
+        ],
+        "urls": [
+          "http://gpsaknowledge.org/expert/simon-peter-gregorio/"
+        ],
+        "themes": [
+          [5,6,7,8]
+        ],
+        "name": "Philippines"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         122.6953125,
+		 11.415418041941416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+		"names": [
           "Silvana Fumega"
         ],
         "urls": [
-          "http://gpsaknowledge.org/expert/hernan-charosky/",
-          "http://gpsaknowledge.org/expert/karina-banfi/",
           "http://gpsaknowledge.org/expert/silvana-fumega/"
         ],
         "themes": [
-          [1,3,4,5,6,8],
-          [1,3,6,8],
           [1,4,5,6,8]
+        ],
+        "name": "Australia"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.9453125,
+          -23.644524198573677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "names": [
+          "Hernan Charosky",
+          "Karina Banfi",
+        ],
+        "urls": [
+          "http://gpsaknowledge.org/expert/hernan-charosky/",
+          "http://gpsaknowledge.org/expert/karina-banfi/"
+        ],
+        "themes": [
+          [1,3,4,5,6,8],
+          [1,3,6,8]
         ],
         "name": "Argentina"
       },
@@ -241,12 +282,15 @@
       "type": "Feature",
       "properties": {
         "names": [
-          "Blair Glencorse"
+          "Blair Glencorse",
+          "Saad Filali Meknassi"
         ],
         "urls": [
-          "http://gpsaknowledge.org/expert/blair-glencorse/"
+          "http://gpsaknowledge.org/expert/blair-glencorse/",
+          "http://gpsaknowledge.org/expert/saad-filali-meknassi/"
         ],
         "themes": [
+          [1,4,5,6,7,8],
           [1,4,5,6,7,8]
         ],
         "name": "United States"
