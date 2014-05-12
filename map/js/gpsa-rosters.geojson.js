@@ -4,6 +4,28 @@ var geojson = {
     {
       "type": "Feature",
       "properties": {
+		"names": [
+          "Fourth hint"
+        ],
+        "urls": [
+          "http://gpsaknowledge.org/?attachment_id=1044"
+        ],
+        "themes": [
+          [1,2,3,4,5,6,7,8]
+        ],
+        "name": "Fourth hint"
+	  },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.896484375,
+          34.016241889667015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "names": [
           "Hernan Charosky",
           "Karina Banfi"
