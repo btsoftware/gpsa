@@ -3705,9 +3705,7 @@ figure:after {
 .rollover {
     transition: all 0.25s ease-out 0s;
 }
-img.rollover:hover {
-    background:#253169;
-}
+
 figure {
     position: relative;
 }
