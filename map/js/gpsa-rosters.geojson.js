@@ -28,15 +28,18 @@ var geojson = {
       "properties": {
         "names": [
           "Hernan Charosky",
-          "Karina Banfi"
+          "Karina Banfi",
+          "Silvana Fumega"
         ],
         "urls": [
           "http://gpsaknowledge.org/expert/hernan-charosky/",
-          "http://gpsaknowledge.org/expert/karina-banfi/"
+          "http://gpsaknowledge.org/expert/karina-banfi/",
+          "http://gpsaknowledge.org/expert/silvana-fumega/"
         ],
         "themes": [
           [1,3,4,5,6,8],
-          [1,3,6,8]
+          [1,3,6,8],
+          [1,4,5,6,8]
         ],
         "name": "Argentina"
       },
