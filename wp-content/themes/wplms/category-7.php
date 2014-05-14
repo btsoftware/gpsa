@@ -81,7 +81,7 @@ get_header();
 		
                 <div class="row repositorio">
                 <a class="wpcf7-submit" href="/submit-your-materials">Submit your materials</a>
-		<figure class="rollover"><img class="alignnone size-full wp-image-795" width="600px" src="http://gpsaknowledge.org/wp-content/uploads/2014/05/third-hint-1.jpg" style="margin-top: 49px;"></figure>
+		<figure class="rollover"><img class="alignnone size-full wp-image-795" width="600px" src="http://gpsaknowledge.org/wp-content/uploads/2014/05/third-hint-2.jpg" style="margin-top: 49px;"></figure>
 		
 		
 		
