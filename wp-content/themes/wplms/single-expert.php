@@ -117,6 +117,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 </div>
             </div>
         </div>
+        <div class="row">
+			<a class="buttoncontact" href="/contact/">Contact Us</a>	
+		</div>
     </div>
 </section>
 </div>
