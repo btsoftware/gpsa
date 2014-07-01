@@ -106,7 +106,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 					</div>
 				</div>
 				<div class="row">
-					<a class="buttoncontact" href="/contact/">If you wish to contact this expert for short-term consultancy work, please contact Fundar by filling out this form</a>	
+					<p>
+						If you wish to contact this expert for short-term consultancy work, please contact Fundar by filling out this form<br/>
+						<a class="buttoncontact" href="/contact/">Contact Us</a>
+					</p>
 				</div>
             </div>
             
