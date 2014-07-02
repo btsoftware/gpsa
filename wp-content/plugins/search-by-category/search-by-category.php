@@ -274,7 +274,7 @@ function sbc($focus = null, $hide_empty = null, $search_text = null, $only_cat =
 	$form = <<< EOH
 	<div id="sbc">
 		<form method="get" id="sbc-search" action="{$blog_url}">
-			<input type="text" value="{$search_text}" name="s" id="s" class="{$input_class}" onblur="if (this.value == '') {this.value = '{$search_text_default}';}"  onfocus="if (this.value == '{$search_text_default}') {this.value = '';}" />
+			<input type="text" value="{$search_text}" placeholder="{$search_text_default}" name="s" id="s" class="{$input_class}" />
 			{$input}
 			<input type="submit" id="sbc-submit" value="Search" />
 		</form>
