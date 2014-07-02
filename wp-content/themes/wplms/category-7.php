@@ -93,8 +93,8 @@ get_header();
 <script>
 	jQuery(document).ready(function() {
 		jQuery("#sbc-submit").click(function(){
-			if(jQuery("#sbc-search > #s").val() == "" && jQuery("#sbc-search > #cat:selected").val() != 0) {
-				var query     = jQuery("#sbc-search > #cat:selected").val();
+			if(jQuery("#sbc-search > #s").val() == "" && jQuery("#sbc-search > #cat:selected option:selected").val() != 0) {
+				var query     = jQuery("#sbc-search > #cat option:selected").val();
 				var firstPart = "<?php echo get_site_url();?>/?&cat=";
 				window.location.href = firstPart + query;
 				return false;
