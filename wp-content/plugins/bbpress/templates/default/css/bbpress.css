@@ -400,9 +400,11 @@ span.bbp-author-ip {
 
 /* =Breadcrumb and Tags
 -------------------------------------------------------------- */
-
-div.bbp-breadcrumb {
-	float: left;
+.bbPress #primary {
+display: none;
+}
+.bbp-forums {
+width: 100%;
 }
 
 div.bbp-breadcrumb,
