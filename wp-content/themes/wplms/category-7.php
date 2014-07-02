@@ -91,10 +91,12 @@ get_header();
 	</div>
 </section>
 <script>
-	$(document).ready( function () {
-		$("#sbc-submit").click(function(){
-			if($("#sbc-search > #s").val() == "" && $("#sbc-search > #cat:selected").val() != 0) {
-				window.location = '"<?php echo get_site_url();?>' + '/?&cat=' + $("#sbc-search > #cat:selected").val() + '"';
+	jQuery(document).ready(function() {
+		jQuery("#sbc-submit").click(function(){
+			if(jQuery("#sbc-search > #s").val() == "" && jQuery("#sbc-search > #cat:selected").val() != 0) {
+				var query     = jQuery("#sbc-search > #cat:selected").val();
+				var firstPart = "<?php echo get_site_url();?>/?&cat=";
+				window.location.href = firstPart + query;
 			}
 		});
 	});
