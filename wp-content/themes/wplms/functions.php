@@ -57,10 +57,10 @@ function bookmarks($url = false, $title = false) {
 		$current_url = $url;
 	}
 	
-	echo '<a class="add-bookmark" href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to my favorites</a>';
-	
 	if(isset($_GET["msg"]) and $_GET["msg"] == "successful-bookmark") {
 		echo '<span class="bookmark-successful">Bookmark added successfully</span>';
+	} else {
+		echo '<a class="add-bookmark" href="' . home_url() . '/add-bookmark?page=' . $current_url . '&title=' . $title . '">Add to my favorites</a>';
 	}
 	return true;
 }
