@@ -1,5 +1,5 @@
 <?php
-die("ok");
+
 get_header();
 ?>
 <section id="title">
