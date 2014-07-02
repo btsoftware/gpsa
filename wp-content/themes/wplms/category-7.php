@@ -97,6 +97,7 @@ get_header();
 				var query     = jQuery("#sbc-search > #cat:selected").val();
 				var firstPart = "<?php echo get_site_url();?>/?&cat=";
 				window.location.href = firstPart + query;
+				return false;
 			}
 		});
 	});
