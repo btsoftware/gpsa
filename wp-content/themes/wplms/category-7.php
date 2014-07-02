@@ -94,7 +94,7 @@ get_header();
 	$(document).ready( function () {
 		$("#sbc-submit").click(function(){
 			if($("#sbc-search > #s").val() == "" && $("#sbc-search > #cat:selected").val() != 0) {
-				window.location = <?php echo get_site_url();?> + "/?&cat=" + $("#sbc-search > #cat:selected").val();
+				window.location = '"<?php echo get_site_url();?>' + '/?&cat=' + $("#sbc-search > #cat:selected").val() + '"';
 			}
 		});
 	});
