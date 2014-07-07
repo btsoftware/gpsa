@@ -179,6 +179,8 @@ function getSurvey() {
 			jQuery("#survey").hide();
 		});
 	</script>';
+	
+	return true;
 }
 
 //custom category type template
