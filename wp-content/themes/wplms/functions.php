@@ -118,7 +118,7 @@ function getSurvey() {
 			position: absolute;
 			top: 100;
 			width: 455px;
-			height:300px;
+			height:235px;
 			left: 600;
 			outline: 0 none;
 			overflow: hidden;
