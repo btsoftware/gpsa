@@ -159,7 +159,7 @@ function getSurvey() {
 		#yes-survey { margin-left:155px; }
 	</style>";
 	
-	$url_image = bloginfo('template_url') . '/images/admiracion.png';
+	$url_image = '/wp-content/themes/wplms/images/admiracion.png';
 	
 	echo '<div id="survey" class="border">
 		<div class="title-survey border">
