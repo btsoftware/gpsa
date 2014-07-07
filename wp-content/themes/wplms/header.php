@@ -129,7 +129,7 @@ wp_head();
                 </div>
             </div>
         </header>
-
+		<?php if(is_home()) { ?>
 			<style>
 				#survey {
 					display: block;
@@ -196,3 +196,4 @@ wp_head();
 					$("#survey").hide();
 				});
 			</script>
+		<?php } ?>
