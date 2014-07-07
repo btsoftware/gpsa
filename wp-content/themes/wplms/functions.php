@@ -159,7 +159,7 @@ function getSurvey() {
 		#yes-survey { margin-left:155px; }
 	</style>";
 	
-	$url_image = dirname( __FILE__ ) . '/images/admiracion.png';
+	$url_image = bloginfo('template_url') . '/images/admiracion.png';
 	
 	echo '<div id="survey" class="border">
 		<div class="title-survey border">
