@@ -6,8 +6,6 @@ $title=get_post_meta(get_the_ID(),'vibe_title',true);
 if(isset($title) && $title !='' && $title !='H'){
 ?>
 
-<?php getSurvey(); ?>
-
 <section id="title">
     <div class="container">
         <div class="row">
@@ -33,6 +31,9 @@ if(isset($title) && $title !='' && $title !='H'){
     $v_add_content = get_post_meta( $post->ID, '_add_content', true );
  
 ?>
+
+<?php getSurvey(); ?>
+
 <section id="content"> 
     <div class="container">
         <div class="row">
