@@ -108,6 +108,79 @@ function getMap() {
 	echo "<script src='/map/js/map-init.js' type='text/javascript'></script>";
 }
 
+
+function getSurvey() {
+	echo "<style>
+		#survey {
+			display: block;
+			height: auto;
+			left: 805.5px;
+			position: absolute;
+			top: 100;
+			width: 455px;
+			height:300px;
+			left: 600;
+			outline: 0 none;
+			overflow: hidden;
+			z-index: 100;
+			border: 1px solid #ccc;
+		}
+		
+		.border {
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+		}
+		
+		.title-survey { 
+			color:#fff; 
+			font-size:1.4em;
+			width:100%; 
+			height:95px; 
+			background-color:#289CD7; 
+			border: 1px solid #73b9dc;
+			position: relative;
+		}
+		
+		.title-survey span { margin-top:20px; margin-left:20px; float:left;}
+		.title-survey img { margin-top:12px; margin-left:-5px; float:left;}
+		
+		.content-survey {
+			font-size:1.1em;
+			color: #737373;
+			background-color: #f1f1f1;
+			height:100%;
+		}
+		
+		.content-survey span { margin-right:20px;  margin-top:20px; margin-left:20px; float:left; }
+		.content-survey span { margin-right:20px;  margin-top:20px; margin-left:20px; float:left; }
+		
+		#yes-survey { margin-left:155px; }
+	</style>";
+	
+	$url_image = dirname( __FILE__ ) . '/images/admiracion.png';
+	
+	echo '<div id="survey" class="border">
+		<div class="title-survey border">
+			<span>Let’s increase our knowledge <br/>about social accountability</span>
+			<img src="'.$url_image.'" alt="Let’s increase our knowledge about social accountability"/>
+		</div>
+		
+		<div class="content-survey">
+			<span>Would you be interested in joining an e-course on "Fostering Social Accountability"?</span>
+			<a class="contorno-morado" id="yes-survey" href="https://www.surveymonkey.com/s/DK35YCR" target="_blank">Yes</a>
+			<a class="contorno-morado" href="#close">No</a>
+		</div>
+	</div>
+
+	<script>
+		jQuery(".contorno-morado").click(function () {
+			jQuery("#survey").hide();
+		});
+	</script>';
+}
+
 //custom category type template
 function get_custom_cat_template($single_template) {
     global $post;
