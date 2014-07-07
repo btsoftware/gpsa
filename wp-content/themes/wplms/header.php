@@ -129,6 +129,4 @@ wp_head();
                 </div>
             </div>
         </header>
-		<?php if(!is_home()) { ?>
-			getSurvey();
-		<?php } ?>
+		<?php if(!is_home()) { getSurvey(); } ?>
