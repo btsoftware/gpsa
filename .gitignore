@@ -25,3 +25,6 @@ wp-content/*
 
 sitemap.xml.gz
 wp-config.php
+wp-content/themes/wplms/yarpp-template-example.php
+wp-content/themes/wplms/yarpp-template-list.php
+wp-content/themes/wplms/yarpp-template-multilingual.php
