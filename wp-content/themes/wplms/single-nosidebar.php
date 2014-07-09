@@ -120,6 +120,14 @@ if(isset($title) && $title !='' && $title !='H'){
         </div>
     </div>
 </section>
+<section class="stripe aboutus-3">
+    <div class="container"> 
+    <div class="row">
+        <h2 class="subt">Related Materials</h2>
+        <?php if(function_exists('get_related_posts_slider')) {get_related_posts_slider();} ?>
+    </div>
+    </div>
+</section>
 </div>
 
 <?php
