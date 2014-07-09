@@ -44,7 +44,7 @@ isset($loop_number)?$loop_number:$loop_number=5;
 
 		<li>
 			<div class="item-avatar">
-				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
+				<a target="_blank" href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
 			</div>
 
 			<div class="item">
@@ -58,7 +58,7 @@ isset($loop_number)?$loop_number:$loop_number=5;
 
 					echo '<span>'.$role.'</span>';
 					?>
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
+					<a target="_blank" href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
 					<?php
 					if($role == 'student'){
 						$field = vibe_get_option('student_field');
