@@ -103,12 +103,11 @@
 <div id="footerbottom">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">              
-                <?php $copyright=vibe_get_option('copyright'); echo (isset($copyright)?$copyright:'&copy; 2013, All rights reserved.'); ?>
+            <div class="col-md-8">              
+                <?php $copyright=vibe_get_option('copyright'); echo (isset($copyright)?$copyright:'&copy; 2013, All rights reserved.'); ?>, Developed by Fundar, Centro de Análisis e Investigación
             </div>
-            <div class="col-md-8">
+            <div class="col-md-4">
                 <div id="footermenu">
-					, Developed by Fundar, Centro de Análisis e Investigación
                 </div>    
             </div>
         </div>
