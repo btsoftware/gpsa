@@ -48,7 +48,6 @@ get_header( 'buddypress' ); ?>
 </section>
 <section id="content">
 	<div id="buddypress">
-		TESTasdasdasdasdasdasd
 	    <div class="container">
 	    	<div class="padder">
 	    	<div class="row">
