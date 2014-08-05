@@ -216,4 +216,11 @@ function set_wp_test_cookie() {
 	}
 }
 
+add_filter( 'wp_headers', 'yourprefix_remove_x_pingback' );
+function yourprefix_remove_x_pingback( $headers )
+{
+    unset( $headers['X-Pingback'] );
+    return $headers;
+}
+
 add_action( 'after_setup_theme', 'set_wp_test_cookie', 101 );
