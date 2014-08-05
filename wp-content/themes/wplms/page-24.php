@@ -32,8 +32,6 @@ if(isset($title) && $title !='' && $title !='H'){
  
 ?>
 
-<?php getSurvey(); ?>
-
 <section id="content"> 
     <div class="container">
         <div class="row">
