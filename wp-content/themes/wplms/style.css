@@ -53,6 +53,7 @@ text-transform:uppercase;
 .logo-fundar {
     display: block;
     height: 80%;
+    margin-bottom:50px;
     margin-top: 29px;
     width: 80%;
 }
