@@ -188,7 +188,7 @@ get_header( 'buddypress' ); ?>
 
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-3 col-sm-3">tretyry
 					<?php get_sidebar( 'buddypress' ); ?>
 				</div>
 			</div>
