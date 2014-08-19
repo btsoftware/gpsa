@@ -135,7 +135,6 @@ isset($loop_number)?$loop_number:$loop_number=5;
 			<?php bp_members_pagination_links(); ?>
 
 		</div>
-ty57657
 	</div>
 
 <?php else: ?>
