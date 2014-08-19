@@ -188,8 +188,14 @@ get_header( 'buddypress' ); ?>
 
 					</div>
 				</div>	
-				<div class="col-md-3 col-sm-3">tretyry
-					<?php get_sidebar( 'buddypress' ); ?>
+				<div class="col-md-3 col-sm-3">
+					     <div class="sidebar">
+						<?php
+						$sidebar=getPostMeta($post->ID,'vibe_sidebar');
+						((isset($sidebar) && $sidebar)?$sidebar:$sidebar='mainsidebar');
+						if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
+					       <?php endif; ?>
+                                             </div>
 				</div>
 			</div>
 		</div><!-- .padder -->
