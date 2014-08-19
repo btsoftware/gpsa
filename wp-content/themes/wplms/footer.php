@@ -34,6 +34,7 @@
             <div class="footerbottom">
 		<div class="col-md-5">
                      <h2 id="footerlogo"><a><img src="<?php $logo=vibe_get_option('logo'); echo (isset($logo)?$logo:VIBE_URL.'/images/logo.png'); ?>"></a></h2>
+		     <h2 id="footerlogo"><a target="_blank" href="http://fundar.org.mx/"><img src="http://gpsaknowledge.org/wp-content/uploads/2014/08/fundar-logo.png'); ?>"></a></h2>
                 </div>
                 <div class="col-md-7 sitemap">
                     <div class="col-md-2">
