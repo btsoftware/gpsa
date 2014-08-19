@@ -48,3 +48,11 @@ font-size:16px;
 font-weight:600;
 text-transform:uppercase;
 }
+
+/**footer**/
+.logo-fundar {
+    display: block;
+    height: 90%;
+    margin-top: 29px;
+    width: 90%;
+}
