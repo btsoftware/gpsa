@@ -2232,7 +2232,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 
 #buddypress .widget ul.item-list li{
-	border-color:#dfdfdf;
+	border:none;
 }
 #buddypress .widget ul.item-list li div.item-title, #buddypress .widget ul.item-list li h4{
 	font-size:14px;
