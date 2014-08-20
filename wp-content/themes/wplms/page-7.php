@@ -11,8 +11,8 @@ if(isset($title) && $title !='' && $title !='H'){
             <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
                     <h1><?php the_title(); ?></h1>
-                    <h5><?php the_sub_title(); ?></h5>
-                </div>jh,kil
+                    <h5><?php the_sub_title(); ?></h5>jh,kil
+                </div>
             </div>
             <div class="col-md-3 col-sm-4">
                 <?php
