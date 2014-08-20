@@ -42,11 +42,10 @@ if(isset($title) && $title !='' && $title !='H'){
            </article> <!-- end .entry -->
             <?php endwhile; // end of the loop. ?>
         </div>        
-    </div>    
+    </div>
+    <?php
+?>
 </section>
-                <?php
-                endif;
-                ?> 
 <section id="content">
     <div class="container">
         <div class="row">
