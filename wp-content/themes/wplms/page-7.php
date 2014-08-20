@@ -44,7 +44,8 @@ if(isset($title) && $title !='' && $title !='H'){
         </div>        
     </div>
 </section>
-<?php ;
+<?php
+}
 ?>
 <section id="content">
     <div class="container">
@@ -52,8 +53,13 @@ if(isset($title) && $title !='' && $title !='H'){
             <div class="col-md-9 col-sm-8">
                 <div class="content">
                     <?php
-                        the_content();
-                     ?>
+if( function_exists('add_eventon')) {
+        $args = array(
+                'shortcode_variable_name'=> 'shortcode_variable_value',
+        );
+        add_eventon($args); 
+}
+?>
                 </div>
                 <?php
                 
