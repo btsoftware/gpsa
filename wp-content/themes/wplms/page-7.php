@@ -36,15 +36,18 @@ if(isset($title) && $title !='' && $title !='H'){
         <div class="v_module v_column stripe_container fullwidth v_first">
         <?php $service_query = new WP_Query('page_id=660');
         while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
-           <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>                       
+            <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>                       
                    <h2 class="subt"><?php the_title(); ?></h2>  
                    <?php the_content(); ?>                                                                               
-           </article> <!-- end .entry -->
-            <?php endwhile; // end of the loop. ?>
+            </article> <!-- end .entry -->
+            <?php
+            
+            endwhile;
+            endif;
+            ?>
         </div>        
     </div>
-    <?php
-?>
+
 </section>
 <section id="content">
     <div class="container">
@@ -62,13 +65,11 @@ if(isset($title) && $title !='' && $title !='H'){
                 ?>
             </div>
             <div class="col-md-3 col-sm-4">
-                <div class="sidebar">
-                    <?php
-                    $sidebar=getPostMeta($post->ID,'vibe_sidebar');
-                    ((isset($sidebar) && $sidebar)?$sidebar:$sidebar='mainsidebar');
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
-                   <?php endif; ?>
-                </div>
+			<div class="sidebar">
+				<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('newssidebar') ) : ?>
+                <?php endif; ?>
+			</div>
             </div>
         </div>
     </div>
