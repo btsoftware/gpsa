@@ -39,7 +39,8 @@ if(isset($title) && $title !='' && $title !='H'){
            <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>                       
                    <h2 class="subt"><?php the_title(); ?></h2>  
                    <?php the_content(); ?>                                                                               
-           </article> <!-- end .entry -->            
+           </article> <!-- end .entry -->
+            <?php endwhile; // end of the loop. ?>
         </div>        
     </div>    
 </section>
