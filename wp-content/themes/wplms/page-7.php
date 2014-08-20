@@ -57,6 +57,17 @@ if( function_exists('add_eventon')) {
         add_eventon($args); 
 }
 ?>
+<?php $args = array(
+        'cal_id'                => 1,
+        'month_incre'           => +2,
+        'event_count'           => 3,
+        'show_upcoming'         => 0,
+        'number_of_months'      => 2,
+        'event_type'            => '3,4,1',
+        'event_type_2'          => '4,7',
+); ?>
+
+
                 </div>
                 <?php
                 
