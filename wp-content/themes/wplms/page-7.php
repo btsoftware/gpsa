@@ -31,24 +31,8 @@ if(isset($title) && $title !='' && $title !='H'){
 <?php
 }
 ?>
-<section class="stripe aboutus-1">
-    <div class="container">
-        <div class="v_module v_column stripe_container fullwidth v_first">
-        <?php $service_query = new WP_Query('page_id=660');
-        while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>                       
-                   <h2 class="subt"><?php the_title(); ?></h2>  
-                   <?php the_content(); ?>                                                                               
-            </article> <!-- end .entry -->
-<?php endwhile; // end of the loop. ?>
-        </div>        
-    </div>
-</section>
-                <?php
-                
-                endwhile;
-                endif;
-                ?>
+
+               
 <section id="content">
     <div class="container">
         <div class="row">
