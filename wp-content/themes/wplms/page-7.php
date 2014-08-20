@@ -44,10 +44,9 @@ if(isset($title) && $title !='' && $title !='H'){
         </div>        
     </div>    
 </section>
- <?php
- endwhile;
- endif;
- ?>  
+<?php
+}
+?> 
 <section id="content">
     <div class="container">
         <div class="row">
