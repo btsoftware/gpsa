@@ -31,7 +31,7 @@ if(isset($title) && $title !='' && $title !='H'){
 <?php
 }
 ?>
-<section class="stripe">
+<section class="stripe evento">
     <div class="container">
         <div class="v_module v_column stripe_container fullwidth v_first">
         <?php $service_query = new WP_Query('page_id=660');

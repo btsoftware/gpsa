@@ -502,6 +502,11 @@ section.sombra {
 .about-4 {
     margin-top: 40px !important;
 }
+/** news and events**/
+.evento{
+    background: url("images/bk-components.png") repeat-x scroll 0 bottom #fcfcfc;
+    padding: 50px 0 80px !important;
+}
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
 /*========================================================================*/
