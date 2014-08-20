@@ -504,9 +504,21 @@ section.sombra {
 }
 /** news and events**/
 .evento{
-    background: url("images/bk-components.png") repeat-x scroll 0 bottom #fcfcfc;
+    background: url("images/bk-components.png") repeat-x scroll 0 bottom #fff;
     padding: 50px 0 80px !important;
 }
+#evcal_calendar_1{
+    margin-top: -26px;
+}
+#evcal_calendar_1 > #evcal_head > #evcal_cur p {  
+    color: #000;
+    display: block;
+    font-family: steelfish_rgregular;
+    font-size: 27px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
 /*========================================================================*/
 /*   04. CHOSEN CUSTOMIZATION
 /*========================================================================*/
