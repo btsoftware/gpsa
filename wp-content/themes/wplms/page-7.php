@@ -45,8 +45,6 @@ if(isset($title) && $title !='' && $title !='H'){
     </div>    
 </section>
                 <?php
-                
-                endwhile;
                 endif;
                 ?> 
 <section id="content">
