@@ -2955,9 +2955,13 @@ top: 0;
 .unit_title{
 	margin-bottom:30px;
 }
-.unit_title h1{
-	margin:30px 20px 10px 0;
-	display: inline-block;
+.unit_title h1 {
+    color: #253169;
+    display: inline-block;
+    font-family: steelfish_rgregular;
+    font-size: 38px;
+    margin: 0 20px 10px 0;
+    text-transform: uppercase;
 }
 .unit_title ul{
 	width: 50%;
