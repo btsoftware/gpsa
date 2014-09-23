@@ -188,7 +188,7 @@
 			</div>	
 			<div class="col-md-3 col-sm-3">
 								<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('homesidebar') ) : ?>
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('DirectoryCourse') ) : ?>
                 <?php endif; ?>
 			</div>
 		</div>	
