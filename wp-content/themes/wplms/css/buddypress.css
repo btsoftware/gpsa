@@ -1921,7 +1921,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress ul.item-list li div.item-title a{font-weight:600;}
 #buddypress ul.item-list li div.item-title span {
 	display: block;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 11px;
 	text-transform: uppercase;
 	color: #bbb;
