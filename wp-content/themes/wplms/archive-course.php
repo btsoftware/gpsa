@@ -187,7 +187,9 @@
 				</form><!-- #course-directory-form -->
 			</div>	
 			<div class="col-md-3 col-sm-3">
-				<?php get_sidebar( 'buddypress' ); ?>
+								<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('homesidebar') ) : ?>
+                <?php endif; ?>
 			</div>
 		</div>	
 		<?php do_action( 'bp_after_directory_course' ); ?>
