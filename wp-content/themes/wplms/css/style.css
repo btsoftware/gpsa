@@ -2979,6 +2979,7 @@ top: 0;
 	padding:0;
 	margin:0;
 	float:right;
+	display:none;
 }
 .unit_title .instructor img,
 .unit_title ul+.instructor img{
