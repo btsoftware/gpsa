@@ -2596,6 +2596,7 @@ body.register #buddypress div.page ul {
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight:600;
+	display:none;
 }
 .course_instructor a{font-weight:600;}
 .course_instructor span{
