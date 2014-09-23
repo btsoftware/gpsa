@@ -3732,3 +3732,14 @@ figure:after {
 figure {
     position: relative;
 }
+/** cursos **/
+.box-bookmark-repository > .suscribete-curso {
+    border-radius: 0 0 0 0;
+    color: #FFF !important;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin:0;
+    padding: 11px 11px 11px 37px;
+
+}
