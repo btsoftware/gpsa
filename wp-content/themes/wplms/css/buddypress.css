@@ -1918,7 +1918,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	font-size:21px;
 	font-family: 'Open Sans','Helvetica Neue',sans-serif;
 }
-#buddypress ul.item-list li div.item-title a{font-weight:600;}
+#buddypress ul.item-list li div.item-title a{font-weight:400;}
 #buddypress ul.item-list li div.item-title span {
 	display: block;
 	font-weight: 400;
