@@ -104,7 +104,7 @@ if(bp_is_course_component()){
 				</form><!-- #course-directory-form -->
 			</div>	
 			<div class="col-md-3 col-sm-3">
-				<?php get_sidebar( 'buddypress' ); ?>
+				<?php get_sidebar( 'Course Sidebar' ); ?>
 			</div>
 		</div>	
 		<?php do_action( 'bp_after_directory_course' ); ?>
