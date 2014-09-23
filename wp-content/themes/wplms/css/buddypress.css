@@ -3002,6 +3002,7 @@ border-radius: 2px;
 	padding:10px 20px 10px;
 	border-radius:2px;
 	box-shadow:0 1px 1px #e4e4e4;
+	display:none;
 }
 
 .course_button.button{
@@ -3070,6 +3071,7 @@ del{opacity:0.3;}
 	margin:20px 0;
 	padding:20px 0;
 	border-top:1px solid #EFEFEF;
+        display:none;
 }
 
 .students_undertaking ul{
