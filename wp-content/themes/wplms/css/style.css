@@ -3026,9 +3026,9 @@ top: 0;
 .course_time strong span{color:#222;}
 
 .course_timeline{
-	border: 2px solid #3f4c4f;
+	border: 2px solid #253169;
 	border-radius: 2px;
-	background: #313b3d;
+	background: #253169;
 	margin: 30px 0;
 	padding-bottom: 30px;
 	position: relative;
@@ -3076,8 +3076,8 @@ top: 0;
 	top: 18px;
 	width: 12px;
 	height: 12px;
-	border: 2px solid #313b3d;
-	background: #3f4c4f;
+	border: 2px solid #6D6F9E;
+	background: #7476a3;
 	border-radius: 50%;
 }
 .course_timeline h4,
@@ -3102,7 +3102,7 @@ top: 0;
 .course_timeline li.done > span,
 .course_timeline li:hover > span,
 .course_timeline li.active > span{
-	background:#78c8ce;
+	background:#fff;
 }
 .course_timeline li.done > span:before{
 	font-family: "fonticon";
