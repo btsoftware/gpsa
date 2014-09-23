@@ -2590,13 +2590,14 @@ body.register #buddypress div.page ul {
 .item-instructor{
 	padding:15px 0 0;
 	border-top:1px solid #EFEFEF;
+	display:none;
 }
 .course_instructor{
 	margin:0;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight:600;
-	display:none;
+	
 }
 .course_instructor a{font-weight:600;}
 .course_instructor span{
