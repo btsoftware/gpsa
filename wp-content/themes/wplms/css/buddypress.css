@@ -1915,8 +1915,9 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	font-weight: normal;
 	margin: 0;
 	text-transform: uppercase;
-	font-weight:600;
-	font-size:16px;
+	font-weight:400;
+	font-size:21px;
+	font-family: 'Open Sans','Helvetica Neue',sans-serif;
 }
 #buddypress ul.item-list li div.item-title a{font-weight:600;}
 #buddypress ul.item-list li div.item-title span {
