@@ -3040,10 +3040,10 @@ del{opacity:0.3;}
 .item-credits del{opacity:0.3;float:right;}
 .credits,
 .credits > strong > span.amount{
-	font-family:'Oswald',sans-serif;
+	font-family:'steelfish_rgregular',sans-serif;
 	font-size:24px;
 	margin:0;
-	color:#70c989;
+	color:#25a1d9;
 	text-transform: uppercase;
 }
 .credits ins{
