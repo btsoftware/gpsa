@@ -30,16 +30,15 @@ include_once '_inc/ajax.php';
 //Widgets
 include_once('includes/widgets/custom_widgets.php');
 if ( function_exists('bp_get_signup_allowed')) {
-include_once('includes/widgets/custom_bp_widgets.php');
+ include_once('includes/widgets/custom_bp_widgets.php');
 }
 include_once('includes/widgets/advanced_woocommerce_widgets.php');
 include_once('includes/widgets/twitter.php');
 include_once('includes/widgets/flickr.php');
-include_once('includes/widgets/instagram.php');
 
 //Misc
 include_once 'includes/sharing.php';
-include_once 'includes/tour.php';
+include_once 'includes/tincan.php';
 
 // Options Panel
 get_template_part('vibe','options');
@@ -209,12 +208,14 @@ function get_custom_post_type_template($single_template) {
 add_filter( "single_template", "get_custom_post_type_template" ) ;
 
 //fix for cookie error while login.
+/*
 function set_wp_test_cookie() {
 	setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
 	if ( SITECOOKIEPATH != COOKIEPATH ) {
 		setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
 	}
 }
+*/
 
 add_filter( 'wp_headers', 'yourprefix_remove_x_pingback' );
 function yourprefix_remove_x_pingback( $headers )
@@ -222,5 +223,4 @@ function yourprefix_remove_x_pingback( $headers )
     unset( $headers['X-Pingback'] );
     return $headers;
 }
-
 add_action( 'after_setup_theme', 'set_wp_test_cookie', 101 );
