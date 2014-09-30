@@ -50,4 +50,3 @@ function display_user_lastname($activity_action) {
 
 }
 add_filter( 'bp_get_activity_action', 'display_user_lastname' );
-?>
