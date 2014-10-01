@@ -606,6 +606,7 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 	display: inline-block;
 	width: 100%;
 	margin: 0 0 20px;
+	direction:none;
 }
 
 .course_credits{
@@ -3234,6 +3235,7 @@ border-radius: 2px;
 	padding:10px 20px 10px;
 	border-radius:2px;
 	box-shadow:0 1px 1px #EEE;
+	display:none;
 }
 
 .course_sharing{
@@ -3320,6 +3322,7 @@ del{opacity:0.3;}
 	margin:20px 0;
 	padding:20px 0;
 	border-top:1px solid #EFEFEF;
+	display:none;
 }
 
 .students_undertaking ul{
