@@ -8,7 +8,7 @@
         <div class="row">
              <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
-                    <h1><?php _e('Course Directory','vibe'); ?></h1>
+                    <h1><?php _e('Learning Activities','vibe'); ?></h1>
                     <h5><?php _e('All Courses by all instructors','vibe'); ?></h5>
                 </div>
             </div>
