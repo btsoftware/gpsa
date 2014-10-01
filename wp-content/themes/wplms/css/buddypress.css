@@ -2563,6 +2563,14 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
     margin-top: 0;
     position: relative;
 }
+.pagetitle h1 {
+    color: #253169;
+    font-family: 'steelfish_rgregular';
+    font-size: 38px;
+    margin: 20px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
 
 #buddypress #groups-directory-form div.item-list-tabs#subnav,
 #buddypress #course-directory-form div.item-list-tabs#subnav{
