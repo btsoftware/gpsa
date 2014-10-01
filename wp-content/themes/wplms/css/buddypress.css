@@ -1830,7 +1830,7 @@ a.bp-title-button {
 #sitewide-notice a{font-weight:600;color:#222;}
 #buddypress div#item-header {
 	overflow: hidden;
-	background: #232b2d;
+	background: #253169;
 	padding: 0;
 	position: relative;
 	z-index: 2;
@@ -2140,7 +2140,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	display: inline-block;
 	overflow: hidden;
 	width:100%;
-	background:#313B3D;
+	background:#253169;
 	padding:0;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
