@@ -2798,6 +2798,7 @@ body.register #buddypress div.page ul {
 .item-instructor{
 	padding:15px 0 0;
 	border-top:1px solid #EFEFEF;
+	display:none;
 }
 .course_instructor{
 	margin:0;
