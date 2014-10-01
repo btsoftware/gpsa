@@ -9,13 +9,21 @@
              <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
                     <h1><?php _e('Learning Activities','vibe'); ?></h1>
-                    <h5><?php _e('All Courses by all instructors','vibe'); ?></h5>
+                    <h5><?php _e('All Courses','vibe'); ?></h5>
                 </div>
             </div>
             <div class="col-md-3 col-sm-4">
-            	<?php 
-            		do_action('wplms_be_instructor_button');	
-				?>
+            	<?php if ( is_user_logged_in() && bp_user_can_create_course() ) : 
+					
+					$create_pageid=vibe_get_option('create_course_page');
+					if(isset($create_pageid))
+						$create_link =get_page_uri($create_pageid);
+					else
+						$create_link='#';
+						?>	
+					&nbsp;
+					<a class="button create-group-button full" href="<?php echo $create_link; ?>"><?php _e( 'Create a Course', 'vibe' ); ?></a>
+				<?php endif; ?>
             </div>
         </div>
     </div>
