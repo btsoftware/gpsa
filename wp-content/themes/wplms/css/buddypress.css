@@ -2563,6 +2563,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
     background: none repeat scroll 0 0 #f4f4f4;
     margin-top: 0;
     position: relative;
+<<<<<<< HEAD
 }
 .pagetitle-bp h1 {
     color: #253169;
@@ -2571,6 +2572,8 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
     margin: 20px 0;
     padding: 0;
     text-transform: uppercase;
+=======
+>>>>>>> estilo título budypress pages
 }
 
 #buddypress #groups-directory-form div.item-list-tabs#subnav,
