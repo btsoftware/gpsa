@@ -606,7 +606,11 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 	display: inline-block;
 	width: 100%;
 	margin: 0 0 20px;
+<<<<<<< HEAD
 	display:none;
+=======
+	direction:none;
+>>>>>>> ocultando divs en courses
 }
 
 .course_credits{
@@ -3244,12 +3248,22 @@ border-radius: 2px;
 	line-height: 1.4;
 	font-family: 'open sans';
 }
+<<<<<<< HEAD
 .widget.pricing {
     background: none repeat scroll 0 0 #f4f4f4 !important;
     border-radius: 2px;
     box-shadow: 0 1px 1px #ccc;
     padding: 10px 20px;
     position: relative;
+=======
+.widget.pricing{
+	position: relative;
+	background:#FFF;
+	padding:10px 20px 10px;
+	border-radius:2px;
+	box-shadow:0 1px 1px #EEE;
+	display:none;
+>>>>>>> ocultando divs en courses
 }
 
 .course_sharing{
