@@ -3220,9 +3220,12 @@ border-radius: 2px;
 .course_title{
 	position: relative;
 }
-.course_title h1{
-	margin:0;
-	font-weight:600;
+.course_title h1 {
+    color: #253169;
+    font-family: open sans;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
 }
 .course_title h6{
 	font-size:15px;
