@@ -606,11 +606,6 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 	display: inline-block;
 	width: 100%;
 	margin: 0 0 20px;
-<<<<<<< HEAD
-	display:none;
-=======
-	direction:none;
->>>>>>> ocultando divs en courses
 }
 
 .course_credits{
@@ -2567,17 +2562,6 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
     background: none repeat scroll 0 0 #f4f4f4;
     margin-top: 0;
     position: relative;
-<<<<<<< HEAD
-}
-.pagetitle-bp h1 {
-    color: #253169;
-    font-family: 'steelfish_rgregular';
-    font-size: 38px;
-    margin: 20px 0;
-    padding: 0;
-    text-transform: uppercase;
-=======
->>>>>>> estilo título budypress pages
 }
 .pagetitle-bp h1 {
     color: #253169;
@@ -3236,26 +3220,14 @@ border-radius: 2px;
 .course_title{
 	position: relative;
 }
-.course_title h1 {
-    color: #253169;
-    font-family: 'open sans';
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0;
+.course_title h1{
+	margin:0;
+	font-weight:600;
 }
 .course_title h6{
-	font-size:16px;
+	font-size:15px;
 	line-height: 1.4;
-	font-family: 'open sans';
 }
-<<<<<<< HEAD
-.widget.pricing {
-    background: none repeat scroll 0 0 #f4f4f4 !important;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px #ccc;
-    padding: 10px 20px;
-    position: relative;
-=======
 .widget.pricing{
 	position: relative;
 	background:#FFF;
@@ -3263,7 +3235,6 @@ border-radius: 2px;
 	border-radius:2px;
 	box-shadow:0 1px 1px #EEE;
 	display:none;
->>>>>>> ocultando divs en courses
 }
 
 .course_sharing{
@@ -3324,7 +3295,7 @@ del{opacity:0.3;}
 	font-family:'Oswald',sans-serif;
 	font-size:16px;
 	margin:0;
-	color:#209ED8;
+	color:#70c989;
 	text-transform: uppercase;
 }
 .credits span.amount{display: block;}
@@ -3381,7 +3352,7 @@ del{opacity:0.3;}
 	font-size: 12px;	
 	font-weight: 600;
 	text-transform: uppercase;
-	border-bottom: 1px dotted #ddd !important;
+	border-bottom: 1px solid #ddd;
 }
 
 .widget .course_details li{
