@@ -3233,7 +3233,7 @@ border-radius: 2px;
 	font-family: 'open sans';
 }
 .widget.pricing {
-    background: none repeat scroll 0 0 #f4f4f4;
+    background: none repeat scroll 0 0 #f4f4f4 !important;
     border-radius: 2px;
     box-shadow: 0 1px 1px #ccc;
     padding: 10px 20px;
