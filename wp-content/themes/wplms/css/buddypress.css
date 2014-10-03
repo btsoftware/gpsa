@@ -3222,14 +3222,15 @@ border-radius: 2px;
 }
 .course_title h1 {
     color: #253169;
-    font-family: open sans;
+    font-family: 'open sans';
     font-size: 28px;
     font-weight: 400;
     margin: 0;
 }
 .course_title h6{
-	font-size:15px;
+	font-size:16px;
 	line-height: 1.4;
+	font-family: 'open sans';
 }
 .widget.pricing{
 	position: relative;
@@ -3237,7 +3238,7 @@ border-radius: 2px;
 	padding:10px 20px 10px;
 	border-radius:2px;
 	box-shadow:0 1px 1px #EEE;
-	display:none;
+	display:none;	
 }
 
 .course_sharing{
