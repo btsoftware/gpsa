@@ -3233,12 +3233,12 @@ border-radius: 2px;
 	line-height: 1.4;
 	font-family: 'open sans';
 }
-.widget.pricing{
-	position: relative;
-	background:#FFF;
-	padding:10px 20px 10px;
-	border-radius:2px;
-	box-shadow:0 1px 1px #EEE;
+.widget.pricing {
+    background: none repeat scroll 0 0 #f4f4f4;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #ccc;
+    padding: 10px 20px;
+    position: relative;
 }
 
 .course_sharing{
