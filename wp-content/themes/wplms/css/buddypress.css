@@ -3356,7 +3356,7 @@ del{opacity:0.3;}
 	font-size: 12px;	
 	font-weight: 600;
 	text-transform: uppercase;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px dotted #ddd;
 }
 
 .widget .course_details li{
