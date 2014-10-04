@@ -606,6 +606,7 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 	display: inline-block;
 	width: 100%;
 	margin: 0 0 20px;
+	display:none;
 }
 
 .course_credits{
