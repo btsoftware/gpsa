@@ -195,6 +195,7 @@ function get_custom_cat_template($single_template) {
  
 add_filter( "single_template", "get_custom_cat_template" ) ;
 
+/*
 //custom post type template
 function get_custom_post_type_template($single_template) {
     global $post;
@@ -206,7 +207,7 @@ function get_custom_post_type_template($single_template) {
 }
  
 add_filter( "single_template", "get_custom_post_type_template" ) ;
-
+*/
 //fix for cookie error while login.
 /*
 function set_wp_test_cookie() {
