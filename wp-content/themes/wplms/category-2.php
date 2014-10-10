@@ -68,7 +68,6 @@ get_header();
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('blogsidebar') ) : ?>
                 <?php endif; ?>
 			</div>
-
     		</div>
         </div>
 	</div>
