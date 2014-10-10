@@ -5,7 +5,7 @@ get_header();
 	<div class="container">
 		<div class="row">
             <div class="col-md-9 col-sm8">
-                <div class="pagetitle">
+                <div class="pagetitle">Webinars
                     <h1><?php
 
                     if(is_month()){
