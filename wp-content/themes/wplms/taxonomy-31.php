@@ -5,7 +5,7 @@ get_header();
 	<div class="container">
 		<div class="row">
             <div class="col-md-9 col-sm8">
-                <div class="pagetitle">dfrt4t
+                <div class="pagetitle">
                     <h1><?php
 
                     if(is_month()){

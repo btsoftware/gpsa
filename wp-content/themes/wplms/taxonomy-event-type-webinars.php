@@ -27,7 +27,7 @@ get_header();
 </section>
 <section id="content">
 	<div class="container">
-		<div class="col-md-9 col-sm-8">32r234r54tt
+		<div class="col-md-9 col-sm-8">
 			<div class="content">
 				<?php
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
