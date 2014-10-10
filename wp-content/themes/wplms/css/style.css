@@ -4116,7 +4116,7 @@ p.aprendizaje {
     margin-top: 0;
 }
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 .col-sm-8> .content > .blogpost .excerpt.thumb{margin-left:90px !important;}
-.term-31 > #global > .pusher > #content > .container > .row > .col-md-9 .col-sm-8> .content > .blogpost > .meta{display: none !important;}
+.term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .meta{display: none !important;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 .col-sm-8> .content > .blogpost > .excerpt > .cats {display: none !important;}
 
 /** formularios **/
