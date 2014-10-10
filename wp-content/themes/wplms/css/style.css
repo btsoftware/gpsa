@@ -4105,20 +4105,13 @@ p.aprendizaje {
 .sub-menu > .menu-item > a {
 	color:#000 !important;
 }
-
 /** archive webinar**/
-
-.term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost h3{
-    pointer-events: none !important;
-    font-family: open sans !important;
-    font-size: 18px !important;
-    font-weight: lighter !important;
-    margin-top: 0;
+.term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost h3{ font-family: open sans !important;font-size: 18px !important;font-weight: lighter !important; margin-top: 0;
 }
+.term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost h3 > a{color: #253169;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost .excerpt.thumb{margin-left:90px !important;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .meta{display: none !important;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .excerpt > .cats {display: none !important;}
-
 /** formularios **/
 #formulario1 {
     background: none repeat scroll 0 0 #FCFCFC;
