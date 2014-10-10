@@ -46,7 +46,7 @@ get_header();
                                 </div>':'').'
                                 <div class="excerpt '.(has_post_thumbnail(get_the_ID())?'thumb':'').'">
                                     <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
-                                    <div class="cats" style="height: 27px;">
+                                    
                                         '.$cats.'
                                         <p></p>
                                     </div>
