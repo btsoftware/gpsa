@@ -4111,6 +4111,9 @@ p.aprendizaje {
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost .excerpt.thumb{margin-left:90px;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .meta{display: none;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .excerpt > .cats {display: none;}
+
+/**post events **/
+.single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > .featured {display:none;}
 /** formularios **/
 #formulario1 {
     background: none repeat scroll 0 0 #FCFCFC;
