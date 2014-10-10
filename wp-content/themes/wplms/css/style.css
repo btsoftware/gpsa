@@ -4114,8 +4114,10 @@ p.aprendizaje {
 
 /**post events **/
 .single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > .featured {display:none;}
-.single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > #comments {display:none;}
+.single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > #comments {display:none;}
 .single-ajde_events> #global > .pusher {margin-bottom: 30px;}
+.single-ajde_events> #global > .pusher > #title > .container > .row > .col-md-8 > .pagetitle {margin-bottom: 30px;}
+.single-ajde_events> #global > .pusher > #title > .container > .row > .col-md-4> .pagetitle > .breadcrumbs {display:none;}
 /** formularios **/
 #formulario1 {
     background: none repeat scroll 0 0 #FCFCFC;
