@@ -46,11 +46,9 @@ get_header();
                                 </div>':'').'
                                 <div class="excerpt '.(has_post_thumbnail(get_the_ID())?'thumb':'').'">
                                     <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
-                                    <div class="cats">
+                                        <div class="cats" style="height: 27px;">
                                         '.$cats.'
-                                        <p>| 
-                                        <a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'">'.get_the_author_meta( 'display_name' ).'</a>
-                                        </p>
+                                        <p></p>
                                     </div>
                                     <p>'.get_the_excerpt().'</p>
                                     <a href="'.get_permalink().'" class="link">'.__('Read More','vibe').'</a>
