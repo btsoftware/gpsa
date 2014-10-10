@@ -4114,6 +4114,7 @@ p.aprendizaje {
 
 /**post events **/
 .single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > .featured {display:none;}
+.single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > #comments {display:none;}
 /** formularios **/
 #formulario1 {
     background: none repeat scroll 0 0 #FCFCFC;
