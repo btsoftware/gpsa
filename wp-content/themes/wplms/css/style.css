@@ -3920,7 +3920,7 @@ section.sombra {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-/Title & Map/
+/**Title & Map**/
 .pagetitle h2{
   color: #253169;        
        margin:0;
@@ -4021,8 +4021,7 @@ p.resumen {
     margin-top: -4px;
 }
 form#sbc-search select#cat {
-    border-radius:2px 0 0 2px !important;
-    
+    border-radius:2px 0 0 2px !important;   
 }
 form#sbc-search input#sbc-submit {
     border-radius: 0 2px 2px 0 !important;
@@ -4050,7 +4049,6 @@ p.aprendizaje {
     margin-top: 20px;
     text-align: center;
 }
-
 /** MAILCHIMP **/
 #mc_embed_signup input.email {
     background: none repeat scroll 0 0 #E9E9E9;
