@@ -2540,7 +2540,6 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 
 #activitytitle:after {
     background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
-    bottom: -6px;
     content: "";
     height: 7px;
     left: 0;
@@ -2551,6 +2550,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #memberstitle,
 #activitytitle{
 	padding-top:30px;
+	background: none repeat scroll 0 0 #f4f4f4;
 }
 
 #buddypress #groups-directory-form div.item-list-tabs#subnav,
