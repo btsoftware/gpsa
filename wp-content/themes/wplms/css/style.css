@@ -3920,7 +3920,7 @@ section.sombra {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-/Title & Map/
+/**Title & Map**/
 .pagetitle h2{
   color: #253169;        
        margin:0;
@@ -3931,8 +3931,7 @@ section.sombra {
 }
 
 #map { position:relative; width:100%; height: 500px; }
-/* End Title & Map*/
-Me lo puso como negritas el comentario, aca va otra vez:
+/* End Title & Map Me lo puso como negritas el comentario, aca va otra vez:*/
 
 /** Title & Map **/
 .pagetitle h2{
@@ -4021,8 +4020,7 @@ p.resumen {
     margin-top: -4px;
 }
 form#sbc-search select#cat {
-    border-radius:2px 0 0 2px !important;
-    
+    border-radius:2px 0 0 2px !important;   
 }
 form#sbc-search input#sbc-submit {
     border-radius: 0 2px 2px 0 !important;
@@ -4050,7 +4048,6 @@ p.aprendizaje {
     margin-top: 20px;
     text-align: center;
 }
-
 /** MAILCHIMP **/
 #mc_embed_signup input.email {
     background: none repeat scroll 0 0 #E9E9E9;
@@ -4094,13 +4091,10 @@ p.aprendizaje {
     font: 12px Open Sans,Helvetica,Arial,sans-serif !important;
     margin-top: -19px !important;
 }
-
-
 /** widget aidebar costum**/
 .sidebar .widget{
     border-bottom: 1px solid #d7d9e3;
 }
-
 /**menu top**/
 .sub-menu > .menu-item > a {
 	color:#000 !important;
@@ -4111,11 +4105,12 @@ p.aprendizaje {
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost .excerpt.thumb{margin-left:90px;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .meta{display: none;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .excerpt > .cats {display: none;}
-
 /**post events **/
 .single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > .featured {display:none;}
-.single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events > .content > #comments {display:none;}
-.single-ajde_events> #global > .pusher {margin-bottom: 30px;}
+.single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > #comments {display:none;}
+.single-ajde_events> #global > .pusher > #title > .container > .row > .col-md-8 > .pagetitle {margin-bottom: 30px;}
+.single-ajde_events> #global > .pusher > #title > .container > .row > .col-md-4> .pagetitle > .breadcrumbs {display:none;}
+
 /** formularios **/
 #formulario1 {
     background: none repeat scroll 0 0 #FCFCFC;
