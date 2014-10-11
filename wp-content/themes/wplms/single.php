@@ -11,13 +11,13 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 <section id="title">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-sm-8">
+            <div class="col-md-8 col-sm-8">
                 <div class="pagetitle">
                     <h1><?php the_title(); ?></h1>
                     <?php the_sub_title(); ?>
                 </div>
             </div>
-             <div class="col-md-3 col-sm-4">
+             <div class="col-md-4 col-sm-4">
                  <?php
                     $breadcrumbs=get_post_meta(get_the_ID(),'vibe_breadcrumbs',true);
                     if(!isset($breadcrumbs) || !$breadcrumbs || vibe_validate($breadcrumbs)){
