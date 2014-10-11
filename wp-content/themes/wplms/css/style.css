@@ -4094,13 +4094,10 @@ p.aprendizaje {
     font: 12px Open Sans,Helvetica,Arial,sans-serif !important;
     margin-top: -19px !important;
 }
-
-
 /** widget aidebar costum**/
 .sidebar .widget{
     border-bottom: 1px solid #d7d9e3;
 }
-
 /**menu top**/
 .sub-menu > .menu-item > a {
 	color:#000 !important;
@@ -4111,7 +4108,6 @@ p.aprendizaje {
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost .excerpt.thumb{margin-left:90px;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .meta{display: none;}
 .term-31 > #global > .pusher > #content > .container > .row > .col-md-9 > .content > .blogpost > .excerpt > .cats {display: none;}
-
 /**post events **/
 .single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > .ajde_events .content > .featured {display:none;}
 .single-ajde_events> #global > .pusher > #content > .container > .row > .col-md-9 > #comments {display:none;}
