@@ -1187,6 +1187,7 @@ width: 32px;
 .pusher {
 	position: relative;
 	left: 0;
+	margin-bottom: 30px;
 	width: 100%;
 	display:block;
 	-webkit-transition: -webkit-transform 0.5s;
