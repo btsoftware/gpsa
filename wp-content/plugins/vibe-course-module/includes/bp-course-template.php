@@ -529,13 +529,13 @@ if(!function_exists('bp_course_get_course_credits')){
 		$user_id=get_current_user_id();
 
 		$credits='<strong itemprop="price">';
-			
+
 		$free_course = get_post_meta($id,'vibe_course_free',true);
 
 		if(vibe_validate($free_course)){
 			$credits .= apply_filters('wplms_free_course_price',__('FREE','vibe'));
 		}else{
-			
+
 			$product_id = get_post_meta($id,'vibe_product',true);
 			if(isset($product_id) && $product_id !='' && function_exists('get_product')){ //WooCommerce installed
 				$product = get_product( $product_id );
@@ -544,11 +544,11 @@ if(!function_exists('bp_course_get_course_credits')){
 				//$credits = apply_filters('wplms_course_credits',$credits,$id);
 			}else
 				$private=1;
-		
+
 	    if ( in_array( 'paid-memberships-pro/paid-memberships-pro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
 			$membership_ids = vibe_sanitize(get_post_meta($id,'vibe_pmpro_membership',false));
-			
+
 			if(isset($membership_ids) && is_Array($membership_ids) && count($membership_ids) && function_exists('pmpro_getAllLevels')){
 
 			$membership_id = min($membership_ids);
@@ -576,7 +576,7 @@ if(!function_exists('bp_course_get_course_credits')){
 		  if(isset($private) && $private){
 		  	$credits .= apply_filters('wplms_private_course_label',__('PRIVATE','vibe'));
 		  }
-		  	
+
 		} // End Else
 
 		$credits .='</strong>';
@@ -597,7 +597,7 @@ if(!function_exists('bp_course_get_course_credits')){
  * @return bool True if it's the course component, false otherwise
  */
 function bp_is_course_component() {
-	
+
 		$is_course_component = bp_is_current_component(BP_COURSE_SLUG);
 
 	return apply_filters( 'bp_is_course_component', $is_course_component );
@@ -666,13 +666,13 @@ if(!function_exists('bp_course_get_students_undertaking')){
 
 		$course_members = array();
 
-		$loop_number=vibe_get_option('loop_number');
-		if(!isset($loop_number)) $loop_number = 5;
+		$loop_number=300;
+		if(!isset($loop_number))
 
 		$prepage = (isset($_GET['items_page'])?$loop_number*($_GET['items_page']-1):0);
 		$nextpage = (isset($_GET['items_page'])?$loop_number*$_GET['items_page']:$loop_number);
 		$course_meta = $wpdb->get_results( $wpdb->prepare("select meta_key from {$wpdb->postmeta} where post_id = %d AND meta_value >= %d AND meta_key REGEXP '^-?[0-9]+$' ORDER BY meta_value ASC LIMIT %d, %d",$course_id,0,$prepage,$nextpage), ARRAY_A);
-		
+
 		foreach($course_meta as $meta){
 			if(is_numeric($meta['meta_key']))  // META KEY is NUMERIC ONLY FOR USERIDS
 				$course_members[] = $meta['meta_key'];
@@ -694,7 +694,7 @@ function bp_course_count_students_pursuing($course_id=NULL){
 
 	$course_meta = $wpdb->get_results( $wpdb->prepare("select count(meta_key) as number from {$wpdb->postmeta} where post_id = %d AND meta_value >= %d AND meta_value <= %d AND meta_key REGEXP '^-?[0-9]+$' ORDER BY meta_value",$course_id,0,2), ARRAY_A);
 	$number = $course_meta[0]['number'];
-	
+
 	return $number;
 }
 
@@ -703,8 +703,8 @@ function bp_course_paginate_students_undertaking($course_id=NULL){
 	if(!isset($course_id))
 		$course_id=get_the_ID();
 
-	$loop_number=vibe_get_option('loop_number');
-	if(!isset($loop_number)) $loop_number = 5;
+	$loop_number = 300;
+	if(!isset($loop_number))
 
 	$course_number = $wpdb->get_row( $wpdb->prepare("select count(meta_key) as number from {$wpdb->postmeta} where post_id = %d AND meta_value <= %d AND meta_key REGEXP '^-?[0-9]+$'",$course_id,2), ARRAY_A);
 	$max_page = ceil($course_number['number']/$loop_number);
@@ -723,17 +723,17 @@ function bp_course_paginate_students_undertaking($course_id=NULL){
 										 	$return  .= '<a class="page-numbers" href="?action='.$_GET['action'].'&items_page='.$i.'">'.$i.'</a>';
 										 else{
 										 	if($f && ($i > ($_GET['items_page'] + 2))){
-												$return  .= '<a class="page-numbers">...</a>'; 
+												$return  .= '<a class="page-numbers">...</a>';
 												$f=0;
 											}
 											if($g && ($i <($_GET['items_page'] - 2))){
-												$return  .= '<a class="page-numbers">...</a>'; 
+												$return  .= '<a class="page-numbers">...</a>';
 												$g=0;
 											}
 										 }
 									}
 								}else{
-									
+
 									if($i==1)
 										$return .= '<span class="page-numbers current">1</span>';
 									else{
