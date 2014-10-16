@@ -24,19 +24,19 @@ $.fn.timer = function( useroptions ){
             'bgColor': opt.bgColor,                 
             'displayInput' : false, 
             'dynamicDraw': false, 
-            'ticks': 0, 
-            'thickness': 0.1 
-        }); 
+            'ticks': 0,
+            'thickness': 0.1
+        });
 
-        setInterval(function(){ 
-            newVal = ++count; 
-            $this.val(newVal).trigger('change'); 
-        }, 1000); 
+        setInterval(function(){
+            newVal = ++count;
+            $this.val(newVal).trigger('change');
+        }, 1000);
     };
 
 // Necessary functions
 function runnecessaryfunctions(){
-  
+
   jQuery('.fitvids').fitVids();
   jQuery('.tip').tooltip();
   jQuery('.nav-tabs li:first a').tab('show');
@@ -1234,6 +1234,20 @@ $( 'body' ).delegate( '#certificate', 'generate_certificate', function(event){
 $( 'body' ).delegate( '.certificate_print', 'click', function(event){
     event.preventDefault();
     $(this).parent().parent().print();
+});
+
+$('#select-all').click(function(event) {
+  if(this.checked) {
+      // Iterate each checkbox
+      $(':checkbox').each(function() {
+          this.checked = true;
+      });
+  }
+  else {
+    $(':checkbox').each(function() {
+          this.checked = false;
+      });
+  }
 });
 
 $('.widget_carousel').flexslider({
