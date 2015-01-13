@@ -90,8 +90,8 @@ class My_Custom_Group2_Extension extends BP_Group_Extension {
 
     function __construct() {
          $args = array(
-            'slug' => 'Grantes-Files',
-            'name' => 'Grantes Files',
+            'slug' => 'Folders',
+            'name' => 'Folders',
         );
         parent::init( $args );
     }
