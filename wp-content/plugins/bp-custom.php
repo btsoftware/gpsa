@@ -50,7 +50,6 @@ function display_user_lastname($activity_action) {
 
 }
 add_filter( 'bp_get_activity_action', 'display_user_lastname' );
-add_filter( 'bp_ajax_querystring', 'bbg_my_groups_activity_default', 999 );
 //grupos
 function bpfr_add_page_to_group() {
 
@@ -87,6 +86,40 @@ class My_Custom_Group_Extension extends BP_Group_Extension {
 } // end of class
 
 
+class My_Custom_Group2_Extension extends BP_Group_Extension {
+
+    function __construct() {
+         $args = array(
+            'slug' => 'Grantes-Files',
+            'name' => 'Grantes Files',
+        );
+        parent::init( $args );
+    }
+
+
+     function settings_screen( $group_id ) {
+		// don't remove this function
+           }
+          function display() {
+
+
+			// grab page or post ID
+			$id = 3028;
+			$p = get_post($id);
+
+			// output the title
+			echo '<h3>'.apply_filters('the_content', $p->post_title).'</h3>';
+			// output the post
+
+			echo apply_filters('the_content', $p->post_content);
+
+			// end option
+			}
+}
+
+
+
+
 /* display content only in one group*/
 
 
@@ -103,7 +136,10 @@ class My_Custom_Group_Extension extends BP_Group_Extension {
         if ( $group_id == 3) {
             bp_register_group_extension( 'My_Custom_Group_Extension' );
         }
-
+		if ( $group_id == 4) {
+             bp_register_group_extension( 'My_Custom_Group2_Extension' );
+        }
+        
 
     endif;
 }
