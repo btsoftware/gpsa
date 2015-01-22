@@ -11,16 +11,6 @@
 
 <?php do_action( 'bbp_template_before_topics_loop' ); ?>
 
-<?php 
-if(bbp_get_forum_topic_count()>0)
-    {       
-
-        $bbp_loop_args = array(
-        'orderby' => 'title',
-        'order' => 'DESC',
-        );
-        ?>
-
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="bbp-topics">
 
 	<li class="bbp-header">
@@ -35,13 +25,13 @@ if(bbp_get_forum_topic_count()>0)
 	</li>
 
 	<li class="bbp-body">
-    <?php if ( bbp_has_topics( $bbp_loop_args ) ) : ?>
-        <?php while ( bbp_topics() ) : bbp_the_topic(); ?>
 
-            <?php bbp_get_template_part( 'loop', 'single-topic' ); ?>
+		<?php while ( bbp_topics() ) : bbp_the_topic(); ?>
 
-        <?php endwhile; ?>
-    <?php endif;?>
+			<?php bbp_get_template_part( 'loop', 'single-topic' ); ?>
+
+		<?php endwhile; ?>
+
 	</li>
 
 	<li class="bbp-footer">
