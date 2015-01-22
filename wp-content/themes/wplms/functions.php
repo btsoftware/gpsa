@@ -228,3 +228,11 @@ add_action( 'after_setup_theme', 'set_wp_test_cookie', 101 );
 //add button friends and message private
 add_action( 'bp_member_header_actions', 'bp_add_friend_button' );
 add_action( 'bp_member_header_actions', 'bp_send_private_message_button' );
+function my_custom_display_topic_index_query () {
+  $args['orderby'] = 'title';
+  $args['order']   = 'DESC';
+
+  return $args;
+}
+add_filter('bbp_before_has_topics_parse_args', 'my_custom_display_topic_index_query' );
+
