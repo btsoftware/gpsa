@@ -13,7 +13,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
         <div class="row">
             <div class="col-md-8 col-sm-8">
                 <div class="pagetitle">
-                    <h1><?php the_title(); ?></h1>
+                    <h1><?php $titulo=the_title('', '', false); ?></h1>
                     <?php the_sub_title(); ?>
                 </div>
             </div>
@@ -116,6 +116,28 @@ if(!isset($title) || !$title || (vibe_validate($title))){
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                     <?php endif; ?>
                 </div>
+				
+					<div class="sidebar">
+                    <div class="widget"><h4 class="widget_title">Forums</h4>
+								<ul>
+				<?php 
+				     if($titulo=="Thematic Forums"){
+					    $var="EXPERT FORUMS";
+					     $slug="expert-forums";
+					}else{
+					     $var="THEMATIC FORUMS";
+					      $slug="tematic-forums";
+						  } 
+							?>
+				<li><a class="bbp-forum-title" href="http://gpsatest.fundarlabs.mx/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
+								</ul>
+					</div>                
+				</div>				
+				
+				
+				
+				
+				
             </div>
         </div>
     </div>
