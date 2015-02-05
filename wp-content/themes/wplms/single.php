@@ -129,7 +129,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					      $slug="tematic-forums";
 						  } 
 							?>
-				<li><a class="bbp-forum-title" href="http://gpsatest.fundarlabs.mx/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
+				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
 								</ul>
 					</div>                
 				</div>				
