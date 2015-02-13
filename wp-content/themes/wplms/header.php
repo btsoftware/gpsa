@@ -18,7 +18,7 @@ wp_head();
 ?>
 
 </head>
-<div id="bar"><center>Your browser is out-of-date. Please download one of these up-to-date, free and excellent browsers: Chrome, Firefox</center></div>
+<div id="bar"><center>Your browser(Internet Explorer) is out-of-date. Please updated it to the latest version or download one of these up-to-date, free and excellent browsers: Chrome or Firefox.</center></div>
 <body <?php body_class(); ?>>
 <div id="global" class="global">
     <div class="pagesidebar">
