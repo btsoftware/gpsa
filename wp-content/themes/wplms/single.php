@@ -37,7 +37,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
         
         <div class="row">
             <div class="col-md-9 col-sm-8">
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div id="post-<?php $id=the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content">
                     <?php if(has_post_thumbnail()){ ?>
                     <div class="featured">
@@ -130,7 +130,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					      $slug="tematic-forums";
 						  } 
 							?>
-				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
+				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var.$id; ?></a></li>
 								</ul>
 					</div>                
 				</div>				
