@@ -121,7 +121,8 @@ if(!isset($title) || !$title || (vibe_validate($title))){
                     <div class="widget"><h4 class="widget_title">Forums</h4>
 								<ul>
 				<?php 
-				     if($titulo=="Thematic Forums"){
+							echo $titulo."hola";
+					if($titulo=="Thematic Forums"){
 					    $var="EXPERT FORUMS";
 					     $slug="expert-forums";
 					}else{
@@ -129,7 +130,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					      $slug="tematic-forums";
 						  } 
 							?>
-				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var."Expert"; ?></a></li>
+				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
 								</ul>
 					</div>                
 				</div>				
