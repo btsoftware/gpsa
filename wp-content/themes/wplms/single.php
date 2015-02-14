@@ -13,7 +13,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
         <div class="row">
             <div class="col-md-8 col-sm-8">
                 <div class="pagetitle">
-                    <h1><?php the_title('', '', true); ?></h1>
+                    <h1><?php $titulo=the_title('', '', false); ?></h1>
                     <?php $titulo=the_sub_title(); ?>
                 </div>
             </div>
@@ -122,15 +122,16 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 								<ul>
 				<?php 
 					
-					if($title=="Thematic Forums"){
+					if($titulo=="Thematic Forums"){
 					    $var="EXPERT FORUMS";
 					     $slug="expert-forums";
+				
 					}else{
 					     $var="THEMATIC FORUMS";
 					      $slug="tematic-forums";
-						  } 
+						  	  } 
 							?>
-				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var.$title; ?></a></li>
+				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
 								</ul>
 					</div>                
 				</div>				
