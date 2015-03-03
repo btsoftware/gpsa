@@ -82,7 +82,7 @@ isset($loop_number)?$loop_number:$loop_number=5;
 						echo '<span>'.bp_get_profile_field_data( array('user_id'=>$user_id,'field'=>$field )).'</span>';
 					}
 
-					$members_activity=vibe_get_option('members_activity');
+					//$members_activity=vibe_get_option('members_activity');
 					if(isset($members_activity) && $members_activity){
 					?>
 					<?php if ( bp_get_member_latest_update() ) : ?>
