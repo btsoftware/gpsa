@@ -112,7 +112,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
             <div class="col-md-3 col-sm-3">
                 <div class="sidebar">
                     <?php
-                    $sidebar = apply_filters('wplms_sidebar','mainsidebar',get_the_ID());
+                    $sidebar = apply_filters('wplms_sidebar','WebinarSidebar',get_the_ID());
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                     <?php endif; ?>
                 </div>
