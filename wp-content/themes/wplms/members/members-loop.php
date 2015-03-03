@@ -82,7 +82,8 @@ isset($loop_number)?$loop_number:$loop_number=5;
 						echo '<span>'.bp_get_profile_field_data( array('user_id'=>$user_id,'field'=>$field )).'</span>';
 					}
 
-					//$members_activity=vibe_get_option('members_activity');
+					/* quitando defaul members activity
+					$members_activity=vibe_get_option('members_activity');
 					if(isset($members_activity) && $members_activity){
 					?>
 					<?php if ( bp_get_member_latest_update() ) : ?>
@@ -98,7 +99,7 @@ isset($loop_number)?$loop_number:$loop_number=5;
 				<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span>
 				<?php } ?>
 				</div>
-
+						*/
 				<?php do_action( 'bp_directory_members_item' ); ?>
 
 				<?php
