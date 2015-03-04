@@ -121,7 +121,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
                     <div class="widget"><h4 class="widget_title">Forums</h4>
 								<ul>
 				<?php 
-					if(is_single( '528' ){ 
+					if(is_single( '528' )){ 
 
 					$titulo=the_title('', '', false);
 					if($titulo=="Thematic Forums"){
