@@ -117,12 +117,13 @@ if(!isset($title) || !$title || (vibe_validate($title))){
                     <?php endif; ?>
                 </div>
 				
+				<?php	if(is_single( array( 528, 566 ))) { ?>
+
 					<div class="sidebar">
                     <div class="widget"><h4 class="widget_title">Forums</h4>
 								<ul>
-				<?php 
-					if(is_single( '528' )){ 
-
+				<?php
+						 		
 					$titulo=the_title('', '', false);
 					if($titulo=="Thematic Forums"){
 					    $var="EXPERT FORUMS";
