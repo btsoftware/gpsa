@@ -137,12 +137,15 @@ echo vibe_get_option('google_analytics');
 </script>
 
 <script type="text/javascript">
-	jQuery(document).ready(function() {
+	jQuery(document).ready( function () {
+		jQuery("#alternar-respuesta-ej1").on("click", function(e){
+		    	jQuery("#respuesta-ej1").slideToggle();
+				return false;		    	
+		    })
+</script>
 
-   jQuery('#alternar-respuesta-ej1').on('click',function(){
-      jQuery('#respuesta-ej1').toggle();
-   });
-});
+	
+
 
 </body>
 </html>
