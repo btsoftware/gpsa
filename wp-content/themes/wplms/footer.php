@@ -142,6 +142,7 @@ echo vibe_get_option('google_analytics');
 		    	jQuery("#respuesta-ej1").slideToggle();
 				return false;		    	
 		    })
+			});
 </script>
 
 	
