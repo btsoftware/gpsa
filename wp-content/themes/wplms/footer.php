@@ -144,7 +144,14 @@ echo vibe_get_option('google_analytics');
 		    })
 			});
 </script>
-
+<script type="text/javascript">
+	jQuery(document).ready( function () {
+		jQuery("#alternar-respuesta-ej2").on("click", function(e){
+		    	jQuery("#respuesta-ej2").slideToggle();
+				return false;		    	
+		    })
+			});
+</script>
 	
 
 
