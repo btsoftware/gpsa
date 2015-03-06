@@ -135,6 +135,7 @@ echo vibe_get_option('google_analytics');
   ga('send', 'pageview');
 
 </script>
+<script type='text/javascript' src='http://gpsaknowledge.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
 
 <script type="text/javascript">
 $(document).ready(function(){ 
