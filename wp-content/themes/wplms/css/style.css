@@ -3749,7 +3749,7 @@ img.wp-image-2001 {
     padding: 13px 17px;
     text-align: center;
 }
-a#boton-llamada {
+#boton-llamada > a {
     color: #fff;
     font-size: 18px;
     text-shadow: 0 0 1px #2492c6;
