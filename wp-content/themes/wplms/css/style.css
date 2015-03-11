@@ -3740,6 +3740,15 @@ p.welcome3 {
 img.wp-image-2001 {
     margin-top: 20px;
 }
+.boton-llamada{
+    background: none repeat scroll 0 0 #289cd7;
+    border: 1px solid #289cd7;
+    color: #fff;
+    display: table;
+    margin: 33px auto !important;
+    padding: 13px 17px;
+    text-align: center;
+}
 .greybackhome:before {
     background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
     bottom: -6px;
