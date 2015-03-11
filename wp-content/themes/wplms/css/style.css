@@ -3740,7 +3740,7 @@ p.welcome3 {
 img.wp-image-2001 {
     margin-top: 20px;
 }
-.boton-llamada{
+#boton-llamada{
     background: none repeat scroll 0 0 #289cd7;
     border: 1px solid #289cd7;
     color: #fff;
