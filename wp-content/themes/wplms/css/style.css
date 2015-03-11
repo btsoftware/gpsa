@@ -3749,6 +3749,11 @@ img.wp-image-2001 {
     padding: 13px 17px;
     text-align: center;
 }
+a#boton-llamada {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0 1px #ccc;
+}
 .greybackhome:before {
     background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
     bottom: -6px;
