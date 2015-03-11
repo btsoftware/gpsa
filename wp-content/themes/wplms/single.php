@@ -128,14 +128,19 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					if($titulo=="Thematic Forums"){
 					    $var="EXPERT FORUMS";
 					     $slug="expert-forums";
+						 $add='<div class="separadorsw"></div> <li>Making Accountability Processes work: Engagement between Civil Society and State Accountability Institutions<li>Making Accountability Processes work: Engagement between Civil Society and State Accountability Institutions Started by:<b> Carolina </b></li>';
+						 
 				
 					}else{
 					     $var="THEMATIC FORUMS";
 					      $slug="tematic-forums";
+						  $add='';
 						  	  } 
 									
 							?>
 				<li><a class="bbp-forum-title" href="http://gpsaknowledge.org/forums/forum/<?php echo $slug; ?>/"><?php echo $var; ?></a></li>
+							
+								<?php echo $add; ?>
 								</ul>
 					</div>                
 				</div>			
