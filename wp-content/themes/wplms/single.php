@@ -128,7 +128,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					if($titulo=="Thematic Forums"){
 					    $var="EXPERT FORUMS";
 					     $slug="expert-forums";
-						 $add='<div class="separadorsw"></div> <li>Making Accountability Processes work: Engagement between Civil Society and State Accountability Institutions Started by:<b> Carolina </b></li>';
+						 $add='<div class="separadorsw"></div> <li><b>Making Accountability Processes work: Engagement between Civil Society and State Accountability Institutions</b> Started by: Carolina Cornejo, ACIJ</li><br><a href="google.com">Join the discussion</a>';
 						 
 				
 					}else{
