@@ -3735,7 +3735,7 @@ h1.welcome2 {
     font-family: 'steelfish_rgregular';
     font-size: 57px;
     line-height: 59px;
-    margin-bottom: 9px;
+    margin-bottom: 9px;  
     margin-top:0px;
     text-transform: uppercase;
     margin-left:30px;
@@ -3769,7 +3769,7 @@ img.wp-image-2001 {
     text-align: center;
 }
 #boton-llamada:hover{
-    background: none repeat scroll 0 0 #2287b7;
+    background: none repeat scroll 0 0 #46acdd;
 }
 #boton-llamada > a {
     color: #fff;
@@ -3778,6 +3778,7 @@ img.wp-image-2001 {
 }
 #boton-llamada > a:hover {
     color: #f7f7f7;
+    
 }
 .greybackhome:before {
     background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
