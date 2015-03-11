@@ -3768,10 +3768,16 @@ img.wp-image-2001 {
     padding: 13px 17px;
     text-align: center;
 }
+#boton-llamada:hover{
+    background: none repeat scroll 0 0 #2287b7;
+}
 #boton-llamada > a {
     color: #fff;
     font-size: 18px;
     text-shadow: 0 0 1px #2492c6;
+}
+#boton-llamada > a:hover {
+    color: #f7f7f7;
 }
 .greybackhome:before {
     background: url("images/shadow-bottom.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
