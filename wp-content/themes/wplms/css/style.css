@@ -3721,6 +3721,14 @@ h1.welcome1 {
     text-transform: uppercase;
     margin-left:30px;
 }
+h1.welcome1-blulight {
+    color: #289CD7;
+    font-family: 'steelfish_rgregular';
+    font-size: 32px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-left:30px;
+}
 h1.welcome2 {
     color: #28336A;
     font-family: 'steelfish_rgregular';
@@ -3728,6 +3736,16 @@ h1.welcome2 {
     line-height: 59px;
     margin-bottom: 9px;
     margin-top:0px;
+    text-transform: uppercase;
+    margin-left:30px;
+}
+h1.welcome2a {
+    color: #28336A;
+    font-family: 'steelfish_rgregular';
+    font-size: 57px;
+    line-height: 59px;
+    margin-bottom: 9px;
+    margin-top:8px;
     text-transform: uppercase;
     margin-left:30px;
 }
