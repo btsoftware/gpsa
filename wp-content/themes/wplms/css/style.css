@@ -3707,11 +3707,12 @@ span.wpcf7-form-control-wrap{
     background:url("/wp-content/uploads/2015/03/pattern-destacado-A280px.png") repeat scroll left top rgba(0, 0, 0, 0) !important;
 }
 .content.no {
-    background: none repeat scroll 0 0 rgba(237, 238, 243, 0.88) !important;
+    background: none repeat scroll 0 0 rgba(237, 238, 243, 0) !important;
     border: 0 none;
     border-radius: 0 !important;
     margin: 1px 0 0;
     padding: 20px;
+    text-align: center;
 }
 h1.welcome1 {
     color: #6D6F9E;
@@ -3722,12 +3723,15 @@ h1.welcome1 {
     margin-left:30px;
 }
 h1.welcome1-blulight {
+    background: none repeat scroll 0 0 rgba(237, 238, 243, 1);
     color: #289cd7;
+    display: inline-block;
     font-family: "Open Sans";
     font-size: 22px;
     font-weight: normal;
-    margin-bottom: 0;
-    margin-left: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
     text-shadow: 1px 1px rgba(250, 250, 250, 0.3);
 }
 h1.welcome2 {
@@ -3741,14 +3745,17 @@ h1.welcome2 {
     margin-left:30px;
 }
 h1.welcome2a {
-    color: #28336A;
-    font-family: 'steelfish_rgregular';
+    background: none repeat scroll 0 0 rgba(237, 238, 243, 1);
+    color: #28336a;
+    display: inline-block;
+    font-family: "steelfish_rgregular";
     font-size: 57px;
     line-height: 59px;
     margin-bottom: 9px;
-    margin-top:8px;
+    margin-left: 30px;
+    margin-top: 8px;
+    padding: 20px;
     text-transform: uppercase;
-    margin-left:30px;
 }
 p.welcome3 {
     color: #666;
