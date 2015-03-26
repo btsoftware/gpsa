@@ -234,7 +234,7 @@ function my_custom_display_topic_index_query () {
 
   return $args;
 }
-add_filter('bbp_before_has_topics_parse_args', 'my_custom_display_topic_index_query' );
+//add_filter('bbp_before_has_topics_parse_args', 'my_custom_display_topic_index_query' );
 
 
 
