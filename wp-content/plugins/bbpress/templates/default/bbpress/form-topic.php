@@ -27,7 +27,7 @@
 
 <?php if ( bbp_current_user_can_access_create_topic_form() ) : ?>
 
-	<div id="new-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-form<?php bbp_get_topic_title(); ?>">
+	<div id="new-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-form-<?php bbp_get_topic_title(); ?>">
 
 		<form id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
 
