@@ -236,16 +236,5 @@ function my_custom_display_topic_index_query () {
 }
 add_filter('bbp_before_has_topics_parse_args', 'my_custom_display_topic_index_query' );
 
-function mycustom_breadcrumb_options() {
-// Home – default = true
-$args['include_home'] = false;
-// Forum root – default = true
-$args['include_root'] = false;
-// Current – default = true
-$args['include_current'] = true;
 
-return $args;
-}
-
-add_filter('bbp_before_get_breadcrumb_parse_args', 'mycustom_breadcrumb_options' );
 
