@@ -101,7 +101,7 @@ function getMap() {
 	echo "<link href='/map/css/map-style.css' rel='stylesheet'/>";
 	echo "<script src='/map/js/gpsa-rosters.geojson.js' type='text/javascript'></script>";
 	
-	echo "<a name='roster-of-practitioners'></a><div class='pagetitle'><h2>Roster of practitioners</h2></div>";
+	echo "<a name='roster-of-practitioners'></a><div class='pagetitle'><h2>Roster of Experts</h2></div>";
 	echo "<p class='obj'>Click on an expert to find out more about his areas of expertise, working languages, and disponibilities for short-term consultancy work.</p>";
 	echo "<div id='map'><div id='themes-layers' class='layers'></div><div id='info'></div></div>";
 	echo "<script src='/map/js/map-init.js' type='text/javascript'></script>";
