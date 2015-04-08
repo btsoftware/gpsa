@@ -3791,6 +3791,18 @@ img.wp-image-2001 {
 #boton-llamada:hover{
     background: none repeat scroll 0 0 #46acdd;
 }
+#boton-llamada2{
+    background: none repeat scroll 0 0 #0F3C7C;
+    border: 1px solid #0F3C7C;
+    color: #fff;
+    display: table;
+    margin: 18px auto 34px !important;
+    padding: 13px 17px;
+    text-align: center;
+}
+#boton-llamada2:hover{
+    background: none repeat scroll 0 0 #253169;
+}
 #boton-llamada > a {
     color: #fff;
     font-size: 18px;
