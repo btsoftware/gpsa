@@ -3808,6 +3808,15 @@ img.wp-image-2001 {
     font-size: 18px;
     text-shadow: 0 0 1px #2492c6;
 }
+#boton-llamada2 > a {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0 1px #2492c6;
+}
+#boton-llamada2 > a:hover {
+    color: #f7f7f7;
+    
+}
 #boton-llamada > a:hover {
     color: #f7f7f7;
     
