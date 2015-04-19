@@ -2389,13 +2389,13 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	text-align: center;
 	border-radius: 2px;
 }
-
-.widget .item-options a{
-	font-weight:600;
-	padding:8px;
-	color:#FFF;
-	text-transform: uppercase;
-	display: inline-block;
+.widget .item-options a {
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 8px;
+    text-transform: uppercase;
 }
 
 #buddypress .widget_title{
