@@ -161,7 +161,7 @@ addListener(downloadLink, 'click', function() {
   ga('send', 'event', 'button', 'click', 'nav-buttons');
 });
 
-</script
+</script>
 
 
 <script type="text/javascript">
