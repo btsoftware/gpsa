@@ -133,6 +133,8 @@ echo vibe_get_option('google_analytics');
 
   ga('create', 'UA-21808432-6', 'gpsaknowledge.org');
   ga('send', 'pageview');
+   ga('send', 'event', 'button', 'click', 'nav buttons');
+
 
 </script>
 
@@ -155,18 +157,18 @@ echo vibe_get_option('google_analytics');
 			});
 </script>
 
+
+
 <script type="text/javascript">
 
- 
-$('#button').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'nav-buttons');
-});
+jQuery(document).ready( function () {
+		jQuery("#button").on("click", function(e){
+		ga('send', 'event', 'button', 'click', 'nav-buttons');
+		    })
+			});
 
 
 </script>
-
-
-
 
 
 <script type="text/javascript">
@@ -189,6 +191,17 @@ $('#button').on('click', function() {
 }
 	
 </script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
