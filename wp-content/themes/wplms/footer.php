@@ -154,14 +154,19 @@ echo vibe_get_option('google_analytics');
 		    })
 			});
 </script>
+
 <script type="text/javascript">
 
- var downloadLink = document.getElementById('button');
-addListener(downloadLink, 'click', function() {
+ 
+$('#button').on('click', function() {
   ga('send', 'event', 'button', 'click', 'nav-buttons');
 });
 
+
 </script>
+
+
+
 
 
 <script type="text/javascript">
