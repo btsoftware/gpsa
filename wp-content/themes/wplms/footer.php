@@ -136,6 +136,8 @@ echo vibe_get_option('google_analytics');
 
 </script>
 
+
+
 <script type="text/javascript">
 	jQuery(document).ready( function () {
 		jQuery("#alternar-respuesta-ej1").on("click", function(e){
@@ -152,7 +154,31 @@ echo vibe_get_option('google_analytics');
 		    })
 			});
 </script>
+
+<script type="text/javascript">
+
+/**
+ * Utility to wrap the different behaviors between W3C-compliant browsers
+ * and IE when adding event handlers.
+ *
+ * @param {Object} element Object on which to attach the event listener.
+ * @param {string} type A string representing the event type to listen for
+ *     (e.g. load, click, etc.).
+ * @param {function()} callback The function that receives the notification.
+ */
+ 
+ var downloadLink = document.getElementById('button');
+addListener(downloadLink, 'click', function() {
+  ga('send', 'event', 'button', 'click', 'nav-buttons');
+});
+
+
+ function addListener(element, type, callback) {
+ if (element.addEventListener) element.addEventListener(type, callback);
+ else if (element.attachEvent) element.attachEvent('on' + type, callback);
+}
 	
+</script>
 
 
 </body>
