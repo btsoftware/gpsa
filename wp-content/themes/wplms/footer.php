@@ -154,6 +154,15 @@ echo vibe_get_option('google_analytics');
 		    })
 			});
 </script>
+<script type="text/javascript">
+
+ var downloadLink = document.getElementById('button');
+addListener(downloadLink, 'click', function() {
+  ga('send', 'event', 'button', 'click', 'nav-buttons');
+});
+
+</script
+
 
 <script type="text/javascript">
 
@@ -167,10 +176,6 @@ echo vibe_get_option('google_analytics');
  * @param {function()} callback The function that receives the notification.
  */
  
- var downloadLink = document.getElementById('button');
-addListener(downloadLink, 'click', function() {
-  ga('send', 'event', 'button', 'click', 'nav-buttons');
-});
 
 
  function addListener(element, type, callback) {
