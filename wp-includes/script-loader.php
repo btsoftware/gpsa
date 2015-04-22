@@ -161,8 +161,12 @@ function wp_default_scripts( &$scripts ) {
 
 	// jQuery
 	$scripts->add( 'jquery', false, array( 'jquery-core', 'jquery-migrate' ), '1.11.1' );
+
 	$scripts->add( 'jquery-core', '/wp-includes/js/jquery/jquery.js', array(), '1.11.1' );
-	$scripts->add( 'jquery-migrate', "/wp-includes/js/jquery/jquery-migrate$suffix.js", array(), '1.2.1' );
+
+	//$scripts->add( 'jquery-migrate', "/wp-includes/js/jquery/jquery-migrate$suffix.js", array(), '1.2.1' );
+	$scripts->add( 'jquery-migrate', "/wp-includes/js/jquery/jquery.min.js", array(), '' );
+
 
 	// full jQuery UI
 	$scripts->add( 'jquery-ui-core', '/wp-includes/js/jquery/ui/jquery.ui.core.min.js', array('jquery'), '1.10.4', 1 );
