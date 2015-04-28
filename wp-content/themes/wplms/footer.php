@@ -133,7 +133,6 @@ echo vibe_get_option('google_analytics');
 
   ga('create', 'UA-21808432-6', 'gpsaknowledge.org');
   ga('send', 'pageview');
-   ga('send', 'event', 'button', 'click', 'nav buttons');
 
 
 </script>
@@ -163,7 +162,7 @@ echo vibe_get_option('google_analytics');
 
 jQuery(document).ready( function () {
 		jQuery("#button").on("click", function(e){
-		ga('send', 'event', 'button', 'click', 'nav-buttons');
+		ga('send', 'event', 'button', 'click', 'downloads');
 		    })
 			});
 
