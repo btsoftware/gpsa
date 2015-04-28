@@ -162,7 +162,7 @@ echo vibe_get_option('google_analytics');
 
 jQuery(document).ready( function () {
 		jQuery("#button").on("click", function(e){
-		ga('send', 'event', 'button', 'click', $(this).attr('href')]);
+		ga('send', 'event', 'button', 'click', $(this).attr('href'));
 		    })
 			});
 
