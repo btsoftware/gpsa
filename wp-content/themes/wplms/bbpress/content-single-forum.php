@@ -11,6 +11,7 @@
 
 <div id="bbpress-forums">
 
+	<?php bbp_breadcrumb(); ?>
 
 	<?php bbp_forum_subscription_link(); ?>
 
@@ -38,6 +39,7 @@
 
 			<?php bbp_get_template_part( 'pagination', 'topics'    ); ?>
 
+			<?php bbp_get_template_part( 'form',       'topic'     ); ?>
 
 		<?php elseif ( !bbp_is_forum_category() ) : ?>
 

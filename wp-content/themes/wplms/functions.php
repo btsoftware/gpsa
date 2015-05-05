@@ -238,3 +238,12 @@ function my_custom_display_topic_index_query () {
 
 
 
+function recent_bbpress_topics() {  
+
+	if ( bbp_has_topics( array( 'author' => 0, 'show_stickies' => false, 'order' => 'DESC', 'post_parent' => 'any', 'posts_per_page' => 10 ) ) )
+		bbp_get_template_part( 'bbpress/loop', 'topics' );
+} 
+
+// Hook into action
+add_action('bbp_template_after_forums_loop','recent_bbpress_topics');
+
