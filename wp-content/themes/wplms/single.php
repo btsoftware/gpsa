@@ -134,7 +134,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					     $var="THEMATIC FORUMS";
 					      $slug="tematic-forums";
 						  $add='';
-						  echo do_shortcode('[bbp-topic-index]');
+						  echo do_shortcode('[bbp-single-forum id=528]');
 
 						  	  } 
 									
