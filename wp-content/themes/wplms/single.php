@@ -129,7 +129,7 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					    $var="EXPERT FORUMS";
 					     $slug="expert-forums";
 						 $add='<div class="separadorsw"></div> <li><b>Making Accountability Processes work: Engagement between Civil Society and State Accountability Institutions</b><br> Started by: Carolina Cornejo, ACIJ<br><a href="http://gpsaknowledge.org/forums/topic/making-accountability-processes-work-engagement-between-civil-society-and-state-accountability-institutions/">Join the discussion</a></li>';
-							echo do_shortcode('[bbp-topic-form]');
+							echo do_shortcode('[bbp-forum-index]');
 				
 					}else{
 					     $var="THEMATIC FORUMS";
