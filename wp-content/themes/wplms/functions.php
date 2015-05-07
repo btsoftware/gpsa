@@ -106,8 +106,13 @@ function getMap() {
 	echo "<div id='map'><div id='themes-layers' class='layers'></div><div id='info'></div></div>";
 	echo "<script src='/map/js/map-init.js' type='text/javascript'></script>";
 }
-
-
+					
+function removeimages() {
+	echo "<style>
+			.bpfb_images {display: none;}
+		  </style>";
+	return true;
+}
 function getSurvey() {
 	echo "<style>
 		#survey {
