@@ -31,7 +31,12 @@ if(isset($title) && $title !='' && $title !='H'){
     $v_add_content = get_post_meta( $post->ID, '_add_content', true );
  
 ?>
-<?php //getSurvey(); ?>
+<?php 
+removeimages(); 
+
+add_filter( 'bp_activity_excerpt_length', 'cc_custom_excerpt_length' );
+?>
+
 <section id="content"> 
     <div class="container">
         <div class="row">

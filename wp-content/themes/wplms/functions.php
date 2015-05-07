@@ -113,6 +113,10 @@ function removeimages() {
 		  </style>";
 	return true;
 }
+
+function cc_custom_excerpt_length() {
+return '180';
+}
 function getSurvey() {
 	echo "<style>
 		#survey {
