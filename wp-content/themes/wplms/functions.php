@@ -253,6 +253,12 @@ function recent_bbpress_topics() {
 		bbp_get_template_part( 'bbpress/loop', 'topics' );
 } 
 
+
+
+function cc_excerpt_append_text() {
+return '';
+}
+
 // Hook into action
 add_action('bbp_template_after_forums_loop','recent_bbpress_topics');
 
