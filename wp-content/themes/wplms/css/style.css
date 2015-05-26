@@ -3713,6 +3713,43 @@ span.wpcf7-form-control-wrap{
     padding: 20px 10px 0;
     text-align: center;
 }
+h1.destacado4 {
+    background: rgba(237, 238, 243, 0.9) none repeat scroll 0 0;
+    color: #28336a;
+    display: table;
+    font-family: steelfish_rgregular;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 7px;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+h2.destacado4 {
+    background: rgba(237, 238, 243, 0.9) none repeat scroll 0 0;
+    color: #28336a;
+    display: inline-block;
+    font-family: steelfish_rgregular;
+    font-size: 31px;
+    font-weight: normal;
+    margin: 14px auto 0;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+h1.destacado3-b {
+    background: rgba(237, 238, 243, 0.9) none repeat scroll 0 0;
+    color: #28336a;
+    display: inline-block;
+    font-family: steelfish_rgregular;
+    font-size: 31px;
+    font-weight: normal;
+    margin: 14px auto 0;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
 h1.welcome1 {
     color: #6D6F9E;
     font-family: 'steelfish_rgregular';
@@ -3746,6 +3783,7 @@ h1.welcomea3-b {
     text-shadow: 1px 1px rgba(250, 250, 250, 0.3);
     width: 432px;
 }
+
 
 #second-content {
     background: none repeat scroll 0 0 #E2E4EC;
