@@ -4294,6 +4294,8 @@ p.aprendizaje {
 .sidebar .widget{
     border-bottom: 1px solid #d7d9e3;
 }
+.lastnewsletter:hover {
+	background: url("images/lastest-newsletter-2.jpg") no-repeat scroll left 8px rgba(0, 0, 0, 0);}
 /**menu top**/
 .sub-menu > .menu-item > a {
 	color:#000 !important;
