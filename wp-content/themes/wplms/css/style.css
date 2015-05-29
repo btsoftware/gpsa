@@ -4294,7 +4294,7 @@ p.aprendizaje {
 .sidebar .widget{
     border-bottom: 1px solid #d7d9e3;
 }
-img.lastnewsletter:hover {
+.lastnewsletter:hover  a{
 	opacity:0.3;}
 /**menu top**/
 .sub-menu > .menu-item > a {
