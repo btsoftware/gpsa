@@ -4294,8 +4294,10 @@ p.aprendizaje {
 .sidebar .widget{
     border-bottom: 1px solid #d7d9e3;
 }
-.lastnewsletter:hover  a{
-	opacity:0.3;}
+img.lastnewsletter:hover  {
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+} 	
 /**menu top**/
 .sub-menu > .menu-item > a {
 	color:#000 !important;
