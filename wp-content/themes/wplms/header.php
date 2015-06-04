@@ -88,7 +88,7 @@ wp_head();
                                             }
                                         ?>
                 
-                                            <a href="<?php echo home_url();?>/"><img src="wp-content/themes/wplms/images/Knowledge-Platform.png" /></a>
+                                            <a href="<?php echo home_url();?>/"><img src="/wp-content/themes/wplms/images/Knowledge-Platform.png" /></a>
                                         <?php
                                             if(is_home()){
                                                 echo '</h1>';
