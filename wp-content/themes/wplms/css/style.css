@@ -3721,26 +3721,24 @@ h1.destacado4 {
     color: #28336a;
     display: table;
     font-family: steelfish_rgregular;
-    font-size: 38px;
+    font-size: 34px;
     font-weight: normal;
-    margin: 0 auto;
+    margin: 7px auto 0;
     padding: 7px;
     text-align: center;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    width:70%;
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
 }
 h2.destacado4 {
     background: rgba(235, 234, 234, 0.8) none repeat scroll 0 0;
-    color: #28336a;
+    color: #0e609c;
     display: inline-block;
     font-family: steelfish_rgregular;
-    font-size: 31px;
+    font-size: 26px;
     font-weight: normal;
     margin: 14px auto 0;
     padding: 5px;
     text-align: center;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
 }
 h1.destacado3-b {
     background: rgba(237, 238, 243, 0.9) none repeat scroll 0 0;
