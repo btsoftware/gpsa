@@ -881,7 +881,7 @@ nav .sub-menu li:hover > a{
 	display: block;
 	color:#ccc;
 }
-
+.menu-menu-header-container > #menu-menu-header-1 > .menu-item > a:hover {color:#253169;}
 nav .menu li a{
 	color:#fff;
 	font-family: 'Open Sans', sans-serif;
