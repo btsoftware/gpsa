@@ -882,13 +882,17 @@ nav .sub-menu li:hover > a{
 	color:#ccc;
 }
 
-nav .sub-menu li a:hover {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
-    color: #fff;
-    display: block;
-    font-size: 12px;
-    opacity: 0.8;
-    padding: 10px;
+nav .menu li a{
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	padding: 8px 15px;
+	display: inline-block;
+	font-size: 13px;
+	text-transform:uppercase;
+	position: relative;
+	border-left: 1px solid rgba(209, 209, 209, 0.1);
+	
 }
 nav .menu li.current-menu-item a{
 	color:#F4F4F4;
