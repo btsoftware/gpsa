@@ -882,8 +882,8 @@ nav .sub-menu li:hover > a{
 	color:#ccc;
 }
 .menu-menu-header-container > #menu-menu-header-1 > .menu-item > a:hover {color:#253169;}
-nav .menu li a{
-	color:#fff;
+nav .menu li a:hover{
+	color:#253169;
 	font-family: 'Open Sans', sans-serif;
 	margin:0;
 	padding: 8px 15px;
@@ -893,6 +893,14 @@ nav .menu li a{
 	position: relative;
 	border-left: 1px solid rgba(209, 209, 209, 0.1);
 	
+}
+nav .sub-menu li a:hover {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+    padding: 10px;
 }
 nav .menu li.current-menu-item a{
 	color:#F4F4F4;
