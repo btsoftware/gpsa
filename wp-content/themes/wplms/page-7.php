@@ -45,7 +45,7 @@ if(isset($title) && $title !='' && $title !='H'){
     </div>
 </section>
 
-<!--empieza eventon y didebar -->              
+<!--empieza eventon y sidebar -->              
 <section id="content" style="background: none repeat scroll 0% 0% rgb(252, 252, 252);">
     <div class="container">
         <div class="row">
