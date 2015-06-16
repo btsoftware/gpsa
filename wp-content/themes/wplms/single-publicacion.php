@@ -53,9 +53,13 @@ if(isset($title) && $title !='' && $title !='H'){
                     <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                                         
-                     <div class="tags"> 
-                    <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?> </div>           
+                     <div class="tags">
                     <div class="inpublication"><i class="icon-user clicked p13"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
+                    <div class="inpublication"><i class="icon-book-open-1 p13 left-i"></i>
+                        <?php echo get_post_meta($post->ID, 'publication_by', true); ?>                          
+                    </div>
+                       
+                    <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?> </div>           
                     <div class="inpublication"><i class="icon-script clicked p12"></i>
                         <?php
                          $terms = get_terms('Material Type');
@@ -65,13 +69,7 @@ if(isset($title) && $title !='' && $title !='H'){
                          }
                         ;?>
                     </div>
-                    <div class="inpublication"><i class="icon-folder-fill clicked p12 left-i"></i>
-                    <?php
-                    $category = get_the_category(); 
-                    echo $category[0]->cat_name;
-                    ?>
-                           
-                    </div>
+
                  </div>  
                                            
                     <?php
