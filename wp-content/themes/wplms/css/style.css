@@ -2035,6 +2035,7 @@ h4.block_title + .date{line-height:1.4;}
 .left-i {
     margin-right: 4px;
 }
+.rignt-i {margin-left: 8px;}
 p.autor_material {
     float: right;
     font-size: 11px;

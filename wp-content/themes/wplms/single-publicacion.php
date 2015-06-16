@@ -54,13 +54,13 @@ if(isset($title) && $title !='' && $title !='H'){
                     <div class="separador"></div>
                                         
                      <div class="tags">
-                    <div class="inpublication"><i class="icon-user clicked left-i"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
+                    <div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
                     <div class="inpublication"><i class="icon-book-open-1 p13 left-i"></i>
                         <?php echo get_post_meta($post->ID, 'publication_by', true); ?>                          
                     </div>
                        
                     <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?> </div>           
-                    <div class="inpublication"><i class="icon-script clicked p12"></i>
+                    <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
                         <?php
                          $terms = get_terms('Material Type');
                          
