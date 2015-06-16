@@ -262,3 +262,35 @@ return '';
 // Hook into action
 add_action('bbp_template_after_forums_loop','recent_bbpress_topics');
 
+/**
+ * Add custom taxonomies
+ * Material Type
+ */
+function add_custom_taxonomies() {
+  // Add new "Material Type" taxonomy to Posts
+  register_taxonomy('Material Type', 'post', array(
+    // Hierarchical taxonomy (like categories)
+    'hierarchical' => true,
+    // This array of options controls the labels displayed in the WordPress Admin UI
+    'labels' => array(
+      'name' => _x( 'Materials', 'taxonomy general name' ),
+      'singular_name' => _x( 'Material', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Materials' ),
+      'all_items' => __( 'All Materials' ),
+      'parent_item' => __( 'Parent Material' ),
+      'parent_item_colon' => __( 'Parent Material:' ),
+      'edit_item' => __( 'Edit Material' ),
+      'update_item' => __( 'Update Material' ),
+      'add_new_item' => __( 'Add New Material' ),
+      'new_item_name' => __( 'New Material Name' ),
+      'menu_name' => __( 'Materials' ),
+    ),
+    // Control the slugs used for this taxonomy
+    'rewrite' => array(
+      'slug' => 'repository', // This controls the base slug that will display before each term
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+}
+add_action( 'init', 'add_custom_taxonomies', 0 );
