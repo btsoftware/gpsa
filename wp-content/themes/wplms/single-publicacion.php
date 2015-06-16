@@ -56,8 +56,9 @@ if(isset($title) && $title !='' && $title !='H'){
                      <div class="tags">
                     <div class="inpublication">
                         <i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
-                    <div class="inpublication"><p class="autor_material">Published by: <i class="icon-book-open-1 p13 left-i"></i>
-                        <?php echo get_post_meta($post->ID, 'publication_by', true); ?> </p>                         
+                    <div class="inpublication">
+                        <i class="icon-book-open-1 p13 left-i"></i>
+                        <p class="autor_material">Published by: <?php echo get_post_meta($post->ID, 'publication_by', true); ?> </p>                         
                     </div>
                        
                     <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?>
