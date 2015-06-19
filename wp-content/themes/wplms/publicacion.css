@@ -68,6 +68,7 @@
     display: inline-block;
     padding: 11px;
     text-indent: 29px;
+    font-size: 14px;
 }
 .box-bookmark-m > a.add-bookmark:hover{
 	background: url("css/images/icon-favorities.png") no-repeat scroll 11px 11px rgba(250, 250, 250, 0);
