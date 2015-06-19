@@ -80,8 +80,19 @@ if(isset($title) && $title !='' && $title !='H'){
                         the_content();
 
                      ?>
-                   
-                    <div class="box-bookmark"><?php bookmarks(); ?></div>
+                    <div class="one_half clearfix">
+                        <div class="column_content first">
+                            <a class="ghost-morado" href="<?php echo get_post_meta($post->ID, 'url-materials_by', true); ?> "target="_blank">
+                                <i class="icon-play-1 left-i"></i> Read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="one_half ">
+                        <div class="column_content ">
+                            <div class="box-bookmark-m"><?php bookmarks(); ?></div>
+                        </div>
+                    </div>
+                    
                     <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
                     </div>
                     

@@ -49,6 +49,49 @@
 	background: url("css/images/icon-favorities.png") no-repeat scroll 11px 11px rgba(250, 250, 250, 0.15);
   
 }
+/** tamplate materials**/
+
+.box-bookmark-m {
+    background: #29356c none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    margin: 20px 0 25px;
+    text-align: center !important;
+    width: 100%;
+}
+.box-bookmark-m:hover {
+    background:#1b234b;
+}
+.box-bookmark-m > .add-bookmark {
+    background: rgba(0, 0, 0, 0) url("css/images/icon-favorities.png") no-repeat scroll 11px 11px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 11px;
+    text-indent: 29px;
+}
+.box-bookmark-m > a.add-bookmark:hover{
+	background: url("css/images/icon-favorities.png") no-repeat scroll 11px 11px rgba(250, 250, 250, 0);
+  
+}
+.ghost-morado {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 2px solid #253169;
+    border-radius: 0;
+    color: #253169;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 20px 0 25px;
+    padding: 8px 12px 9px;
+    text-align: center;
+    width: 100%;
+}
+.ghost-morado:hover {
+    background-color: rgb(242, 242, 245) !important;
+    border: 2px solid rgb(109, 111, 158);
+
+}
+/** fin tamplate materials**/
 .adthis{}
 .materialrelacionado {
     background:#f8f8fa;
