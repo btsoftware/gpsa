@@ -44,9 +44,8 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
-                    <?php if(has_post_thumbnail()){ ?>
                     <div class="featured">
-                        <?php the_post_thumbnail(get_the_ID(),'full'); ?>
+                      
                     </div>
                     </div>
                     <div class="col-md-9 col-sm-8">
@@ -80,17 +79,9 @@ if(isset($title) && $title !='' && $title !='H'){
                         the_content();
 
                      ?>
-                    <div class="one_half clearfix">
-                        <div class="column_content first">
-                            <a class="ghost-morado" href="<?php echo get_post_meta($post->ID, 'url-materials_by', true); ?> "target="_blank">
-                                <i class="icon-play-1 left-i"></i> Read more
-                            </a>
-                        </div>
-                    </div>
-                    <div class="one_half ">
-                        <div class="column_content ">
+
                             <div class="box-bookmark-m"><?php bookmarks(); ?></div>
-                        </div>
+                     
                     </div>
                     
                     <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
