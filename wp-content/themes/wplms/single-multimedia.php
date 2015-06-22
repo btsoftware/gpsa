@@ -45,7 +45,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div class="content top-puplicaciones ">
                     <div class="col-md-9 col-sm-8">
                     <?php if (have_posts()) : ?>
-                    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div id="post-<?php $id=the_ID(); ?>" <?php post_class(); ?>>
                     <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                                         
