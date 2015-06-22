@@ -58,7 +58,7 @@ get_header();
                                 <a href="'.get_post_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'full').'</a>
                             </div>':'').'
                             <div class="excerpt2 '.(has_post_thumbnail(get_the_ID())?'':'').'">
-                                <h3><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
+                                <h3 class="title-bpR"><a href="'.get_post_permalink().'">'.get_the_title().'</a></h3>
 								<div class="box-bookmark-repository">';
 								
 								bookmarks(get_permalink(), get_the_title());
@@ -68,7 +68,7 @@ get_header();
                                     '.$cats.'
 
                                 </div>
-                                <p class="resumen">'.get_the_excerpt(100).'</p>
+                                <p class="resumen bprepotext">'.get_the_excerpt(100).'</p>
                             </div>
 			    
                         </div>';
