@@ -55,13 +55,11 @@ if(isset($title) && $title !='' && $title !='H'){
                                         
                     <div class="tags">                                
                     <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
-                        <?php
-                         $terms = get_terms('Material Type');
-                         
-                         foreach ($terms as $term) {
-                             echo '<a href="'.get_term_link($term).'">'.$term->name.'</a>';
-                         }
-                        ;?>
+                    <?php $terms = get_the_terms( $post->ID , 'Material Type' ); 
+                    foreach ( $terms as $term ) {
+                    echo '<a href="' . $term_link . '">' . $term->name . '</a>';
+                    } 
+                    ?>
                     </div>
 
                  </div>  
