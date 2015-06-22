@@ -85,16 +85,19 @@ get_header( 'buddypress' ); ?>
 								<li id="members-order-select" class="last filter">
 
 									<label for="members-order-by"><?php _e( 'Order By:', 'vibe' ); ?></label>
+									
 									<select id="members-order-by">
-										<option value="active"><?php _e( 'Last Active', 'vibe' ); ?></option>
-										<option value="newest"><?php _e( 'Newest Registered', 'vibe' ); ?></option>
-
+									
 										<?php if ( bp_is_active( 'xprofile' ) ) : ?>
 
 											<option value="alphabetical"><?php _e( 'Alphabetical', 'vibe' ); ?></option>
 
 										<?php endif; ?>
 
+										<option value="active"><?php _e( 'Last Active', 'vibe' ); ?></option>
+										<option value="newest"><?php _e( 'Newest Registered', 'vibe' ); ?></option>
+
+										
 										<?php do_action( 'bp_members_directory_order_options' ); ?>
 
 									</select>
