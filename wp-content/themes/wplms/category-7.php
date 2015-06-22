@@ -64,7 +64,7 @@ get_header();
 								bookmarks(get_permalink(), get_the_title());
 									
 								echo '</div>
-                                <div class="cats">
+                                <div class="cats catKR">
                                     '.$cats.'
 
                                 </div>

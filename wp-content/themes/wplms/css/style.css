@@ -1715,6 +1715,9 @@ text-transform: uppercase;
     padding-right: 32px;
     width: 74%;
 }
+.catKR{
+	width:74%;
+}
 .blogpost .featured{
 	max-width: 200px;
 	height: auto;
