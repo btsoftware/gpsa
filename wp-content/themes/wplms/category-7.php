@@ -47,7 +47,7 @@ get_header();
                     $cats='<ul>';
                     if($categories){
                         foreach($categories as $category) {
-                            $cats .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '"></a></li>';
+                            $cats .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>';
                         }
                     }
                     $cats .='</ul>';
@@ -66,9 +66,7 @@ get_header();
 								echo '</div>
                                 <div class="cats">
                                     '.$cats.'
-                                    <p>| 
-                                    <a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'">'.get_the_author_meta( 'display_name' ).'</a>
-                                    </p>
+
                                 </div>
                                 <p class="resumen">'.get_the_excerpt(100).'</p>
                             </div>
