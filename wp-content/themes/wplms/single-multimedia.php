@@ -41,7 +41,9 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="content">
     <div class="container">       
         <div class="row">         
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div id="post">
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              
                 <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
                     <div class="featured">
@@ -80,7 +82,7 @@ if(isset($title) && $title !='' && $title !='H'){
 
                      ?>
 
-                            <div class="box-bookmark-m"><?php bookmarks(); ?></div>
+                    <div class="box-bookmark-m"><?php bookmarks(); ?></div>
                      
                     </div>
                     
