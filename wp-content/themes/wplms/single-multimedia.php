@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name Posts: Materials Repository
+Template Name Posts: Materials Multimedia
 */
 ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/publicacion.css" />
