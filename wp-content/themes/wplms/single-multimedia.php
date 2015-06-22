@@ -41,13 +41,14 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="content">
     <div class="container">       
         <div class="row">
-               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                <div id="post-<?php $id=the_ID(); ?>" <?php post_class(); ?>>                        
                 <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
                     <div class="featured">
                       
                     </div>
+                    <?php
+                    }
                     </div>
                     <div class="col-md-9 col-sm-8">
                         
