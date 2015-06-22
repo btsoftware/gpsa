@@ -41,9 +41,7 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="content">
     <div class="container">       
         <div class="row">         
-                <div id="post">
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-              
+                <div id="post">                         
                 <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
                     <div class="featured">
@@ -51,6 +49,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     </div>
                     </div>
                     <div class="col-md-9 col-sm-8">
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                                         
