@@ -44,15 +44,25 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
-
+                    <?php if(has_post_thumbnail()){ ?>
+                    <div class="featured">
+                        <?php the_post_thumbnail(get_the_ID(),'full'); ?>
                     </div>
                     </div>
                     <div class="col-md-9 col-sm-8">
                     <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                                         
-                     <div class="tags">                       
-         
+                     <div class="tags">
+                    <div class="inpublication">
+                        <i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
+                    <div class="inpublication">
+                        <i class="icon-book-open-1 p13 left-i"></i>
+                        <p class="autor_material">Published by: <?php echo get_post_meta($post->ID, 'publication_by', true); ?> </p>                         
+                    </div>
+                       
+                    <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?>
+                    </div>           
                     <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
                         <?php
                          $terms = get_terms('Material Type');
