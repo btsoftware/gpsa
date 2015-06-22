@@ -52,7 +52,7 @@ get_header();
                     }
                     $cats .='</ul>';
                         
-                       echo ' <div class="blogpost">
+                       echo ' <div class="blogpost bpcat7">
                             '.(has_post_thumbnail(get_the_ID())?'
                             <div class="featured2">
                                 <a href="'.get_post_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'full').'</a>
