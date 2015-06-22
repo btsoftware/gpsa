@@ -47,7 +47,7 @@ get_header();
                     $cats='<ul>';
                     if($categories){
                         foreach($categories as $category) {
-                            $cats .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>';
+                            $cats .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '"></a></li>';
                         }
                     }
                     $cats .='</ul>';
