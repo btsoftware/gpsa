@@ -42,7 +42,7 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">       
         <div class="row">
                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">                         
+               <div id="post-<?php $id=the_ID(); ?>" <?php post_class(); ?>>                        
                 <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
                     <div class="featured">
