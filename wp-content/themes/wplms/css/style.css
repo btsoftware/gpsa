@@ -1699,6 +1699,12 @@ text-transform: uppercase;
 	clear:both;
 	margin-bottom:60px;
 }
+.bpcat7{
+	display: block;
+	min-height:235;
+	
+}
+
 .blogpost .featured{
 	max-width: 200px;
 	height: auto;
