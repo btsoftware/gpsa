@@ -1717,6 +1717,7 @@ text-transform: uppercase;
 }
 .catKR{
 	width:74%;
+	float:left;
 }
 .blogpost .featured{
 	max-width: 200px;
