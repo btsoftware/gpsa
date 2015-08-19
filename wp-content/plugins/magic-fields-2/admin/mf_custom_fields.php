@@ -372,7 +372,7 @@ class mf_custom_fields extends mf_admin {
           'name'        =>  'mf_field[core][name]',
           'description' =>  __( 'Used by the system, only lowercase alphanumeric characters and underscore is accepted.', $mf_domain),
           'div_class'   =>  'form-required',
-          'class'       => "{ validate:{ required:true, maxlength:150, lowercase:true, messages:{ lowercase:'".__( 'Only  are accepted lowercase characters,numbers or underscores' )."', required:'".__( 'This Field is required', $mf_domain )."', maxlength:'".__( 'This Field must have less than 150 characters' )."' }}}",
+          'class'       => "{ validate:{ required:true, maxlength:150, messages:{ lowercase:'".__( 'Only  are accepted lowercase characters,numbers or underscores' )."', required:'".__( 'This Field is required', $mf_domain )."', maxlength:'".__( 'This Field must have less than 150 characters' )."' }}}",
           'value'       =>  ''
         ),
         'description' =>  array(
