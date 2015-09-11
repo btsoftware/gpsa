@@ -294,3 +294,7 @@ function add_custom_taxonomies() {
   ));
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
+function myplugin_cookie_expiration( $expiration, $user_id, $remember ) {
+    return $remember ? $expiration : 86400;
+}
+add_filter( 'auth_cookie_expiration', 'myplugin_cookie_expiration', 99, 3 );
