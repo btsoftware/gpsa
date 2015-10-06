@@ -1244,11 +1244,12 @@ function bbp_reply_nice( $args = array() ) {
 				}
 
 				if ( true === $r['show_role'] ) {
-					$author_link[] = bbp_get_reply_author_role( array( 'reply_id' => $reply_id ) );
-				}
-				if ( true === $r['show_role'] ) {
 					$author_link[] = bbp_get_reply_nice( array( 'reply_id' => $reply_id ) );
 				}
+				if ( true === $r['show_role'] ) {
+					$author_link[] = bbp_get_reply_author_role( array( 'reply_id' => $reply_id ) );
+				}
+				
 				$author_link = implode( $r['sep'], $author_link );
 
 			// No links if anonymous
