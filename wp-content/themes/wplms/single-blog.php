@@ -1,7 +1,7 @@
 <?php
-
+/*
 Template Name Posts: Blog
-
+*/
 get_header();
 $page_id = get_the_ID();
 ?>
@@ -11,10 +11,8 @@ $page_id = get_the_ID();
 <?php
 get_header();
 if ( have_posts() ) : while ( have_posts() ) : the_post();
-
 $title=get_post_meta(get_the_ID(),'vibe_title',true);
 if(isset($title) && $title !='' && $title !='H'){
-
 ?>
 <section id="title">
     <div class="container">
@@ -38,7 +36,6 @@ if(isset($title) && $title !='' && $title !='H'){
 </section>
 <?php
 }
-
 ?>
 <section id="content">
     <div class="container">       
@@ -78,7 +75,6 @@ if(isset($title) && $title !='' && $title !='H'){
                     <?php
                     }
                         the_content();
-
                      ?>
                     <div class="one_half clearfix">
                         <div class="column_content first">
