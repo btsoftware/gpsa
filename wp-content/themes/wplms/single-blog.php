@@ -5,85 +5,161 @@ Template Name Posts: Blog
 get_header();
 $page_id = get_the_ID();
 ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/publicacion.css" />
+
+
+<?php
+get_header();
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+$title=get_post_meta(get_the_ID(),'vibe_title',true);
+if(isset($title) && $title !='' && $title !='H'){
+
+?>
 <section id="title">
-	<div class="container">
-		<div class="row">
-            <div class="col-md-8 col-sm-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
-                    <h1>Jose blog template</h1>
-                    <?php the_sub_title(); ?>
+                    <h1>Knowledge Repository</h1>
+                    <h5><?php the_sub_title(); ?></h5>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-                <?php vibe_breadcrumbs(); ?> 
+             <div class="col-md-3 col-sm-4">
+                 <?php
+                    $breadcrumbs=get_post_meta(get_the_ID(),'vibe_breadcrumbs',true);
+                    if(isset($breadcrumbs) && $breadcrumbs !='' && $breadcrumbs !='H'){
+                        vibe_breadcrumbs();
+                    }    
+                ?>
             </div>
         </div>
-	</div>
+    </div>
 </section>
+<?php
+}
+
+?>
 <section id="content">
-	<div class="container">
-        <div class="row">
-		<div class="col-md-9 col-sm-8">
-			<div class="content">
-				<?php
-                    
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
-                    
-                    query_posts(array('post_type'=>'post','per_page'=>5,'paged' => $paged));
-                    
-                    if ( have_posts() ) : while ( have_posts() ) : the_post();
+    <div class="container">       
+        <div class="row">         
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div class="content top-puplicaciones ">
+                    <div class="col-md-3 col-sm-3">
+                    <?php if(has_post_thumbnail()){ ?>
+                    <div class="featured">
+                        <?php the_post_thumbnail(get_the_ID(),'full'); ?>
+                    </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                    <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
+                    <div class="separador"></div>
+                                        
+                     <div class="tags">
+                    <div class="inpublication">
+                        <i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
+                    <div class="inpublication">
+                        <i class="icon-book-open-1 p13 left-i"></i>
+                        <p class="autor_material">Publisher: <?php echo get_post_meta($post->ID, 'publication_by', true); ?> </p>                         
+                    </div>
+                       
+                    <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?>
+                    </div>           
+                    <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
+                    <?php $terms = get_the_terms( $post->ID , 'Material Type' ); 
+                    foreach ( $terms as $term ) {
+                    echo '<a href="' . $term_link . '">' . $term->name . '</a>';
+                    } 
+                    ?>
+                    </div>
 
-                    $categories = get_the_category();
-                    $cats='<ul>';
-                    if($categories){
-                        foreach($categories as $category) {
-                            $cats .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>';
-                        }
+                 </div>  
+                                           
+                    <?php
                     }
-                    $cats .='</ul>';
-                        
-                       echo ' <div class="blogpost">
-                            <div class="meta">
-                               <div class="date">
-                                <p class="day"><span>'.sprintf('%02d', get_the_time('j')).'</span></p>
-                                <p class="month">'.get_the_time('M').'\''.get_the_time('y').'</p>
-                               </div>
-                            </div>
-                            '.(has_post_thumbnail(get_the_ID())?'
-                            <div class="featured">
-                                <a href="'.get_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'medium').'</a>
-                            </div>':'').'
-                            <div class="excerpt '.(has_post_thumbnail(get_the_ID())?'thumb':'').'">
-                                <h3><a href="'.get_permalink().'">'.get_the_title().'</a></h3>
-                                <div class="cats">
-                                    '.$cats.'
-                                    <p>| 
-                                    <a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'">'.get_the_author_meta( 'display_name' ).'</a>
-                                    </p>
-                                </div>
-                                <p>'.get_the_excerpt().'</p>
-                                <a href="'.get_permalink().'" class="link">'.__('Read More','vibe').'</a>
-                            </div>
-                        </div>';
+                        the_content();
 
-                        
-                    endwhile;
-                    endif;
-                    wp_reset_postdata();
-                    pagination();
+                     ?>
+                    <div class="one_half clearfix">
+                        <div class="column_content first">
+                            <a class="ghost-morado" href="<?php echo get_post_meta($post->ID, 'url-materials_by', true); ?> "target="_blank">
+                                <i class="icon-play-1 left-i"></i> Read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="one_half ">
+                        <div class="column_content ">
+                            <div class="box-bookmark-m"><?php bookmarks(); ?></div>
+                        </div>
+                    </div>
+                    
+                    <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
+                    </div>
+                    
+                
+                
+                <?php
+                        $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
+                        if(isset($prenex) && $prenex !='' && $prenex !='H'){
+                    ?>
+                    <div class="prev_next_links">
+                        <ul class="prev_next">
+                            <?php 
+                            echo '<li>';previous_post_link('<strong class="prev">%link</strong>'); 
+                            echo '</li><li> | </li><li>';
+                            next_post_link('<strong class="next">%link</strong>');
+                            echo '</li>';
+                            ?>
+                        </ul>    
+                    </div>
+                    <?php
+                        }
+                    ?>
+                </div>
+                
+                <?php
+                $author = getPostMeta($post->ID,'vibe_author',true);
+                if(isset($author) && $author && $author !='H'){?>
+                <div class="postauthor">
+                    <div class="auth_image">
+                        <?php
+                            echo get_avatar( get_the_author_meta('email'), '80');
+                         ?>
+                    </div>
+                    <div class="author_info">
+                        <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="readmore link">Courses from <?php the_author_meta( 'display_name' ); ?></a>
+                        <h6><?php the_author_meta( 'display_name' ); ?></h6>
+                        <div class="author_desc">
+                             <?php  the_author_meta( 'description' );?>
+
+                             <p class="website">Website : <a href="<?php  the_author_meta( 'url' );?>" target="_blank"><?php  the_author_meta( 'url' );?></a></p>
+                                     <?php
+                            $author_id=  get_the_author_meta('ID');
+                            vibe_author_social_icons($author_id);
+                        ?>  
+                            
+                        </div>     
+                    </div>    
+                </div>
+                <?php
+                }              
+                ;
+                endwhile;
+                endif;
                 ?>
-			</div>
-		</div>
-		<div class="col-md-3 col-sm-4">
-			<div class="sidebar">
-				<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('mainsidebar') ) : ?>
-                <?php endif; ?>
-			</div>
-		</div>
+            </div>
         </div>
-	</div>
+    </div>
 </section>
+<section class="stripe aboutus-3">
+    <div class="container"> 
+    <div class="row">
+      <?php if ( function_exists( 'echo_ald_crp' ) ) echo_ald_crp(); ?> 
+    </div>
+    </div>
+</section>
+</div>
+
 <?php
 get_footer();
 ?>
