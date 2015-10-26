@@ -48,7 +48,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         <?php the_post_thumbnail(get_the_ID(),'full'); ?>
                     </div>
                     </div>
-                    <div class="col-md-9 col-sm-8">
+                    <div class="col-md-6 col-sm-6">
                     <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                                         
@@ -58,8 +58,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <div class="inpublication">
                         <i class="icon-book-open-1 p13 left-i"></i>
                         <p class="autor_material">Publisher: <?php echo get_post_meta($post->ID, 'publication_by', true); ?> </p>                         
-                    </div>
-                       
+                    </div>     
                     <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?>
                     </div>           
                     <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
@@ -69,9 +68,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     } 
                     ?>
                     </div>
-
-                 </div>  
-                                           
+                 </div>                                           
                     <?php
                     }
                         the_content();
@@ -90,10 +87,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     </div>
                     
                     <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
-                    </div>
-                    
-                
-                
+
                 <?php
                         $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
                         if(isset($prenex) && $prenex !='' && $prenex !='H'){
@@ -112,7 +106,13 @@ if(isset($title) && $title !='' && $title !='H'){
                         }
                     ?>
                 </div>
-                
+             <div class="col-md-3 col-sm-3">
+                <div class="sidebar">
+                    <?php
+                    $sidebar = apply_filters('wplms_sidebar','WebinarSidebar',get_the_ID());
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
+                    <?php endif; ?>
+                </div>               
                 <?php
                 $author = getPostMeta($post->ID,'vibe_author',true);
                 if(isset($author) && $author && $author !='H'){?>
