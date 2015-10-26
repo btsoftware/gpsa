@@ -97,7 +97,7 @@ if(isset($title) && $title !='' && $title !='H'){
              <div class="col-md-3 col-sm-3">
                 <div class="sidebar">
                     <?php
-                    $sidebar = apply_filters('wplms_sidebar','BlogSidebar',get_the_ID());
+                    $sidebar = apply_filters('wplms_sidebar','BlogpostSidebar',get_the_ID());
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                     <?php endif; ?>
                 </div>               
