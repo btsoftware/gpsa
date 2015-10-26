@@ -52,9 +52,23 @@ if(isset($title) && $title !='' && $title !='H'){
                     <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                     <div class="separador"></div>
                                         
-                    <div class="tags">
-                          <div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>           
-                   </div>                                           
+                     <div class="tags">
+                    <div class="inpublication">
+                        <i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>
+                    <div class="inpublication">
+                        <i class="icon-book-open-1 p13 left-i"></i>
+                        <p class="autor_material">Publisher: <?php echo get_post_meta($post->ID, 'publication_by', true); ?> </p>                         
+                    </div>     
+                    <div class="inpublication"><i class="icon-clock left-i"></i><?php echo get_post_meta($post->ID, 'publication_year', true); ?>
+                    </div>           
+                    <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
+                    <?php $terms = get_the_terms( $post->ID , 'Material Type' ); 
+                    foreach ( $terms as $term ) {
+                    echo '<a href="' . $term_link . '">' . $term->name . '</a>';
+                    } 
+                    ?>
+                    </div>
+                 </div>                                           
                     <?php
                     }
                         the_content();
