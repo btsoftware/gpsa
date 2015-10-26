@@ -4684,6 +4684,9 @@ footer, footer a:hover, .footerwidget li a {
 }
 
 /** blog post custom style **/
+.blogPost > .sidebar {
+    padding: 0;
+}
 #cat {
     margin-bottom: 16px;
     padding: 1px 0;
