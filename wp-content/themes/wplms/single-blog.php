@@ -54,7 +54,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                         
                     <div class="tags">
                           <div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>           
-        </div>                                           
+                   </div>                                           
                     <?php
                     }
                         the_content();
@@ -67,8 +67,21 @@ if(isset($title) && $title !='' && $title !='H'){
                               <div class="col-md-2"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
                               <div class="col-md-10">la info</div>
                          </div>
+                 </div>
+                <?php
+                        $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
+                        if(isset($prenex) && $prenex !='' && $prenex !='H'){
+                    ?>
+                    <div class="prev_next_links">
+                        <ul class="prev_next">
+                            <?php 
+                            echo '<li>';previous_post_link('<strong class="prev">%link</strong>'); 
+                            echo '</li><li> | </li><li>';
+                            next_post_link('<strong class="next">%link</strong>');
+                            echo '</li>';
+                            ?>
+                        </ul>    
                     </div>
-
                     
                     <?php
                         }
@@ -112,7 +125,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 endif;
                 ?>
             </div>
-     
+        </div>
         </div>
     </div>
 </section>
