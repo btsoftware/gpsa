@@ -61,10 +61,6 @@ if(isset($title) && $title !='' && $title !='H'){
                      ?>
                     
                     <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
-                    <div class="row autor-trayectoria">
-                        <div class="col-md-2">imagen</div>
-                        <div class="col-md-10">la info</div>
-                    </div>
 
                 <?php
                         $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
@@ -84,6 +80,12 @@ if(isset($title) && $title !='' && $title !='H'){
                         }
                     ?>
                 </div>
+                      <div class="col-md-9 col-sm-9">
+                                    <div class="row autor-trayectoria">
+                        <div class="col-md-2">imagen</div>
+                        <div class="col-md-10">la info</div>
+                    </div>
+                      </div>
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
