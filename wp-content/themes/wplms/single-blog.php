@@ -76,16 +76,18 @@ if(isset($title) && $title !='' && $title !='H'){
                             ?>
                         </ul>    
                     </div>
-                    <?php
-                        }
-                    ?>
-                </div>
-                 <div class="col-md-9 col-sm-9 trayectoria-top">
+                    
+                <div class="col-md-9 col-sm-9 trayectoria-top">
                         <div class="row autor-trayectoria">
                               <div class="col-md-2"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
                               <div class="col-md-10">la info</div>
                          </div>
                  </div>
+                    <?php
+                        }
+                    ?>
+                </div>
+
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
