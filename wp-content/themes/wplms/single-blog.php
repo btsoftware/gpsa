@@ -68,6 +68,7 @@ if(isset($title) && $title !='' && $title !='H'){
                               <div class="col-md-10">la info</div>
                          </div>
                  </div>
+                       </div>
                 <?php
                         $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
                         if(isset($prenex) && $prenex !='' && $prenex !='H'){
@@ -112,7 +113,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 endif;
                 ?>
             </div>
-        </div>
+      
         </div>
     </div>
 </section>
