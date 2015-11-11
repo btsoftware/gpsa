@@ -87,7 +87,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <?php
                         }
                     ?>
-              
+                </div>
 
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
