@@ -76,6 +76,10 @@ if(isset($title) && $title !='' && $title !='H'){
                             ?>
                         </ul>    
                     </div>
+                    <div class="row autor-trayectoria">
+                      <div class="col-md-2">imagen</div>
+                      <div class="col-md-10">la info</div>
+                    </div>
                     <?php
                         }
                     ?>
@@ -111,10 +115,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         </div>     
                     </div>    
                 </div>
-                <div class="row autor-trayectoria">
-                      <div class="col-md-2">imagen</div>
-                      <div class="col-md-10">la info</div>
-                </div>
+
                 <?php
                 }              
                 ;
