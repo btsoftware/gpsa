@@ -61,7 +61,13 @@ if(isset($title) && $title !='' && $title !='H'){
                      ?>
                     
                     <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
-
+                    </div>
+                                    <div class="col-md-9 col-sm-9 trayectoria-top">
+                        <div class="row autor-trayectoria">
+                              <div class="col-md-2"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
+                              <div class="col-md-10">la info</div>
+                         </div>
+                 </div>
                 <?php
                         $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
                         if(isset($prenex) && $prenex !='' && $prenex !='H'){
@@ -76,14 +82,7 @@ if(isset($title) && $title !='' && $title !='H'){
                             ?>
                         </ul>    
                     </div>
-                      </div>
                     
-                <div class="col-md-9 col-sm-9 trayectoria-top">
-                        <div class="row autor-trayectoria">
-                              <div class="col-md-2"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
-                              <div class="col-md-10">la info</div>
-                         </div>
-                 </div>
                     <?php
                         }
                     ?>
