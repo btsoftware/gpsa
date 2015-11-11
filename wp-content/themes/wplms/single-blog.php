@@ -125,7 +125,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 endif;
                 ?>
             </div>
-        </div>
+     
         </div>
     </div>
 </section>
