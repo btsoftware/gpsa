@@ -76,6 +76,7 @@ if(isset($title) && $title !='' && $title !='H'){
                             ?>
                         </ul>    
                     </div>
+                      </div>
                     
                 <div class="col-md-9 col-sm-9 trayectoria-top">
                         <div class="row autor-trayectoria">
@@ -86,7 +87,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <?php
                         }
                     ?>
-                </div>
+              
 
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
