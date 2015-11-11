@@ -40,35 +40,25 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="content">
     <div class="container">       
         <div class="row">         
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content top-puplicaciones ">
-                    <div class="col-md-3 col-sm-3">
-                    <?php if(has_post_thumbnail()){ ?>
-                    <div class="featured">
-                        <?php the_post_thumbnail(get_the_ID(),'full'); ?>
-                    </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                    <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
-                    <div class="separador"></div>
-                                        
-                    <div class="tags">
-                          <div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>           
-                   </div>                                           
-                    <?php
-                    }
-                        the_content();
-                     ?>
-                    
-                    <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
-                    </div>
-                     <div class="col-md-9 col-sm-9 trayectoria-top">
-                        <div class="row autor-trayectoria">
-                              <div class="col-md-2"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
-                              <div class="col-md-10">la info</div>
-                         </div>
-                 </div>
-                       ·
+                     <div class="col-md-3 col-sm-3">
+                         <?php if(has_post_thumbnail()){ ?> <div class="featured"> <?php the_post_thumbnail(get_the_ID(),'full'); ?> </div>
+                     </div>
+                     
+                     <div class="col-md-6 col-sm-6">
+                          <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
+                          <div class="separador"></div>                                      
+                          <div class="tags"><div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div></div>                                          
+                          <?php } the_content(); ?>
+                           <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
+                     </div>
+                     
+                                         
+                              <div class="col-md-1"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
+                              <div class="col-md-8">la info</div>
+                   
+
                 <?php
                         $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
                         if(isset($prenex) && $prenex !='' && $prenex !='H'){
@@ -112,10 +102,10 @@ if(isset($title) && $title !='' && $title !='H'){
                 endwhile;
                 endif;
                 ?>
-            </div>
+             </div><!-- end blogPost-->
       
-        </div>
-    </div>
+        </div> <!-- end post id-->
+    </div> <!-- end row -->
 </section>
 <section class="stripe aboutus-3">
     <div class="container"> 
