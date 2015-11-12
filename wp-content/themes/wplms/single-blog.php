@@ -39,7 +39,8 @@ if(isset($title) && $title !='' && $title !='H'){
 ?>
 <section id="content">
     <div class="container">       
-        <div class="row">         
+        <div class="row">
+            <div class="col-md-9 col-sm-8">
                 <div  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content top-puplicaciones ">
                      <div class="col-md-3 col-sm-3">
@@ -56,7 +57,7 @@ if(isset($title) && $title !='' && $title !='H'){
                      
                                          
                               <div class="col-md-1"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
-                              <div class="col-md-8">la info</div>
+                              <div class="col-md-">la info</div>
                    
 
                 <?php
@@ -76,7 +77,8 @@ if(isset($title) && $title !='' && $title !='H'){
                 </div>  
                     <?php
                         }
-                    ?>            
+                    ?>
+            </div>
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
