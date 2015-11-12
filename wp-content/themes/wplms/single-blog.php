@@ -55,9 +55,8 @@ if(isset($title) && $title !='' && $title !='H'){
                            <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
                      </div>
                      
-                                         
-                              <div class="col-md-1"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
-                              <div class="col-md-">la info</div>
+                     <div class="col-md-1"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
+                     <div class="col-md-8">la info</div>
                    
 
                 <?php
@@ -74,12 +73,13 @@ if(isset($title) && $title !='' && $title !='H'){
                             ?>
                         </ul>    
                     </div>
-                </div>  
+                </div>
+                </div>jij
                     <?php
                         }
                     ?>
-            </div>
-             <div class="col-md-3 col-sm-3 blogPost">
+                    
+                                 <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
                     $sidebar = apply_filters('wplms_sidebar','BlogpostSidebar',get_the_ID());
@@ -105,9 +105,12 @@ if(isset($title) && $title !='' && $title !='H'){
                 endif;
                 ?>
              </div><!-- end blogPost-->
+            </div>
+        
+
       
-        </div> <!-- end post id-->
-    </div> <!-- end row -->
+
+    </div> <!-- end class cointeiner -->
 </section>
 <section class="stripe aboutus-3">
     <div class="container"> 
@@ -116,7 +119,7 @@ if(isset($title) && $title !='' && $title !='H'){
     </div>
     </div>
 </section>
-</div>
+
 
 <?php
 get_footer();
