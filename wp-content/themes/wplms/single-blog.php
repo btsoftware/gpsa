@@ -41,13 +41,13 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">       
         <div class="row">
             <div class="col-md-9 col-sm-8">
-                <div  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div id="post">
                 <div class="content top-puplicaciones ">
                      <div class="col-md-3 col-sm-3">
                          <?php if(has_post_thumbnail()){ ?> <div class="featured"> <?php the_post_thumbnail(get_the_ID(),'full'); ?> </div>
                      </div>
                      
-                     <div class="col-md-6 col-sm-6">
+                     <div class="col-md-9 col-sm-9">
                           <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                           <div class="separador"></div>                                      
                           <div class="tags"><div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div></div>                                          
@@ -56,7 +56,7 @@ if(isset($title) && $title !='' && $title !='H'){
                      </div>
                      
                      <div class="col-md-1"><?php echo get_post_meta($post->ID, 'imagen_author-post', true); ?></div>
-                     <div class="col-md-8">la info</div>
+                     <div class="col-md-11">la info</div>
                    
 
                 <?php
@@ -74,12 +74,15 @@ if(isset($title) && $title !='' && $title !='H'){
                         </ul>    
                     </div>
                 </div>
-                </div>jij
+                </div>
+                
+               
                     <?php
                         }
                     ?>
-                    
-                                 <div class="col-md-3 col-sm-3 blogPost">
+                </div>
+            
+                <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
                     $sidebar = apply_filters('wplms_sidebar','BlogpostSidebar',get_the_ID());
