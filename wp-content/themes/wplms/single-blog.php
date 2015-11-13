@@ -49,7 +49,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                 <?php the_post_thumbnail(get_the_ID(),'full'); ?>
                             </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-9 col-sm-6">
                             <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                             <div class="separador"></div>
                                                 
@@ -64,7 +64,8 @@ if(isset($title) && $title !='' && $title !='H'){
                             <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>                          
                              
                         </div>
-                        <div class="row">guh uhduiehuf uhfiuehrf unuifgh ujdniuji uiniwujng iejwufhruhv </div>  
+                        <div class="col-md-12 col-sm-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at neque eget lacus sodales varius. Nulla consectetur fermentum lectus, ac mollis velit commodo sit amet. Quisque massa urna, egestas ac eleifend non, gravida sit amet tellus. Suspendisse laoreet elit neque, sed consequat metus posuere vitae. Maecenas pharetra arcu erat, vulputate bibendum ligula lacinia in. Donec ullamcorper leo sit amet nunc finibus aliquam. Fusce sed euismod erat. Aenean vehicula lacus augue, bibendum ullamcorper orci auctor ut. Nulla massa nibh, fringilla a tristique sit amet, ornare blandit orci. Donec tempus porta felis ac accumsan.</p>
+                        </div>  
                     </div>
  <?php
                                 
