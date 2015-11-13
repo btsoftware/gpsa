@@ -62,22 +62,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     
                     <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
 
-                <?php
-                        $prenex=get_post_meta(get_the_ID(),'vibe_prev_next',true);
-                        if(isset($prenex) && $prenex !='' && $prenex !='H'){
-                    ?>
-                    <div class="prev_next_links">
-                    
-                        <ul class="prev_next">
-                           
-                            <?php 
-                            echo '<li>';previous_post_link('<strong class="prev">%link</strong>'); 
-                            echo '</li><li> | </li><li>';
-                            next_post_link('<strong class="next">%link</strong>');
-                            echo '</li>';
-                            ?>
-                        </ul>    
-                    </div>
+                
                     <?php
                         }
                     ?>
