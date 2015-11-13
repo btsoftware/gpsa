@@ -41,7 +41,7 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">       
         <div class="row">         
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <div class="content top-puplicaciones ">
+                <div class="content top-puplicaciones ">dgvduyghfuyghu
                     <div class="col-md-3 col-sm-3">
                     <?php if(has_post_thumbnail()){ ?>
                     <div class="featured">
@@ -81,7 +81,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         }
                     ?>
                 </div>
-             <div class="col-md-9 col-sm-9">uiewhfuiehw uehdiuewhf</div>
+
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
