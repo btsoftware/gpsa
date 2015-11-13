@@ -69,7 +69,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <div class="prev_next_links">
                     
                         <ul class="prev_next">
-                            <p>dgvduyghfuyghu dgvduyghfuyghu dgvduyghfuyghu</p>
+                           
                             <?php 
                             echo '<li>';previous_post_link('<strong class="prev">%link</strong>'); 
                             echo '</li><li> | </li><li>';
@@ -82,6 +82,9 @@ if(isset($title) && $title !='' && $title !='H'){
                         }
                     ?>
                 </div>
+                     <div class="col-md-9 col-sm-9">
+                     <p>dgvduyghfuyghu dgvduyghfuyghu dgvduyghfuyghu</p>
+                     </div>
 
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
