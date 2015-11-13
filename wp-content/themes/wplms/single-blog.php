@@ -64,7 +64,7 @@ if(isset($title) && $title !='' && $title !='H'){
 
                 
                     <?php
-                        }
+                        
                     ?>
                 </div>
 
