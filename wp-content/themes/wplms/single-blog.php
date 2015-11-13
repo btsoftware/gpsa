@@ -61,13 +61,12 @@ if(isset($title) && $title !='' && $title !='H'){
                                 the_content();
                              ?>
                             
-                            <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>
-                            dfagrtghhh
-        
+                            <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>                          
+                             
+                        </div>
                             <?php
                                 
                             ?>
-                        </div>
                     </div>
 
 
