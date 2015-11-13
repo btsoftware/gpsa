@@ -49,7 +49,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                 <?php the_post_thumbnail(get_the_ID(),'full'); ?>
                             </div>
                             </div>
-                            <div class="col-md-9 col-sm-6">
+                            <div class="col-md-9 col-sm-9">
                             <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
                             <div class="separador"></div>
                                                 
