@@ -76,6 +76,7 @@ if(isset($title) && $title !='' && $title !='H'){
                             ?>
                         </ul>    
                     </div>
+                    <div class="col-md-3 col-sm-3">Aqui va</div>
                     <?php
                         }
                     ?>
