@@ -64,13 +64,11 @@ if(isset($title) && $title !='' && $title !='H'){
                             <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>                          
                              
                         </div>
-                        <div class="row">guh uhduiehuf uhfiuehrf unuifgh ujdniuji uiniwujng iejwufhruhv </div>
-                        
-                            <?php
+                        <div class="row">guh uhduiehuf uhfiuehrf unuifgh ujdniuji uiniwujng iejwufhruhv </div>  
+                    </div>
+ <?php
                                 
                             ?>
-                    </div>
-
 
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
