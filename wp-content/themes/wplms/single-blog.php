@@ -41,7 +41,7 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">       
         <div class="row">         
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <div class="content top-puplicaciones ">dgvduyghfuyghu
+                <div class="content top-puplicaciones ">
                     <div class="col-md-3 col-sm-3">
                     <?php if(has_post_thumbnail()){ ?>
                     <div class="featured">
@@ -69,6 +69,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <div class="prev_next_links">
                     
                         <ul class="prev_next">
+                            <p>dgvduyghfuyghu dgvduyghfuyghu dgvduyghfuyghu</p>
                             <?php 
                             echo '<li>';previous_post_link('<strong class="prev">%link</strong>'); 
                             echo '</li><li> | </li><li>';
