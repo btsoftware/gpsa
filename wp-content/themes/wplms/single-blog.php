@@ -64,8 +64,8 @@ if(isset($title) && $title !='' && $title !='H'){
                             <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>                          
                              
                         </div>
-                        <div class="col-md-12 col-sm-12">
-                            <div class="col-md-2 col-sm-2 ">                                							    
+                        <div class="col-md-12 col-sm-12 trayectoria-cont">
+                            <div class="col-md-2 col-sm-2">                                							    
 				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_img_trayectoria', true); ?>
 				    <img src="<?php echo $wp_img_trayectoria;?>" >				
                             </div>
