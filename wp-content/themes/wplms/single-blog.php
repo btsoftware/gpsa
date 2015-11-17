@@ -71,6 +71,7 @@ if(isset($title) && $title !='' && $title !='H'){
                             </div>
                             <div class="col-md-10 col-sm-10 trayectoria-top">
                                 <p class="autor-articulo">About the Author</p>
+                                <p class="autor-nombre"><?php echo get_post_meta($post->ID, 'nombre_del_author', true); ?></p>
                                 <?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?>
                             </div>
                         </div>  
