@@ -66,7 +66,10 @@ if(isset($title) && $title !='' && $title !='H'){
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="col-md-1 col-sm-1">
-                                imagen
+                                <div class="pais-thumbnail">							    
+				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_pais_recientes', true); ?>
+				    <img src="<?php echo $wp_img_trayectoria;?>" >
+				</div>
                             </div>
                             <div class="col-md-11 col-sm-11">
                                 texto
