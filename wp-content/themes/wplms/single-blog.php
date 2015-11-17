@@ -64,8 +64,7 @@ if(isset($title) && $title !='' && $title !='H'){
                             <div class="adthis"><?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'small_toolbox'); ?></div>                          
                              
                         </div>
-                        <div class="col-md-12 col-sm-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at neque eget lacus sodales varius. Nulla consectetur fermentum lectus, ac mollis velit commodo sit amet. Quisque massa urna, egestas ac eleifend non, gravida sit amet tellus. Suspendisse laoreet elit neque, sed consequat metus posuere vitae. Maecenas pharetra arcu erat, vulputate bibendum ligula lacinia in. Donec ullamcorper leo sit amet nunc finibus aliquam. Fusce sed euismod erat. Aenean vehicula lacus augue, bibendum ullamcorper orci auctor ut. Nulla massa nibh, fringilla a tristique sit amet, ornare blandit orci. Donec tempus porta felis ac accumsan.</p>
-                        </div>  
+                        <div class="col-md-12 col-sm-12"> 
                     </div>
  <?php
                                 
