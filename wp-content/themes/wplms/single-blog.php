@@ -67,7 +67,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         <div class="col-md-12 col-sm-12">
                             <div class="col-md-1 col-sm-1">
                                 <div class="pais-thumbnail">							    
-				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_pais_recientes', true); ?>
+				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_img_trayectoria', true); ?>
 				    <img src="<?php echo $wp_img_trayectoria;?>" >
 				</div>
                             </div>
