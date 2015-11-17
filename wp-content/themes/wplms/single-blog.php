@@ -72,7 +72,7 @@ if(isset($title) && $title !='' && $title !='H'){
 				</div>
                             </div>
                             <div class="col-md-11 col-sm-11">
-                                texto
+                                <p class="descripcion-trayectoria"><?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?></p>
                             </div>
                         </div>  
                     </div>
