@@ -65,11 +65,11 @@ if(isset($title) && $title !='' && $title !='H'){
                              
                         </div>
                         <div class="col-md-12 col-sm-12 trayectoria-cont">
-                            <div class="col-md-2 col-sm-2">                                							    
+                            <div class="col-md-2 col-sm-2 trayectoria-top">                                							    
 				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_img_trayectoria', true); ?>
 				    <img src="<?php echo $wp_img_trayectoria;?>" >				
                             </div>
-                            <div class="col-md-10 col-sm-10">
+                            <div class="col-md-10 col-sm-10 trayectoria-top">
                                 <?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?>
                             </div>
                         </div>  
