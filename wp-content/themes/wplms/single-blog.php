@@ -65,6 +65,12 @@ if(isset($title) && $title !='' && $title !='H'){
                              
                         </div>
                         <div class="col-md-12 col-sm-12">
+                            <div class="col-md-1 col-sm-1">
+                                imagen
+                            </div>
+                            <div class="col-md-11 col-sm-11">
+                                texto
+                            </div>
                         </div>  
                     </div>
  <?php
