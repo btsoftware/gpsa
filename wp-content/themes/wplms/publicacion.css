@@ -100,3 +100,10 @@
 /** tamplete blog post **/
 .trayectoria-cont {margin-top:60px;}
 .trayectoria-top {margin-top:60px;}
+p.autor-articulo{
+    color: #253169;
+    font-family: "steelfish_rgregular";
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+}
