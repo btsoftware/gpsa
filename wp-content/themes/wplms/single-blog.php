@@ -65,14 +65,12 @@ if(isset($title) && $title !='' && $title !='H'){
                              
                         </div>
                         <div class="col-md-12 col-sm-12">
-                            <div class="col-md-1 col-sm-1">
-                                <div class="pais-thumbnail">							    
+                            <div class="col-md-2 col-sm-2 ">                                							    
 				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_img_trayectoria', true); ?>
-				    <img src="<?php echo $wp_img_trayectoria;?>" >
-				</div>
+				    <img src="<?php echo $wp_img_trayectoria;?>" >				
                             </div>
-                            <div class="col-md-11 col-sm-11">
-                                <p class="descripcion-trayectoria"><?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?></p>
+                            <div class="col-md-10 col-sm-10">
+                                <?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?>
                             </div>
                         </div>  
                     </div>
