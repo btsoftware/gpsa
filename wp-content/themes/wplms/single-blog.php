@@ -19,7 +19,7 @@ if(isset($title) && $title !='' && $title !='H'){
         <div class="row">
             <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
-                    <h1>Knowledge Repository</h1>
+                    <h1>Blog</h1>
                     <h5><?php the_sub_title(); ?></h5>
                 </div>
             </div>
