@@ -34,7 +34,7 @@ get_header();
                         $cats .='</ul>';
                             
                            echo ' <div class="blogpost">
-                                <div class="meta">
+                                <div class="meta" style="display: none;">
                                    <div class="date">
                                     <p class="day"><span>'.get_the_time('j').'</span></p>
                                     <p class="month">'.get_the_time('M').'</p>
