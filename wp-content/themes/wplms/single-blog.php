@@ -41,16 +41,15 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">       
         <div class="row">         
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <div class="content top-puplicaciones ">
+                <div class="blogpost">
                     <div class="col-md-9 col-sm-9">
-                        <div class="col-md-3 col-sm-3" style="margin: 0px; padding: 0px;">
                             <?php if(has_post_thumbnail()){ ?>
-                            <div class="featured">
+                            <div class="featured" style="margin: 0px; padding: 0px;">
                                 <?php the_post_thumbnail(get_the_ID(),'full'); ?>
                             </div>
-                            </div>
-                            <div class="col-md-9 col-sm-9">
-                            <div class="publicacionpost"><h3><?php the_title(); ?></h3></div>
+                        
+                            <div class="excerpt thumb">
+                           <h3><?php the_title(); ?></h3>
                             <div class="separador"></div>
                                                 
                             <div class="tags">
