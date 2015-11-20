@@ -43,7 +43,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="content top-puplicaciones ">
                     <div class="col-md-9 col-sm-9">
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-3 col-sm-3" style="margin: 0px; padding: 0px;">
                             <?php if(has_post_thumbnail()){ ?>
                             <div class="featured">
                                 <?php the_post_thumbnail(get_the_ID(),'full'); ?>
