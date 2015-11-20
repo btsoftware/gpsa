@@ -110,3 +110,6 @@ p.autor-articulo {
 p.autor-nombre {
     font-weight: bold;
 }
+.blogpost .excerpt.thumb {
+    margin-left: 221px;
+}
