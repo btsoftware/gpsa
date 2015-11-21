@@ -113,3 +113,9 @@ p.autor-nombre {
 .blogpost .excerpt.thumb {
     margin-left: 221px;
 }
+.blogpost h3 {
+    color: #253169;
+    font-family: steelfish_rgregular;
+    font-size: 29px;
+    margin-top: 0;
+}
