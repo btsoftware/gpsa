@@ -119,3 +119,6 @@ p.autor-nombre {
     font-size: 29px;
     margin-top: 0;
 }
+.featured > img {
+    border-bottom: 5px solid #6d6f9e;
+}
