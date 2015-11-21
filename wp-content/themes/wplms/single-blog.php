@@ -68,7 +68,7 @@ if(isset($title) && $title !='' && $title !='H'){
 				    <?php $wp_img_trayectoria= get_post_meta($post->ID, 'wp_img_trayectoria', true); ?>
 				    <img src="<?php echo $wp_img_trayectoria;?>" >				
                             </div>
-                            <div class="col-md-10 col-sm-10 trayectoria-top">
+                            <div class="col-md-10 col-sm-10 trayectoria-top bottom-tray">
                                 <p class="autor-articulo">About the Author</p>
                                 <p class="autor-nombre"><?php echo get_post_meta($post->ID, 'nombre_del_author', true); ?></p>
                                 <?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?>
