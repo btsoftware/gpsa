@@ -4693,3 +4693,6 @@ footer, footer a:hover, .footerwidget li a {
     padding: 1px 0;
     width: 100%;
 }
+.blogpost .excerpt.thumb-blog {
+    margin-left: 246px;
+}
