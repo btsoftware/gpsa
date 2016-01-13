@@ -193,10 +193,12 @@ var geojson = {
       "type": "Feature",
       "properties": {
         "names": [
-          "Richard Holloway"
+          "Richard Holloway",
+		  "Maria Cavatore"
         ],
         "urls": [
-          "http://gpsaknowledge.org/expert/richard-holloway/"
+          "http://gpsaknowledge.org/expert/richard-holloway/",
+		  "http://gpsaknowledge.org/expert/maria-cavatore/"
         ],
         "themes": [
           [1,2,3,4,5,6,7,8]
