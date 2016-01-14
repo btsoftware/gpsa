@@ -194,7 +194,7 @@ var geojson = {
       "properties": {
         "names": [
           "Richard Holloway",
-		  "Mari a Cavatore"
+		  "Maria Cavatore"
         ],
         "urls": [
           "http://gpsaknowledge.org/expert/richard-holloway/",
