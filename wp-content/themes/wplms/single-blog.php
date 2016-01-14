@@ -2,7 +2,8 @@
 /*
 Template Name Posts: Blog
 */
-
+get_header();
+$page_id = get_the_ID();
 ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/publicacion.css" />
 
