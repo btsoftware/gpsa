@@ -201,7 +201,8 @@ var geojson = {
 		  "http://gpsaknowledge.org/expert/maria-cavatore/"
         ],
         "themes": [
-          [1,2,3,4,5,6,7,8]
+          [1,2,3,4,5,6,7,8],
+		  [2,4,6,8]
         ],
         "name": "France"
       },
