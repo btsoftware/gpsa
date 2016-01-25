@@ -3788,7 +3788,7 @@ h2.destacado4 {
     text-align: center;
     text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
 }
-
+/** estilo fondo bco, letras azules
 h1.destacado5 {
     background: #fff;
     color: #212b58;
@@ -3800,6 +3800,18 @@ h1.destacado5 {
     padding: 13px 20px;
     text-align: center;
     text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+}**/
+h1.destacado5 {
+    background: rgba(37, 49, 105, 0.7) none repeat scroll 0 0;
+    color: #fff;
+    display: table;
+    font-family: steelfish_rgregular;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 7px auto 0;
+    padding: 13px 20px;
+    text-align: center;
+    text-shadow: 1px 0 rgba(0, 0, 0, 0.3);
 }
 h2.destacado5 {
     background:#fff;
@@ -3925,7 +3937,7 @@ img.wp-image-2001 {
     margin-top: 20px;
 }
 #boton-llamada{
-    background: none repeat scroll 0 0 #289cd7;
+    background:rgba(37, 49, 105, 0.7) none repeat scroll 0 0;
     border: 1px solid #289cd7;
     color: #fff;
     display: table;
@@ -3934,7 +3946,7 @@ img.wp-image-2001 {
     text-align: center;
 }
 #boton-llamada:hover{
-    background: none repeat scroll 0 0 #46acdd;
+    background: rgba(37, 49, 105, 1) none repeat scroll 0 0;
 }
 #boton-llamada2{
     background: #212B58;
