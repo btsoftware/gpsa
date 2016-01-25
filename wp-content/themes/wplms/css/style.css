@@ -3937,7 +3937,7 @@ img.wp-image-2001 {
     margin-top: 20px;
 }
 #boton-llamada{
-    background:rgba(37, 49, 105, 0.7) none repeat scroll 0 0;
+    background: none repeat scroll 0 0 #289cd7;
     border: 1px solid #289cd7;
     color: #fff;
     display: table;
@@ -3946,11 +3946,11 @@ img.wp-image-2001 {
     text-align: center;
 }
 #boton-llamada:hover{
-    background: rgba(37, 49, 105, 1) none repeat scroll 0 0;
+    background: none repeat scroll 0 0 #46acdd;
 }
 #boton-llamada2{
-    background: #212B58;
-    border: 1px solid #0F3C7C;
+    background:rgba(37, 49, 105, 0.7) none repeat scroll 0 0;
+    border: 0px solid #0F3C7C;
     color: #fff;
     display: table;
     margin:18px auto 34px !important;
@@ -3958,7 +3958,7 @@ img.wp-image-2001 {
     text-align: center;
 }
 #boton-llamada2:hover{
-    background: none repeat scroll 0 0 #253169;
+    background: none repeat scroll 0 0 rgba(37, 49, 105, 0.1) none repeat scroll 0 0;
 }
 #boton-llamada > a {
     color: #fff;
