@@ -86,38 +86,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                     <?php endif; ?>
                 </div>               
-                <?php
-                $author = getPostMeta($post->ID,'vibe_author',true);
-                if(isset($author) && $author && $author !='H'){?>
-                <div class="postauthor">
-                    <div class="auth_image">
-                        <?php
-                            echo get_avatar( get_the_author_meta('email'), '80');
-                         ?>
-                    </div>
-                    <div class="author_info">
-                        <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="readmore link">Courses from <?php the_author_meta( 'display_name' ); ?></a>
-                        <h6><?php the_author_meta( 'display_name' ); ?></h6>
-                        <div class="author_desc">
-                             <?php  the_author_meta( 'description' );?>
 
-                             <p class="website">Website : <a href="<?php  the_author_meta( 'url' );?>" target="_blank"><?php  the_author_meta( 'url' );?></a></p>
-                                     <?php
-                            $author_id=  get_the_author_meta('ID');
-                            vibe_author_social_icons($author_id);
-                        ?>  
-                            
-                        </div>     
-                    </div>    
-                </div>
-
-                <?php
-                }              
-             comments_template();
-
-                endwhile;
-                endif;
-                ?>
 
             </div>
         </div>
