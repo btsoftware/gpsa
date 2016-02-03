@@ -111,7 +111,9 @@ if(isset($title) && $title !='' && $title !='H'){
                     </div>    
                 </div>
 
-                <?php
+                
+            </div>
+			<?php
                 }              
              comments_template();
 
@@ -119,7 +121,6 @@ if(isset($title) && $title !='' && $title !='H'){
                 endif;
                 ?>
 
-            </div>
         </div>
     </div>
 </section>
