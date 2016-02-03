@@ -75,10 +75,13 @@ if(isset($title) && $title !='' && $title !='H'){
                             </div>
                         </div>  
                     </div>
- <?php
-                                
-                            ?>
+						<?php
+                }              
+             comments_template();
 
+                endwhile;
+                endif;
+                ?>
              <div class="col-md-3 col-sm-3 blogPost">
                 <div class="sidebar">
                     <?php
@@ -113,13 +116,7 @@ if(isset($title) && $title !='' && $title !='H'){
 
                 
             </div>
-			<?php
-                }              
-             comments_template();
-
-                endwhile;
-                endif;
-                ?>
+			
 
         </div>
     </div>
