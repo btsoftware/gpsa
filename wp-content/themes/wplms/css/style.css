@@ -4584,6 +4584,9 @@ figure {
 .blogpost .excerpt2{
 	margin-left:170px;
 }
+#comentarios-blog{
+	margin-top=40px;
+}
 /** footer custom**/
 .footer-contact{
 	color: #fff;

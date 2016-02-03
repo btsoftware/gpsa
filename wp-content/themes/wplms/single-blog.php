@@ -74,6 +74,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                 <?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?>
                             </div>
                             <!-- comentarios -->
+                            <div id="comentarios-blog">
                                             <?php
                 $author = getPostMeta($post->ID,'vibe_author',true);
                 if(vibe_validate($author)){?>
@@ -105,6 +106,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 endwhile;
                 endif;
                 ?>
+                </div>
                         </div>  
                     </div>
  <?php
