@@ -75,8 +75,8 @@ if(isset($title) && $title !='' && $title !='H'){
                             </div>
                             <!-- comentarios -->
                             <div id="comentarios-blog">
-                            &nbsp;
-                            &nbsp;
+                            &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                            
                                             <?php
                 $author = getPostMeta($post->ID,'vibe_author',true);
                 if(vibe_validate($author)){?>
