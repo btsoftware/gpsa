@@ -113,10 +113,12 @@ if(isset($title) && $title !='' && $title !='H'){
 
                 <?php
                 }              
-                ;
+             comments_template();
+
                 endwhile;
                 endif;
                 ?>
+
             </div>
         </div>
     </div>
