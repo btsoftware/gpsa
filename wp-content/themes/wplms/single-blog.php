@@ -112,8 +112,11 @@ if(isset($title) && $title !='' && $title !='H'){
                 </div>
 
                 <?php
-                                 
-                             ?>
+                 }              
+                 ;
+                 endwhile;
+                 endif;
+                 ?>
 
             </div>
         </div>
