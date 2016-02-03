@@ -73,6 +73,7 @@ if(isset($title) && $title !='' && $title !='H'){
                                 <p class="autor-nombre"><?php echo get_post_meta($post->ID, 'nombre_del_author', true); ?></p>
                                 <?php echo get_post_meta($post->ID, 'trayectoria_author', true); ?>
                             </div>
+                            <div class="espacio"></div>
                             <!-- comentarios -->
                             <div id="comentarios-blog">
                             &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
