@@ -86,7 +86,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                     <?php endif; ?>
                 </div>               
-
+  <?php ?>
 
             </div>
         </div>
