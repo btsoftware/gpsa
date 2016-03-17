@@ -3802,14 +3802,14 @@ h1.destacado5 {
     text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
 }**/
 h1.destacado5 {
-    background: rgba(46, 165, 219, 0.8) none repeat scroll 0 0;
+    background: rgba(37, 49, 105, 0.85) none repeat scroll 0 0;
     color: #fff;
     display: table;
     font-family: steelfish_rgregular;
     font-size: 32px;
     font-weight: normal;
     margin: 22px auto 0;
-    padding: 7px 20px;
+    padding: 5px 20px;
     text-align: center;
     text-shadow: 1px 0 rgba(0, 0, 0, 0.3);
 }
@@ -3949,7 +3949,7 @@ img.wp-image-2001 {
     background: none repeat scroll 0 0 #46acdd;
 }
 #boton-llamada2{
-    background:rgba(46, 165, 219, 0.8) none repeat scroll 0 0;
+    background: rgba(37, 49, 105, 0.85) none repeat scroll 0 0;
     border: 0px solid #0F3C7C;
     color: #fff;
     display: table;
