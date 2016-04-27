@@ -3754,7 +3754,7 @@ span.wpcf7-form-control-wrap{
 
 /** Home **/
 .page-id-24 > .global > .pusher > #content {
-    background: rgba(0, 0, 0, 0) url("/wp-content/themes/wplms/images/data-citizen-220.png") repeat scroll left top !important;
+    background: rgba(0, 0, 0, 0) url("/wp-content/themes/wplms/images/data-citizen-200.png") repeat scroll left top !important;
 }
 .content.no {
     background: none repeat scroll 0 0 rgba(237, 238, 243, 0) !important;
@@ -3951,7 +3951,7 @@ img.wp-image-2001 {
     margin-top: 20px;
 }
 #boton-llamada{
-    background-color: rgba(63, 150, 183, 0.9);
+    background: none repeat scroll 0 0 #289cd7;
     border: 1px solid #289cd7;
     color: #fff;
     display: table;
@@ -3963,7 +3963,7 @@ img.wp-image-2001 {
     background: none repeat scroll 0 0 #46acdd;
 }
 #boton-llamada2{
-    background: rgba(37, 49, 105, 0.85) none repeat scroll 0 0;
+    background-color: rgba(37, 49, 105, 0.85);
     border: 0px solid #0F3C7C;
     color: #fff;
     display: table;
