@@ -3802,14 +3802,28 @@ h1.destacado5 {
     text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
 }**/
 h1.destacado5 {
-    background: rgba(37, 49, 105, 0.85) none repeat scroll 0 0;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(63, 150, 183, 0.9);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
     color: #fff;
     display: table;
     font-family: steelfish_rgregular;
-    font-size: 32px;
+    font-size: 33px;
     font-weight: normal;
-    margin: 32px auto 0;
-    padding: 5px 20px;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
     text-align: center;
     text-shadow: 1px 0 rgba(0, 0, 0, 0.3);
 }
@@ -3937,7 +3951,7 @@ img.wp-image-2001 {
     margin-top: 20px;
 }
 #boton-llamada{
-    background: none repeat scroll 0 0 #289cd7;
+    background-color: rgba(63, 150, 183, 0.9);
     border: 1px solid #289cd7;
     color: #fff;
     display: table;
