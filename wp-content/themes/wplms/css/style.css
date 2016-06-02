@@ -3804,7 +3804,7 @@ h1.destacado5 {
 h1.destacado5 {
     background-attachment: scroll;
     background-clip: border-box;
-    background-color: rgba(63, 150, 183, 0.9);
+    background-color: #6D6F9E;
     background-image: none;
     background-origin: padding-box;
     background-position: 0 0;
@@ -3963,7 +3963,7 @@ img.wp-image-2001 {
     background: none repeat scroll 0 0 #46acdd;
 }
 #boton-llamada2{
-    background-color: rgba(63, 150, 183, 0.9);
+    background-color: #6D6F9E;
     border: 0px solid #0F3C7C;
     color: #fff;
     display: table;
