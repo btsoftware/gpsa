@@ -3820,10 +3820,10 @@ h1.destacado5 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
     text-align: center;
     text-shadow: 1px 0 rgba(0, 0, 0, 0.3);
 }
