@@ -3832,12 +3832,12 @@ h2.destacado5 {
     color:  #212b58;
     display: inline-block;
     font-family: steelfish_rgregular;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: normal;
     margin: 14px auto 0;
     padding: 5px 8px;
     text-align: center;
-    text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.1);
 }
 h1.destacado3-b {
     background: rgba(237, 238, 243, 0.9) none repeat scroll 0 0;
