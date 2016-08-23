@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: testmap Page 
+ * Template Name: Test map Page 
  */
 
 get_header();
