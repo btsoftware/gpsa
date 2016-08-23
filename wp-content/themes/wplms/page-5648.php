@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Right Sidebar Page
+ * Template Name: testmap
  */
 
 get_header();
@@ -31,60 +31,42 @@ if(isset($title) && $title !='' && $title !='H'){
 <?php
 }
 ?>
-<section class="stripe evento">
-    <div class="container">
-        <div class="v_module v_column stripe_container fullwidth v_first">
-        <?php $service_query = new WP_Query('page_id=660');
-        while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>                       
-                     
-                   <?php the_content(); ?>                                                                               
-            </article> <!-- end .entry -->
-<?php endwhile; // end of the loop. ?>
-        </div>        
-    </div>
-</section>
-
-<!--empieza eventon y sidebar -->              
-<section id="content" style="background: none repeat scroll 0% 0% rgb(252, 252, 252);">
+<!-- secci—m mapa -->
+<section id="content" class="mapa">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-sm-8">
-                <div class="content">
-<?php
-if( function_exists('add_eventon')) {
-        add_eventon($args); 
-}
-?>
-<?php $args = array(
-        'cal_id'                => 1,
-        'month_incre'           => +2,
-        'event_count'           => 3,
-        'show_upcoming'         => 0,
-        'number_of_months'      => 2,
-        'event_type'            => '3,4,1',
-        'event_type_2'          => '4,7',
-); ?>
+            <div class="col-md-12">
+
+                <div class="content" id="map_container">
+                    <div class="row">
+                        <div id="map-info">
+                            <a class="close-map-info">  &#9668; Go to map </a>
+                            <div class="map-info-data"></div>
+                        </div>
+                        <div id="map">
+                            <!--img class="wait" src="http://www.ajaxload.info/cache/BE/95/BF/00/00/00/8-1.gif"-->
+                            <img class="wait" src="<?php echo get_template_directory_uri(); ?>/assets/images/ajax-loader.gif" >
+                            
+                            <!--div id="map-legend">    
+                                <p> Da click en el mapa para ver los casos de cada país </p> 
+                            </div-->
+                        </div>
 
 
+                        <div id="menu-paises">
+                            <h2> Tell your stories </h2>  
+                            <ul> <!-- Aquí se agregan dinamicamente los paises y sus historias --> </ul>
+                        </div>
+                        
+                    </div>
                 </div>
-                <?php
-                
-                endwhile;
-                endif;
-                ?>
-            </div>
-            <div class="col-md-3 col-sm-4">
-			<div class="sidebar">
-				<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('newssidebar') ) : ?>
-                <?php endif; ?>
-			</div>
+
             </div>
         </div>
     </div>
 </section>
-</div>
+
+
 
 <?php
 get_footer();
