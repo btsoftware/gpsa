@@ -125,17 +125,17 @@ if(!isset($title) || !$title || (vibe_validate($title))){
 					<?php
 					 		
 					$titulo=the_title('', '', false);
-					if($titulo=="Thematic Forums"){
-					    $var="EXPERT FORUMS";
+					if($titulo=="Forum"){
+					    $var="Discussions with Experts";
 					     $slug="expert-forums";
 						 $add='<div class="separadorsw"></div> <li><b>Making Accountability Processes work: Engagement between Civil Society and State Accountability Institutions</b><br> Started by: Carolina Cornejo, ACIJ<br><a href="http://gpsaknowledge.org/forums/topic/making-accountability-processes-work-engagement-between-civil-society-and-state-accountability-institutions/">Join the discussion</a></li>';
 				
 					}else{
-					     $var="THEMATIC FORUMS";
+					     $var="Forum";
 					      $slug="tematic-forums";
 						  $add='';
 									
-					recent_bbpress_topics();
+					//recent_bbpress_topics();
 						  	  } 
 									
 							?>
