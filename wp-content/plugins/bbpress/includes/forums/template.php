@@ -1942,8 +1942,8 @@ function bbp_single_forum_description( $args = '' ) {
 		// Parse arguments against default values
 		$r = bbp_parse_args( $args, array(
 			'forum_id'  => 0,
-			'before'    => '<div class="bbp-template-notice info"><p class="bbp-forum-description">',
-			'after'     => '</p></div>',
+			'before'    => '<div class="bbp-template-notice info">',
+			'after'     => '</div>',
 			'size'      => 14,
 			'feed'      => true
 		), 'get_single_forum_description' );
@@ -1985,7 +1985,8 @@ function bbp_single_forum_description( $args = '' ) {
 				if ( bbp_is_forum_category( $forum_id ) ) {
 					$retstr = sprintf( esc_html__( 'This category contains %1$s and %2$s, and was last updated by %3$s %4$s.', 'bbpress' ), $topic_text, $reply_text, $last_updated_by, $time_since );
 				} else {
-					$retstr = sprintf( esc_html__( 'This forum contains %1$s and %2$s, and was last updated by %3$s %4$s.',    'bbpress' ), $topic_text, $reply_text, $last_updated_by, $time_since );
+					$retstr = bbp_forum_content();
+			
 				}
 
 			} else {
@@ -1993,7 +1994,8 @@ function bbp_single_forum_description( $args = '' ) {
 				if ( bbp_is_forum_category( $forum_id ) ) {
 					$retstr = sprintf( esc_html__( 'This category contains %1$s, and was last updated by %2$s %3$s.', 'bbpress' ), $topic_text, $last_updated_by, $time_since );
 				} else {
-					$retstr = sprintf( esc_html__( 'This forum contains %1$s, and was last updated by %2$s %3$s.',    'bbpress' ), $topic_text, $last_updated_by, $time_since );
+					$retstr = bbp_forum_content();
+				
 				}
 			}
 
@@ -2005,7 +2007,8 @@ function bbp_single_forum_description( $args = '' ) {
 				if ( bbp_is_forum_category( $forum_id ) ) {
 					$retstr = sprintf( esc_html__( 'This category contains %1$s and %2$s.', 'bbpress' ), $topic_text, $reply_text );
 				} else {
-					$retstr = sprintf( esc_html__( 'This forum contains %1$s and %2$s.',    'bbpress' ), $topic_text, $reply_text );
+					$retstr = bbp_forum_content();
+					
 				}
 
 			} else {
@@ -2015,7 +2018,8 @@ function bbp_single_forum_description( $args = '' ) {
 					if ( bbp_is_forum_category( $forum_id ) ) {
 						$retstr = sprintf( esc_html__( 'This category contains %1$s.', 'bbpress' ), $topic_text );
 					} else {
-						$retstr = sprintf( esc_html__( 'This forum contains %1$s.',    'bbpress' ), $topic_text );
+					$retstr = bbp_forum_content();
+
 					}
 
 				} else {
