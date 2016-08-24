@@ -8,6 +8,7 @@
  */
 
 ?>
+<?php  $jose =  bbp_get_topic_title(); ?>
 
 <?php if ( !bbp_is_single_forum() ) : ?>
 
@@ -16,7 +17,6 @@
 	<?php bbp_breadcrumb(); ?>
 
 <?php endif; ?>
-
 <?php if ( bbp_is_topic_edit() ) : ?>
 
 	<?php bbp_topic_tag_list( bbp_get_topic_id() ); ?>
@@ -25,7 +25,18 @@
 
 <?php endif; ?>
 
-<?php if ( bbp_current_user_can_access_create_topic_form() ) : ?>
+<?php if ( $jose == "Discussions with Experts" ) : ?>
+
+	<div id="no-topic-<?php bbp_topic_id(); ?>" class="bbp-no-topic">
+		<div class="bbp-template-notice">
+			<p><?php is_user_logged_in() ? _e( 'You cannot create new topics.', 'bbpress' ) : _e( 'You must be logged in to create new topics.', 'bbpress' ); ?></p>
+		</div>
+	</div>
+<?php else : ?>
+
+
+
+<?php if ( bbp_current_user_can_access_create_topic_form()  ) : ?>
 
 	<div id="new-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-form">
 	
@@ -234,6 +245,8 @@
 			<p><?php is_user_logged_in() ? _e( 'You cannot create new topics.', 'bbpress' ) : _e( 'You must be logged in to create new topics.', 'bbpress' ); ?></p>
 		</div>
 	</div>
+
+<?php endif; ?>
 
 <?php endif; ?>
 
