@@ -298,3 +298,15 @@ function myplugin_cookie_expiration( $expiration, $user_id, $remember ) {
     return $remember ? $expiration : 86400;
 }
 add_filter( 'auth_cookie_expiration', 'myplugin_cookie_expiration', 99, 3 );
+
+
+function readRss($atts) {
+    extract(shortcode_atts(array(
+	"feed" => 'http://',
+      "num" => '2',
+    ), $atts));
+
+    return wp_rss($feed, $num);
+}
+
+add_shortcode('rss', 'readRss');
