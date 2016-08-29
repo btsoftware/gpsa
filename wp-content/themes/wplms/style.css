@@ -56,3 +56,231 @@ text-transform:uppercase;
 }
 
 .live-edit-sidebar,.live-edit-sidebar + .text-options{display: none;}
+
+/* Map styles */
+
+
+
+
+#map_container{ 
+    width: 100%;
+    min-height: 60%; 
+    min-width: 80%;
+    margin-bottom: 20px;
+}
+
+
+.country{
+    fill: #4B5456;
+    stroke: #4B5456;
+    stroke-width: 1.5px;
+}
+
+.elected{
+    fill: #EB7D62;
+    stroke: #EB7D62;
+    stroke-width: 1.5px;
+}
+
+.elected:hover{
+    fill: #E5512D;
+    stroke: #E5512D;
+    cursor: pointer;
+    /*stroke-width: 1.5px;*/
+}
+
+.stroke {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.fill {
+    fill: transparent; /* fondo mapa*/
+}
+
+.graticule, #sphere {
+    fill: none;
+    stroke: #777;
+    stroke-width: .5px;
+    stroke-opacity: .5;
+}
+
+.land {
+    fill: #222;
+}
+
+.boundary {
+    fill: none;
+    stroke: transparent;
+    stroke-width: .5px;
+}
+
+.hidden { 
+    display: none; 
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+}
+#map-legend{
+    background: transparent;
+    margin:30px 0px 0px 50px;
+    padding: 0px 10px;
+    position: absolute;
+    left:0;
+    z-index: 100;
+    /*display:none;/**/
+    /*border: 2px solid #800080;*/
+}
+
+#map-legend p{
+    color: #800080;
+    /*font-family: oswald;*/
+    font-weight: lighter;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#map-info{
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    height:100%;
+    min-height:100%;
+    min-width:100%;
+    overflow-y: scroll;
+    padding: 50px;
+    position: absolute;
+    width:100%;
+    z-index: 100;
+    text-align: center;
+}
+
+.map-info-data h1{ font-size: 2.5em; }
+
+#map-info .close-map-info{
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#menu-paises{
+    display:none;
+    margin: 30px auto;
+    min-height: 200px;
+    width: 80%;
+}
+
+#menu-paises ul{
+    margin:0;
+}
+
+#menu-paises h2{
+    background: none repeat scroll 0 0 #f8f8f8;
+    color: #141414;
+    display: inline-block;
+    font-family: 'futuralightregular';
+    font-size: 28px;
+    margin: 0 0 25px;
+    padding: 0 11px 0 0;
+    text-transform: uppercase;
+}
+
+#map-info .resultados li, #menu-paises li{
+    color: #bbb;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#map-info .resultados li{
+    font-size: 1.9em;
+
+}
+
+#menu-paises li a{
+    font-size: 1.2em;
+    min-width: 100%;
+    display: block;
+    padding: 10px;
+    border:2px solid #8A358D ;
+    border-top:2px solid #8A358D ;
+    text-align: center;
+}
+
+#menu-paises li a:hover{
+    background: #D5BFD5;
+    color:#8A358D;
+    font-weight: bolder;
+}
+
+
+div.tooltip {
+    color: #222; 
+    background: #fff; 
+    padding: .5em; 
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px; 
+    box-shadow: 0px 0px 2px 0px #a6a6a6; 
+    opacity: 0.9; 
+    position: absolute;
+}
+
+div.tooltip {
+    color: #222; 
+    background: #fff; 
+    padding: .5em; 
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px; 
+    box-shadow: 0px 0px 2px 0px #a6a6a6; 
+    opacity: 0.9; 
+    position: absolute;
+}
+
+
+img.wait {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+}
+
+.resultados, .resultados li{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.resultados li, .resultados li p {
+    float: left !important;
+}
+
+.resultados li p {
+    margin: 0px 5px 5px 5px !important; 
+}
+
+.instagram-media, .instagram-media-rendered {
+    float: left !important;
+    max-width: 30% !important;
+    width: 30% !important;
+    margin: 10px !important;
+}
+
+@media (max-width: 800px) {
+  #map-info-data h1{ font-size: 1.3em; }
+  #map-info { 
+    text-align: center;
+    padding: 10px;
+  }
+  #map-info .resultados li{ 
+    font-size: 1.2em; 
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  #map, #map-info .close-map-info, img.wait{ 
+    display: none; 
+  }
+  #menu-paises{ display: block}
+}
+
