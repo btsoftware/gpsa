@@ -86,7 +86,41 @@ endif;
 
 
 
+<script>
+$(document).ready(function(){
+    var countries = ['Mexico'];
+    
+    /*Agregando paises a la lista*/
+    for(var i = 0 in countries){
+        jQuery('#menu-paises ul').append("<li class='pais'> <a href='#" + countries[i] + "'>" + countries[i] + "</a> </li>")
+    }
+    if ($(window).width() > 600) {
+      var width = document.getElementById('map').offsetWidth 
+        , height = document.getElementById('map').offsetHeight 
+        , topo, projection, path, svg, g
+        , tooltip = d3.select("#map").append("div").attr("class", "tooltip hidden");
+      
+      d3.json("<?php echo get_template_directory_uri(); ?>/assets/js/data/world-topo.json.packed", function(error, world) {
+            jQuery(".wait").remove()
+            setup(width, height);
+            topo = topojson.feature(world, world.objects.countries).features;
+            draw(topo, tooltip, countries); 
+      });
+    }
 
+    jQuery(".close-map-info").on("click", function(){
+        jQuery("#map-info").toggle( "slide", { "direction": "down", "duration": 800  });
+    })
+
+    jQuery("li.pais a").on("click", function(e){
+        var pais = jQuery(this).attr("href").substring(1);
+        search_stories_by_country(pais)
+        return false
+    })
+
+    $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+})
+</script>
 
 
 <?php
