@@ -299,6 +299,153 @@ function myplugin_cookie_expiration( $expiration, $user_id, $remember ) {
 }
 add_filter( 'auth_cookie_expiration', 'myplugin_cookie_expiration', 99, 3 );
 
+function stories_init() {
+  $args = array(
+    'labels' => array(
+	    'name' => __( 'Stories' ),
+	    'singular_name' => __( 'Story' ),
+	    'add_new' => __( 'Add New Story' ),
+	    'add_new_item' => __( 'Add New Story' ),
+	    'edit_item' => __( 'Edit Story' ),
+	    'new_item' => __( 'Add New Story' ),
+	    'view_item' => __( 'View Story' ),
+	    'search_items' => __( 'Search Story' ),
+	    'not_found' => __( 'No stories found' ),
+	    'not_found_in_trash' => __( 'No stories found in trash' )
+		),
+      'public' => true,
+      'has_archive' => true,
+      'show_ui' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+      'rewrite' => array('slug' => 'stories'),
+      'query_var' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-portfolio',
+      'supports' => array(
+          'title',
+          'excerpt',
+          'editor'
+          //'custom-fields',
+          //'revisions',
+          //'author',
+          //'page-attributes',
+      )
+ 	);
+  register_post_type( 'stories', $args );
+}
+add_action( 'init', 'stories_init' );
+
+function add_events_metaboxes() {
+  add_meta_box('wpt_stories_uri', 'Video', 'wpt_stories_uri', 'stories', 'normal', 'default');
+  add_meta_box('wpt_stories_country', 'Country', 'wpt_stories_country', 'stories', 'normal', 'default');
+}
+
+add_action( 'add_meta_boxes', 'add_events_metaboxes' );
+
+
+
+function wpt_stories_uri() {
+	global $post;
+	// Noncename needed to verify where the data originated
+	echo '<input type="hidden" name="storymeta_noncename" id="storymeta_noncename" value="' . 
+	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+	
+	// Get the uris data if its already been entered
+	$uri = get_post_meta($post->ID, '_uri', true);
+	
+	// Echo out the field
+	echo 'Anota solo el id del video de vimeo (https://vimeo.com/<b>158818287</b>) <br> <input type="text" name="_uri" value="' . $uri  . '" class="widefat" />';
+}
+
+function wpt_stories_country() {
+	global $post;
+	// Noncename needed to verify where the data originated
+	echo '<input type="hidden" name="storymeta_noncename2" id="storymeta_noncename2" value="' . 
+	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+	
+	// Get the uris data if its already been entered
+	$country = get_post_meta($post->ID, '_country', true);
+	
+	// Echo out the field
+	echo '<input type="text" name="_country" value="' . $country  . '" class="widefat" />';
+}
+
+// Save the Metabox Data
+
+function wpt_save_stories_meta($post_id, $post) {
+  // verify this came from the our screen and with proper authorization,
+  // because save_post can be triggered at other times
+  if ( !wp_verify_nonce( $_POST['storymeta_noncename'], plugin_basename(__FILE__) ) || 
+       !wp_verify_nonce( $_POST['storymeta_noncename2'], plugin_basename(__FILE__) )    ){
+      return $post->ID;
+  } 
+
+  // Is the user allowed to edit the post or page?
+  if ( !current_user_can( 'edit_post', $post->ID ))
+      return $post->ID;
+
+  // OK, we're authenticated: we need to find and save the data
+  // We'll put it into an array to make it easier to loop though.
+  
+  $events_meta['_uri'] = $_POST['_uri'];
+  $events_meta['_country'] = $_POST['_country'];
+  
+  // Add values of $events_meta as custom fields
+  
+  foreach ($events_meta as $key => $value) { // Cycle through the $events_meta array!
+      if( $post->post_type == 'revision' ) return; // Don't store custom data twice
+      $value = implode(',', (array)$value); // If $value is an array, make it a CSV (unlikely)
+      if(get_post_meta($post->ID, $key, FALSE)) { // If the custom field already has a value
+          update_post_meta($post->ID, $key, $value);
+      } else { // If the custom field doesn't have a value
+          add_post_meta($post->ID, $key, $value);
+      }
+      if(!$value) delete_post_meta($post->ID, $key); // Delete if blank
+  }
+}
+
+add_action('save_post', 'wpt_save_stories_meta', 1, 2); // save the custom fields
+
+
+/* Search stories by country */
+
+// Primero incluimos nuestro archivo javascript definido anteriormente
+wp_enqueue_script( 'mi-script-ajax', get_template_directory_uri() . '/assets/js/map_d3.js', array( 'jquery' ) );
+  
+// ahora declaramos la variable MyAjax y le pasamos el valor url (wp-admin/admin-ajax.php) al script ajax-search.js
+wp_localize_script( 'mi-script-ajax', 'MyAjax', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
+ 
+//Para manejar admin-ajax tenemos que añadir estas dos acciones.
+//IMPORTANTE!! Para que funcione reemplazar "buscar_posts" por vuestra action definida en ajax-search.js
+ 
+add_action('wp_ajax_search_stories_by_country', 'search_stories_by_country_callback');
+add_action('wp_ajax_nopriv_search_stories_by_country', 'search_stories_by_country_callback');
+ 
+function search_stories_by_country_callback() {
+  global $post;
+  $args = array('post_type'=> 'stories', 'post_status' => 'publish' );
+
+  $args['meta_query'][] = array(
+    'key' => '_country',
+    'value' =>  $_POST['country'],
+    'compare' => 'LIKE',
+    'posts_per_page' => 50
+  );
+ 
+  $myposts = get_posts($args);
+  echo '<h1>' . $_POST['country'] . '</h1>';
+  echo '<ul class="resultados">';
+    foreach( $myposts as $post ) :  setup_postdata($post); ?>
+      <li> 
+      	<?php the_content( $more_link_text, $stripteaser ) ?>
+      </li>
+    <?php endforeach; 
+	echo '</ul>';
+  die(); // Siempre hay que terminar con die
+}
+//This file is needed to be able to use the wp_rss() function.
+include_once(ABSPATH.WPINC.'/rss.php');
 
 function readRss($atts) {
     extract(shortcode_atts(array(
@@ -308,4 +455,5 @@ function readRss($atts) {
 
     return wp_rss($feed, $num);
 }
+
 add_shortcode('rss', 'readRss');
