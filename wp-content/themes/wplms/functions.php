@@ -308,5 +308,4 @@ function readRss($atts) {
 
     return wp_rss($feed, $num);
 }
-
 add_shortcode('rss', 'readRss');

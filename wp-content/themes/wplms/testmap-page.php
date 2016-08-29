@@ -45,7 +45,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         </div>
                         <div id="map">
                             <!--img class="wait" src="http://www.ajaxload.info/cache/BE/95/BF/00/00/00/8-1.gif"-->
-                            <img class="wait" src="<?php echo get_template_directory_uri(); ?>/assets/images/ajax-loader.gif" >
+                            <img class="wait" style="position: absolute; top: 48%; left: 45%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loader.gif" >
                             
                             <!--div id="map-legend">    
                                 <p> Da click en el mapa para ver los casos de cada país </p> 
@@ -65,7 +65,65 @@ if(isset($title) && $title !='' && $title !='H'){
         </div>
     </div>
 </section>
+<?php
+endwhile;
+endif; 
+?>
 
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/colorbox.css">
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.colorbox-min.js"></script>
+
+
+<!-- no cargarlos si la pantalla es menor a 600 -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/libs/d3.min.js"></script>
+
+<!--script src="http://d3js.org/d3.geo.projection.v0.min.js"></script-->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/libs/d3.geo.projection.v0.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/libs/topojson.v1.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/map_d3.js"></script>
+<!-- no cargarlos si la pantalla es menor a 600 -->
+
+
+
+<script>
+$(document).ready(function(){
+    var countries = ['Mexico'];
+    
+    /*Agregando paises a la lista*/
+    for(var i = 0 in countries){
+        jQuery('#menu-paises ul').append("<li class='pais'> <a href='#" + countries[i] + "'>" + countries[i] + "</a> </li>")
+    }
+    if ($(window).width() > 600) {
+      var width = document.getElementById('map').offsetWidth 
+        , height = document.getElementById('map').offsetHeight 
+        , topo, projection, path, svg, g
+        , tooltip = d3.select("#map").append("div").attr("class", "tooltip hidden");
+      
+      d3.json("<?php echo get_template_directory_uri(); ?>/assets/js/data/world-topo.json.packed", function(error, world) {
+            jQuery(".wait").remove()
+            setup(width, height);
+            topo = topojson.feature(world, world.objects.countries).features;
+            draw(topo, tooltip, countries); 
+      });
+    }
+
+    jQuery(".close-map-info").on("click", function(){
+        jQuery("#map-info").toggle( "slide", { "direction": "down", "duration": 800  });
+    })
+
+    jQuery("li.pais a").on("click", function(e){
+        var pais = jQuery(this).attr("href").substring(1);
+        search_stories_by_country(pais)
+        return false
+    })
+
+    $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+})
+</script>
 
 
 <?php
