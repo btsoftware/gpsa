@@ -3826,6 +3826,7 @@ h1.destacado5 {
     padding-top: 4px;
     text-align: center;
     text-shadow: 1px 0 rgba(0, 0, 0, 0.3);
+    width: 70%;
 }
 h2.destacado5 {
     background:#fff;
