@@ -3827,6 +3827,8 @@ h1.destacado5 {
     text-align: center;
     text-shadow: 1px 0 rgba(0, 0, 0, 0.3);
     width: auto;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
 }
 h2.destacado5 {
     background:#fff;
