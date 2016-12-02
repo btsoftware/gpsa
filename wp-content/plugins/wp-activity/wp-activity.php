@@ -613,7 +613,7 @@ function act_prepare($act_raw, $act_disp){
     case 'admin' :
     case 'csv' :
       $act_date = nicetime($act_raw->act_date, true);
-      $act_user = $act_raw->display_name;
+      $act_user = $act_raw->user_nicename;
       break;
     case 'rss':
       $act_date = gmdate('r', strtotime($act_raw->act_date));
