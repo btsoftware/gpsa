@@ -613,7 +613,7 @@ function act_prepare($act_raw, $act_disp){
     case 'admin' :
     case 'csv' :
       $act_date = nicetime($act_raw->act_date, true);
-      $act_user = $act_raw->user_nicename;
+      $act_user = '<a href="'.$wp_url.'/'.$options_act['act_author_path'].'/'.$act_raw->user_nicename.'" title="'.__('View Profile', 'wp-activity').'">'.$act_raw->display_name.'</a>';
       break;
     case 'rss':
       $act_date = gmdate('r', strtotime($act_raw->act_date));
