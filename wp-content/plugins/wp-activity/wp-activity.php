@@ -608,12 +608,13 @@ function act_stream_common($act_number='30', $act_user = '', $archive = false) {
 */
 function act_prepare($act_raw, $act_disp){
   global $options_act, $wpdb;
+
   $wp_url = get_bloginfo('wpurl');
   switch ($act_disp) {
     case 'admin' :
     case 'csv' :
       $act_date = nicetime($act_raw->act_date, true);
-      $act_user = $act_raw->display_name;
+      $act_user = $act_raw->id;
       break;
     case 'rss':
       $act_date = gmdate('r', strtotime($act_raw->act_date));

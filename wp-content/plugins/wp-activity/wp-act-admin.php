@@ -180,10 +180,10 @@ function act_pagination($act_count, $limit = 50, $current, $act_start = 0, $args
 }
 function act_get_users(){
   global $wpdb;
-  $act_users_sql = "SELECT display_name, user_email FROM ".$wpdb->users." WHERE display_name LIKE '%%".$_GET['q']."%%' ORDER BY display_name ASC";
+  $act_users_sql = "SELECT display_name FROM ".$wpdb->users." WHERE display_name LIKE '%%".$_GET['q']."%%' ORDER BY display_name ASC";
   if ( $results = $wpdb->get_results($wpdb->prepare($act_users_sql))){
     foreach ($results as $user) {
-      echo $user->user_email . "\n";
+      echo $user->display_name . "\n";
     }
   }
   die();
