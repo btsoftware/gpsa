@@ -619,8 +619,7 @@ function act_prepare($act_raw, $act_disp){
       $act_user_pp = $act_raw->id;
 	  $act_users_sql = "SELECT user_email FROM ".$wpdb->users." WHERE ID LIKE '%%".$act_user_pp."%%'";
 	  $results = $wpdb->get_results($wpdb->prepare($act_users_sql));
-      $act_user = $results;
-	  print_r($results);
+      $act_user = $results->user_email;
       break;
     case 'rss':
       $act_date = gmdate('r', strtotime($act_raw->act_date));
