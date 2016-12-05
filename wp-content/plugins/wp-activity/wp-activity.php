@@ -617,8 +617,8 @@ function act_prepare($act_raw, $act_disp){
     case 'csv' :
       $act_date = nicetime($act_raw->act_date, true);
       $act_user_pp = $act_raw->id;
-	  $act_users_sql = "SELECT user_email FROM ".$wpdb->users." WHERE ID LIKE '%%".$act_user_pp."%%'ORDER BY user_email ASC"	;
-	  $results = $wpdb->get_results($wpdb->prepare($act_users_sql)
+	  $act_users_sql = "SELECT user_email FROM ".$wpdb->users." WHERE ID LIKE '%%".$act_user_pp."%%'";
+	  $results = $wpdb->get_results($wpdb->prepare($act_users_sql));
       $act_user = $results;
       break;
     case 'rss':
