@@ -606,6 +606,8 @@ function act_stream_common($act_number='30', $act_user = '', $archive = false) {
 * $act_disp : can be 'frontend', 'admin', 'csv' or 'rss'
 * Returns array ('class', 'user', 'text', 'params', 'date', 'type')
 */
+
+
 function act_prepare($act_raw, $act_disp){
   global $options_act, $wpdb;
 
@@ -614,7 +616,9 @@ function act_prepare($act_raw, $act_disp){
     case 'admin' :
     case 'csv' :
       $act_date = nicetime($act_raw->act_date, true);
-      $act_user = $act_raw->id;
+      $act_user_pp = $act_raw->id;
+	  $act_users_sql = "SELECT user_email FROM ".$wpdb->users." WHERE ID LIKE '%%".$act_user_pp."%%'ORDER BY user_email ASC"	;
+      $act_user = $act_users_sql;
       break;
     case 'rss':
       $act_date = gmdate('r', strtotime($act_raw->act_date));
