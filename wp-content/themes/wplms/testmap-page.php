@@ -70,6 +70,7 @@ endwhile;
 endif; 
 ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/colorbox.css">
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.colorbox-min.js"></script>
