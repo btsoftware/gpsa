@@ -457,3 +457,12 @@ function readRss($atts) {
 }
 
 add_shortcode('rss', 'readRss');
+add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
+
+function my_deregister_javascript() 
+ { 
+    if ( is_page('test') ) 
+      {
+        wp_deregister_script( 'jquery.touchcarousel.min.js' ); 
+      } 
+ } 
