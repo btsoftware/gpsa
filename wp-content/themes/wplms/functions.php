@@ -457,7 +457,6 @@ function readRss($atts) {
 }
 
 add_shortcode('rss', 'readRss');
-add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
 
 function my_deregister_javascript() 
  { 
@@ -467,4 +466,6 @@ function my_deregister_javascript()
 		wp_deregister_script( 'logos.js?ver=4.0.1' ); 
 
       } 
- } 
+ }
+add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
+ 
