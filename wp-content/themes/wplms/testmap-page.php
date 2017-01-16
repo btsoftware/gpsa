@@ -32,6 +32,12 @@ if(isset($title) && $title !='' && $title !='H'){
 <?php
 }
 ?>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/colorbox.css">
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.colorbox-min.js"></script>
 
 
 <!-- no cargarlos si la pantalla es menor a 600 -->
@@ -52,7 +58,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div class="content" id="map_container">
                     <div class="row">
                         <div id="map-info">
-                            <a class="close-map-info">  Go to map </a>
+					<a class="close-map-info" onclick="document.getElementById('map-info').style.display='none';return false;">  Go to map </a>
                             <div class="map-info-data"></div>
                         </div>
                         <div id="map">
@@ -114,6 +120,7 @@ $(document).ready(function(){
 
     $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 })
+
 </script>
 
 
