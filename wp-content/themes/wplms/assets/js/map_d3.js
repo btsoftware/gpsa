@@ -71,7 +71,7 @@ function draw(topo, tooltip, elected) {
 function search_stories_by_country(country){
   
   alert("ola k ase " + country)
-  
+  document.getElementById('map-info').style.display='block';
   
   $.post(MyAjax.url, {action : 'search_stories_by_country' , country : country }, function(response) {
     jQuery("#map-info .map-info-data").html(response);
