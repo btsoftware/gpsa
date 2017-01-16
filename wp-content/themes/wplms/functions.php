@@ -461,8 +461,10 @@ add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
 
 function my_deregister_javascript() 
  { 
-    if ( is_page('test') ) 
+    if ( is_page (5697) ) 
       {
         wp_deregister_script( 'jquery.touchcarousel.min.js' ); 
+		wp_deregister_script( 'logos.js?ver=4.0.1' ); 
+
       } 
  } 
