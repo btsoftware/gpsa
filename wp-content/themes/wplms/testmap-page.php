@@ -111,6 +111,10 @@ $(document).ready(function(){
     jQuery(".close-map-info").on("click", function(e){
         jQuery("#map-info").toggle( "slide", { "direction": "down", "duration": 800  });
     })
+	
+	  $('.close-map-info').click(function(){  //Adds click event listener  
+        $('#map-info').toggle('slow'); // Toggles visibility.  Use the 'slow' parameter to add a nice effect.
+    });
 
     jQuery("li.pais a").on("click", function(e){
         var pais = jQuery(this).attr("href").substring(1);
@@ -121,6 +125,11 @@ $(document).ready(function(){
     $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 })
 
+$(function() {
+    $('.close-map-info').click(function(){  //Adds click event listener  
+        $('#map-info').toggle('slow'); // Toggles visibility.  Use the 'slow' parameter to add a nice effect.
+    });
+});
 </script>
 
 
