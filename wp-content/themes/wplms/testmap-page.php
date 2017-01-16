@@ -57,7 +57,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <h5>We invite you to share with the community your experiences in promoting the fulfilment of human rights and advancing transitional justice process. Just take your cell phone and record your story!</h5>                </div>         
             </div>
             <div class="col-md-5">
-                <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/ME6cK_WCN-g?rel=0&amp;wmode=transparent">
+                <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <h3>SHARE YOUR STORY</h3>
                     <hr class="pleca-bca">
                     <span class="tutorial">Tutorial </span> <span id ="play">►</span> 
