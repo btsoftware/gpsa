@@ -54,12 +54,13 @@ if(isset($title) && $title !='' && $title !='H'){
             <div class="col-md-7">
                 <div class="pagetitleTJ-interiores">
                                         <h1>Tell us your story</h1>
-                    <h5>We invite you to share with the community your experiences in promoting the fulfilment of human rights and advancing transitional justice process. Just take your cell phone and record your story!</h5>                </div>         
+                    <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story! #SocialAccStories</h5>                </div>         
             </div>
             <div class="col-md-5">
                 <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <h3>SHARE YOUR STORY</h3>
                     <hr class="pleca-bca">
+                <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <span class="tutorial">Tutorial </span> <span id ="play">►</span> 
                 </a>
             </div>
@@ -102,7 +103,7 @@ if(isset($title) && $title !='' && $title !='H'){
     </div>
 </section>
 <div class="row repositorio">
-                <a class="wpcf7-submit" href="/submit-your-materials">Submit your materials</a>
+                <a class="wpcf7-submit" href="/share-video">Submit your materials</a>
 		
 </div>
 <script>
