@@ -48,7 +48,25 @@ if(isset($title) && $title !='' && $title !='H'){
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/libs/topojson.v1.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/map_d3.js"></script>
 <!-- no cargarlos si la pantalla es menor a 600 -->
+<section id="title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="pagetitleTJ-interiores">
+                                        <h1>Tell us your story</h1>
+                    <h5>We invite you to share with the community your experiences in promoting the fulfilment of human rights and advancing transitional justice process. Just take your cell phone and record your story!</h5>                </div>         
+            </div>
+            <div class="col-md-5">
+                <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/ME6cK_WCN-g?rel=0&amp;wmode=transparent">
+                    <h3>SHARE YOUR STORY</h3>
+                    <hr class="pleca-bca">
+                    <span class="tutorial">Tutorial </span> <span id ="play">►</span> 
+                </a>
+            </div>
 
+        </div>
+    </div>
+</section>
 <!-- secci—m mapa -->
 <section id="content" class="mapa">
     <div class="container">
