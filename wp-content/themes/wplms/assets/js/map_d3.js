@@ -50,8 +50,7 @@ function draw(topo, tooltip, elected) {
       .attr("title", function(d,i) { return d.properties.name; })
       
   //tooltips
-  country
-    .on("mousemove", function(d,i) {
+  country.on("mousemove", function(d,i) {
       var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
         if( d.properties.elected == "true" ){
           tooltip
