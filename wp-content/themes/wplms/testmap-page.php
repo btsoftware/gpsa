@@ -103,10 +103,7 @@ if(isset($title) && $title !='' && $title !='H'){
         </div>
     </div>
 </section>
-<div class="row repositorio">
-                <a class="wpcf7-submit" href="/share-video">Submit your materials</a>
-		
-</div>
+
 <script>
 $(document).ready(function(){
     var countries = ['Mexico'];
