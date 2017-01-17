@@ -109,7 +109,7 @@ if(isset($title) && $title !='' && $title !='H'){
 
 <script>
 $(document).ready(function(){
-    var countries = ['Mexico'];
+    var countries = ['Mexico', 'Togo'];
     
     /*Agregando paises a la lista*/
     for(var i = 0 in countries){
