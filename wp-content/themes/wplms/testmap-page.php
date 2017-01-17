@@ -49,7 +49,7 @@ if(isset($title) && $title !='' && $title !='H'){
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/map_d3.js"></script>
 <!-- no cargarlos si la pantalla es menor a 600 -->
 <style>
- .button-uploadVideo { background-color: #f15630 !important; border-color: #f15630 !important; border-radius: 2px; color: #fff; display: inline-block;  letter-spacing: 0.2em; margin: 83px 10px 10px 0; padding: 10px 24px; position: relative; transition: all 0.3s ease 0s; width: 143px; z-index: 1;}
+ .button-uploadVideo { background-color: #f15630 !important; border-color: #f15630 !important; border-radius: 2px; color: #fff;  letter-spacing: 0.2em; margin: 83px 10px 10px 0; padding: 10px 24px; position: relative; transition: all 0.3s ease 0s; width: 143px; z-index: 1;}
 </style>
 <section id="title">
     <div class="container">
@@ -57,7 +57,7 @@ if(isset($title) && $title !='' && $title !='H'){
             <div class="col-md-7">
                 <div class="pagetitleTJ-interiores">
                                         <h1>Tell us your story</h1>
-                    <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story! #SocialAccStories</h5>                </div>         
+                    <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story! <br> #SocialAccStories</h5>                </div>         
             </div>
             <div class="col-md-5">
                 <a href="/share-video">
