@@ -9,7 +9,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 $title=get_post_meta(get_the_ID(),'vibe_title',true);
 if(isset($title) && $title !='' && $title !='H'){
 ?>
-
+<style>
+ .button-uploadVideo { background-color: #f15630 !important; border-color: #f15630 !important; border-radius: 2px; color: #fff; display: inline-block; float: right; letter-spacing: 0.1em; margin: 83px 10px 10px 0; padding: 10px 24px; position: relative; transition: all 0.3s ease 0s; width: 143px; z-index: 1;}
+</style>
 <section id="title">
     <div class="container">
          <div class="row">
