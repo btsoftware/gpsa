@@ -49,7 +49,7 @@ if(isset($title) && $title !='' && $title !='H'){
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/map_d3.js"></script>
 <!-- no cargarlos si la pantalla es menor a 600 -->
 <style>
- .button-uploadVideo { background-color: #f15630 !important; border-color: #f15630 !important; border-radius: 2px; color: #fff; display: inline-block; float: right; letter-spacing: 0.1em; margin: 83px 10px 10px 0; padding: 10px 24px; position: relative; transition: all 0.3s ease 0s; width: 143px; z-index: 1;}
+ .button-uploadVideo { background-color: #f15630 !important; border-color: #f15630 !important; border-radius: 2px; color: #fff; display: inline-block;  letter-spacing: 0.2em; margin: 83px 10px 10px 0; padding: 10px 24px; position: relative; transition: all 0.3s ease 0s; width: 143px; z-index: 1;}
 </style>
 <section id="title">
     <div class="container">
@@ -65,7 +65,7 @@ if(isset($title) && $title !='' && $title !='H'){
 					</a>
                     <hr class="pleca-bca">
                 <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
-                    <span class="tutorial">Tutorial </span> <span id ="play">►</span> 
+                    <span class="tutorial">Video Tutorial </span> <span id ="play">►</span> 
                 </a>
             </div>
 
