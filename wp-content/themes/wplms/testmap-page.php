@@ -57,8 +57,9 @@ if(isset($title) && $title !='' && $title !='H'){
                     <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story! #SocialAccStories</h5>                </div>         
             </div>
             <div class="col-md-5">
-                <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
+                <a class="button-uploadVideo youtube" href="/share-video">
                     <h3>SHARE YOUR STORY</h3>
+					</a>
                     <hr class="pleca-bca">
                 <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <span class="tutorial">Tutorial </span> <span id ="play">►</span> 
@@ -142,7 +143,7 @@ $(document).ready(function(){
         return false
     })
 
-    $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+    $(".youtube").colorbox({iframe:true, innerWidth:340, innerHeight:190});
 })
 
 $(function() {
