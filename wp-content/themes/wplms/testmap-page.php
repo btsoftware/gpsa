@@ -57,7 +57,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story! #SocialAccStories</h5>                </div>         
             </div>
             <div class="col-md-5">
-                <a class="button-uploadVideo youtube" href="/share-video">
+                <a href="/share-video">
                     <h3>SHARE YOUR STORY</h3>
 					</a>
                     <hr class="pleca-bca">
