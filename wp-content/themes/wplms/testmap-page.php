@@ -54,17 +54,15 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="title">
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-12">
 		<div class="pagetitle"><h1>Tell us your story</h1></div>
                 <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story!
-		<br> #SocialAccStories</h5>
+		<b> #SocialAccStories</b>
 	    </div>         
             
-            <div class="col-md-5">
-                <a href="/share-video">
-                    <h3>SHARE YOUR STORY</h3>
-					</a>
-                    <hr class="pleca-bca">
+            <div class="col-md-12">
+                <a class="contorno-morado" href="/share-video"><h3>Share your story</h3></a>
+                   
                 <a class="button-uploadVideo youtube" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <span class="tutorial">Video Tutorial </span> <span id ="play">►</span> 
                 </a>
