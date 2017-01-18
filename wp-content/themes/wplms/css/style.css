@@ -4731,3 +4731,19 @@ footer, footer a:hover, .footerwidget li a {
 .blogpost .excerpt.thumb-blog {
     margin-left: 246px;
 }
+.contorno-morado-tell {
+    background-color: rgba(0, 0, 0, 0) !important
+    border: 1px solid #253169;
+    color: #253169;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 7px;
+}

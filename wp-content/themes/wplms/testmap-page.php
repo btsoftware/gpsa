@@ -61,9 +61,9 @@ if(isset($title) && $title !='' && $title !='H'){
 	    </div>         
             
             <div class="col-md-12" style="margin-top: -11px; margin-bottom: 10px;">
-                <a class="contorno-morado" href="/share-video">Share your story</a>
+                <a class="contorno-morado-tell" href="/share-video">Share your story</a>
                    
-                <a class="contorno-morado" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
+                <a class="contorno-morado-tell" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <span class="tutorial">Video Tutorial </span> <span id ="play">►</span> 
                 </a>
             </div>
