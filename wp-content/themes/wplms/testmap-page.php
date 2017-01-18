@@ -55,10 +55,11 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <div class="pagetitleTJ-interiores">
-                                        <h1>Tell us your story</h1>
-                    <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story! <br> #SocialAccStories</h5>                </div>         
-            </div>
+		<div class="pagetitle"><h1>Tell us your story<</h1></div>
+                <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story!
+		<br> #SocialAccStories</h5>
+	    </div>         
+            
             <div class="col-md-5">
                 <a href="/share-video">
                     <h3>SHARE YOUR STORY</h3>
@@ -68,8 +69,7 @@ if(isset($title) && $title !='' && $title !='H'){
                     <span class="tutorial">Video Tutorial </span> <span id ="play">►</span> 
                 </a>
             </div>
-
-        </div>
+	</div>	    
     </div>
 </section>
 <!-- secci—m mapa -->
