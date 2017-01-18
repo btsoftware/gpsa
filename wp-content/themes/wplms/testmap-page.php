@@ -64,7 +64,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <a class="contorno-morado-tell" href="/share-video">Share your story</a>
                    
                 <a class="contorno-morado-tell" href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
-                    <span class="tutorial">how to upload your video</span> <span id ="play">►</span> 
+                    <span class="tutorial">How to upload your video</span> <span id ="play">►</span> 
                 </a>
             </div>
 	</div>	    
