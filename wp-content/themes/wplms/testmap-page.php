@@ -55,7 +55,7 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-		<div class="pagetitle"><h1>Tell us your story<</h1></div>
+		<div class="pagetitle"><h1>Tell us your story</h1></div>
                 <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story!
 		<br> #SocialAccStories</h5>
 	    </div>         
