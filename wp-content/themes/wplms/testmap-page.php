@@ -107,7 +107,7 @@ if(isset($title) && $title !='' && $title !='H'){
 
 <script>
 $(document).ready(function(){
-    var countries = ['Mexico', 'Uganda'];
+    var countries = ['Mexico', 'Uganda', 'Senegal'];
     
     /*Agregando paises a la lista*/
     for(var i = 0 in countries){
