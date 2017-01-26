@@ -74,6 +74,6 @@ function search_stories_by_country(country){
   $.post(MyAjax.url, {action : 'search_stories_by_country' , country : country }, function(response) {
     jQuery("#map-info .map-info-data").html(response);
     var dir = ( jQuery("#map-info").css("display") == "block")? "up" : "down";
-    jQuery("#map-info").toggle( "slide", { "direction": dir, "duration": 800  });
+    jQuery("#map-info").toggle( "slide", { "direction": dir, "duration": 0  });
   });
 }
