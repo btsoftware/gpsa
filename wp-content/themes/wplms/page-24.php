@@ -39,6 +39,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 
 
 ?>
+<?php getSurvey(); ?>
 
 <section id="content"> 
     <div class="container">
