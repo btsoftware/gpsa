@@ -176,8 +176,7 @@ function getSurvey() {
 
 			</div>
 		<div class="content-survey">
-						<span>Your feedback is very important to us! So, please give us your opinion on the GPSA Knowledge Platform and its different activities.
-.</span>
+						<span>Your feedback is very important to us! So, please give us your opinion on the GPSA Knowledge Platform and its different activities.</span>
 			<a class="contorno-morado" id="yes-survey" href="https://www.surveymonkey.com/r/6YMYMC2" target="_blank">Participate </a>
 
 			</div>
