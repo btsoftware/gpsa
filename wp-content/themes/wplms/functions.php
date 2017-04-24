@@ -124,7 +124,7 @@ function getSurvey() {
 			height: auto;
 			left: 605.5px;
 			position: absolute;
-			top: 180px;
+			top: 160px;
 			width: 455px;
 			height:285px;
 			left: 600;
@@ -172,7 +172,7 @@ function getSurvey() {
 	echo '<div id="survey" class="border">
 		<div class="title-survey border">
 		&nbsp;&nbsp;<a class="contorno-morado" href="#close">X</a>
-			<span>Tell us what you think!                        </span>
+			<span>Tell us what you think!&nbsp;&nbsp;&nbsp;</span>
 
 			</div>
 		<div class="content-survey">
