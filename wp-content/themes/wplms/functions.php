@@ -122,9 +122,9 @@ function getSurvey() {
 		#survey {
 			display: block;
 			height: auto;
-			left: 805.5px;
+			left: 605.5px;
 			position: absolute;
-			top: 100;
+			top: 180px;
 			width: 455px;
 			height:285px;
 			left: 600;
@@ -146,8 +146,8 @@ function getSurvey() {
 			font-size:1.4em;
 			width:100%; 
 			height:95px; 
-			background-color:#289CD7; 
-			border: 1px solid #73b9dc;
+			background-color:#FF4F00; 
+			border: 1px solid #FF4F00;
 			position: relative;
 		}
 		
@@ -172,7 +172,7 @@ function getSurvey() {
 	echo '<div id="survey" class="border">
 		<div class="title-survey border">
 		&nbsp;&nbsp;<a class="contorno-morado" href="#close">X</a>
-			<span>Help us improve the Knowledge Platform!</span>
+			<span>Tell us what you think!</span>
 
 			</div>
 		<div class="content-survey">
