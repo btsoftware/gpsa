@@ -122,11 +122,11 @@ function getSurvey() {
 		#survey {
 			display: block;
 			height: auto;
-			left: 605.5px;
+			left: 995.5px;
 			position: absolute;
-			top: 160px;
+			top: 390px;
 			width: 455px;
-			height:285px;
+			height:268px;
 			left: 600;
 			outline: 0 none;
 			overflow: hidden;
