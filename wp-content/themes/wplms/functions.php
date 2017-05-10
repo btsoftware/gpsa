@@ -332,7 +332,7 @@ function stories_init() {
           'custom-fields',
           'revisions',
           'author',
-          'page-attributes',
+          'page-attributes'
       )
  	);
   register_post_type( 'stories', $args );
