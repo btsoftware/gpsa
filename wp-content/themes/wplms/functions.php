@@ -304,9 +304,7 @@ function stories_init() {
     'labels' => array(
 	    'name' => __( 'Stories' ),
 	    'singular_name' => __( 'Story' ),
-	    'singular_label' => __( 'Story' ),        
-	    'all_items' => __('Stories'),
-        'add_new' => __( 'Add New Story' ),
+	    'add_new' => __( 'Add New Story' ),
 	    'add_new_item' => __( 'Add New Story' ),
 	    'edit_item' => __( 'Edit Story' ),
 	    'new_item' => __( 'Add New Story' ),
@@ -320,19 +318,18 @@ function stories_init() {
       'show_ui' => true,
       'capability_type' => 'post',
       'hierarchical' => true,
-      'rewrite' => array('slug' => 'stories', 'with_front' => false),
+      'rewrite' => array('slug' => 'stories'),
       'query_var' => true,
       'menu_position' => 5,
- 	 'taxonomies' => array("story_category"),
       'menu_icon' => 'dashicons-portfolio',
       'supports' => array(
           'title',
           'excerpt',
           'editor'
-          'custom-fields',
-          'revisions',
-          'author',
-          'page-attributes'
+          //'custom-fields',
+          //'revisions',
+          //'author',
+          //'page-attributes',
       )
  	);
   register_post_type( 'stories', $args );
