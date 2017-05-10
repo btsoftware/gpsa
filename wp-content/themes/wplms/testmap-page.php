@@ -185,6 +185,36 @@ var gallery_video_view = "lightbox-gallery";
 <script type='text/javascript' src="http://gpsaknowledge.org/wp-includes/js/jquery/ui/jquery.ui.draggable.min.js?7f8560"></script>
 <script type='text/javascript' src="http://gpsaknowledge.org/wp-includes/js/jquery/ui/jquery.ui.droppable.min.js?7f8560"></script>
 <script type='text/javascript'>
+<script type='text/javascript' src="http://gpsaknowledge.org/wp-content/themes/wplms/js/custom.js?7f8560"></script>
+    <script type="text/javascript">
+	nb_lightbox = true;
+	nb_touchswipe = true;
+	nb_min_news_h = 150;
+	nb_min_news_w = 200;
+	nb_min_horiz_w = 400;
+	nb_read_more_txt = "..";
+	nb_fb_share_fix = "http://gpsaknowledge.org/wp-content/plugins/news-box-wp/lcis_fb_img_fix.php";
+	nb_script_basepath = "http://gpsaknowledge.org/wp-content/plugins/news-box-wp/js/nb/";
+	
+	nb_short_d_names = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+	nb_full_d_names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	nb_short_m_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	nb_full_m_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	nb_elapsed_names = ["ago", "seconds", "minute", "minutes", "hour", "hours", "day", "days", "week", "weeks", "month", "months"];
+	
+		if( typeof(lcnb_loaded_themes) == 'undefined' ) {lcnb_loaded_themes = new Array();}
+	lcnb_loaded_themes.push('wpdt');
+		</script>
+		<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
 
 <?php
 endwhile;
