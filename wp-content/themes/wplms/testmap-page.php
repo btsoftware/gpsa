@@ -151,7 +151,6 @@ $(function() {
 });
 </script>
 
-<script type='text/javascript' src="http://gpsaknowledge.org/wp-content/themes/wplms/js/html5gallery.js"></script>
 <?php
 endwhile;
 endif; 
