@@ -79,7 +79,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div class="content" id="map_container">
                     <div class="row">
                         <div id="map-info">
-					<a class="close-map-info"  onclick="document.getElementById('map-info').style.display='none';return false;">  Go to map </a>
+					<a class="close-map-info"  onclick="document.getElementById('map-info').style.display='none';return false;">  Go back to map </a>
                             <div class="map-info-data"></div>
                         </div>
                         <div id="map">
@@ -151,6 +151,7 @@ $(function() {
 });
 </script>
 
+<script type='text/javascript' src="http://gpsaknowledge.org/wp-content/themes/wplms/js/html5gallery.js"></script>
 <?php
 endwhile;
 endif; 
