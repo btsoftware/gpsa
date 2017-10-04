@@ -123,7 +123,6 @@ $(document).ready(function(){
             jQuery(".wait").remove()
             setup(width, height);
             topo = topojson.feature(world, world.objects.countries).features;
-            draw(topo, tooltip, countries); 
       });
     }
 
