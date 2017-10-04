@@ -60,7 +60,7 @@ function draw(topo, tooltip, elected) {
         }
       })
     .on("mouseout",  function(d,i) {
-      //tooltip.classed("hidden", true)
+      tooltip.classed("hidden", true)
     })
     .on("click",  function(d,i) {
       if( elected.indexOf(d.properties.name) >= 0 ) search_stories_by_country(d.properties.name)
