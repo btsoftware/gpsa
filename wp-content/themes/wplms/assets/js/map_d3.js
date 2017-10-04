@@ -69,11 +69,10 @@ function draw(topo, tooltip, elected) {
    
 
 function search_stories_by_country(country){
-  setTimeout(function(){document.getElementById('map-info').style.display='block';}, 2000);
 
   $.post(MyAjax.url, {action : 'search_stories_by_country' , country : country }, function(response) {
     jQuery("#map-info .map-info-data").html(response);
     var dir = ( jQuery("#map-info").css("display") == "block")? "up" : "down";
-    jQuery("#map-info").toggle( "slide", { "direction": up, "duration": 1000  });
+    jQuery("#map-info").toggle( "slide", { "direction": dir, "duration": 800  });
   });
 }
