@@ -39,7 +39,7 @@ if(isset($title) && $title !='' && $title !='H'){
                 <div class="content" id="map_container">
                     <div class="row">
                         <div id="map-info">
-                            <a class="close-map-info" onclick="document.getElementById('map-info').style.display='none';return false;>  &#9668; Back to map </a>
+                            <a class="close-map-info" onclick="document.getElementById('map-info').style.display='none';return false;>  &#9668; go back to map </a>
                             <div class="map-info-data"></div>
                         </div>
                         <div id="map">
