@@ -61,11 +61,13 @@ if(isset($title) && $title !='' && $title !='H'){
 	    </div>         
             
             <div class="col-md-12" style="margin-top: -11px; margin-bottom: 10px;">
-                <a class="contorno-morado-tell" href="/share-video">Share your story</a>
                    
                 <a class="contorno-morado-tell" id="484"  href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <span class="tutorial">How to upload your video</span> <span id ="play">►</span> 
                 </a>
+				
+				<a class="contorno-morado-tell" href="/share-video">Share your story</a>
+
             </div>
 	</div>	    
     </div>
