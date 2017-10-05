@@ -69,7 +69,7 @@ function draw(topo, tooltip, elected) {
    
 
 function search_stories_by_country(country){
-  setTimeout(function(){document.getElementById('map-info').style.display='block';}, 0);
+  setTimeout(function(){document.getElementById('map-info').style.display='block';}, 2000);
 
   $.post(MyAjax.url, {action : 'search_stories_by_country' , country : country }, function(response) {
     jQuery("#map-info .map-info-data").html(response);
