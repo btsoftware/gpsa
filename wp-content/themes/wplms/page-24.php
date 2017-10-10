@@ -85,13 +85,13 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 				 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 			     
 					 <div class="animate zoom load">
-					 <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/forums/forum/expert-forums/"><?php the_title(); ?></a> </h4>  
-					 <a href="http://gpsaknowledge.org/forums/forum/expert-forums/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
+					 <h4 class="bloque_title"><a class="" href="http://gpsaknowledge.org/tell-your-story"><?php the_title(); ?></a> </h4>  
+					 <a href="http://gpsaknowledge.org/tell-your-story"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
 					 </div> 	<!-- end .post-thumbnail -->					
 					 <div class="block_info">						
 						 <?php the_content(); ?>
 					 </div> 	<!-- end .post_content -->                                                                                  
-					  <a class="more" href="http://gpsaknowledge.org/forums/forum/expert-forums/"><span>Read more</span></a>
+					  <a class="more" href="http://gpsaknowledge.org/tell-your-story"><span>Read more</span></a>
 
 				 </article> <!-- end .entry -->
 				 <?php endwhile; // end of the loop. ?>
