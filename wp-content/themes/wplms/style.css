@@ -255,7 +255,9 @@ img.wait {
     padding-top: 0px;
 }
 
-
+.resultados li p {
+    margin: 0px 0px 0px 0px !important; 
+}
 
 .instagram-media, .instagram-media-rendered {
     float: left !important;
