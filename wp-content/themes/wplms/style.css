@@ -251,7 +251,8 @@ img.wait {
 }
 
 .resultados li, .resultados li p {
-    float: left !important;
+    	padding: 210px;
+    padding-top: 0px;
 }
 
 .resultados li p {
