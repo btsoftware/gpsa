@@ -253,11 +253,9 @@ img.wait {
 .resultados li, .resultados li p {
     padding: 210px;
     padding-top: 0px;
+	-webkit-padding-after:0px;
 }
 
-.resultados li p {
-    margin: 0px 0px 0px 0px !important; 
-}
 
 .instagram-media, .instagram-media-rendered {
     float: left !important;
