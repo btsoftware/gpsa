@@ -38,6 +38,11 @@ if(isset($title) && $title !='' && $title !='H'){
 
                 <div class="content" id="map_container">
                     <div class="row">
+			<div id = "cargando" style="display:none">
+			<img id = "myImage" src = "http://gpsaknowledge.org/wp-content/themes/wplms/assets/images/loader.gif">
+			</div>
+			<br>
+
                         <div id="map-info">
                             <a class="close-map-info" onclick="document.getElementById('map-info').style.display='none';return false;>  &#9668; go back to map </a>
                             <div class="map-info-data"></div>
