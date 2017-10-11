@@ -56,7 +56,7 @@ function draw(topo, tooltip, elected) {
           tooltip
             .classed("hidden", false)
             .attr("style", "left:"+(mouse[0] + 30)+"px;top:"+(mouse[1])+"px")
-  .html("Pais:"+d.properties.name+"<br>Cantidad de videos:"+d.properties.cantidad+"<br><img src='http://youtubethumbnail.net/youtube-thumb.jpg' style='width:150px'>" )
+  .html("Country:"+d.properties.name+"<br>Videos:"+d.properties.cantidad+"<br><img src='http://youtubethumbnail.net/youtube-thumb.jpg' style='width:150px'>" )
         }
       })
     .on("mouseout",  function(d,i) {
