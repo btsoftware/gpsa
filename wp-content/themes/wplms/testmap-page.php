@@ -77,7 +77,6 @@ if(isset($title) && $title !='' && $title !='H'){
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-						<div id="cargando" style="display:none ">
 
                 <div class="content" id="map_container">
                     <div class="row">
@@ -86,8 +85,12 @@ if(isset($title) && $title !='' && $title !='H'){
 					<a class="close-map-info"  onclick="document.getElementById('map-info').style.display='none';return false;">  Go back to map </a>
                             <div class="map-info-data"></div>
                         </div>
+					<div id="cargando" style="display:none ">
+
 				<img id="myImage"  style="position: absolute; top: 48%; left: 45%;" src = "http://gpsaknowledge.org/wp-content/themes/wplms/assets/images/loader.gif">
-                        <div id="map">
+                    </div>
+
+						<div id="map">
                             <!--img class="wait" src="http://www.ajaxload.info/cache/BE/95/BF/00/00/00/8-1.gif"-->
                             <img class="wait" style="position: absolute; top: 48%; left: 45%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loader.gif" >
                             
@@ -102,7 +105,6 @@ if(isset($title) && $title !='' && $title !='H'){
                             <ul> <!-- Aquí se agregan dinamicamente los paises y sus historias --> </ul>
                         </div>
                         
-                    </div>
                 </div>
 						</div>
 
