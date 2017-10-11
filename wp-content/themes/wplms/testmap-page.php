@@ -85,7 +85,7 @@ if(isset($title) && $title !='' && $title !='H'){
 					<a class="close-map-info"  onclick="document.getElementById('map-info').style.display='none';return false;">  Go back to map </a>
                             <div class="map-info-data"></div>
                         </div>
-						<div id="cargando" style="display:none">
+						<div id="cargando" style="display:none position: absolute; top: 48%; left: 45%;">
 						<img id="myImage" src = "http://gpsaknowledge.org/wp-content/themes/wplms/assets/images/loader.gif">
 						</div>
                         <div id="map">
