@@ -77,7 +77,7 @@ function search_stories_by_country(country){
     jQuery("#map-info .map-info-data").html(response);
     var dir = ( jQuery("#map-info").css("display") == "block")? "up" : "down";
     setTimeout(function(){document.getElementById('cargando').style.display='none';}, 5000);
-	setTimeout(function(){document.getElementById('myOverlay').style.display='none';}, 5000);
+	setTimeout(function(){document.getElementById('myOverlay').style.display='none';}, 4000);
 	jQuery("#map-info").toggle( "slide", { "direction": dir, "duration": 7000  });
 	 
   });
