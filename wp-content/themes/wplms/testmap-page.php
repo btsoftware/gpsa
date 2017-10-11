@@ -79,6 +79,8 @@ if(isset($title) && $title !='' && $title !='H'){
             <div class="col-md-12">
 
                 <div class="content" id="map_container">
+				<div id="myOverlay"></div>
+
                     <div class="row">
 						
 					    <div id="map-info">

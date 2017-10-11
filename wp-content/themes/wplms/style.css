@@ -259,6 +259,8 @@ img.wait {
 #cargando {
 background: rgba(255, 255, 255, 0.9);
 }
+#myOverlay{position:absolute;height:100%;width:100%;}
+#myOverlay{background:black;opacity:.7;z-index:2;display:none;}
 .instagram-media, .instagram-media-rendered {
     float: left !important;
     max-width: 30% !important;
