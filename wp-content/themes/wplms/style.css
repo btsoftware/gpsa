@@ -256,7 +256,9 @@ img.wait {
 	-webkit-padding-after:0px;
 }
 
-
+#cargando {
+background: rgba(255, 255, 255, 0.9);
+}
 .instagram-media, .instagram-media-rendered {
     float: left !important;
     max-width: 30% !important;
