@@ -61,15 +61,15 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		          <div class="v_module v_column col-md-4 col-sm-4 v_first">
                                 <!-- webinars -->
                                 <div class="block_home" style="margin-top: 50px;">
-								<?php $args = array( 'post_type' => 'Story', 'posts_per_page' => 5 );?>
+								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 5 );?>
 
-                                <?php $service_query = new WP_Query($args);
+                                <?php
+								$service_query = new WP_Query($args);
                                 while ( $service_query->have_posts() ) : $service_query->the_post(); 
 								the_title();
 								echo '<div class="entry-content">';
 								the_content();
 								echo '</div>';
-								endwhile;
 								?>
                                     <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                          <div class="animate zoom load">
