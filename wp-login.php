@@ -752,11 +752,13 @@ default:
 		}
 	}
 
+				//die($_REQUEST['redirect_to'] );
 	if ( isset( $_REQUEST['redirect_to'] ) ) {
 		$redirect_to = $_REQUEST['redirect_to'];
 		// Redirect to https if user wants ssl
-		if ( $secure_cookie && false !== strpos($redirect_to, 'wp-admin') )
+		if ( $secure_cookie && false !== strpos($redirect_to, 'wp-admin') ){
 			$redirect_to = preg_replace('|^http://|', 'https://', $redirect_to);
+		}
 	} else {
 		$redirect_to = admin_url();
 	}
@@ -786,7 +788,9 @@ default:
 	 * @param string           $requested_redirect_to The requested redirect destination URL passed as a parameter.
 	 * @param WP_User|WP_Error $user                  WP_User object if login was successful, WP_Error object otherwise.
 	 */
-	$redirect_to = apply_filters( 'login_redirect', $redirect_to, $requested_redirect_to, $user );
+
+	// Redireccionar siempre a la ficha del usuario
+	// $redirect_to = apply_filters( 'login_redirect', $redirect_to, $requested_redirect_to, $user );
 
 	if ( !is_wp_error($user) && !$reauth ) {
 		if ( $interim_login ) {
@@ -862,37 +866,6 @@ default:
 	$rememberme = ! empty( $_POST['rememberme'] );
 ?>
 
-<form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
-	<p>
-		<label for="user_login"><?php _e('Username') ?><br />
-		<input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
-	</p>
-	<p>
-		<label for="user_pass"><?php _e('Password') ?><br />
-		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
-	</p>
-	<?php
-	/**
-	 * Fires following the 'Password' field in the login form.
-	 *
-	 * @since 2.1.0
-	 */
-	do_action( 'login_form' );
-	?>
-	<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
-	<p class="submit">
-		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
-<?php	if ( $interim_login ) { ?>
-		<input type="hidden" name="interim-login" value="1" />
-<?php	} else { ?>
-		<input type="hidden" name="redirect_to" value="<?php echo esc_attr($redirect_to); ?>" />
-<?php 	} ?>
-<?php   if ( $customize_login ) : ?>
-		<input type="hidden" name="customize-login" value="1" />
-<?php   endif; ?>
-		<input type="hidden" name="testcookie" value="1" />
-	</p>
-</form>
 
 <?php if ( ! $interim_login ) { ?>
 <p id="nav">
