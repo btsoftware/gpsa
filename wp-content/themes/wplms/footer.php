@@ -130,7 +130,19 @@ echo vibe_get_option('google_analytics');
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-21808432-6', 'gpsaknowledge.org');
+  //ga('create', 'UA-21808432-6', 'gpsaknowledge.org');
+ <?php
+ // New Google Analytics code to set User ID.
+ if ( get_current_user_id() > 0 )  {
+  $gacode = "ga('create', 'UA-21808432-6', { 'userId': '%s' });";
+  echo sprintf($gacode, get_current_user_id());
+ } else {
+  $gacode = "ga('create', 'UA-21808432-6', 'gpsaknowledge.org');";
+  echo sprintf($gacode);
+ }?>
+
+
+ 
   ga('send', 'pageview');
 
 
