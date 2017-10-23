@@ -2125,13 +2125,15 @@ p.autor_material {
 	display: none;
 	width: 240px;
 	position: absolute;
-	right: 80px;
+	right: 0px;
+	/*right: 80px;*/
 	top: 36px;
 	background: #232b2d;
 	border-radius:2px;
 	opacity: 1;
 	z-index: 9;
 }
+
 #vibe_bp_login:after{
 	content:'';
 	position: absolute;

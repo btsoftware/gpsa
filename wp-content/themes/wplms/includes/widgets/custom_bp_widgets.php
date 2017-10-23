@@ -1,5 +1,78 @@
-<?php
+<style type="text/css">
+ /* LEFT ARROW */
+.arrowLeft {
+  position: absolute;
+  width: 151px;
+  height: 38px;
+  background: #6d6f9e;
+  border: solid 1px #999;
+  top: -13px;
+  right: -130px;
+  color: white;
+  display: none;
+}
 
+.arrowLeft:after {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  top: -2px;
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 16px solid #6d6f9e;
+  left: -16px;
+  z-index: 2;
+}
+
+.gray_screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  /*background: rgba(0, 0, 0, 0.7);*/
+}
+
+#vibe-bp-login, .widget.vibe-bp-login, #sidebar-me { z-index: 1000 !important; }
+
+</style>
+  <script type="text/javascript">
+      var advice = function (){
+        setTimeout(function(){ 
+          $(".pusher").append('<div class="gray_screen"> </div>')
+          $(".gray_screen").fadeIn("slow") 
+          $("a.smallimg.vbplogin").trigger("click")
+
+          setTimeout(function(){ 
+            $(".arrowLeft").fadeIn("slow", function(){
+              setTimeout(function(){ $(".arrowLeft").fadeOut("slow", function(){
+                setTimeout(function(){ 
+                  $(".arrowLeft").fadeIn("slow", function(){
+                    setTimeout(function(){ 
+                      $(".arrowLeft").fadeOut("slow") 
+
+                      $("#vibe_bp_login").fadeOut("slow", function(){ 
+                        $(".gray_screen").fadeOut("slow", function(){ $(".gray_screen").remove() })
+                      })
+                    }, 600);
+
+                  })
+                }, 300);
+              }) }, 1500);
+            })
+          }, 600);
+        }, 500);
+      }
+
+
+  </script>
+
+<?php
 add_action( 'widgets_init', 'vibe_bp_widgets' );
 
 
@@ -19,12 +92,22 @@ if ( !class_exists('vibe_bp_login') ) {
       $widget_ops = array( 'classname' => 'vibe-bp-login', 'description' => __( 'Vibe BuddyPress Login', 'vibe' ) );
       $this->WP_Widget( 'vibe_bp_login', __( 'Vibe BuddyPress Login Widget','vibe' ), $widget_ops);
     }
+
     
     function widget( $args, $instance ) {
       extract( $args );
       
       echo $before_widget;
-      
+
+      global $bp;
+      $signup_date = date( $bp->loggedin_user->userdata->user_registered );
+      $now = date('Y-m-d H:i:s');
+      $interval = intval( (strtotime($now) - strtotime($signup_date)) / (60 * 60 * 24) );
+
+      if($interval <= 15){ ?>
+        <script type="text/javascript">  $(document).ready(function(){ advice(); }) </script>
+
+      <?php }
       if ( is_user_logged_in() ) :
         do_action( 'bp_before_sidebar_me' ); ?>
         <div id="sidebar-me">
@@ -32,8 +115,17 @@ if ( !class_exists('vibe_bp_login') ) {
             <?php bp_loggedin_user_avatar( 'type=full' ); ?>
           </div>
           <ul>
-            <li id="username"><a href="<?php bp_loggedin_user_link(); ?>"><?php bp_loggedin_user_fullname(); ?></a></li>
-            <li><a href="<?php echo bp_loggedin_user_domain() . BP_XPROFILE_SLUG ?>/" title="<?php _e('View profile','vibe'); ?>"><?php _e('View profile','vibe'); ?></a></li>
+            <li id="username">
+              <a href="<?php bp_loggedin_user_link(); ?>"><?php bp_loggedin_user_fullname(); ?></a>
+            </li>
+            <li>
+              <a href="<?php echo bp_loggedin_user_domain() . BP_XPROFILE_SLUG ?>/" title="<?php _e('View profile','vibe'); ?>"><?php _e('View profile','vibe'); ?></a>
+                <div class="arrowLeft"> Don't forget to complete your profile </div>
+              <?php if( bp_loggedin_user_fullname() == "Kevin"){ ?>
+                <div class="arrowLeft"></div>
+              <?php } ?>
+
+            </li>
             <li id="vbplogout"><a href="<?php echo wp_logout_url( get_permalink() ); ?>" rel="nofollow" class="logout" title="<?php _e( 'Log Out','vibe' ); ?>"><i class="icon-close-off-2"></i> <?php _e('LOGOUT','vibe'); ?></a></li>
             <li id="admin_panel_icon"><?php if (current_user_can("edit_posts"))
                  echo '<a href="'.vibe_site_url() .'wp-admin/" title="'.__('Access admin panel','vibe').'"><i class="icon-settings-1"></i></a>'; ?>
