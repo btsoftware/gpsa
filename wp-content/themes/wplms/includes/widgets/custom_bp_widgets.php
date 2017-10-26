@@ -1,88 +1,11 @@
-<style type="text/css">
- /* LEFT ARROW */
-.arrowLeft {
-  position: absolute;
-  width: 151px;
-  height: 38px;
-  background: #6d6f9e;
-  border: solid 1px #999;
-  top: -13px;
-  right: -130px;
-  color: white;
-  display: none;
-}
-
-.arrowLeft:after {
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  top: -2px;
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-right: 16px solid #6d6f9e;
-  left: -16px;
-  z-index: 2;
-}
-
-.gray_screen{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 8;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  /*background: rgba(0, 0, 0, 0.7);*/
-}
-
-#vibe-bp-login, .widget.vibe-bp-login, #sidebar-me { z-index: 1000 !important; }
-
-</style>
-  <script type="text/javascript">
-      var advice = function (){
-        setTimeout(function(){ 
-          $(".pusher").append('<div class="gray_screen"> </div>')
-          $(".gray_screen").fadeIn("slow") 
-          $("a.smallimg.vbplogin").trigger("click")
-
-          setTimeout(function(){ 
-            $(".arrowLeft").fadeIn("slow", function(){
-              setTimeout(function(){ $(".arrowLeft").fadeOut("slow", function(){
-                setTimeout(function(){ 
-                  $(".arrowLeft").fadeIn("slow", function(){
-                    setTimeout(function(){ 
-                      $(".arrowLeft").fadeOut("slow") 
-
-                      $("#vibe_bp_login").fadeOut("slow", function(){ 
-                        $(".gray_screen").fadeOut("slow", function(){ $(".gray_screen").remove() })
-                      })
-                    }, 600);
-
-                  })
-                }, 300);
-              }) }, 1500);
-            })
-          }, 600);
-        }, 500);
-      }
-
-
-  </script>
-
 <?php
 add_action( 'widgets_init', 'vibe_bp_widgets' );
-
 
 function vibe_bp_widgets() {
     register_widget('vibe_bp_login');
     register_widget('vibe_course_categories'); 
     register_widget('vibecertificatecode'); 
 }
-
-
 /* Creates the widget itself */
 
 if ( !class_exists('vibe_bp_login') ) {
@@ -105,7 +28,35 @@ if ( !class_exists('vibe_bp_login') ) {
       $interval = intval( (strtotime($now) - strtotime($signup_date)) / (60 * 60 * 24) );
 
       if($interval <= 15){ ?>
-        <script type="text/javascript">  $(document).ready(function(){ advice(); }) </script>
+        <script type="text/javascript">
+          var advice = function (){
+            setTimeout(function(){ 
+              $(".pusher").append('<div class="gray_screen"> </div>')
+              $(".gray_screen").fadeIn("slow") 
+              $("a.smallimg.vbplogin").trigger("click")
+
+              setTimeout(function(){ 
+                $(".arrowLeft").fadeIn("slow", function(){
+                  setTimeout(function(){ $(".arrowLeft").fadeOut("slow", function(){
+                    setTimeout(function(){ 
+                      $(".arrowLeft").fadeIn("slow", function(){
+                        setTimeout(function(){ 
+                          $(".arrowLeft").fadeOut("slow") 
+
+                          $("#vibe_bp_login").fadeOut("slow", function(){ 
+                            $(".gray_screen").fadeOut("slow", function(){ $(".gray_screen").remove() })
+                          })
+                        }, 600);
+
+                      })
+                    }, 300);
+                  }) }, 1500);
+                })
+              }, 600);
+            }, 500);
+          }
+          $(document).ready(function(){ advice(); }) 
+        </script>
 
       <?php }
       if ( is_user_logged_in() ) :
