@@ -44,14 +44,15 @@ get_header();
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
 
                     $categories = get_the_category();
-                    $cats='<ul>';
+/*                    $cats='<ul>';
                     if($categories){
                         foreach($categories as $category) {
-                            $cats .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>';
+                            $cats .= '<li>i<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>';
                         }
                     }
                     $cats .='</ul>';
-                        
+  */
+                      
                        echo ' <div class="blogpost bpcat7">
                             '.(has_post_thumbnail(get_the_ID())?'
                             <div class="featured2">
@@ -63,15 +64,35 @@ get_header();
 								
 								bookmarks(get_permalink(), get_the_title());
 									
-								echo '</div>
-                                <div class="cats catKR">
+								echo '</div>i';
+                            /*   echo ' <div class="cats catKR">
                                     '.$cats.'
 
                                 </div>
                                 <p class="resumen bprepotext">'.get_the_excerpt(100).'</p>
                             </div>
 			    
-                        </div>';
+                        </div>';*/
+
+echo '<div class="tags">
+                    <div class="inpublication">
+                        <i class="icon-user clicked left-i p12"></i><p class="autor_material">'.get_post_meta($post->ID, 'publication_author', true).'</p></div>
+                    <div class="inpublication">
+                        <i class="icon-book-open-1 p13 left-i"></i>
+                        <p class="autor_material">Publisher:'.get_post_meta($post->ID, 'publication_by', true).' </p>
+                    </div>
+
+                    <div class="inpublication"><i class="icon-clock left-i"></i>'.get_post_meta($post->ID, 'publication_year', true).'
+                    </div>
+                    <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
+                    ';
+			$terms = get_the_terms( $post->ID , 'Material Type' );
+                    foreach ( $terms as $term ) {
+                    echo '<a href="' . $term_link . '">' . $term->name . '</a>';
+                    }
+                    echo'</div></div>
+                                <p class="resumen bprepotext">'.get_the_excerpt(100).'</p>
+                            </div>';
                     endwhile;
                     endif;
                     pagination();
