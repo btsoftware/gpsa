@@ -82,7 +82,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 			  <div class="v_module v_column col-md-4 col-sm-4">
 			    <!-- stories -->
 			     <div class="block_home" style="margin-top: 50px;">
-			      <?php $args = array( 'post_type' => 'd', 'posts_per_page' => 5 ); $service_query = new WP_Query('page_id=182');
+			      <?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 1 ); $service_query = new WP_Query('page_id=182');
 			      while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
 				 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 			     
