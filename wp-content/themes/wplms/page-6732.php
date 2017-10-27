@@ -138,40 +138,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 <!-- third home -->
 <section id="content" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-sm-8">
-                    <div id="networking-home"class="content" style="padding: 0px ! important; margin-top: 18px ! important;">
-				<!--Inicio Networking -->				     
-				<h2 class="logos_title"><a class="" href="http://gpsaknowledge.org/networking/">Networking Board</a> </h2>
-				<div class="block_networking">
-					     <?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) . '&action=activity_update' .'&max=4') ) : ?>
-																	     
-						     <?php while ( bp_activities() ) : bp_the_activity(); ?>
-						     <?php locate_template( array( 'activity/entry2.php' ), true, false ); ?>
-						     <?php endwhile; ?>
-						     <?php endif; ?>
-				</div>
-				    
-				<!-- Fin de Networking -->
-				<!--Inicio carrusel -->
-                                <?php $service_query = new WP_Query('page_id=813');
-                                while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
-                               <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-                                     <h2 class="logos_title "><?php the_title(); ?></h4>                                                                  				
-                                     <div><?php the_content(); ?></div><!-- end .post_content -->                                                                                                                                                         
-                                </article> <!-- end .entry -->
-                                <?php endwhile; // end of the loop. ?>                       
-                                <!-- fin carrusel logos ongs -->  				                                                                                             
-                     </div>        														
-            </div><!--fin colummna derecha -->
-            <div class="col-md-3 col-sm-4">
-			<div class="sidebar">
-				<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('homesidebar') ) : ?>
-                <?php endif; ?>
-			</div>
-            </div>
-        </div>
+    
     </div>
 </section>
 <?php
