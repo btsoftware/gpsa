@@ -65,10 +65,7 @@ get_header();
 									
 								echo '</div>
                                 <div class="cats catKR">
-                                    '.$tags.'
-			<div class="tags">
-                                  <div class="inpublication"><i class="icon-user clicked left-i p12"></i><p class="autor_material"><?php echo get_post_meta($post->ID, 'publication_author', true); ?></p></div>           
-                           </div>   
+                                    '.$cats.'
 
                                 </div>
                                 <p class="resumen bprepotext">'.get_the_excerpt(100).'</p>
