@@ -89,7 +89,7 @@ if(isset($title) && $title !='' && $title !='H'){
                         </div>
 					<div id="cargando" style="display:none ">
 
-				<img id="myImage"  style="position: absolute; top: 48%; left: 45%;" src = "http://gpsaknowledge.org/wp-content/themes/wplms/assets/images/loader.gif">
+	<img id="myImage"  style="position: absolute; top: 48%; left: 45%; z-index:99;" src = "http://gpsaknowledge.org/wp-content/themes/wplms/assets/images/loader.gif">
                     </div>
 
 						<div id="map">
