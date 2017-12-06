@@ -41,9 +41,9 @@ get_header();
         </form>
     </div>  
 
-<form action="category/knowledge-repository/?s=" method="get">
-Name: <input type="text" name="fName">
-Number: <input type="text" name="number">
+<form action="/category/knowledge-repository/?s=" method="get">
+<input type="hidden" name="/knowledge-repository">
+<input type="text" name="s">
 <input type="submit">
 </form>
 
