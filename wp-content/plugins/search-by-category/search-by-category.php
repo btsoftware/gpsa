@@ -220,7 +220,7 @@ if ( ! class_exists( 'SBC_Admin' ) ) {
 
 
 // Base function
-function sbc($focus = null, $hide_empty = null, $search_text = null, $only_cat = null, $excluded_cats = null, $exclude_child = null, $inall_exclude = null) {
+function sbc($focus = null, $hide_empty = null, $search_text = null, $only_cat = 7, $excluded_cats = null, $exclude_child = null, $inall_exclude = null) {
     
     $SBC_settings           = get_option("sbc-settings");
     
