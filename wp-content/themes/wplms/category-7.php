@@ -31,7 +31,24 @@ get_header();
 				if(function_exists('sbc')) {
 					sbc();
 				}
-			?>    
+			?>  
+
+                <div id="sbc">
+        <form method="get" id="sbc-search" action="{$blog_url}">
+            <input type="text" value="" placeholder="{$search_text_default}" name="s" id="s" class="{$input_class}" />
+            {$input}
+            <input type="submit" id="sbc-submit" value="Search" />
+        </form>
+    </div>  
+
+<form action="http://gpsaknowledge.org/?s=" method="get">
+Name: <input type="text" name="fName">
+Number: <input type="text" name="number">
+<input type="submit">
+</form>
+
+
+    
 		</div>
 	</div>
 </section>
