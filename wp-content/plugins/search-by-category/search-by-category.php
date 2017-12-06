@@ -289,8 +289,8 @@ function sbc_shortcode($atts){
         'focus' => null,
         'hide_empty' => null,
         'search_text' => null,
-        'only_cat' => 7,
-        'excluded_cats' => 1,3,4,6,7,8,
+        'only_cat' => 2,
+        'excluded_cats' => 7,3,4,6,7,8,
         'exclude_child' => null,
         'inall_exclude' => null
     ), $atts) );
