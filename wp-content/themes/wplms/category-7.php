@@ -42,8 +42,8 @@ get_header();
     </div>  
 
 <form action="/category/knowledge-repository/?s=" method="get">
-<input type="hidden" name="/knowledge-repository">
-<input type="text" name="s">
+<input type="hidden" name="category" value="knowledge-repository" name="s" id="s" class="single-cat">
+<input type="text" placeholder="{$search_text_default}" name="s">
 <input type="submit">
 </form>
 
