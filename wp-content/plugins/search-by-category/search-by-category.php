@@ -306,7 +306,7 @@ function return_only_selected_category() {
 		$desired_cat = $_REQUEST['cat'];
 		if($desired_cat === '0') $desired_cat = $SBC_settings['inall_exclude'];
 		
-		$excluded = get_categories("hide_empty=true&exclude={$desired_cat}");
+		$excluded = get_categories("hide_empty=false&exclude={$desired_cat}");
 		
 		$wp_query->query_vars['cat'] = "-{$excluded}";
 	}
