@@ -33,19 +33,14 @@ get_header();
 				}
 			?>  
 
-                <div id="sbc">
-        <form method="get" id="sbc-search" action="{$blog_url}">
-            <input type="text" value="" placeholder="{$search_text_default}" name="s" id="s" class="{$input_class}" />
-            {$input}
-            <input type="submit" id="sbc-submit" value="Search" />
-        </form>
-    </div>  
+<div id="sbc">
 
 <form action="/category/knowledge-repository/?s=" method="get">
+<input type="text" placeholder="Search" name="s">
 <input type="hidden" name="category" value="knowledge-repository" name="s" id="s" class="single-cat">
-<input type="text" placeholder="{$search_text_default}" name="s">
-<input type="submit">
+<input type="submit" id="sbc-submit" value="Search">
 </form>
+</div>
 
 
 
