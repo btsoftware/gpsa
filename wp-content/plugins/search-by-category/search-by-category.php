@@ -287,11 +287,11 @@ EOH;
 function sbc_shortcode($atts){
     extract( shortcode_atts(array(
         'focus' => null,
-        'hide_empty' => null,
+        'hide_empty' => 1,
         'search_text' => null,
         'only_cat' => 2,
         'excluded_cats' => 7,3,4,6,7,8,
-        'exclude_child' => null,
+        'exclude_child' => 7,
         'inall_exclude' => null
     ), $atts) );
     
