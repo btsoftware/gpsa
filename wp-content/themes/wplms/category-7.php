@@ -27,16 +27,11 @@ get_header();
 <section class="stripe sort-serach">
 	<div class="container">
 		<div class="row">	
-			<?php 
-				if(function_exists('sbc')) {
-					sbc();
-				}
-			?>  
+			
 
 <div id="sbc">
-
-<form action="/category/knowledge-repository/?s=" method="get">
-<input type="text" placeholder="Search" name="s">
+<form action="/category/knowledge-repository/?s=" method="get" id="sbc-search">
+<input type="text" placeholder="Search" name="s"  class="single-cat">
 <input type="hidden" name="category" value="knowledge-repository" name="s" id="s" class="single-cat">
 <input type="submit" id="sbc-submit" value="Search">
 </form>
