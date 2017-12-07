@@ -41,14 +41,14 @@ get_header();
         </form>
     </div>  
 
-<form action="http://gpsaknowledge.org/?s=" method="get">
+<form action="category/knowledge-repository/?s=" method="get">
 Name: <input type="text" name="fName">
 Number: <input type="text" name="number">
 <input type="submit">
 </form>
 
 
-    
+
 		</div>
 	</div>
 </section>
