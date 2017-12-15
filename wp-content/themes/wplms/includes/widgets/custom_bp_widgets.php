@@ -14,20 +14,14 @@ if ( !class_exists('vibe_bp_login') ) {
     function vibe_bp_login() {
       $widget_ops = array( 'classname' => 'vibe-bp-login', 'description' => __( 'Vibe BuddyPress Login', 'vibe' ) );
       $this->WP_Widget( 'vibe_bp_login', __( 'Vibe BuddyPress Login Widget','vibe' ), $widget_ops);
-    }
 
-    
-    function widget( $args, $instance ) {
-      extract( $args );
       
-      echo $before_widget;
-
       global $bp;
       $signup_date = date( $bp->loggedin_user->userdata->user_registered );
       $now = date('Y-m-d H:i:s');
       $interval = intval( (strtotime($now) - strtotime($signup_date)) / (60 * 60 * 24) );
 
-      if($interval <= 15){ ?>
+      if($interval <= 50){ ?>
         <script type="text/javascript">
           var advice = function (){
             setTimeout(function(){ 
@@ -59,6 +53,69 @@ if ( !class_exists('vibe_bp_login') ) {
         </script>
 
       <?php }
+
+    }
+
+    
+    function widget( $args, $instance ) {
+      extract( $args );
+      
+      echo $before_widget;
+
+      global $bp;
+      $signup_date = date( $bp->loggedin_user->userdata->user_registered );
+      $now = date('Y-m-d H:i:s');
+      $interval = intval( (strtotime($now) - strtotime($signup_date)) / (60 * 60 * 24) );
+
+      if( isset($_GET['ab']) ){ $_SESSION['adblock'] = true; }
+      else if( !isset($_SESSION['adblock']) ){ $_SESSION['adblock'] = false;}
+
+      if( $interval <= 15 AND isset($_SESSION) AND !isset($_SESSION['was_login']) AND !$_SESSION['adblock'] ) {
+        $_SESSION['was_login'] = true;
+      ?>
+       <script type="text/javascript">
+
+	$("#close_advice, .gray_screen").live("click", function(e){
+	  $(".gray_screen").fadeOut("slow")
+	})
+
+	$("#block_advice").live("click", function(e){
+	  //$.redirect( window.location.href, { ab: true }, "POST" );
+	  window.location.replace( (window.location.href) +"?ab=true" );
+        })
+
+          var advice = function (){
+            setTimeout(function(){
+              //$(".pusher").append('<div class="gray_screen"> <a href="#" id="close_advice">X - Close</a> <a href="#" id="block_advice"> Don't show me that </a> </div>')
+	      $(".pusher").append('<div class="gray_screen"> <a href="#" id="close_advice"> Close </a> <a href="#" id="block_advice"> Don\'t- show me that</a> | </div>')
+              $(".gray_screen").fadeIn("slow")
+              $("a.smallimg.vbplogin").trigger("click")
+
+              setTimeout(function(){
+                $(".arrowLeft").fadeIn("slow", function(){
+                  setTimeout(function(){ $(".arrowLeft").fadeOut("slow", function(){
+                    setTimeout(function(){
+                      $(".arrowLeft").fadeIn("slow", function(){
+                        setTimeout(function(){
+                          $(".arrowLeft").fadeOut("slow")
+
+                          $("#vibe_bp_login").fadeOut("slow", function(){
+                            $(".gray_screen").fadeOut("slow", function(){ $(".gray_screen").remove() })
+                          })
+                        }, 600);
+
+                      })
+                    }, 300);
+                  }) }, 1500);
+                })
+              }, 600);
+            }, 500);
+          }
+
+          $(document).ready(function(){ advice(); })
+        </script>
+      <?php }
+
       if ( is_user_logged_in() ) :
         do_action( 'bp_before_sidebar_me' ); ?>
         <div id="sidebar-me">

@@ -326,6 +326,15 @@ background: rgba(255, 255, 255, 0.9);
   /*background: rgba(0, 0, 0, 0.7);*/
 }
 
+.gray_screen #block_advice,
+.gray_screen #close_advice {
+ color: #fff;
+ font-weight: bolder;
+ float:right; 20px;
+ margin-right: 20px;
+ top: 100px;
+}
+
 
 
 #vibe-bp-login, .widget.vibe-bp-login, #sidebar-me { z-index: 1000 !important; }
