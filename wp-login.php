@@ -481,6 +481,7 @@ case 'logout' :
 
 	$redirect_to = !empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : 'wp-login.php?loggedout=true';
 	wp_safe_redirect( $redirect_to );
+        unset($_SESSION['was_login']);
 	exit();
 
 case 'lostpassword' :
@@ -793,6 +794,7 @@ default:
 	// $redirect_to = apply_filters( 'login_redirect', $redirect_to, $requested_redirect_to, $user );
 
 	if ( !is_wp_error($user) && !$reauth ) {
+// die("lo que sea");
 		if ( $interim_login ) {
 			$message = '<p class="message">' . __('You have logged in successfully.') . '</p>';
 			$interim_login = 'success';

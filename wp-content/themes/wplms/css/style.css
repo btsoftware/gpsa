@@ -1110,8 +1110,8 @@ button span {
 	cursor:pointer;
 	display: none;
 	position:absolute;
-	top:40px;
-	right:40px;
+	top:-60px;
+	right:35px;
 }
 
 #trigger{
@@ -4734,9 +4734,10 @@ footer, footer a:hover, .footerwidget li a {
     margin-left: 246px;
 }
 .contorno-morado-tell {
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgb(109, 111, 158) !important;
     border: 1px solid #253169;
-    color: #253169;
+    /*color: #253169;*/
+    color:#FFF;
     display: inline-block;
     font-size: 13px;
     font-weight: normal;
@@ -4749,3 +4750,6 @@ footer, footer a:hover, .footerwidget li a {
     padding-right: 30px;
     padding-top: 7px;
 }
+
+ .contorno-morado-tell:hover {color:#000;}
+

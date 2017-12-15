@@ -44,7 +44,6 @@ if(isset($title) && $title !='' && $title !='H'){
         </div>        
     </div>
 </section>
-
 <!--empieza eventon y sidebar -->              
 <section id="content" style="background: none repeat scroll 0% 0% rgb(252, 252, 252);">
     <div class="container">
@@ -86,6 +85,19 @@ if( function_exists('add_eventon')) {
 </section>
 </div>
 
+
+<script>
+$(document).ready(function(){
+  $("#eventon_loadbar_section").after( "<img src='http://muraski.com/wp-content/themes/muraski/img/ajax-load.gif' id='loader_' style='display: none'>" );
+
+  $(".evcal_arrows").on("click", function(){
+    $('#loader_').slideDown(2300, function(){
+      $('#loader_').slideUp("slow")
+    })
+
+  })
+})
+</script>
 <?php
 get_footer();
 ?>
