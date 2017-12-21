@@ -1,0 +1,1440 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPLMS Front End v1.7.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-09 19:32+0530\n"
+"PO-Revision-Date: 2014-09-11 08:00:30+0000\n"
+"Last-Translator: VibeThemes <vibethemes@gmail.com>\n"
+"Language-Team: VibeThemes <vibethemes@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-front-end\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-front-end\n"
+"X-Textdomain-Support: yes"
+
+#: autoupdate/class-envato-protected-api.php:67
+#@ vibe
+msgid "Please enter your Envato Marketplace Username."
+msgstr ""
+
+#: autoupdate/class-envato-protected-api.php:71
+#@ vibe
+msgid "Please enter your Envato Marketplace API Key."
+msgstr ""
+
+#: autoupdate/class-envato-protected-api.php:96
+#@ vibe
+msgid "The API \"set\" is a required parameter."
+msgstr ""
+
+#: autoupdate/class-envato-protected-api.php:167
+#@ vibe
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:376
+#@ text-domain
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:376
+#: autoupdate/class-plugin-update.php:541
+#@ text-domain
+msgid "Try again"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:417
+#@ text-domain
+msgid "An unknown error occurred"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:453
+#@ text-domain
+msgid "The plugin has been updated, but could not be reactivated. Please reactivate it manually."
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:454
+#@ text-domain
+msgid "Plugin reactivated successfully. "
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:476
+#@ text-domain
+msgid " Plugin Updates"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:515
+#@ text-domain
+msgid "Username: "
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:519
+#@ text-domain
+msgid "Email: "
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:525
+#@ text-domain
+msgid "Key: "
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:531
+#@ text-domain
+msgid "<p>Your plugin update is <span style=\"color:green\">active</span></p>"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:535
+#@ text-domain
+msgid "<p>Your input is <span style=\"color:red\">not valid</span>, automatic updates is <span style=\"color:red\">not active</span>.</p>"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:536
+#@ text-domain
+msgid "Edit Key"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:540
+#@ text-domain
+msgid "<p>Unable to validate update activation.</p>"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:546
+#@ text-domain
+msgid "Add Key"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:632
+#@ text-domain
+msgid "User name"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:638
+#@ text-domain
+msgid "Email"
+msgstr ""
+
+#: autoupdate/class-plugin-update.php:647
+#@ text-domain
+msgid "Themeforest User name ( for Auto-Updates )"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:203
+#@ default
+msgid "You attempted to edit an item that doesn&#8217;t exist. Perhaps it was deleted?"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:223
+#: front-end-editor/class-wp-front-end-editor.php:862
+#@ default
+msgid "You are not allowed to edit this item."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:296
+#: front-end-editor/class-wp-front-end-editor.php:371
+#: front-end-editor/class-wp-front-end-editor.php:1328
+#: front-end-editor/class-wp-front-end-editor.php:1369
+#: front-end-editor/class-wp-front-end-editor.php:1527
+#@ default
+msgid "Cancel"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:300
+#@ default
+msgid "LOCKED"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:370
+#: front-end-editor/class-wp-front-end-editor.php:1327
+#: front-end-editor/class-wp-front-end-editor.php:1368
+#@ default
+msgid "OK"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:372
+#@ default
+msgid "Publish on:"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:373
+#@ default
+msgid "Schedule for:"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:374
+#@ default
+msgid "Published on:"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:375
+#, php-format
+#@ default
+msgid "%1$s %2$s, %3$s @ %4$s : %5$s"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:376
+#@ default
+msgid "Show more comments"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:377
+#@ default
+msgid "No more comments found."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:378
+#: front-end-editor/class-wp-front-end-editor.php:583
+#: front-end-editor/class-wp-front-end-editor.php:1153
+#: includes/class_wplms_front_end.php:859
+#@ default
+#@ wplms-front-end
+msgid "Publish"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:379
+#@ default
+msgid "Schedule"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:380
+#: front-end-editor/class-wp-front-end-editor.php:510
+#: front-end-editor/class-wp-front-end-editor.php:595
+#@ default
+msgid "Update"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:381
+#@ default
+msgid "Save as Pending"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:382
+#@ default
+msgid "Save Draft"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:383
+#: front-end-editor/class-wp-front-end-editor.php:1337
+#: front-end-editor/class-wp-front-end-editor.php:1365
+#@ default
+msgid "Private"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:384
+#: front-end-editor/class-wp-front-end-editor.php:1346
+#: front-end-editor/class-wp-front-end-editor.php:1359
+#@ default
+msgid "Public"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:385
+#: front-end-editor/class-wp-front-end-editor.php:1343
+#@ default
+msgid "Public, Sticky"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:386
+#@ default
+msgid "Password Protected"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:387
+#: front-end-editor/class-wp-front-end-editor.php:1290
+#: front-end-editor/class-wp-front-end-editor.php:1316
+#@ default
+msgid "Privately Published"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:388
+#: front-end-editor/class-wp-front-end-editor.php:1293
+#: front-end-editor/class-wp-front-end-editor.php:1314
+#@ default
+msgid "Published"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:499
+#@ default
+msgid "Saving Draft&#8230;"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:500
+#@ default
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:509
+#: front-end-editor/class-wp-front-end-editor.php:1482
+#@ default
+msgid "Insert/edit link"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:511
+#: front-end-editor/class-wp-front-end-editor.php:1524
+#@ default
+msgid "Add Link"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:512
+#@ default
+msgid "(no title)"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:513
+#@ default
+msgid "No matches found."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:583
+#@ default
+msgid "Publishing&hellip;"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:595
+#: wplms-front-end.php:79
+#@ default
+#@ wplms-front-end
+msgid "Save"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:595
+#@ default
+msgid "Saving&hellip;"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:595
+#@ default
+msgid "Updating&hellip;"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1083
+#, php-format
+#@ default
+msgid "Post updated. <a href=\"%s\">View post</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1084
+#: front-end-editor/class-wp-front-end-editor.php:1100
+#@ default
+msgid "Custom field updated."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1085
+#: front-end-editor/class-wp-front-end-editor.php:1101
+#@ default
+msgid "Custom field deleted."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1086
+#@ default
+msgid "Post updated."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: front-end-editor/class-wp-front-end-editor.php:1088
+#, php-format
+#@ default
+msgid "Post restored to revision from %s"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1089
+#, php-format
+#@ default
+msgid "Post published. <a href=\"%s\">View post</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1090
+#@ default
+msgid "Post saved."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1091
+#, php-format
+#@ default
+msgid "Post submitted. <a target=\"_blank\" href=\"%s\">Preview post</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1092
+#, php-format
+#@ default
+msgid "Post scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview post</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1094
+#: front-end-editor/class-wp-front-end-editor.php:1107
+#: front-end-editor/class-wp-front-end-editor.php:1375
+#@ default
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1095
+#, php-format
+#@ default
+msgid "Post draft updated. <a target=\"_blank\" href=\"%s\">Preview post</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1099
+#, php-format
+#@ default
+msgid "Page updated. <a href=\"%s\">View page</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1102
+#@ default
+msgid "Page updated."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1103
+#, php-format
+#@ default
+msgid "Page restored to revision from %s"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1104
+#, php-format
+#@ default
+msgid "Page published. <a href=\"%s\">View page</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1105
+#@ default
+msgid "Page saved."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1106
+#, php-format
+#@ default
+msgid "Page submitted. <a target=\"_blank\" href=\"%s\">Preview page</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1107
+#, php-format
+#@ default
+msgid "Page scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview page</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1108
+#, php-format
+#@ default
+msgid "Page draft updated. <a target=\"_blank\" href=\"%s\">Preview page</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1110
+#@ default
+msgid "Media attachment updated."
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1141
+#, php-format
+#@ default
+msgid "There is an autosave of this post that is more recent than the version below. <a href=\"%s\">View the autosave</a>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1164
+#@ default
+msgid "Revisions"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1202
+#@ default
+msgid "Page Attributes"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1202
+#@ default
+msgid "Attributes"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1206
+#@ default
+msgid "Excerpt"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1210
+#@ default
+msgid "Send Trackbacks"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1214
+#@ default
+msgid "Custom Fields"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1218
+#@ default
+msgid "Discussion"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1285
+#@ default
+msgid "Status:"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1296
+#: front-end-editor/class-wp-front-end-editor.php:1318
+#@ default
+msgid "Scheduled"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1299
+#: front-end-editor/class-wp-front-end-editor.php:1320
+#@ default
+msgid "Pending Review"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1303
+#: front-end-editor/class-wp-front-end-editor.php:1322
+#: front-end-editor/class-wp-front-end-editor.php:1324
+#@ default
+msgid "Draft"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1309
+#: front-end-editor/class-wp-front-end-editor.php:1351
+#: front-end-editor/class-wp-front-end-editor.php:1398
+#@ default
+msgid "Edit"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1333
+#@ default
+msgid "Visibility:"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1340
+#: front-end-editor/class-wp-front-end-editor.php:1363
+#@ default
+msgid "Password protected"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1361
+#@ default
+msgid "Stick this post to the front page"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1364
+#@ default
+msgid "Password:"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1378
+#, php-format
+#@ default
+msgid "Scheduled for: <b>%1$s</b>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1380
+#, php-format
+#@ default
+msgid "Published on: <b>%1$s</b>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1382
+#: front-end-editor/class-wp-front-end-editor.php:1390
+#@ default
+msgid "Publish <b>immediately</b>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1384
+#, php-format
+#@ default
+msgid "Schedule for: <b>%1$s</b>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1386
+#, php-format
+#@ default
+msgid "Publish on: <b>%1$s</b>"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1414
+#@ default
+msgid "Slug"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1427
+#@ default
+msgid "Author"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1447
+#: front-end-editor/class-wp-front-end-editor.php:1492
+#@ default
+msgid "Title"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1487
+#@ default
+msgid "Enter the destination URL"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1489
+#@ default
+msgid "URL"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1495
+#@ default
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1498
+#@ default
+msgid "Or link to existing content"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1502
+#@ default
+msgid "Search"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1514
+#@ default
+msgid "No search term specified. Showing recent items."
+msgstr ""
+
+#: front-end-editor/meta-modal-template.php:9
+#@ default
+msgid "<strong>Connection lost.</strong> Saving has been disabled until you&#8217;re reconnected."
+msgstr ""
+
+#: front-end-editor/meta-modal-template.php:10
+#@ default
+msgid "We&#8217;re backing up this post in your browser, just in case."
+msgstr ""
+
+#: includes/class_wplms_front_end.php:61
+#@ vibe
+msgid "Create a Course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:68
+#@ wplms-front-end
+msgid "COURSE CREATION ONLY ALLOWED FOR INSTRUCTORS & ADMINISTRATORS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:78
+#@ wplms-front-end
+msgid "Unable to edit Course, please contact Site Administrator"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:81
+#@ wplms-front-end
+msgid "Incorrect Action, please contact Site Administrator"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:109
+#@ vibe
+msgid "Edit Course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:139
+#: includes/class_wplms_front_end.php:211
+#: includes/class_wplms_front_end.php:304
+#: includes/class_wplms_front_end.php:425
+#: includes/class_wplms_front_end.php:482
+#: includes/class_wplms_front_end.php:537
+#: includes/class_wplms_front_end.php:565
+#: includes/class_wplms_front_end.php:600
+#: includes/class_wplms_front_end.php:729
+#: includes/class_wplms_front_end.php:939
+#: includes/class_wplms_front_end.php:1236
+#: includes/class_wplms_front_end.php:1290
+#: includes/class_wplms_front_end.php:1349
+#: includes/class_wplms_front_end.php:1478
+#: includes/class_wplms_front_end.php:1504
+#: includes/class_wplms_front_end.php:1693
+#@ wplms-front-end
+msgid "Security check Failed. Contact Administrator."
+msgstr ""
+
+#: includes/class_wplms_front_end.php:163
+#: includes/class_wplms_front_end.php:248
+#@ wplms-front-end
+msgid "Unable to create a new Course Category. Contact Admin !"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:192
+#: includes/class_wplms_front_end.php:276
+#@ wplms-front-end
+msgid "Unable to create course, contact admin !"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:217
+#: includes/class_wplms_front_end.php:309
+#: includes/class_wplms_front_end.php:430
+#: includes/class_wplms_front_end.php:487
+#: includes/class_wplms_front_end.php:542
+#: includes/class_wplms_front_end.php:570
+#: includes/class_wplms_front_end.php:605
+#: includes/class_wplms_front_end.php:734
+#: includes/class_wplms_front_end.php:944
+#@ wplms-front-end
+msgid "Invalid Course id, please edit a course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:223
+#: includes/class_wplms_front_end.php:315
+#: includes/class_wplms_front_end.php:436
+#: includes/class_wplms_front_end.php:493
+#: includes/class_wplms_front_end.php:576
+#: includes/class_wplms_front_end.php:611
+#: includes/class_wplms_front_end.php:740
+#@ wplms-front-end
+msgid "Invalid Course Instructor"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:327
+#@ wplms-front-end
+msgid "Unable to save course setting : "
+msgstr ""
+
+#: includes/class_wplms_front_end.php:420
+#@ wplms-front-end
+msgid "Can not have a blank Unit "
+msgstr ""
+
+#: includes/class_wplms_front_end.php:455
+#@ wplms-front-end
+msgid "Edit Unit"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:456
+#: includes/class_wplms_front_end.php:511
+#: includes/class_wplms_front_end.php:860
+#: includes/class_wplms_front_end.php:1063
+#: includes/class_wplms_front_end.php:1101
+#: includes/class_wplms_front_end.php:1254
+#@ wplms-front-end
+msgid "Remove"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:457
+#: includes/class_wplms_front_end.php:512
+#: includes/class_wplms_front_end.php:1064
+#: includes/class_wplms_front_end.php:1255
+#@ wplms-front-end
+msgid "Delete"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:477
+#@ wplms-front-end
+msgid "Can not have a Blank Quiz"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:510
+#@ wplms-front-end
+msgid "Edit Quiz"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:532
+#@ wplms-front-end
+msgid "Can not have delete"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:548
+#: includes/class_wplms_front_end.php:1355
+#@ wplms-front-end
+msgid "Instructor can not delete this unit/quiz"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:556
+#: includes/class_wplms_front_end.php:1363
+#@ wplms-front-end
+msgid "Unable to delete"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:590
+#@ wplms-front-end
+msgid "Unable to save curriculum, please contact site admin"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:669
+#@ wplms-front-end
+msgid "Invalid Product specs"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:719
+#@ wplms-front-end
+msgid "Unable to create product and pricing for course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:752
+#@ wplms-front-end
+msgid "Course successfully updated."
+msgstr ""
+
+#: includes/class_wplms_front_end.php:753
+#@ wplms-front-end
+msgid "View Course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:755
+#@ wplms-front-end
+msgid "Unable to update Course, contact Site admin"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:796
+#@ wplms-front-end
+msgid "Unit Settings"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:799
+#@ wplms-front-end
+msgid "Unit Type"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:800
+#@ wplms-front-end
+msgid "Select Unit Type"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:804
+#@ wplms-front-end
+msgid "Video"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:805
+#@ wplms-front-end
+msgid "Audio"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:806
+#@ wplms-front-end
+msgid "Podcast"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:807
+#@ wplms-front-end
+msgid "General"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:815
+#@ wplms-front-end
+msgid "Free Unit"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:816
+#@ wplms-front-end
+msgid "Make Unit Free"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:819
+#: includes/class_wplms_front_end.php:1574
+#@ wplms-front-end
+msgid "NO"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:821
+#: includes/class_wplms_front_end.php:1572
+#@ wplms-front-end
+msgid "YES"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:827
+#@ wplms-front-end
+msgid "Unit Duration"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:828
+#@ wplms-front-end
+msgid "Duration of Unit"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:834
+#@ wplms-front-end
+msgid "Unit assignments"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:835
+#@ wplms-front-end
+msgid "Connect Assignments"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:837
+#: includes/class_wplms_front_end.php:874
+#: includes/class_wplms_front_end.php:1076
+#: includes/class_wplms_front_end.php:1582
+#@ wplms-front-end
+msgid "None"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:852
+#@ wplms-front-end
+msgid "Edit Assignment"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:854
+#@ wplms-front-end
+msgid "ADD NEW ASSIGNMENT"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:855
+#@ wplms-front-end
+msgid "Add the Assignment title"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:871
+#@ wplms-front-end
+msgid "Unit Forum"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:872
+#@ wplms-front-end
+msgid "Connect a Forum"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:875
+#@ wplms-front-end
+msgid "Add new child forum in Course forum"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:876
+#@ wplms-front-end
+msgid "Add new forum"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:896
+#@ wplms-front-end
+msgid "SAVE UNIT SETTINGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:949
+#@ wplms-front-end
+msgid "Invalid Unit id, please edit a course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:955
+#@ wplms-front-end
+msgid "Invalid Unit Instructor"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1018
+#@ wplms-front-end
+msgid "Settings Saved"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1020
+#@ wplms-front-end
+msgid "Unable to save settings"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1044
+#@ wplms-front-end
+msgid "Manage Quiz Questions"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1047
+#@ wplms-front-end
+msgid "ADD QUESTION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1058
+#: includes/class_wplms_front_end.php:1249
+#@ wplms-front-end
+msgid "Question "
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1062
+#: includes/class_wplms_front_end.php:1253
+#@ wplms-front-end
+msgid "Edit Question"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1067
+#: includes/class_wplms_front_end.php:1258
+#@ default
+msgid "MARKS : "
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1077
+#@ wplms-front-end
+msgid "ADD A NEW QUESTION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1093
+#@ default
+msgid "Marks : "
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1095
+#@ wplms-front-end
+msgid "Question Title : "
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1096
+#@ wplms-front-end
+msgid "Enter title for reference"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1100
+#@ wplms-front-end
+msgid "Publish Question"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1107
+#: includes/class_wplms_front_end.php:1227
+#@ wplms-front-end
+msgid "SAVE QUIZ SETTINGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1130
+#@ wplms-front-end
+msgid "Enter a Quiz sub-title"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1140
+#@ wplms-front-end
+msgid "Enter a Quiz Completion message"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1146
+#@ wplms-front-end
+msgid "Quiz Settings"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1150
+#@ wplms-front-end
+msgid "QUIZ SUB-TITLE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1155
+#@ wplms-front-end
+msgid "CONNECTED COURSE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1170
+#@ wplms-front-end
+msgid "QUIZ DURATION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1173
+#@ wplms-front-end
+msgid "QUIZ EVALUATION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1176
+#@ wplms-front-end
+msgid "AUTO"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1178
+#@ wplms-front-end
+msgid "MANUAL"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1182
+#@ wplms-front-end
+msgid "QUIZ QUESTIONS TYPE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1185
+#@ wplms-front-end
+msgid "DYNAMIC"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1187
+#@ wplms-front-end
+msgid "STATIC"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1191
+#@ wplms-front-end
+msgid "SELECT QUESTION TAGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1202
+#@ wplms-front-end
+msgid "NUMER OF QUESTIONS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1205
+#@ wplms-front-end
+msgid "MARKS PER QUESTION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1208
+#@ wplms-front-end
+msgid "QUIZ RETAKES"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1209
+#@ wplms-front-end
+msgid " Retakes"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1211
+#@ wplms-front-end
+msgid "QUESTIONS ORDER"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1214
+#@ wplms-front-end
+msgid "RANDOM"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1216
+#@ wplms-front-end
+msgid "SEQUENTIAL"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1220
+#@ wplms-front-end
+msgid "QUIZ COMPLETION MESSAGE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1242
+#, php-format
+#@ wplms-front-end
+msgid "Add Content for %s"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1295
+#@ wplms-front-end
+msgid "Invalid Quiz"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1321
+#@ wplms-front-end
+msgid "Quiz Settings saved"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1344
+#@ wplms-front-end
+msgid "Can not delete"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1396
+#@ wplms-front-end
+msgid "QUESTION SETTINGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1398
+#@ wplms-front-end
+msgid "Question Type"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1409
+#@ wplms-front-end
+msgid "ADD OPTION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1419
+#@ wplms-front-end
+msgid "Click to select as Correct answer"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1428
+#@ wplms-front-end
+msgid "Correct Answer"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1429
+#@ wplms-front-end
+msgid "Answer Hint"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1430
+#@ wplms-front-end
+msgid "Answer Explaination"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1438
+#@ wplms-front-end
+msgid "SAVE QUESTION SETTINGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1473
+#@ wplms-front-end
+msgid "Unable to save, incorrect question"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1497
+#@ wplms-front-end
+msgid "Question settings successfully saved"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1511
+#@ wplms-front-end
+msgid "Unable to save, incorrect unit"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1551
+#@ wplms-front-end
+msgid "ASSIGNMENT SETTINGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1555
+#@ wplms-front-end
+msgid "ASSIGNMENT SUB-TITLE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1561
+#@ wplms-front-end
+msgid "ASSIGNMENT MARKS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1562
+#@ wplms-front-end
+msgid "Assignment Maximum Marks"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1562
+#@ wplms-front-end
+msgid "MARKS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1565
+#@ wplms-front-end
+msgid "ASSIGNMENT DURATION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1566
+#@ wplms-front-end
+msgid "Enter Assignment Duration"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1568
+#@ wplms-front-end
+msgid "ASSIGNMENT EVALUATION"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1569
+#@ wplms-front-end
+msgid "Include in Course Evaluation"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1579
+#@ wplms-front-end
+msgid "ASSIGNMENT COURSE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1580
+#@ wplms-front-end
+msgid "Select Assignment Course"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1597
+#@ wplms-front-end
+msgid "ASSIGNMENT SUBMISISON TYPE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1599
+#@ wplms-front-end
+msgid "UPLOAD"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1600
+#@ wplms-front-end
+msgid "TEXTAREA"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1603
+#@ wplms-front-end
+msgid "ATTACHMENT TYPE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1648
+#@ wplms-front-end
+msgid "Attachment Size"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1649
+#@ wplms-front-end
+msgid "Maximum attachment size"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1649
+#@ wplms-front-end
+msgid " MBs"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1652
+#@ wplms-front-end
+msgid "SAVE SETTINGS"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1698
+#@ wplms-front-end
+msgid "Invalid details"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1704
+#@ wplms-front-end
+msgid "Invalid Assignment author"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1713
+#@ wplms-front-end
+msgid "SETTINGS SAVED"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1724
+#@ wplms-front-end
+msgid "ADD PACKAGE"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1728
+#@ wplms-front-end
+msgid "Seconds"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1729
+#@ wplms-front-end
+msgid "Minutes"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1730
+#@ wplms-front-end
+msgid "Hours"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1731
+#@ wplms-front-end
+msgid "Days"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1732
+#@ wplms-front-end
+msgid "Weeks"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1733
+#@ wplms-front-end
+msgid "Months"
+msgstr ""
+
+#: includes/class_wplms_front_end.php:1734
+#@ wplms-front-end
+msgid "Years"
+msgstr ""
+
+#: wplms-front-end.php:61
+#@ vibe
+msgid "Please change the course title"
+msgstr ""
+
+#: wplms-front-end.php:62
+#@ vibe
+msgid "This will create a new course in the site, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:63
+#@ wplms-front-end
+msgid "Yes, create a new course"
+msgstr ""
+
+#: wplms-front-end.php:64
+#@ vibe
+msgid "This will overwrite the previous course settings, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:65
+#@ wplms-front-end
+msgid "Save course"
+msgstr ""
+
+#: wplms-front-end.php:66
+#@ vibe
+msgid "This will create a new unit in the site, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:67
+#@ wplms-front-end
+msgid "Yes, create a new unit"
+msgstr ""
+
+#: wplms-front-end.php:68
+#@ vibe
+msgid "This will overwrite the existing unit settings, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:69
+#@ wplms-front-end
+msgid "Yes, save unit settings"
+msgstr ""
+
+#: wplms-front-end.php:70
+#@ vibe
+msgid "This will create a new question in the site, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:71
+#@ wplms-front-end
+msgid "Yes, create a new question"
+msgstr ""
+
+#: wplms-front-end.php:72
+#@ vibe
+msgid "This will create a new quiz in the site, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:73
+#@ wplms-front-end
+msgid "Yes, create a new quiz"
+msgstr ""
+
+#: wplms-front-end.php:74
+#@ vibe
+msgid "This will overwrite the existing quiz settings, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:75
+#@ wplms-front-end
+msgid "Yes, save quiz settings"
+msgstr ""
+
+#: wplms-front-end.php:76
+#@ vibe
+msgid "This will delete the unit/quiz from your site, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:77
+#@ wplms-front-end
+msgid "Continue"
+msgstr ""
+
+#: wplms-front-end.php:78
+#@ vibe
+msgid "This will overwrite the previous settings, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:80
+#@ vibe
+msgid "This will create a new assignment in the site, do you want to continue ?"
+msgstr ""
+
+#: wplms-front-end.php:81
+#@ wplms-front-end
+msgid "Yes, create a new assignment"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:389
+#@ default
+msgctxt "tag delimiter"
+msgid ","
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:825
+#: front-end-editor/class-wp-front-end-editor.php:826
+#@ default
+msgid "Set featured image"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:846
+#@ default
+msgid "Remove featured image"
+msgstr ""
+
+#: front-end-editor/class-wp-front-end-editor.php:1173
+#@ default
+msgctxt "post format"
+msgid "Format"
+msgstr ""
+
