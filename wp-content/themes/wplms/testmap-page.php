@@ -131,7 +131,7 @@ if(isset($title) && $title !='' && $title !='H'){
 
 <script>
 $(document).ready(function(){
-    var countries = ['Mexico', 'Uganda', 'Senegal','Egypt','Colombia','India','Pakistan','Argentina','Indonesia','Malawi','Niger','Liberia','Peru','Ghana','Sudáfrica'];
+    var countries = ['Mexico', 'Uganda', 'Senegal','Egypt','Colombia','India','Pakistan','Argentina','Indonesia','Malawi','Niger','Liberia','Peru','Ghana','South Africa'];
     //var countries2 = <?php echo json_encode($countries); ?>
     //console.log(countries2)
     /*Agregando paises a la lista*/
