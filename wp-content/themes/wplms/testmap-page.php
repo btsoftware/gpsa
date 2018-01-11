@@ -116,7 +116,7 @@ if(isset($title) && $title !='' && $title !='H'){
 </section>
 
 <?php
-  $args = array('post_type'=> 'stories' );
+  $args = array('post_type'=> 'stories', 'post_status' => 'publish', 'posts_per_page' => -1);
 
   $my_query = new WP_Query( $args );
     $countries = array();
@@ -124,16 +124,14 @@ if(isset($title) && $title !='' && $title !='H'){
       $post_id = $post->ID;
       $countries[] = get_post_meta( $post_id, '_country', true );
     endwhile;
-
-  //echo json_encode($countries);
 ?>
 
 
 <script>
 $(document).ready(function(){
-    var countries = ['Mexico', 'Uganda', 'Senegal','Egypt','Colombia','India','Pakistan','Argentina','Indonesia','Malawi','Niger','Liberia','Peru','Ghana','South Africa'];
-    //var countries2 = <?php echo json_encode($countries); ?>
-    //console.log(countries2)
+    //var countries = ['Mexico', 'Uganda', 'Senegal','Egypt','Colombia','India','Pakistan','Argentina','Indonesia','Malawi','Niger','Liberia','Peru','Ghana','South Africa'];
+    var countries = <?php echo json_encode($countries);; ?>;
+    console.log(countries);
     /*Agregando paises a la lista*/
     for(var i = 0 in countries){
         jQuery('#menu-paises ul').append("<li class='pais'> <a href='#" + countries[i] + "'>" + countries[i] + "</a> </li>")
@@ -142,13 +140,13 @@ $(document).ready(function(){
       var width = document.getElementById('map').offsetWidth 
         , height = document.getElementById('map').offsetHeight 
         , topo, projection, path, svg, g
-countries        , tooltip = d3.select("#map").append("div").attr("class", "tooltip hidden");
+        countries        , tooltip = d3.select("#map").append("div").attr("class", "tooltip hidden");
       
       d3.json("<?php echo get_template_directory_uri(); ?>/assets/js/data/world-topo.json.packed", function(error, world) {
             jQuery(".wait").remove()
             setup(width, height);
             topo = topojson.feature(world, world.objects.countries).features;
-            console.log(topo)
+            //console.log(topo)
 	    for(var i in topo){ 
                 if( countries.indexOf(topo[i].properties.name) >= 0){ 
                   topo[i].properties["elected"] = "true"
