@@ -120,9 +120,12 @@ if(isset($title) && $title !='' && $title !='H'){
 
   $my_query = new WP_Query( $args );
     $countries = array();
+    $cty_video = array();
     while ( $my_query->have_posts() ) : $my_query->the_post();
       $post_id = $post->ID;
-      $countries[] = get_post_meta( $post_id, '_country', true );
+      $c = get_post_meta( $post_id, '_country', true );
+      $cty_video[$c] = get_post_meta( $post_id, '_uri', true );
+      $countries[] = $c;
     endwhile;
 ?>
 
@@ -131,7 +134,8 @@ if(isset($title) && $title !='' && $title !='H'){
 $(document).ready(function(){
     //var countries = ['Mexico', 'Uganda', 'Senegal','Egypt','Colombia','India','Pakistan','Argentina','Indonesia','Malawi','Niger','Liberia','Peru','Ghana','South Africa'];
     var countries = <?php echo json_encode($countries);; ?>;
-    console.log(countries);
+    var videos = <?php echo json_encode($cty_video);; ?>;
+//    console.log(videos);
     /*Agregando paises a la lista*/
     for(var i = 0 in countries){
         jQuery('#menu-paises ul').append("<li class='pais'> <a href='#" + countries[i] + "'>" + countries[i] + "</a> </li>")
@@ -147,11 +151,13 @@ $(document).ready(function(){
             setup(width, height);
             topo = topojson.feature(world, world.objects.countries).features;
             //console.log(topo)
-	    for(var i in topo){ 
-                if( countries.indexOf(topo[i].properties.name) >= 0){ 
-                  topo[i].properties["elected"] = "true"
+	    for(var i in topo){
+                  if( countries.indexOf(topo[i].properties.name) >= 0){
+                  topo[i].properties.elected = "true"
+		  topo[i].properties._uri = videos[topo[i].properties.name]
+                  console.log(topo[i].properties.name,  topo[i].properties._uri)
 		}else{
-		  topo[i].properties["elected"] = "";
+		  topo[i].properties.elected = "";
 		}
 	    }
             draw(topo, tooltip, countries); 

@@ -56,7 +56,7 @@ function draw(topo, tooltip, elected) {
           tooltip
             .classed("hidden", false)
             .attr("style", "left:"+(mouse[0] + 30)+"px;top:"+(mouse[1])+"px")
-  .html("Country: "+d.properties.name+"<br>Videos: "+d.properties.cantidad+"<br><img src='http://gpsaknowledge.org/wp-content/themes/wplms/assets/images/"+d.properties.name+".png' style='width:150px'>" )
+ .html("Country: " + d.properties.name + "<br>Videos: " + d.properties.cantidad + "<br><img src='https://img.youtube.com/vi/" + String(d.properties._uri) + "/0.jpg' style='width:150px'>" )
 		}
       })
     .on("mouseout",  function(d,i) {

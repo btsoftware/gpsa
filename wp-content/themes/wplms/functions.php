@@ -320,12 +320,14 @@ function stories_init() {
       'hierarchical' => true,
       'rewrite' => array('slug' => 'stories'),
       'query_var' => true,
-      'menu_position' => 5,
+      'menu_position' => 6,
       'menu_icon' => 'dashicons-portfolio',
+      'name_admin_bar' => 'Stories',
       'supports' => array(
           'title',
-          'excerpt',
-          'editor'
+          //'excerpt',
+          'editor',
+          'thumbnail',
           //'custom-fields',
           //'revisions',
           //'author',
@@ -344,7 +346,7 @@ function add_events_metaboxes() {
 add_action( 'add_meta_boxes', 'add_events_metaboxes' );
 
 
-
+/**/
 function wpt_stories_uri() {
 	global $post;
 	// Noncename needed to verify where the data originated
@@ -355,8 +357,9 @@ function wpt_stories_uri() {
 	$uri = get_post_meta($post->ID, '_uri', true);
 	
 	// Echo out the field
-	echo 'Anota solo el id del video de vimeo (https://vimeo.com/<b>158818287</b>) <br> <input type="text" name="_uri" value="' . $uri  . '" class="widefat" />';
+	echo 'Anota solo el id del 1er video de youtube (ej. https://www.youtube.com/watch?v=<b>xxxxxxxxxxx</b>) <br> <input type="text" name="_uri" value="' . $uri  . '" class="widefat" />';
 }
+/**/
 
 function wpt_stories_country() {
 	global $post;
