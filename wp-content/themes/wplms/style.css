@@ -338,3 +338,16 @@ background: rgba(255, 255, 255, 0.9);
 
 
 #vibe-bp-login, .widget.vibe-bp-login, #sidebar-me { z-index: 1000 !important; }
+
+.videoContainer {
+    position: relative;
+}
+.playBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 68%;
+    top: 75%;
+    margin-left: -48px; /*half of the width */
+    margin-top: -48px; /*half of the height */
+}

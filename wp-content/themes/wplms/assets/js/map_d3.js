@@ -56,7 +56,7 @@ function draw(topo, tooltip, elected) {
           tooltip
             .classed("hidden", false)
             .attr("style", "left:"+(mouse[0] + 30)+"px;top:"+(mouse[1])+"px")
- .html("Country: " + d.properties.name + "<br>Videos: " + d.properties.cantidad + "<br><img src='https://img.youtube.com/vi/" + String(d.properties._uri) + "/0.jpg' style='width:150px'>" )
+ .html("Country: " + d.properties.name + "<br>Videos: " + d.properties.cantidad + "<br><div class='videoContainer'> <img src='https://img.youtube.com/vi/" + String(d.properties._uri) + "/0.jpg' style='width:150px'> <img src='https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png' alt='play' class='playBtn'></div>" )
 		}
       })
     .on("mouseout",  function(d,i) {
