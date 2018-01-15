@@ -72,14 +72,14 @@ text-transform:uppercase;
 
 .country{
     fill: #4B5456;
-    stroke: #4B5456;
-    stroke-width: 1.5px;
+    stroke: #fff;
+    stroke-width: 0.3px;
 }
 
 .elected{
     fill: #EB7D62;
-    stroke: #EB7D62;
-    stroke-width: 1.5px;
+    stroke: #fff;
+    stroke-width: 0.8px;
 }
 
 .elected:hover{
