@@ -121,10 +121,13 @@ if(isset($title) && $title !='' && $title !='H'){
   $my_query = new WP_Query( $args );
     $countries = array();
     $cty_video = array();
+    $qt_videos = array();
+
     while ( $my_query->have_posts() ) : $my_query->the_post();
       $post_id = $post->ID;
       $c = get_post_meta( $post_id, '_country', true );
       $cty_video[$c] = get_post_meta( $post_id, '_uri', true );
+      $qt_videos[$c] = get_post_meta( $post_id, '_qtvideos', true );
       $countries[] = $c;
     endwhile;
 ?>
@@ -135,7 +138,8 @@ $(document).ready(function(){
     //var countries = ['Mexico', 'Uganda', 'Senegal','Egypt','Colombia','India','Pakistan','Argentina','Indonesia','Malawi','Niger','Liberia','Peru','Ghana','South Africa'];
     var countries = <?php echo json_encode($countries);; ?>;
     var videos = <?php echo json_encode($cty_video);; ?>;
-//    console.log(videos);
+    var qtvideos = <?php echo json_encode($qt_videos);; ?>;
+
     /*Agregando paises a la lista*/
     for(var i = 0 in countries){
         jQuery('#menu-paises ul').append("<li class='pais'> <a href='#" + countries[i] + "'>" + countries[i] + "</a> </li>")
@@ -150,12 +154,11 @@ $(document).ready(function(){
             jQuery(".wait").remove()
             setup(width, height);
             topo = topojson.feature(world, world.objects.countries).features;
-            //console.log(topo)
 	    for(var i in topo){
                   if( countries.indexOf(topo[i].properties.name) >= 0){
                   topo[i].properties.elected = "true"
 		  topo[i].properties._uri = videos[topo[i].properties.name]
-                  console.log(topo[i].properties.name,  topo[i].properties._uri)
+                  topo[i].properties.cantidad = qtvideos[topo[i].properties.name]
 		}else{
 		  topo[i].properties.elected = "";
 		}

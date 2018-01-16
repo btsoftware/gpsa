@@ -327,7 +327,7 @@ function stories_init() {
           'title',
           //'excerpt',
           'editor',
-          'thumbnail',
+          //'thumbnail',
           //'custom-fields',
           //'revisions',
           //'author',
@@ -341,6 +341,7 @@ add_action( 'init', 'stories_init' );
 function add_events_metaboxes() {
   add_meta_box('wpt_stories_uri', 'Video', 'wpt_stories_uri', 'stories', 'normal', 'default');
   add_meta_box('wpt_stories_country', 'Country', 'wpt_stories_country', 'stories', 'normal', 'default');
+  add_meta_box('wpt_qt_videos', 'Cantidad de Videos', 'wpt_qt_videos', 'stories', 'normal', 'default');
 }
 
 add_action( 'add_meta_boxes', 'add_events_metaboxes' );
@@ -380,13 +381,27 @@ function wpt_stories_country() {
 	echo '</select>';
 }
 
+function wpt_qt_videos() {
+        global $post;
+        // Noncename needed to verify where the data originated
+        echo '<input type="hidden" name="storymeta_noncename3" id="storymeta_noncename3" value="' . 
+        wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+
+        // Get the uris data if its already been entered
+        $qtvideos = get_post_meta($post->ID, '_qtvideos', true);
+
+        // Echo out the field
+        echo '<input type="text" name="_qtvideos" value="' . $qtvideos  . '" class="widefat" />';
+}
+
 // Save the Metabox Data
 
 function wpt_save_stories_meta($post_id, $post) {
   // verify this came from the our screen and with proper authorization,
   // because save_post can be triggered at other times
-  if ( !wp_verify_nonce( $_POST['storymeta_noncename'], plugin_basename(__FILE__) ) || 
-       !wp_verify_nonce( $_POST['storymeta_noncename2'], plugin_basename(__FILE__) )    ){
+  if ( !wp_verify_nonce( $_POST['storymeta_noncename'], plugin_basename(__FILE__) ) ||
+       !wp_verify_nonce( $_POST['storymeta_noncename2'], plugin_basename(__FILE__) ) ||
+       !wp_verify_nonce( $_POST['storymeta_noncename3'], plugin_basename(__FILE__) ) ){
       return $post->ID;
   } 
 
@@ -399,6 +414,7 @@ function wpt_save_stories_meta($post_id, $post) {
   
   $events_meta['_uri'] = $_POST['_uri'];
   $events_meta['_country'] = $_POST['_country'];
+ $events_meta['_qtvideos'] = $_POST['_qtvideos'];
   
   // Add values of $events_meta as custom fields
   
@@ -439,7 +455,7 @@ function search_stories_by_country_callback() {
     'key' => '_country',
     'value' =>  $_POST['country'],
     'compare' => 'LIKE',
-    'posts_per_page' => 50
+    'posts_per_page' => -1
   );
  
   $myposts = get_posts($args);
