@@ -105,23 +105,12 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 								$query = new WP_Query($argus);
 
                                 while ( $query->have_posts() ) : $query->the_post(); 
-								//the_title();
+								the_title();
 								echo '<div class="entry-content">';
-								//the_content();
+								the_content();
 								echo '</div>';
 								?>
-                                    <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-                                         <div class="animate zoom load">
-                                             <h4 class="bloque_title">
-						<a class="" href="/event-type/webinars/"><?php the_title(); ?></a> </h4>  
-                                                <a href="/event-type/webinars/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
-                                                 </div> 	<!-- end .post-thumbnail -->					
-                                                 <div class="">						
-                                                     <?php the_content(); ?>
-                                                  </div> 	<!-- end .post_content -->                                                                                  
-                                                
-			            </article> <!-- end .entry -->
-                                 <?php endwhile;   // end of the loop.   ?>
+                                   <?php endwhile;   // end of the loop.   ?>
 
 
 
