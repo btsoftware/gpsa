@@ -82,8 +82,7 @@ get_header();
                         </div>';*/
 
 echo '<div class="tags">
-                    <div class="inpublication">
-                        <i class="icon-user clicked left-i p12"></i><p class="autor_material">'.get_post_meta($post->ID, 'publication_author', true).'</p></div>
+                   
                     <div class="inpublication">
                         <i class="icon-book-open-1 p13 left-i"></i>
                         <p class="autor_material">Publisher:'.get_post_meta($post->ID, 'publication_by', true).' </p>
