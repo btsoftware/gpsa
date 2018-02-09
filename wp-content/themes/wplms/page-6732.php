@@ -59,6 +59,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
              <div class="row">
                   <div class="col-md-12">
 		          <div class="v_module v_column col-md-6 col-sm-12 v_first">
+			      <div class="linea"></div>
                                 <!-- webinars -->
                                 <div class="block_home" style="margin-top: 50px;">
 								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 5 );?>
@@ -77,7 +78,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 						<a class="" href="/event-type/webinars/"><?php the_title(); ?></a> </h4>  
                                                 <a href="/event-type/webinars/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
                                                  </div> 	<!-- end .post-thumbnail -->					
-                                                 <div class="block_info">						
+                                                 <div class="">						
                                                      <?php the_content(); ?>
                                                   </div> 	<!-- end .post_content -->                                                                                  
                                                 
