@@ -59,9 +59,9 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
              <div class="row">
                   <div class="col-md-12">
 		          <div class="v_module v_column col-md-6 col-sm-12 v_first">
-			         <h2>Tell us your story</h2>
+			        <h2 style="text-align: center;font-size: 36px;color: #253169;">Tell us your story</h2>
                                 <!-- webinars -->
-                                <div class="block_home" style="margin-top: 50px;">
+                                <div class="" style="margin-top: 50px;">
 								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 5 );?>
 
                                 <?php
@@ -87,6 +87,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                 </div>
 			  </div>
 			  <div class="v_module v_column col-md-6 col-sm-12">
+			    <h2 style="text-align: center;font-size: 36px;color: #253169;">Discussions with experts</h2>
 			    <!-- forums -->
 
 			  </div>
