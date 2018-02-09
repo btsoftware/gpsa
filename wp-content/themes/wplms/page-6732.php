@@ -62,7 +62,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 			        <h2 style="text-align: center;font-size: 36px;color: #253169;">Tell us your story</h2>
                                 <!-- webinars -->
                                 <div class="" style="margin-top: 50px;">
-								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 5 );?>
+								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' === 5 );?>
 
                                 <?php
 								$service_query = new WP_Query($args);
