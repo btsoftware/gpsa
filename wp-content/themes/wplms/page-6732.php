@@ -99,18 +99,29 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		              <h2 style="text-align: center;font-size: 36px;color: #253169;">Forums</h2>
 		 </div>
 
-<?php $argus = array( 'post_type' => 'topic', 'posts_per_page' => 6, 'post_status' => 'publish', 'post_parent' => 566, 'orderby' => 'title', 'order'   => 'DESC',);?>
+<?php $argus = array( 'post_type' => 'topic', 'posts_per_page' => 6, 'post_status' => 'closed', 'post_parent' => 566, 'orderby' => 'title', 'order'   => 'DESC',);?>
 
                                 <?php
 								$query = new WP_Query($argus);
 
                                 while ( $query->have_posts() ) : $query->the_post(); 
-								the_title();
+								//the_title();
 								echo '<div class="entry-content">';
-								the_content();
+								//the_content();
 								echo '</div>';
 								?>
-                                   <?php endwhile;   // end of the loop.   ?>
+                                    <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                         <div class="animate zoom load">
+                                             <h4 class="bloque_title">
+						<a class="" href="/forums/forum/expert-forums/"><?php the_title(); ?></a> </h4>  
+                                                                                                             
+                                                 </div> 	<!-- end .post-thumbnail -->					
+                                                 <div class="">						
+                                                     <?php the_content(); ?>
+                                                  </div> 	<!-- end .post_content -->                                                                                  
+                                                
+			            </article> <!-- end .entry -->
+                                 <?php endwhile;   // end of the loop.   ?>
 
 
 
