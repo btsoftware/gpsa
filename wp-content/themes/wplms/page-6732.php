@@ -62,7 +62,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 			        <h2 style="text-align: center;font-size: 36px;color: #253169;">Tell us your story</h2>
                                 <!-- webinars -->
                                 <div class="" style="margin-top: 50px;">
-								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 2 );?>
+								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 3 );?>
 
                                 <?php
 								$service_query = new WP_Query($args);
@@ -99,6 +99,32 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		 </div>
 
 			   <?php
+			   
+			   $topics = bp_forums_get_topics(566, 5);
+
+if ($topics)
+
+{
+
+foreach ($topics as $topic)
+
+{
+
+echo  '<div class="home-box-item"> <a class="home-box-item-link" href="' . $topic['topic_uri'] . '">' . $topic['topic_title'] . '</a> by ' . $topic['topic_poster_display_name'] . ' Freshness: ' . $topic['topic_time_since'] . ' Posts: ' . $topic['topic_posts'] . ' </div>';
+
+}
+
+}
+
+else
+
+{
+
+echo  '<p>No topics found.</p>';
+
+}
+			   
+			   
                                                         endwhile;
                                                         endif;
                                                         ?> 
