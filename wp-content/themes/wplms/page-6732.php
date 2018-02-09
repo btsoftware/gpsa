@@ -100,7 +100,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 
 			   <?php
 			   
-			   $topics = bp_forums_get_topics(0, 5);
+			   $topics = bp_forums_get_topics(5309, 5);
 
 if ($topics)
 
