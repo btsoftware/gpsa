@@ -80,7 +80,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                                  <div class="block_info">						
                                                      <?php the_content(); ?>
                                                   </div> 	<!-- end .post_content -->                                                                                  
-                                                <a class="more" href="/event-type/webinars/"><span>Read more</span></a>
+                                                
 			            </article> <!-- end .entry -->
                                  <?php endwhile; // end of the loop. ?>
                                 </div>
