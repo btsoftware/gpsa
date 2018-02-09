@@ -58,7 +58,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
         <div class="container">
              <div class="row">
                   <div class="col-md-12">
-		          <div class="v_module v_column col-md-4 col-sm-4 v_first">
+		          <div class="v_module v_column col-md-6 col-sm-12 v_first">
                                 <!-- webinars -->
                                 <div class="block_home" style="margin-top: 50px;">
 								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 5 );?>
@@ -85,14 +85,11 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                  <?php endwhile; // end of the loop. ?>
                                 </div>
 			  </div>
-			  <div class="v_module v_column col-md-4 col-sm-4">
+			  <div class="v_module v_column col-md-6 col-sm-12">
 			    <!-- forums -->
 
 			  </div>
-			  <div class="v_module v_column col-md-4 col-sm-4">
-			    <!-- blog -->
 
-			  </div>
 			   <?php
                                                         endwhile;
                                                         endif;
