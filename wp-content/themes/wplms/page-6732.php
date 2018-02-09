@@ -98,7 +98,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		<h3> Hola mundo<h3>
 		 </div>
 
-<?php $args = array( 'post_type' => 'forum', 'posts_per_page' => 3, 'post_status' => 'publish');?>
+<?php $args = array( 'post_type' => 'topic', 'posts_per_page' => 6, 'post_status' => 'publish', 'post_parent' => 566);?>
 
                                 <?php
 								$service_query = new WP_Query($args);
