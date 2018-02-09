@@ -4311,6 +4311,7 @@ p.resumen {
     margin-top: 7px;
     padding-right: 32px;
     width: 74%;
+    min-height: 260px;
 }
 .excerpt2 > .blogpost > h3 {
     color: #29356C !important;

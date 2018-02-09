@@ -71,7 +71,7 @@ get_header();
 								
 								bookmarks(get_permalink(), get_the_title());
 									
-								echo '</div>i';
+								echo '</div>';
                             /*   echo ' <div class="cats catKR">
                                     '.$cats.'
 
