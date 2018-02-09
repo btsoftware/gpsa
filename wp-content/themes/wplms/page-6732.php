@@ -56,7 +56,6 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 </section>
 <section id="second-content">
         <div class="container">
-             <div class="row">
                   <div class="col-md-12">
 		          <div class="v_module v_column col-md-6 col-sm-12 v_first">
 			        <h2 style="text-align: center;font-size: 36px;color: #253169;">Tell us your story</h2>
@@ -131,7 +130,6 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		  
 
 	     </div>
-	</div>
 </section>
 <!-- third home -->
 <section id="content" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
