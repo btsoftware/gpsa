@@ -59,7 +59,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
              <div class="row">
                   <div class="col-md-12">
 		          <div class="v_module v_column col-md-6 col-sm-12 v_first">
-			      <div class="linea"></div>
+			         <h2>Tell us your story</h2>
                                 <!-- webinars -->
                                 <div class="block_home" style="margin-top: 50px;">
 								<?php $args = array( 'post_type' => 'stories', 'posts_per_page' => 5 );?>
