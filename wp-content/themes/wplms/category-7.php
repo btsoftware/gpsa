@@ -88,6 +88,7 @@ echo '<div class="tags">
                         <p class="autor_material">Publisher:'.get_post_meta($post->ID, 'publication_by', true).' </p>
                     </div>
 
+
                     <div class="inpublication"><i class="icon-script clicked p12 rignt-i"></i>
                     ';
 			$terms = get_the_terms( $post->ID , 'Material Type' );
