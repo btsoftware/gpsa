@@ -106,15 +106,14 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 
                                 while ( $query->have_posts() ) : $query->the_post(); 
 							
-							the_guid();
 								?>
                          <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                                          <div class="animate zoom load">
-                                             <h4 class="bloque_title"> 	<a class="" href=""><?php the_title(); ?></a> </h4>  
+                                             <h4 class="bloque_title"> 	<a class="" href="<?php the_guid(); ?>"><?php the_title(); ?></a> </h4>  
                                                                                                              
                                                  </div> 	<!-- end .post-thumbnail -->					
-                                                 <div class="">						
-                                                     <?php //the_content(); ?>
+                                                 <div class="">	
+					
                                                   </div> 	<!-- end .post_content -->                                                                                  
                                                 
 			            </article> <!-- end .entry -->
