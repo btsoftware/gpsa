@@ -56,6 +56,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 </section>
 <section id="second-content">
         <div class="container">
+             <div class="row">
                   <div class="col-md-12">
 		          <div class="v_module v_column col-md-6 col-sm-12 v_first">
 			        <h2 style="text-align: center;font-size: 36px;color: #253169;">Tell us your story</h2>
@@ -94,7 +95,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 
 			  </div>
 		 </div>
-		 <div class="col-md-12">
+		 <div class="col-md-5">
 		              <h2 style="text-align: center;font-size: 36px;color: #253169;">Forums</h2>
 		<?php $argus = array( 'post_type' => 'topic', 'posts_per_page' => 4, 'post_status' => 'closed', 'post_parent' => 566, 'orderby' => 'title', 'order'   => 'DESC',);?>
 
@@ -104,15 +105,16 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                 while ( $query->have_posts() ) : $query->the_post(); 
 							
 								?>
-                         <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-                                         <div class="animate zoom load">
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+											<div class="animate zoom load">
                                              <h4 class="bloque_title"> 	<a class="" href="<?php the_guid(); ?>"><?php the_title(); ?></a> </h4>  
                                                                                                              
                                              </div> 	<!-- end .post-thumbnail -->					
                                                                                                                               
                                                 
-			            </article> <!-- end .entry -->
+			            </article></br> <!-- end .entry -->
                                  <?php endwhile;   // end of the loop.   ?>
+		 
 		 </div>
 
 
@@ -130,6 +132,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		  
 
 	     </div>
+	</div>
 </section>
 <!-- third home -->
 <section id="content" style="background: none repeat scroll 0% 0% rgb(255, 255, 255);">
