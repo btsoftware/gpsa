@@ -85,6 +85,8 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                                 
 			            </article> <!-- end .entry -->
                                  <?php endwhile;   // end of the loop.   ?>
+								 	<?php wp_reset_postdata(); ?>
+
                                 </div>
 			  </div>
 			  <div class="v_module v_column col-md-6 col-sm-12">
@@ -95,15 +97,14 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		 </div>
 		 <div class="col-md-12">
 		              <h2 style="text-align: center;font-size: 36px;color: #253169;">Forums</h2>
-		<h3> Hola mundo<h3>
 		 </div>
 
-<?php $args = array( 'post_type' => 'topic', 'posts_per_page' => 6, 'post_status' => 'publish', 'post_parent' => 566);?>
+<?php $argus = array( 'post_type' => 'topic', 'posts_per_page' => 6, 'post_status' => 'publish', 'post_parent' => 566, 'orderby' => 'title', 'order'   => 'DESC',);?>
 
                                 <?php
-								$service_query = new WP_Query($args);
+								$query = new WP_Query($argus);
 
-                                while ( $service_query->have_posts() ) : $service_query->the_post(); 
+                                while ( $query->have_posts() ) : $query->the_post(); 
 								//the_title();
 								echo '<div class="entry-content">';
 								//the_content();
