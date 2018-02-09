@@ -97,9 +97,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		 </div>
 		 <div class="col-md-12">
 		              <h2 style="text-align: center;font-size: 36px;color: #253169;">Forums</h2>
-		 </div>
-
-<?php $argus = array( 'post_type' => 'topic', 'posts_per_page' => 4, 'post_status' => 'closed', 'post_parent' => 566, 'orderby' => 'title', 'order'   => 'DESC',);?>
+		<?php $argus = array( 'post_type' => 'topic', 'posts_per_page' => 4, 'post_status' => 'closed', 'post_parent' => 566, 'orderby' => 'title', 'order'   => 'DESC',);?>
 
                                 <?php
 								$query = new WP_Query($argus);
@@ -111,13 +109,14 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                          <div class="animate zoom load">
                                              <h4 class="bloque_title"> 	<a class="" href="<?php the_guid(); ?>"><?php the_title(); ?></a> </h4>  
                                                                                                              
-                                                 </div> 	<!-- end .post-thumbnail -->					
-                                                 <div class="">	
-					
-                                                  </div> 	<!-- end .post_content -->                                                                                  
+                                             </div> 	<!-- end .post-thumbnail -->					
+                                                                                                                              
                                                 
 			            </article> <!-- end .entry -->
                                  <?php endwhile;   // end of the loop.   ?>
+		 </div>
+
+
 
 
 
