@@ -93,6 +93,10 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 			    <!-- blog -->
 
 			  </div>
+			   <?php
+                                                        endwhile;
+                                                        endif;
+                                                        ?> 
 		  </div>
 	     </div>
 	</div>
