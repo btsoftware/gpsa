@@ -84,7 +84,7 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
                                                   </div> 	<!-- end .post_content -->                                                                                  
                                                 
 			            </article> <!-- end .entry -->
-                                 <?php endwhile; // end of the loop. ?>
+                                 <?php endwhile;   // end of the loop.   ?>
                                 </div>
 			  </div>
 			  <div class="v_module v_column col-md-6 col-sm-12">
@@ -98,24 +98,34 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		<h3> Hola mundo<h3>
 		 </div>
 
-			   
-<?php if ( is_bbpress() ) : ?>
- 
-<div class="abc">
- 
-This content should show if it is bbPress
- 
-    </div>
- 
-<?php else : ?>
- 
-<div class="xyz">
- 
-This should show if it is not bbPress
- 
-    </div>
- 
-<?php endif; ?>
+<?php $args = array( 'post_type' => 'forum', 'posts_per_page' => 3 );?>
+
+                                <?php
+								$service_query = new WP_Query($args);
+
+                                while ( $service_query->have_posts() ) : $service_query->the_post(); 
+								//the_title();
+								echo '<div class="entry-content">';
+								//the_content();
+								echo '</div>';
+								?>
+                                    <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+                                         <div class="animate zoom load">
+                                             <h4 class="bloque_title">
+						<a class="" href="/event-type/webinars/"><?php the_title(); ?></a> </h4>  
+                                                <a href="/event-type/webinars/"><img class="th_home"  <?php echo get_the_post_thumbnail(); ?></a>                                                                                  
+                                                 </div> 	<!-- end .post-thumbnail -->					
+                                                 <div class="">						
+                                                     <?php the_content(); ?>
+                                                  </div> 	<!-- end .post_content -->                                                                                  
+                                                
+			            </article> <!-- end .entry -->
+                                 <?php endwhile;   // end of the loop.   ?>
+
+
+
+		 
+
 			   			   <?php
 
 			   
