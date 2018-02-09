@@ -98,7 +98,6 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 		<h3> Hola mundo<h3>
 		 </div>
 
-			   <?php
 			   
 <?php if ( is_bbpress() ) : ?>
  
@@ -117,7 +116,8 @@ This should show if it is not bbPress
     </div>
  
 <?php endif; ?>
-			   
+			   			   <?php
+
 			   
                                                         endwhile;
                                                         endif;
