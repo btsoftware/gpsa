@@ -106,9 +106,9 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 
                                 while ( $query->have_posts() ) : $query->the_post(); 
 							//print_r($query); 
-							 the_guid();
+								the_guid();
 								echo '<div class="entry-content">';
-								the_content();
+								//the_content();
 								echo '</div>';
 								?>
                                     <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
