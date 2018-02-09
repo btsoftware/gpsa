@@ -100,29 +100,23 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 
 			   <?php
 			   
-			   $topics = bp_forums_get_topics(5309, 5);
-
-if ($topics)
-
-{
-
-foreach ($topics as $topic)
-
-{
-
-echo  '<div class="home-box-item"> <a class="home-box-item-link" href="' . $topic['topic_uri'] . '">' . $topic['topic_title'] . '</a> by ' . $topic['topic_poster_display_name'] . ' Freshness: ' . $topic['topic_time_since'] . ' Posts: ' . $topic['topic_posts'] . ' </div>';
-
-}
-
-}
-
-else
-
-{
-
-echo  '<p>No topics found.</p>';
-
-}
+<?php if ( is_bbpress() ) : ?>
+ 
+<div class="abc">
+ 
+This content should show if it is bbPress
+ 
+    </div>
+ 
+<?php else : ?>
+ 
+<div class="xyz">
+ 
+This should show if it is not bbPress
+ 
+    </div>
+ 
+<?php endif; ?>
 			   
 			   
                                                         endwhile;
