@@ -91,15 +91,16 @@ add_filter( 'bp_activity_excerpt_append_text', 'cc_excerpt_append_text' );
 			    <!-- forums -->
 
 			  </div>
-			  <div class="col-md-12">
+		 </div>
+		 <div class="col-md-12">
 		              <h2 style="text-align: center;font-size: 36px;color: #253169;">Forums</h2>
-		          </div>
+		 </div>
 
 			   <?php
                                                         endwhile;
                                                         endif;
                                                         ?> 
-		  </div>
+		  
 
 	     </div>
 	</div>
