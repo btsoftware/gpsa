@@ -58,17 +58,15 @@ if(isset($title) && $title !='' && $title !='H'){
 		<div class="pagetitle"><h1>Tell your story</h1></div>
                 <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story!
 		<b> #SocialAccStories</b>
-		
-		           <a class="contorno-morado-tell" id="484"  href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
-                    <span class="tutorial">How to upload your video</span> <span id ="play">►</span> 
-                </a>
-				
-				<a class="contorno-morado-tell" href="/share-video">Share your story</a>
 	    </div>         
             
             <div class="col-md-12" style="margin-top: -11px; margin-bottom: 10px;">
                    
-     
+                <a class="contorno-morado-tell" id="484"  href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
+                    <span class="tutorial">How to upload your video</span> <span id ="play">►</span> 
+                </a>
+				
+				<a class="contorno-morado-tell" href="/share-video">Share your story</a>
 
             </div>
 	</div>	    
