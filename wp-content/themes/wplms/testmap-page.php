@@ -10,7 +10,7 @@ $title=get_post_meta(get_the_ID(),'vibe_title',true);
 if(isset($title) && $title !='' && $title !='H'){
 ?>
 
-<section id="title HT-T">
+<section id="title" class="HT-T">
     <div class="container">
          <div class="row">
             <div class="col-md-9 col-sm-8">
