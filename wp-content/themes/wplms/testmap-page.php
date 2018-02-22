@@ -51,7 +51,7 @@ if(isset($title) && $title !='' && $title !='H'){
 <style>
  .button-uploadVideo { background-color: #f15630 !important; border-color: #f15630 !important; border-radius: 2px; color: #fff;  letter-spacing: 0.2em; margin: 83px 10px 10px 0; padding: 10px 24px; position: relative; transition: all 0.3s ease 0s; width: 143px; z-index: 1;}
 </style>
-<section id="title">
+<section id="title" class="HT-T">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
