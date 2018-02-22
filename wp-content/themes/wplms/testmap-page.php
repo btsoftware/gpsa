@@ -54,13 +54,13 @@ if(isset($title) && $title !='' && $title !='H'){
 <section id="title">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
 		<div class="pagetitle"><h1>Tell your story</h1></div>
                 <h5>We invite you to share with the community your lessons learned in social accountability. Just take your cellphone and record your story!
 		<b> #SocialAccStories</b>
 	    </div>         
             
-            <div class="col-md-12" style="margin-top: -11px; margin-bottom: 10px;">
+            <div class="col-md-6" style="margin-top: -11px; margin-bottom: 10px;">
                    
                 <a class="contorno-morado-tell" id="484"  href="http://www.youtube.com/embed/3_1m5dLuJ9k?rel=0&amp;wmode=transparent">
                     <span class="tutorial">How to upload your video</span> <span id ="play">►</span> 
