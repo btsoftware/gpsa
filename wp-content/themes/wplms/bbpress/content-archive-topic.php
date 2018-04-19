@@ -38,3 +38,4 @@
 	<?php do_action( 'bbp_template_after_topics_index' ); ?>
 
 </div>
+

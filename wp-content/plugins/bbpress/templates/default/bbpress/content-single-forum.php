@@ -19,7 +19,7 @@
 
 	<?php if ( post_password_required() ) : ?>
 
-		<?php bbp_get_template_part( 'form', 'protected' ); ?>
+		<?php /*bbp_get_template_part( 'form', 'protected' ); */?>
 
 	<?php else : ?>
 

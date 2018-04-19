@@ -35,3 +35,4 @@
 	<?php do_action( 'bbp_template_after_forums_index' ); ?>
 
 </div>
+

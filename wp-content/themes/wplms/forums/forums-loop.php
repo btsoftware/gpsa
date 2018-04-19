@@ -126,3 +126,4 @@ isset($loop_number)?$loop_number:$loop_number=5;
 <?php endif; ?>
 
 <?php do_action( 'bp_after_forums_loop' ); ?>
+

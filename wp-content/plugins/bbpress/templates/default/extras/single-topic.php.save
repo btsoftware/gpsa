@@ -17,14 +17,14 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<!--div id="bbp-topic-wrapper-<?php bbp_topic_id(); ?>" class="bbp-topic-wrapper">
+			<!div id="bbp-topic-wrapper-<?php bbp_topic_id(); ?>" class="bbp-topic-wrapper">
 				<h1 class="entry-title"><?php bbp_topic_title(); ?></h1>
 				<div class="entry-content">
 
 					<?php bbp_get_template_part( 'content', 'single-topic' ); ?>
 
 				</div>
-			</div--><!-- #bbp-topic-wrapper-<?php bbp_topic_id(); ?> -->
+			</div><!-- #bbp-topic-wrapper-<?php bbp_topic_id(); ?> -->
 
 		<?php endwhile; ?>
 
