@@ -23,6 +23,20 @@ if(vibe_validate($free)){
 
 $flag = apply_filters('wplms_before_unit',$flag);
 
+if(isset($_POST['course_id'])){
+    $course_id=$_POST['course_id'];
+    $coursetaken=get_user_meta($user_id,$course_id,true);
+}else if(isset($_COOKIE['course'])){
+      $course_id=$_COOKIE['course'];
+      $coursetaken=1;
+}
+if(!isset($course_id) || !is_numeric($course_id))
+    wp_die(__('INCORRECT COURSE VALUE. CONTACT ADMIN','vibe'));
+
+$course_curriculum=vibe_sanitize(get_post_meta($course_id,'vibe_course_curriculum',false));
+$unit_id = wplms_get_course_unfinished_unit($course_id);
+
+
 if($flag || current_user_can('manage_options')){
 
     if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -32,23 +46,22 @@ if($flag || current_user_can('manage_options')){
         <div class="row">
             <div class="col-md-9 col-sm-8">
                 <div class="pagetitle">
-                    <h1><?php the_title(); ?></h1>
-                    <?php the_sub_title(); ?>
+                    <h1><?php //the_title(); ?></h1>
+                    <?php //the_sub_title(); ?>
                 </div>
             </div>
             <div class="col-md-3 col-sm-4">
                 <?php
                 if(isset($_GET['id']))
                   echo '<a href="'.get_permalink($_GET['id']).'?action=curriculum" class="course_button button full">'.__('Back to Course','vibe').'</a>';
-                
                 ?>
             </div>
         </div>
     </div>
 </section>
 <section id="content">
-    <!--div class="container">
-        <div class="row">
+    <div class="container">
+        <!--div class="row">
             <div class="col-md-9 col-sm-8">
                 <div class="content">
                     <div class="single_unit_content">
@@ -132,9 +145,29 @@ if($flag || current_user_can('manage_options')){
                 }
                 ?>
             </div>
-        </div>
-    </div-->
-    <div class="container">
+        </div-->
+      <div class="row">
+	 <div class="col-md-9">
+                <div class="unit_content">
+                <div class="unit_title">
+                	<?php
+            		if(isset($unit_id)){
+                		the_unit_tags($unit_id);
+                        if(is_numeric($unit_id))
+                		  the_unit_instructor($unit_id);
+                        else
+                          the_unit_instructor($course_id);  
+                	}
+                    $minutes=0;
+                        $minutes = get_post_meta($unit_id,'vibe_duration',true);
+                        if($minutes){
+                            if($minutes > 60){
+                                $hours = intval($minutes/60);
+                                $minutes = $minutes - $hours*60;
+                            }
+                        echo '<a href="#" class="print_unit"><i class="icon-printer-1"></i></a><span><i class="icon-clock"></i> '.(isset($hours)?$hours.__(' Hours','vibe'):'').' '.$minutes.' '.__('minutes','vibe').'</span>';
+                        }
+                	?>
                 	<h1><?php 
                     if(isset($course_id)){
                     	echo get_the_title($unit_id);
@@ -163,10 +196,11 @@ if($flag || current_user_can('manage_options')){
                         the_content();
                     }
                     
-                endwhile;
-                endif;
+                //endwhile;
+                //endif;
                 ?>
-                <?php
+
+		<?php
                 $units=array();
                 if(isset($course_curriculum) && is_array($course_curriculum) && count($course_curriculum)){
                   foreach($course_curriculum as $key=>$curriculum){
@@ -181,10 +215,12 @@ if($flag || current_user_can('manage_options')){
                   if($unit_id ==''){
                     echo  '<div class="unit_prevnext"><div class="col-md-3"></div><div class="col-md-6">
                           '.((isset($done_flag) && $done_flag)?'': '<a href="#" data-unit="'.$units[0].'" class="unit unit_button">'.__('Start Course','vibe').'</a>').
+$course_curriculum=vibe_sanitize(get_post_meta($course_id,'vibe_course_curriculum',false));
+$unit_id = wplms_get_course_unfinished_unit($course_id);
                         '</div></div>';
                   }else{
-
                     $k = array_search($unit_id,$units);
+		  }
                   
                   if(empty($k)) $k = 0;
 
@@ -193,7 +229,6 @@ if($flag || current_user_can('manage_options')){
                   $max=count($units)-1;
 
                   $done_flag=get_user_meta($user_id,$unit_id,true);
-                  
 
                   echo  '<div class="unit_prevnext"><div class="col-md-3">';
                   if($prev >=0){
@@ -226,12 +261,13 @@ if($flag || current_user_can('manage_options')){
                           }
                     }
                     echo '</div>';
-
-                  echo  '<div class="col-md-3">';
+		echo  '<div class="col-md-3">';
 
                   $nextflag=1;
+
                   if($next <= $max){
                     $nextunit_access = vibe_get_option('nextunit_access');
+			
                     if(isset($nextunit_access) && $nextunit_access){
                         for($i=0;$i<$next;$i++){
                             $status = get_post_meta($units[$i],$user_id,true);
@@ -240,7 +276,7 @@ if($flag || current_user_can('manage_options')){
                                 break;
                             }
                         }
-                    }
+                    }/**/
                     if($nextflag){
                         if(get_post_type($units[$next]) == 'quiz'){
                             $quiz_status = get_post_meta($units[$next],$user_id,true);
@@ -254,20 +290,24 @@ if($flag || current_user_can('manage_options')){
                             }else{
                                 echo '<a href="#" id="next_unit" data-unit="'.$units[$next].'" class="unit unit_button hide">'.__('Next Unit','vibe').'</a>';
                             }
-                        } 
+                        }
                     }
-                  }
+                  //}*/
                   echo '</div></div>';
-
+		 
                 } // End the Bug fix on course begining
-	            ?>
+	         ?>
                 </div>
                 <?php
                 	wp_nonce_field('security','hash');
                 	echo '<input type="hidden" id="course_id" name="course" value="'.$course_id.'" />';
-                ?>
-            </div>
-            <div class="col-md-3">
+               
+?>
+ 	</div>
+   </div>
+</div>
+	<div class="col-md-3">
+
             	<div class="course_time">
             		<?php
             			the_course_time("course_id=$course_id&user_id=$user_id");
@@ -303,13 +343,13 @@ if($flag || current_user_can('manage_options')){
             		}
             	?>
             </div>
-        </div>
+
     </div>
-</section>
+  </section>
 </div>
 
 <?php
-}else{
+}else{/*
 ?>
 <section id="title">
     <div class="container">
@@ -320,6 +360,47 @@ if($flag || current_user_can('manage_options')){
     </div>
 </section>
 <?php
-}
-get_footer();
+*/}
+
+get_footer()
 ?>
+
+<script>
+
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç",
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+
+  for(var i = 0, j = from.length; i < j; i++ )
+      mapping[ from.charAt( i ) ] = to.charAt( i );
+
+  return function( str ) {
+      var ret = [];
+      for( var i = 0, j = str.length; i < j; i++ ) {
+          var c = str.charAt( i );
+          if( mapping.hasOwnProperty( str.charAt( i ) ) )
+              ret.push( mapping[ c ] );
+          else
+              ret.push(c);
+      }
+      return ret.join( '' ).replace( /[^-A-Za-z0-9]+/g, '-' ).toLowerCase();
+  }
+})();
+
+//var t = "modulo-2-tendencias-de-financiamiento-para-america-latina-y-el-caribe"
+var url = window.location.href.split("/"), unit;
+
+$(".course_timeline ul a").each(function(i, a){
+  unit = normalize( $(a).text() )
+  if( url.indexOf(unit) > -1) $(a).trigger('click')
+})
+
+$(".course_timeline ul a").each(function(i, a){ 
+  unit = normalize( $(a).text() ).replace('private-', '')
+  $(a).attr('href', [ url[0], url[1], url[2], url[3] ].join("/") + "/" + unit)
+  $(a).attr('class', '')
+})
+
+
+</script>
